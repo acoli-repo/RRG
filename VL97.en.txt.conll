@@ -2123,42 +2123,42 @@
 # 6	.	.	.	O	2	punct
 
 
-
-1	John	John	NNP	PERSON	2	nsubj
-2	forced	force	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	door	door	NN	O	5	nsubj
-5	open	open	JJ	O	2	xcomp
-6	.	.	.	O	2	punct
-
-
-
-1	Bill	Bill	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	open	open	JJ	O	5	amod
-4	the	the	DT	O	5	det
-5	door	door	NN	O	2	dobj
-6	.	.	.	O	2	punct
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	forced	force	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	door	door	NN	O	5	nsubj
+# 5	open	open	JJ	O	2	xcomp
+# 6	.	.	.	O	2	punct
 
 
+# # ok
+# 1	Bill	Bill	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	open	open	JJ	O	5	amod
+# 4	the	the	DT	O	5	det
+# 5	door	door	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
 
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	broke	break	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	vase	vase	NN	O	2	dobj
-5	.	.	.	O	2	punct
+
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	broke	break	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	vase	vase	NN	O	2	dobj
+# 5	.	.	.	O	2	punct
 
 
-
-1	I	I	PRP	O	2	nsubj
-2	ordered	order	VBD	O	0	ROOT
-3	Fred	Fred	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	force	force	VB	O	2	xcomp
-6	the	the	DT	O	7	det
-7	door	door	NN	O	8	nsubj
-8	open	open	JJ	O	5	xcomp
-9	.	.	.	O	2	punct
+# # ok
+# 1	I	I	PRP	O	2	nsubj
+# 2	ordered	order	VBD	O	0	ROOT
+# 3	Fred	Fred	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	force	force	VB	O	2	xcomp
+# 6	the	the	DT	O	7	det
+# 7	door	door	NN	O	8	nsubj
+# 8	open	open	JJ	O	5	xcomp
+# 9	.	.	.	O	2	punct
 
 
 
