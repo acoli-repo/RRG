@@ -8,8 +8,8 @@
 #p.36 At the park , I talked to Leslie .
 #p.36 Yesterday , I walked on the beach with Kim .
 #p.36 As for Sam , I haven't seen him in two weeks .
-#p.36 As for Felipe , what did Maria get him or his birthday ?
-#p.36,51,53 Yesterday , what did Robin show to Pat in the library ?
+#p.36 As for Felipe , what did Maria get him for his birthday ?
+#p.51,53 Yesterday , what did Robin show to Pat in the library ?
 #p.45 He may be leaving soon .
 #p.45 She was able to see him .
 #p.45,79 Will they have to be leaving ?
