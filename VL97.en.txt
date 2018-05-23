@@ -209,7 +209,7 @@
 #p.446 Fred asked Pam to help him .
 #p.446 Fred made Pam help him .
 #p.447 Sam asked Fred to leave tomorrow .
-#p.448,464 Mary called Fred yesterday , and she asked him to paint her room white .
+#p.464 Mary called Fred yesterday , and she asked him to paint her room white .
 #p.455 Max made the woman leave .
 #p.455 Vince wiped the table clean .
 #p.455,548 Ted tried to open the door .
@@ -218,7 +218,7 @@
 #p.455 That Amy lost the race shocked everyone .
 #p.455 Louisa told Bob to close the window .
 #p.455 Fred saw Harry leave the room .
-#p.455 Harry ran down the hall laughin loudly .
+#p.455 Harry ran down the hall laughing loudly .
 #p.455 Paul drove to the store and brought some beer .
 #p.455 John persuaded Leon that Amy had lost .
 #p.455 Bill went to the party after he talked to Mary .
@@ -279,14 +279,14 @@
 #p.481 Having been shot by Harry , Tom died .
 #p.481 Tom died , because Harry shot him .
 #p.481 After Harry shot him , Tom died .
-#p.481 Harr shot Tom , and he died .
+#p.481 Harry shot Tom , and he died .
 #p.482 That Jim will win the race is likely .
 #p.482 It is likely that Jim will win the race .
 #p.482 Jim is likely to win the race .
 #p.482 Morris remembered to apply the rule .
 #p.482 Morris remembered Abe applying the rule .
 #p.482 Morris remembered that Abe applied the rule .
-#p.482 Alicia persuaded Carlos that a quantm theory of gravity is possible .
+#p.482 Alicia persuaded Carlos that a quantum theory of gravity is possible .
 #p.486 John told Mary that he will arrive at the party late .
 #p.487 Pat saw Mary after she arrived at the party .
 #p.493 the two tall sisters of Tom 's neighbor and the two short brothers of Sam 's friend

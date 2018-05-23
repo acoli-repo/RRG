@@ -2329,22 +2329,22 @@
 # 7	.	.	.	O	2	punct
 
 
-# # ok
-# 1	Mary	Mary	NNP	PERSON	2	nsubj
-# 2	called	call	VBD	O	0	ROOT
-# 3	Fred	Fred	NNP	PERSON	2	dobj
-# 4	yesterday	yesterday	NN	DATE	2	nmod:tmod
-# 5	,	,	,	O	2	punct
-# 6	and	and	CC	O	2	cc
-# 7	she	she	PRP	O	8	nsubj
-# 8	asked	ask	VBD	O	2	conj
-# 9	him	he	PRP	O	8	dobj
-# 10	to	to	TO	O	11	mark
-# 11	paint	paint	VB	O	8	xcomp
-# 12	her	she	PRP$	O	13	nmod:poss
-# 13	room	room	NN	O	14	nsubj
-# 14	white	white	JJ	O	11	xcomp
-# 15	.	.	.	O	2	punct
+# ok, but ops 
+1	Mary	Mary	NNP	PERSON	2	nsubj
+2	called	call	VBD	O	0	ROOT
+3	Fred	Fred	NNP	PERSON	2	dobj
+4	yesterday	yesterday	NN	DATE	2	nmod:tmod
+5	,	,	,	O	2	punct
+6	and	and	CC	O	2	cc
+7	she	she	PRP	O	8	nsubj
+8	asked	ask	VBD	O	2	conj
+9	him	he	PRP	O	8	dobj
+10	to	to	TO	O	11	mark
+11	paint	paint	VB	O	8	xcomp
+12	her	she	PRP$	O	13	nmod:poss
+13	room	room	NN	O	14	nsubj
+14	white	white	JJ	O	11	xcomp
+15	.	.	.	O	2	punct
 
 
 # # ok: Stanford parsing error fixed
@@ -2384,18 +2384,18 @@
 # 6	.	.	.	O	2	punct
 
 
+# # ok
+# 1	David	David	NNP	PERSON	2	nsubj
+# 2	regretted	regret	VBD	O	0	ROOT
+# 3	Amy	Amy	NNP	PERSON	5	nsubj
+# 4	's	's	POS	O	3	case
+# 5	losing	lose	VBG	O	2	ccomp
+# 6	the	the	DT	O	7	det
+# 7	race	race	NN	O	5	dobj
+# 8	.	.	.	O	2	punct
 
-1	David	David	NNP	PERSON	2	nsubj
-2	regretted	regret	VBD	O	0	ROOT
-3	Amy	Amy	NNP	PERSON	5	nsubj
-4	's	's	POS	O	3	case
-5	losing	lose	VBG	O	2	ccomp
-6	the	the	DT	O	7	det
-7	race	race	NN	O	5	dobj
-8	.	.	.	O	2	punct
 
-
-
+# nok, need that clause; Stanford tagger error on shocked
 1	That	that	DT	O	2	det
 2	Amy	Amy	NNP	PERSON	3	nsubj
 3	lost	lose	VBD	O	0	ROOT
@@ -2406,18 +2406,18 @@
 8	.	.	.	O	3	punct
 
 
+# # ok
+# 1	Louisa	Louisa	NNP	PERSON	2	nsubj
+# 2	told	tell	VBD	O	0	ROOT
+# 3	Bob	Bob	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	close	close	VB	O	2	xcomp
+# 6	the	the	DT	O	7	det
+# 7	window	window	NN	O	5	dobj
+# 8	.	.	.	O	2	punct
 
-1	Louisa	Louisa	NNP	PERSON	2	nsubj
-2	told	tell	VBD	O	0	ROOT
-3	Bob	Bob	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	close	close	VB	O	2	xcomp
-6	the	the	DT	O	7	det
-7	window	window	NN	O	5	dobj
-8	.	.	.	O	2	punct
 
-
-
+# nok, should be core coordination
 1	Fred	Fred	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
 3	Harry	Harry	NNP	PERSON	4	nsubj
@@ -2427,7 +2427,7 @@
 7	.	.	.	O	2	punct
 
 
-
+# nok, typo
 1	Harry	Harry	NNP	PERSON	2	nsubj
 2	ran	run	VBD	O	0	ROOT
 3	down	down	RP	O	2	compound:prt
@@ -2438,7 +2438,7 @@
 8	.	.	.	O	2	punct
 
 
-
+# nok, should be clausal cosubordination (shared arguments)
 1	Paul	Paul	NNP	PERSON	2	nsubj
 2	drove	drive	VBD	O	0	ROOT
 3	to	to	TO	O	5	case
@@ -2451,7 +2451,7 @@
 10	.	.	.	O	2	punct
 
 
-
+# nok, Stanford parsing error
 1	John	John	NNP	PERSON	2	nsubj
 2	persuaded	persuade	VBD	O	0	ROOT
 3	Leon	Leon	NNP	PERSON	2	dobj
@@ -2462,7 +2462,7 @@
 8	.	.	.	O	2	punct
 
 
-
+# nok, after must be PP, cf. Fig. 8.13, p.466
 1	Bill	Bill	NNP	PERSON	2	nsubj
 2	went	go	VBD	O	0	ROOT
 3	to	to	TO	O	5	case
@@ -2476,23 +2476,23 @@
 11	.	.	.	O	2	punct
 
 
+# # ok
+# 1	Anna	Anna	NNP	PERSON	2	nsubj
+# 2	read	read	VBD	O	0	ROOT
+# 3	for	for	IN	O	6	case
+# 4	a	a	DT	DURATION	6	det
+# 5	few	few	JJ	DURATION	6	amod
+# 6	minutes	minute	NNS	DURATION	2	nmod
+# 7	,	,	,	O	2	punct
+# 8	and	and	CC	O	2	cc
+# 9	then	then	RB	O	11	advmod
+# 10	she	she	PRP	O	11	nsubj
+# 11	went	go	VBD	O	2	conj
+# 12	out	out	RB	O	11	advmod
+# 13	.	.	.	O	2	punct
 
-1	Anna	Anna	NNP	PERSON	2	nsubj
-2	read	read	VBD	O	0	ROOT
-3	for	for	IN	O	6	case
-4	a	a	DT	DURATION	6	det
-5	few	few	JJ	DURATION	6	amod
-6	minutes	minute	NNS	DURATION	2	nmod
-7	,	,	,	O	2	punct
-8	and	and	CC	O	2	cc
-9	then	then	RB	O	11	advmod
-10	she	she	PRP	O	11	nsubj
-11	went	go	VBD	O	2	conj
-12	out	out	RB	O	11	advmod
-13	.	.	.	O	2	punct
 
-
-
+# nok, must be clausal cosubordination
 1	John	John	NNP	PERSON	3	nsubj
 2	must	must	MD	O	3	aux
 3	try	try	VB	O	0	ROOT
@@ -2503,31 +2503,31 @@
 8	.	.	.	O	3	punct
 
 
-
-1	John	John	NNP	PERSON	3	nsubj
-2	must	must	MD	O	3	aux
-3	tell	tell	VB	O	0	ROOT
-4	Bill	Bill	NNP	PERSON	3	dobj
-5	to	to	TO	O	6	mark
-6	wash	wash	VB	O	3	xcomp
-7	the	the	DT	O	8	det
-8	car	car	NN	O	6	dobj
-9	.	.	.	O	3	punct
-
-
-
-1	John	John	NNP	PERSON	3	nsubj
-2	can	can	MD	O	3	aux
-3	promise	promise	VB	O	0	ROOT
-4	Bill	Bill	NNP	PERSON	3	dobj
-5	to	to	TO	O	6	mark
-6	wash	wash	VB	O	3	xcomp
-7	the	the	DT	O	8	det
-8	car	car	NN	O	6	dobj
-9	.	.	.	O	3	punct
+# # ok
+# 1	John	John	NNP	PERSON	3	nsubj
+# 2	must	must	MD	O	3	aux
+# 3	tell	tell	VB	O	0	ROOT
+# 4	Bill	Bill	NNP	PERSON	3	dobj
+# 5	to	to	TO	O	6	mark
+# 6	wash	wash	VB	O	3	xcomp
+# 7	the	the	DT	O	8	det
+# 8	car	car	NN	O	6	dobj
+# 9	.	.	.	O	3	punct
 
 
+# # ok
+# 1	John	John	NNP	PERSON	3	nsubj
+# 2	can	can	MD	O	3	aux
+# 3	promise	promise	VB	O	0	ROOT
+# 4	Bill	Bill	NNP	PERSON	3	dobj
+# 5	to	to	TO	O	6	mark
+# 6	wash	wash	VB	O	3	xcomp
+# 7	the	the	DT	O	8	det
+# 8	car	car	NN	O	6	dobj
+# 9	.	.	.	O	3	punct
 
+
+# syntax ok, ops
 1	Fred	Fred	NNP	PERSON	3	nsubj
 2	's	's	POS	O	1	case
 3	winning	win	VBG	O	0	ROOT
@@ -2538,7 +2538,7 @@
 8	.	.	.	O	3	punct
 
 
-
+# nok, unclear treatment of predicate
 1	For	for	IN	O	4	mark
 2	Fred	Fred	NNP	PERSON	4	nsubj
 3	to	to	TO	O	4	mark
@@ -2555,19 +2555,19 @@
 14	.	.	.	O	10	punct
 
 
+# # ok
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	hoped	hope	VBD	O	0	ROOT
+# 3	for	for	IN	O	6	mark
+# 4	Fred	Fred	NNP	PERSON	6	nsubj
+# 5	to	to	TO	O	6	mark
+# 6	win	win	VB	O	2	advcl
+# 7	the	the	DT	O	8	det
+# 8	race	race	NN	O	6	dobj
+# 9	.	.	.	O	2	punct
 
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	hoped	hope	VBD	O	0	ROOT
-3	for	for	IN	O	6	mark
-4	Fred	Fred	NNP	PERSON	6	nsubj
-5	to	to	TO	O	6	mark
-6	win	win	VB	O	2	advcl
-7	the	the	DT	O	8	det
-8	race	race	NN	O	6	dobj
-9	.	.	.	O	2	punct
 
-
-
+# nok, parsing error on that
 1	That	that	DT	O	2	det
 2	Fred	Fred	NNP	PERSON	3	nsubj
 3	won	win	VBD	O	0	ROOT
@@ -2578,7 +2578,7 @@
 8	.	.	.	O	3	punct
 
 
-
+# treatment of that unclear, incorrect attchment
 1	It	it	PRP	O	5	nsubj
 2	was	be	VBD	O	5	aux
 3	Fred	Fred	NNP	PERSON	5	nsubj
@@ -2592,7 +2592,7 @@
 11	.	.	.	O	5	punct
 
 
-
+# parser error: wrong attachment
 1	It	it	PRP	O	6	nsubj
 2	was	be	VBD	O	6	cop
 3	for	for	IN	O	6	mark
@@ -2607,7 +2607,7 @@
 12	.	.	.	O	6	punct
 
 
-
+# parser error
 1	Fred	Fred	NNP	PERSON	7	nsubjpass
 2	's	's	POS	O	1	case
 3	loosing	loose	VBG	O	1	acl
@@ -2620,7 +2620,7 @@
 10	.	.	.	O	7	punct
 
 
-
+# nok, parser error, for must be a verbal participle attached to hoped (compound:prt)
 1	For	for	IN	O	4	mark
 2	Fred	Fred	NNP	PERSON	4	nsubj
 3	to	to	TO	O	4	mark
@@ -2635,52 +2635,52 @@
 12	.	.	.	O	4	punct
 
 
-
-1	Robin	Robin	NNP	PERSON	3	nsubjpass
-2	is	be	VBZ	O	3	auxpass
-3	known	know	VBN	O	0	ROOT
-4	for	for	IN	O	5	mark
-5	liking	like	VBG	O	3	advcl
-6	big	big	JJ	O	7	amod
-7	parties	party	NNS	O	5	dobj
-8	,	,	,	O	3	punct
-9	but	but	CC	O	3	cc
-10	why	why	WRB	O	13	advmod
-11	did	do	VBD	O	13	aux
-12	she	she	PRP	O	13	nsubj
-13	invite	invite	VB	O	3	conj
-14	the	the	DT	O	16	det
-15	entire	entire	JJ	O	16	amod
-16	club	club	NN	O	13	dobj
-17	?	?	.	O	3	punct
-
-
-
-1	Sit	sit	VB	O	0	ROOT
-2	down	down	RP	O	1	compound:prt
-3	and	and	CC	O	1	cc
-4	I	I	PRP	O	6	nsubj
-5	'll	will	MD	O	6	aux
-6	fix	fix	VB	O	1	conj
-7	you	you	PRP	O	6	iobj
-8	a	a	DT	O	9	det
-9	drink	drink	NN	O	6	dobj
-10	.	.	.	O	1	punct
+# # ok
+# 1	Robin	Robin	NNP	PERSON	3	nsubjpass
+# 2	is	be	VBZ	O	3	auxpass
+# 3	known	know	VBN	O	0	ROOT
+# 4	for	for	IN	O	5	mark
+# 5	liking	like	VBG	O	3	advcl
+# 6	big	big	JJ	O	7	amod
+# 7	parties	party	NNS	O	5	dobj
+# 8	,	,	,	O	3	punct
+# 9	but	but	CC	O	3	cc
+# 10	why	why	WRB	O	13	advmod
+# 11	did	do	VBD	O	13	aux
+# 12	she	she	PRP	O	13	nsubj
+# 13	invite	invite	VB	O	3	conj
+# 14	the	the	DT	O	16	det
+# 15	entire	entire	JJ	O	16	amod
+# 16	club	club	NN	O	13	dobj
+# 17	?	?	.	O	3	punct
 
 
+# # ok
+# 1	Sit	sit	VB	O	0	ROOT
+# 2	down	down	RP	O	1	compound:prt
+# 3	and	and	CC	O	1	cc
+# 4	I	I	PRP	O	6	nsubj
+# 5	'll	will	MD	O	6	aux
+# 6	fix	fix	VB	O	1	conj
+# 7	you	you	PRP	O	6	iobj
+# 8	a	a	DT	O	9	det
+# 9	drink	drink	NN	O	6	dobj
+# 10	.	.	.	O	1	punct
 
-1	Kim	Kim	NNP	PERSON	2	nsubj
-2	introduced	introduce	VBD	O	0	ROOT
-3	Sandy	Sandy	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	case
-5	Robin	Robin	NNP	PERSON	2	nmod
-6	in	in	IN	O	8	case
-7	the	the	DT	O	8	det
-8	library	library	NN	O	2	nmod
-9	.	.	.	O	2	punct
+
+# # ok
+# 1	Kim	Kim	NNP	PERSON	2	nsubj
+# 2	introduced	introduce	VBD	O	0	ROOT
+# 3	Sandy	Sandy	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	case
+# 5	Robin	Robin	NNP	PERSON	2	nmod
+# 6	in	in	IN	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	library	library	NN	O	2	nmod
+# 9	.	.	.	O	2	punct
 
 
-
+# nok
 1	John	John	NNP	PERSON	2	nsubj
 2	decided	decide	VBD	O	0	ROOT
 3	that	that	IN	O	6	mark
@@ -2694,7 +2694,7 @@
 11	.	.	.	O	2	punct
 
 
-
+# nok
 1	John	John	NNP	PERSON	2	nsubj
 2	decided	decide	VBD	O	0	ROOT
 3	yesterday	yesterday	NN	DATE	2	nmod:tmod
@@ -2708,7 +2708,7 @@
 11	.	.	.	O	2	punct
 
 
-
+# ok, but ops
 1	John	John	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
 3	Max	Max	NNP	PERSON	2	dobj
@@ -2738,30 +2738,30 @@
 14	.	.	.	O	2	punct
 
 
+# # ok
+# 1	As	as	IN	O	3	case
+# 2	for	for	IN	O	3	case
+# 3	Sam	Sam	NNP	PERSON	6	nmod
+# 4	,	,	,	O	6	punct
+# 5	Mary	Mary	NNP	PERSON	6	nsubj
+# 6	saw	see	VBD	O	0	ROOT
+# 7	him	he	PRP	O	6	dobj
+# 8	last	last	JJ	DATE	9	amod
+# 9	week	week	NN	DATE	6	nmod:tmod
+# 10	,	,	,	O	6	punct
+# 11	and	and	CC	O	6	cc
+# 12	as	as	IN	O	14	case
+# 13	for	for	IN	O	14	case
+# 14	Paul	Paul	NNP	PERSON	17	nmod
+# 15	,	,	,	O	17	punct
+# 16	I	I	PRP	O	17	nsubj
+# 17	saw	see	VBD	O	6	conj
+# 18	him	he	PRP	O	17	dobj
+# 19	yesterday	yesterday	NN	DATE	17	nmod:tmod
+# 20	.	.	.	O	6	punct
 
-1	As	as	IN	O	3	case
-2	for	for	IN	O	3	case
-3	Sam	Sam	NNP	PERSON	6	nmod
-4	,	,	,	O	6	punct
-5	Mary	Mary	NNP	PERSON	6	nsubj
-6	saw	see	VBD	O	0	ROOT
-7	him	he	PRP	O	6	dobj
-8	last	last	JJ	DATE	9	amod
-9	week	week	NN	DATE	6	nmod:tmod
-10	,	,	,	O	6	punct
-11	and	and	CC	O	6	cc
-12	as	as	IN	O	14	case
-13	for	for	IN	O	14	case
-14	Paul	Paul	NNP	PERSON	17	nmod
-15	,	,	,	O	17	punct
-16	I	I	PRP	O	17	nsubj
-17	saw	see	VBD	O	6	conj
-18	him	he	PRP	O	17	dobj
-19	yesterday	yesterday	NN	DATE	17	nmod:tmod
-20	.	.	.	O	6	punct
 
-
-
+# nok: double CMPL parents
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	told	tell	VBD	O	0	ROOT
 3	Kim	Kim	NNP	PERSON	2	dobj
@@ -3129,7 +3129,7 @@
 11	.	.	.	O	8	punct
 
 
-
+# cf. problems with (Fig. 8.13, p.466)
 1	While	while	IN	O	2	mark
 2	running	run	VBG	O	8	advcl
 3	down	down	RP	O	2	compound:prt
@@ -3301,35 +3301,35 @@
 12	.	.	.	O	2	punct
 
 
-
-1	John	John	NNP	PERSON	2	nsubj
-2	told	tell	VBD	O	0	ROOT
-3	Mary	Mary	NNP	PERSON	2	dobj
-4	that	that	IN	O	7	mark
-5	he	he	PRP	O	7	nsubj
-6	will	will	MD	O	7	aux
-7	arrive	arrive	VB	O	2	ccomp
-8	at	at	IN	O	10	case
-9	the	the	DT	O	10	det
-10	party	party	NN	O	7	nmod
-11	late	late	RB	O	7	advmod
-12	.	.	.	O	2	punct
-
-
-
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	Mary	Mary	NNP	PERSON	2	dobj
-4	after	after	IN	O	6	mark
-5	she	she	PRP	O	6	nsubj
-6	arrived	arrive	VBD	O	2	advcl
-7	at	at	IN	O	9	case
-8	the	the	DT	O	9	det
-9	party	party	NN	O	6	nmod
-10	.	.	.	O	2	punct
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	told	tell	VBD	O	0	ROOT
+# 3	Mary	Mary	NNP	PERSON	2	dobj
+# 4	that	that	IN	O	7	mark
+# 5	he	he	PRP	O	7	nsubj
+# 6	will	will	MD	O	7	aux
+# 7	arrive	arrive	VB	O	2	ccomp
+# 8	at	at	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	party	party	NN	O	7	nmod
+# 11	late	late	RB	O	7	advmod
+# 12	.	.	.	O	2	punct
 
 
+# # ok
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	Mary	Mary	NNP	PERSON	2	dobj
+# 4	after	after	IN	O	6	mark
+# 5	she	she	PRP	O	6	nsubj
+# 6	arrived	arrive	VBD	O	2	advcl
+# 7	at	at	IN	O	9	case
+# 8	the	the	DT	O	9	det
+# 9	party	party	NN	O	6	nmod
+# 10	.	.	.	O	2	punct
 
+
+# ok, but add ops
 1	the	the	DT	O	4	det
 2	two	two	CD	NUMBER	4	nummod
 3	tall	tall	JJ	O	4	amod
