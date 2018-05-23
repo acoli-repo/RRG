@@ -302,8 +302,8 @@
 #p.505 Sandy could not explain why she had opened the door to the detective during the interviews .
 #p.505 Sandy could not explain to the detective during the interview how she had opened the door .
 #p.505 Sandy could not explain to the detective during the interview why she had opened the door .
-#p.505 Sandy could no describe where she had found the gun to the detective during the interview .
-#p.505 Sandy could no describe during the interview where she had found the gun to the detective .
+#p.505 Sandy could not describe where she had found the gun to the detective during the interview .
+#p.505 Sandy could not describe during the interview where she had found the gun to the detective .
 #p.505 Kim put the gun where no one could find it after the robbery .
 #p.508 Sandy tried to persuade Kim to visit Robin .
 #p.509 Pat asked Robin to try to visit Kim .
