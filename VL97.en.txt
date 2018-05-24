@@ -10,6 +10,7 @@
 #p.36 As for Sam , I haven't seen him in two weeks .
 #p.36 As for Felipe , what did Maria get him for his birthday ?
 #p.51,53 Yesterday , what did Robin show to Pat in the library ?
+#RRG_overview.pdf_Fig.4 Yesterday , what did John give to Mary in the library ?
 #p.45 He may be leaving soon .
 #p.45 She was able to see him .
 #p.45,79 Will they have to be leaving ?
@@ -25,10 +26,12 @@
 #p.55 the resupplying of the troops with ammunition
 #p.55 arrest of Bill by FBI agents in New York
 #p.59 the three big books
+#cf.RRG_overview.pdf_Fig.6 the three bridges
 #p.61 Fred 's book
 #p.62 that book
 #p.62 She likes that .
 #p.75,178,235,236,319,324,430 What did Robin give to Leslie yesterday ?
+#cf.RRG_overview.pdf_Fig.12 What did Dana give Chris yesterday ?
 #p.76 Yesterday , Dana read two magazines in the library .
 #p.76 Chris placed the notebook on the bench .
 #p.76 Who did Robin present with an award at the ceremony ?
@@ -341,3 +344,4 @@
 #p.636 Chris is easy to Pat to please .
 #p.670 Mary having finished doing the dishes , Pat and Neil could start their next project in the kitchen .
 #p.670 With Sam going to the store for beer and pretzels , the other guys could get the surprise party ready .
+#RRG_overview.pdf_Fig.5 She will be singing .
