@@ -521,15 +521,15 @@
 # 8	?	?	.	O	4	punct
 
 
-# To whom must be PrCS
-1	To	to	TO	O	2	case
-2	whom	whom	WP	O	5	nmod
-3	did	do	VBD	O	5	aux
-4	Manuel	Manuel	NNP	PERSON	5	nsubj
-5	give	give	VB	O	0	ROOT
-6	the	the	DT	O	7	det
-7	envelope	envelope	NN	O	5	dobj
-8	?	?	.	O	5	punct
+# # ok
+# 1	To	to	TO	O	2	case
+# 2	whom	whom	WP	O	5	nmod
+# 3	did	do	VBD	O	5	aux
+# 4	Manuel	Manuel	NNP	PERSON	5	nsubj
+# 5	give	give	VB	O	0	ROOT
+# 6	the	the	DT	O	7	det
+# 7	envelope	envelope	NN	O	5	dobj
+# 8	?	?	.	O	5	punct
 
 
 # # ok
@@ -991,7 +991,7 @@
 10	.	.	.	O	2	punct
 
 
-# nexus fail
+# parse fail: sold must modify "the man", not "talked"
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	talked	talk	VBD	O	0	ROOT
 3	to	to	TO	O	5	case
@@ -1006,7 +1006,7 @@
 12	.	.	.	O	2	punct
 
 
-# nexus fail
+# relative clause attachment
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	looked	look	VBD	O	0	ROOT
 3	at	at	IN	O	5	case
@@ -1021,7 +1021,7 @@
 12	.	.	.	O	2	punct
 
 
-# nexus fail
+# relative clause attachment
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	looked	look	VBD	O	0	ROOT
 3	at	at	IN	O	5	case
@@ -1038,57 +1038,57 @@
 14	.	.	.	O	2	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	man	man	NN	O	3	nsubj
-3	went	go	VBD	O	0	ROOT
-4	downhill	downhill	RB	O	3	advmod
-5	and	and	CC	O	3	cc
-6	saw	see	VBD	O	3	conj
-7	the	the	DT	O	8	det
-8	dog	dog	NN	O	6	dobj
-9	.	.	.	O	3	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	man	man	NN	O	3	nsubj
+# 3	went	go	VBD	O	0	ROOT
+# 4	downhill	downhill	RB	O	3	advmod
+# 5	and	and	CC	O	3	cc
+# 6	saw	see	VBD	O	3	conj
+# 7	the	the	DT	O	8	det
+# 8	dog	dog	NN	O	6	dobj
+# 9	.	.	.	O	3	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	dog	dog	NN	O	3	nsubj
-3	went	go	VBD	O	0	ROOT
-4	downhill	downhill	RB	O	3	advmod
-5	and	and	CC	O	3	cc
-6	was	be	VBD	O	7	auxpass
-7	seen	see	VBN	O	3	conj
-8	by	by	IN	O	10	case
-9	the	the	DT	O	10	det
-10	man	man	NN	O	7	nmod
-11	.	.	.	O	3	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	dog	dog	NN	O	3	nsubj
+# 3	went	go	VBD	O	0	ROOT
+# 4	downhill	downhill	RB	O	3	advmod
+# 5	and	and	CC	O	3	cc
+# 6	was	be	VBD	O	7	auxpass
+# 7	seen	see	VBN	O	3	conj
+# 8	by	by	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	man	man	NN	O	7	nmod
+# 11	.	.	.	O	3	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	student	student	NN	O	3	nsubj
-3	watched	watch	VBD	O	0	ROOT
-4	TV	tv	NN	O	3	dobj
-5	while	while	IN	O	6	mark
-6	eating	eat	VBG	O	3	advcl
-7	pizza	pizza	NN	O	6	dobj
-8	.	.	.	O	3	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	student	student	NN	O	3	nsubj
+# 3	watched	watch	VBD	O	0	ROOT
+# 4	TV	tv	NN	O	3	dobj
+# 5	while	while	IN	O	6	mark
+# 6	eating	eat	VBG	O	3	advcl
+# 7	pizza	pizza	NN	O	6	dobj
+# 8	.	.	.	O	3	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	student	student	NN	O	3	nsubj
-3	looked	look	VBD	O	0	ROOT
-4	out	out	RP	O	3	compound:prt
-5	the	the	DT	O	6	det
-6	window	window	NN	O	3	dobj
-7	while	while	IN	O	9	mark
-8	being	be	VBG	O	9	auxpass
-9	questioned	question	VBN	O	3	advcl
-10	by	by	IN	O	12	case
-11	the	the	DT	O	12	det
-12	police	police	NN	O	9	nmod
-13	.	.	.	O	3	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	student	student	NN	O	3	nsubj
+# 3	looked	look	VBD	O	0	ROOT
+# 4	out	out	RP	O	3	compound:prt
+# 5	the	the	DT	O	6	det
+# 6	window	window	NN	O	3	dobj
+# 7	while	while	IN	O	9	mark
+# 8	being	be	VBG	O	9	auxpass
+# 9	questioned	question	VBN	O	3	advcl
+# 10	by	by	IN	O	12	case
+# 11	the	the	DT	O	12	det
+# 12	police	police	NN	O	9	nmod
+# 13	.	.	.	O	3	punct
 
 
 # # ok
@@ -1117,80 +1117,80 @@
 # 4	.	.	.	O	2	punct
 
 
-# by-PPs in periphery (p.291) but this contraticts the rule that peripheral PPs should be predicative
-1	Sally	Sally	NNP	PERSON	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	surprised	surprise	VBN	O	0	ROOT
-4	by	by	IN	O	5	case
-5	Mary	Mary	NNP	PERSON	3	nmod
-6	.	.	.	O	3	punct
+# # ok, but cf. by
+# 1	Sally	Sally	NNP	PERSON	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	surprised	surprise	VBN	O	0	ROOT
+# 4	by	by	IN	O	5	case
+# 5	Mary	Mary	NNP	PERSON	3	nmod
+# 6	.	.	.	O	3	punct
 
 
-# nexus fail
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	brought	bring	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	book	book	NN	O	2	dobj
-5	to	to	TO	O	6	mark
-6	read	read	VB	O	2	advcl
-7	.	.	.	O	2	punct
+# # ok?
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	brought	bring	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	book	book	NN	O	2	dobj
+# 5	to	to	TO	O	6	mark
+# 6	read	read	VB	O	2	advcl
+# 7	.	.	.	O	2	punct
 
 
-# nexus fail
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	brought	bring	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	book	book	NN	O	2	dobj
-5	for	for	IN	O	9	mark
-6	her	she	PRP$	O	7	nmod:poss
-7	sister	sister	NN	O	9	nsubj
-8	to	to	TO	O	9	mark
-9	read	read	VB	O	2	advcl
-10	.	.	.	O	2	punct
+# # ok ?
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	brought	bring	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	book	book	NN	O	2	dobj
+# 5	for	for	IN	O	9	mark
+# 6	her	she	PRP$	O	7	nmod:poss
+# 7	sister	sister	NN	O	9	nsubj
+# 8	to	to	TO	O	9	mark
+# 9	read	read	VB	O	2	advcl
+# 10	.	.	.	O	2	punct
 
 
-# nexus fail
-1	John	John	NNP	PERSON	2	nsubj
-2	built	build	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	chest	chest	NN	O	2	dobj
-5	to	to	TO	O	6	mark
-6	put	put	VB	O	2	advcl
-7	his	he	PRP$	O	8	nmod:poss
-8	clothes	clothes	NNS	O	6	dobj
-9	in	in	IN	O	6	compound:prt
-10	.	.	.	O	2	punct
+# # ok?
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	built	build	VBD	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	chest	chest	NN	O	2	dobj
+# 5	to	to	TO	O	6	mark
+# 6	put	put	VB	O	2	advcl
+# 7	his	he	PRP$	O	8	nmod:poss
+# 8	clothes	clothes	NNS	O	6	dobj
+# 9	in	in	IN	O	6	compound:prt
+# 10	.	.	.	O	2	punct
 
 
-# nexus fail
-1	John	John	NNP	PERSON	2	nsubj
-2	build	build	VB	O	0	ROOT
-3	a	a	DT	O	4	det
-4	chest	chest	NN	O	2	dobj
-5	for	for	IN	O	7	case
-6	his	he	PRP$	O	7	nmod:poss
-7	wife	wife	NN	O	4	nmod
-8	to	to	TO	O	9	mark
-9	put	put	VB	O	2	advcl
-10	her	she	PRP$	O	11	nmod:poss
-11	clothes	clothes	NNS	O	9	dobj
-12	in	in	IN	O	9	compound:prt
-13	.	.	.	O	2	punct
+# # ok? (check nexus)
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	build	build	VB	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	chest	chest	NN	O	2	dobj
+# 5	for	for	IN	O	7	case
+# 6	his	he	PRP$	O	7	nmod:poss
+# 7	wife	wife	NN	O	4	nmod
+# 8	to	to	TO	O	9	mark
+# 9	put	put	VB	O	2	advcl
+# 10	her	she	PRP$	O	11	nmod:poss
+# 11	clothes	clothes	NNS	O	9	dobj
+# 12	in	in	IN	O	9	compound:prt
+# 13	.	.	.	O	2	punct
 
 
-# nexus fail
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	book	book	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	to	to	TO	O	8	mark
-8	read	read	VB	O	2	advcl
-9	.	.	.	O	2	punct
+# # ok ?
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	book	book	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	to	to	TO	O	8	mark
+# 8	read	read	VB	O	2	advcl
+# 9	.	.	.	O	2	punct
 
 
-# nexus fail
+# nexus fail, cf. relative clauses
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	gave	give	VBD	O	0	ROOT
 3	Pat	Pat	NNP	PERSON	2	iobj
@@ -1201,22 +1201,22 @@
 8	.	.	.	O	2	punct
 
 
-# nexus fail
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	book	book	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	for	for	IN	O	11	mark
-8	her	she	PRP$	O	9	nmod:poss
-9	sister	sister	NN	O	11	nsubj
-10	to	to	TO	O	11	mark
-11	read	read	VB	O	2	advcl
-12	.	.	.	O	2	punct
+# # ok ?
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	book	book	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	for	for	IN	O	11	mark
+# 8	her	she	PRP$	O	9	nmod:poss
+# 9	sister	sister	NN	O	11	nsubj
+# 10	to	to	TO	O	11	mark
+# 11	read	read	VB	O	2	advcl
+# 12	.	.	.	O	2	punct
 
 
-# nexus fail
+# nexus fail, cf. relative clauses
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	gave	give	VBD	O	0	ROOT
 3	Pat	Pat	NNP	PERSON	2	iobj
@@ -1230,7 +1230,7 @@
 11	.	.	.	O	2	punct
 
 
-# nexus fail
+# we loose the with argument in the second clause, but RRG analysis is unclear
 1	Leslie	Leslie	NNP	PERSON	2	nsubj
 2	brought	bring	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -1243,7 +1243,7 @@
 10	.	.	.	O	2	punct
 
 
-# nexus fail
+# nexus, cf. relative clauses
 1	Leslie	Leslie	NNP	PERSON	2	nsubj
 2	brought	bring	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -1258,81 +1258,81 @@
 12	.	.	.	O	2	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	book	book	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	brought	bring	VBN	O	0	ROOT
-5	by	by	IN	O	6	case
-6	Sandy	Sandy	NNP	PERSON	4	nmod
-7	for	for	IN	O	10	mark
-8	Pat	Pat	NNP	PERSON	10	nsubj
-9	to	to	TO	O	10	mark
-10	read	read	VB	O	4	advcl
-11	.	.	.	O	4	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	book	book	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	brought	bring	VBN	O	0	ROOT
+# 5	by	by	IN	O	6	case
+# 6	Sandy	Sandy	NNP	PERSON	4	nmod
+# 7	for	for	IN	O	10	mark
+# 8	Pat	Pat	NNP	PERSON	10	nsubj
+# 9	to	to	TO	O	10	mark
+# 10	read	read	VB	O	4	advcl
+# 11	.	.	.	O	4	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	book	book	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	brought	bring	VBN	O	0	ROOT
-5	for	for	IN	O	8	mark
-6	Pat	Pat	NNP	PERSON	8	nsubj
-7	to	to	TO	O	8	mark
-8	read	read	VB	O	4	advcl
-9	.	.	.	O	4	punct
+# # ok? 
+# 1	The	the	DT	O	2	det
+# 2	book	book	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	brought	bring	VBN	O	0	ROOT
+# 5	for	for	IN	O	8	mark
+# 6	Pat	Pat	NNP	PERSON	8	nsubj
+# 7	to	to	TO	O	8	mark
+# 8	read	read	VB	O	4	advcl
+# 9	.	.	.	O	4	punct
 
 
-# nexus fail
-1	Chris	Chris	NNP	PERSON	2	nsubj
-2	brought	bring	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	watch	watch	NN	O	2	dobj
-5	to	to	TO	O	7	mark
-6	be	be	VB	O	7	auxpass
-7	repaired	repair	VBN	O	2	xcomp
-8	by	by	IN	O	10	case
-9	the	the	DT	O	10	det
-10	jeweler	jeweler	NN	O	7	nmod
-11	.	.	.	O	2	punct
+# # ok ?
+# 1	Chris	Chris	NNP	PERSON	2	nsubj
+# 2	brought	bring	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	watch	watch	NN	O	2	dobj
+# 5	to	to	TO	O	7	mark
+# 6	be	be	VB	O	7	auxpass
+# 7	repaired	repair	VBN	O	2	xcomp
+# 8	by	by	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	jeweler	jeweler	NN	O	7	nmod
+# 11	.	.	.	O	2	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	watch	watch	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	brought	bring	VBN	O	0	ROOT
-5	to	to	TO	O	7	mark
-6	be	be	VB	O	7	auxpass
-7	repaired	repair	VBN	O	4	xcomp
-8	.	.	.	O	4	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	watch	watch	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	brought	bring	VBN	O	0	ROOT
+# 5	to	to	TO	O	7	mark
+# 6	be	be	VB	O	7	auxpass
+# 7	repaired	repair	VBN	O	4	xcomp
+# 8	.	.	.	O	4	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	teacher	teacher	NN	O	3	nsubj
-3	sent	send	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	pupils	pupil	NNS	O	3	dobj
-6	away	away	RB	O	8	advmod
-7	to	to	TO	O	8	mark
-8	study	study	VB	O	3	xcomp
-9	.	.	.	O	3	punct
+# # ok ?
+# 1	The	the	DT	O	2	det
+# 2	teacher	teacher	NN	O	3	nsubj
+# 3	sent	send	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	pupils	pupil	NNS	O	3	dobj
+# 6	away	away	RB	O	8	advmod
+# 7	to	to	TO	O	8	mark
+# 8	study	study	VB	O	3	xcomp
+# 9	.	.	.	O	3	punct
 
 
-# nexus fail
-1	The	the	DT	O	2	det
-2	pupils	pupil	NNS	O	4	nsubjpass
-3	were	be	VBD	O	4	auxpass
-4	sent	send	VBN	O	0	ROOT
-5	away	away	RB	O	4	advmod
-6	to	to	TO	O	7	mark
-7	study	study	VB	O	4	xcomp
-8	.	.	.	O	4	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	pupils	pupil	NNS	O	4	nsubjpass
+# 3	were	be	VBD	O	4	auxpass
+# 4	sent	send	VBN	O	0	ROOT
+# 5	away	away	RB	O	4	advmod
+# 6	to	to	TO	O	7	mark
+# 7	study	study	VB	O	4	xcomp
+# 8	.	.	.	O	4	punct
 
 
-# nexus fail
+# advmod of adjectives
 1	The	the	DT	O	4	det
 2	terminally	terminally	RB	O	3	advmod
 3	ill	ill	JJ	O	4	amod
@@ -1346,7 +1346,7 @@
 11	.	.	.	O	5	punct
 
 
-# nexus fail
+# advmod of adjectives
 1	The	the	DT	O	4	det
 2	terminally	terminally	RB	O	4	advmod
 3	ill	ill	JJ	O	4	amod
@@ -1361,7 +1361,7 @@
 12	.	.	.	O	6	punct
 
 
-# nexus fail
+# nexus?
 1	The	the	DT	O	2	det
 2	company	company	NN	O	3	nsubj
 3	supplied	supply	VBD	O	0	ROOT
@@ -1390,7 +1390,7 @@
 13	.	.	.	O	3	punct
 
 
-# failed
+# ok
 1	That	that	DT	O	2	det
 2	one	one	CD	NUMBER	0	ROOT
 3	I	I	PRP	O	5	nsubj
@@ -1399,17 +1399,17 @@
 6	.	.	.	O	2	punct
 
 
-# Stanford parse error
-1	Larry	Larry	NNP	PERSON	2	nsubj
-2	baked	baked	JJ	O	0	ROOT
-3	a	a	DT	O	4	det
-4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	6	case
-6	Sue	sue	NN	O	4	nmod
-7	.	.	.	O	2	punct
+# # ok ?
+# 1	Larry	Larry	NNP	PERSON	2	nsubj
+# 2	baked	baked	JJ	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	cake	cake	NN	O	2	dobj
+# 5	for	for	IN	O	6	case
+# 6	Sue	sue	NN	O	4	nmod
+# 7	.	.	.	O	2	punct
 
 
-# Parse error
+# unrecoverable Stanford parse error
 1	Larry	Larry	NNP	PERSON	3	compound
 2	baked	baked	JJ	O	3	amod
 3	Sue	sue	NN	O	0	ROOT
@@ -1439,13 +1439,13 @@
 # 9	?	?	.	O	3	punct
 
 
-# PrCS
-1	Where	where	WRB	O	4	advmod
-2	did	do	VBD	O	4	aux
-3	Robin	Robin	NNP	PERSON	4	nsubj
-4	see	see	VB	O	0	ROOT
-5	Pat	Pat	NNP	PERSON	4	dobj
-6	?	?	.	O	4	punct
+# # ok
+# 1	Where	where	WRB	O	4	advmod
+# 2	did	do	VBD	O	4	aux
+# 3	Robin	Robin	NNP	PERSON	4	nsubj
+# 4	see	see	VB	O	0	ROOT
+# 5	Pat	Pat	NNP	PERSON	4	dobj
+# 6	?	?	.	O	4	punct
 
 
 

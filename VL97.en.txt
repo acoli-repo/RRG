@@ -117,7 +117,7 @@
 #p.309 Sandy gave the book to Pat for her sister to read .
 #p.309 Sandy gave Pat the book for her sister to read .
 #p.309 Leslie brought a knife to carve the turkey with .
-#p.309 Leslie brought a kniw for Bruce to carve the turkey with .
+#p.309 Leslie brought a knife for Bruce to carve the turkey with .
 #p.310 The book was brought by Sandy for Pat to read .
 #p.310 The book was brought for Pat to read .
 #p.310 Chris brought the watch to be repaired by the jeweler .
