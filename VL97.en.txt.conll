@@ -3005,6 +3005,8 @@
 # 6	.	.	.	O	2	punct
 
 # parser error: stopped -> saw
+# longer requires periphery under CORE
+# missed conj-s
 1	Kim	Kim	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
 3	Sandy	Sandy	NNP	PERSON	4	nsubj
@@ -3025,7 +3027,8 @@
 18	.	.	.	O	2	punct
 
 
-# parser error: called -> saw
+# parser error: called -> saw, not leave
+# missed first conj
 1	Kim	Kim	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
 3	Sandy	Sandy	NNP	PERSON	4	nsubj
@@ -3085,77 +3088,76 @@
 9	.	.	.	O	3	punct
 
 
-# advcl must be LD
-1	Running	run	VBG	O	7	advcl
-2	down	down	RP	O	1	compound:prt
-3	the	the	DT	O	4	det
-4	hall	hall	NN	O	1	dobj
-5	,	,	,	O	7	punct
-6	Sandy	Sandy	NNP	PERSON	7	nsubj
-7	waved	wave	VBD	O	0	ROOT
-8	to	to	TO	O	9	mark
-9	Sue	sue	VB	PERSON	7	xcomp
-10	.	.	.	O	7	punct
+# # ok
+# 1	Running	run	VBG	O	7	advcl
+# 2	down	down	RP	O	1	compound:prt
+# 3	the	the	DT	O	4	det
+# 4	hall	hall	NN	O	1	dobj
+# 5	,	,	,	O	7	punct
+# 6	Sandy	Sandy	NNP	PERSON	7	nsubj
+# 7	waved	wave	VBD	O	0	ROOT
+# 8	to	to	TO	O	9	mark
+# 9	Sue	sue	VB	PERSON	7	xcomp
+# 10	.	.	.	O	7	punct
 
 
-# advcl must be LD
-1	After	after	IN	O	2	mark
-2	running	run	VBG	O	8	advcl
-3	down	down	RP	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	dobj
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
+# # ok
+# 1	After	after	IN	O	2	mark
+# 2	running	run	VBG	O	8	advcl
+# 3	down	down	RP	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	dobj
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
 
-# advcl must be LD
-1	Before	before	IN	O	2	mark
-2	running	run	VBG	O	8	advcl
-3	down	down	RP	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	dobj
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
+# # ok
+# 1	Before	before	IN	O	2	mark
+# 2	running	run	VBG	O	8	advcl
+# 3	down	down	RP	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	dobj
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
 
-# cf. problems with (Fig. 8.13, p.466)
-# advcl must be LD
-1	While	while	IN	O	2	mark
-2	running	run	VBG	O	8	advcl
-3	down	down	RP	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	dobj
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
+# # ok, cf. problems with (Fig. 8.13, p.466)
+# 1	While	while	IN	O	2	mark
+# 2	running	run	VBG	O	8	advcl
+# 3	down	down	RP	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	dobj
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
 
-# advcl must be LD
-1	Having	have	VBG	O	2	aux
-2	run	run	VBN	O	8	advcl
-3	down	down	IN	O	5	case
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	nmod
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
+# # ok
+# 1	Having	have	VBG	O	2	aux
+# 2	run	run	VBN	O	8	advcl
+# 3	down	down	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	nmod
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
 
-# should be nuclear cosub
+# parse error: Tom -> shot
 1	Harry	Harry	NNP	PERSON	2	nsubj
 2	shot	shoot	VBD	O	0	ROOT
 3	Tom	Tom	NNP	PERSON	4	nsubj
@@ -3172,30 +3174,31 @@
 # 6	.	.	.	O	2	punct
 
 
-# LD, clausal cosub
-1	Having	have	VBG	O	3	aux
-2	been	be	VBN	O	3	auxpass
-3	shot	shoot	VBN	O	8	advcl
-4	by	by	IN	O	5	case
-5	Harry	Harry	NNP	PERSON	3	nmod
-6	,	,	,	O	8	punct
-7	Tom	Tom	NNP	PERSON	8	nsubj
-8	died	die	VBD	O	0	ROOT
-9	.	.	.	O	8	punct
+# # should be clausal cosub, but syntactically, isn't that an LD?
+# 1	Having	have	VBG	O	3	aux
+# 2	been	be	VBN	O	3	auxpass
+# 3	shot	shoot	VBN	O	8	advcl
+# 4	by	by	IN	O	5	case
+# 5	Harry	Harry	NNP	PERSON	3	nmod
+# 6	,	,	,	O	8	punct
+# 7	Tom	Tom	NNP	PERSON	8	nsubj
+# 8	died	die	VBD	O	0	ROOT
+# 9	.	.	.	O	8	punct
+
+
+# # ok: clausal subordination
+# 1	Tom	Tom	NNP	PERSON	2	nsubj
+# 2	died	die	VBD	O	0	ROOT
+# 3	,	,	,	O	2	punct
+# 4	because	because	IN	O	6	mark
+# 5	Harry	Harry	NNP	PERSON	6	nsubj
+# 6	shot	shoot	VBD	O	2	advcl
+# 7	him	he	PRP	O	6	dobj
+# 8	.	.	.	O	2	punct
 
 
 # clausal subordination
-1	Tom	Tom	NNP	PERSON	2	nsubj
-2	died	die	VBD	O	0	ROOT
-3	,	,	,	O	2	punct
-4	because	because	IN	O	6	mark
-5	Harry	Harry	NNP	PERSON	6	nsubj
-6	shot	shoot	VBD	O	2	advcl
-7	him	he	PRP	O	6	dobj
-8	.	.	.	O	2	punct
-
-
-# clausal subordination
+# CC: isn't that an LD rather than CS ?, left unchanged
 1	After	after	IN	O	3	mark
 2	Harry	Harry	NNP	PERSON	3	nsubj
 3	shot	shoot	VBD	O	7	advcl
@@ -3217,16 +3220,16 @@
 # 8	.	.	.	O	2	punct
 
 
-# core subord
-1	That	that	DT	O	2	det
-2	Jim	Jim	NNP	PERSON	4	nsubj
-3	will	will	MD	O	4	aux
-4	win	win	VB	O	8	csubj
-5	the	the	DT	O	6	det
-6	race	race	NN	O	4	dobj
-7	is	be	VBZ	O	8	cop
-8	likely	likely	JJ	O	0	ROOT
-9	.	.	.	O	8	punct
+# # ok? core subord
+# 1	That	that	DT	O	2	det
+# 2	Jim	Jim	NNP	PERSON	4	nsubj
+# 3	will	will	MD	O	4	aux
+# 4	win	win	VB	O	8	csubj
+# 5	the	the	DT	O	6	det
+# 6	race	race	NN	O	4	dobj
+# 7	is	be	VBZ	O	8	cop
+# 8	likely	likely	JJ	O	0	ROOT
+# 9	.	.	.	O	8	punct
 
 
 # # ok
@@ -3264,6 +3267,7 @@
 
 
 # core coordination
+# unresolvable from Stanford, dep indicates parse failure
 1	Morris	Morris	NNP	PERSON	2	nsubj
 2	remembered	remember	VBD	O	0	ROOT
 3	Abe	Abe	NNP	PERSON	4	nsubj
@@ -3327,7 +3331,7 @@
 # 10	.	.	.	O	2	punct
 
 
-# ops
+# almost ok: low operator attachment
 1	the	the	DT	O	4	det
 2	two	two	CD	NUMBER	4	nummod
 3	tall	tall	JJ	O	4	amod
