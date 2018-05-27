@@ -245,6 +245,7 @@
 #p.465,467 John decided yesterday that he will go to the party .
 #p.466 John saw Max after he went to the party .
 #p.468,521 Robin drove out of Phoenix this morning and will arrive in Atlanta tomorrow .
+#p.468,521 Robin drove out of Phoenix this morning and will arrive in Atlanta tomorrow .
 #p.470 As for Sam , Mary saw him last week , and as for Paul , I saw him yesterday .
 #p.470 Sandy told Kim to go to the movies .
 #p.470 Robin asked Pat to apply for a job .
