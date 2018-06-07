@@ -13,7 +13,7 @@
 #p.18,19 Whom did Pat send to us ?
 #p.18 Whom did Pat send them to ?
 #p.26 John ate the sandwich in the library .
-#p.32 Scully did not show the photo to Mulder in the office yesterday .
+#p.32 Scully did not show the photo to Mulder at the office yesterday .
 #p.33 The man saw the woman in the mountains .
 #p.34 I killed them .
 #p.36 At the park , I talked to Leslie .
