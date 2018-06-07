@@ -2565,7 +2565,7 @@
 # 9	.	.	.	O	2	punct
 
 
-# unrecoverable parsing error, partially restored
+# unrecoverable parsing error, partially restored, cf. p.623
 1	That	that	DT	O	2	det
 2	Fred	Fred	NNP	PERSON	3	nsubj
 3	won	win	VBD	O	0	ROOT
@@ -3400,19 +3400,19 @@
 # 8	yesterday	yesterday	NN	DATE	7	nmod:tmod
 
 
-# cf. Robin below
-1	I	I	PRP	O	4	nsubj
-2	can	can	MD	O	4	aux
-3	'	'	''	O	4	punct
-4	t	t	NN	O	0	ROOT
-5	remember	remember	VBP	O	4	acl
-6	who	who	WP	O	8	dobj
-7	Jose	Jose	NNP	PERSON	8	nsubj
-8	saw	see	VBD	O	5	ccomp
-9	.	.	.	O	4	punct
+# # ok, but tokenization error in can't
+# 1	I	I	PRP	O	4	nsubj
+# 2	can	can	MD	O	4	aux
+# 3	'	'	''	O	4	punct
+# 4	t	t	NN	O	0	ROOT
+# 5	remember	remember	VBP	O	4	acl
+# 6	who	who	WP	O	8	dobj
+# 7	Jose	Jose	NNP	PERSON	8	nsubj
+# 8	saw	see	VBD	O	5	ccomp
+# 9	.	.	.	O	4	punct
 
 
-
+# copula
 1	What	what	WDT	O	3	dobj
 2	Mary	Mary	NNP	PERSON	3	nsubj
 3	brought	bring	VBD	O	6	csubj
@@ -3423,160 +3423,158 @@
 8	me	I	PRP	O	6	nmod
 9	.	.	.	O	6	punct
 
-
-# a complete mess
-1	Robin	Robin	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	not	not	RB	O	4	neg
-4	identify	identify	VB	O	0	ROOT
-5	who	who	WP	O	7	nsubj
-6	had	have	VBD	O	7	aux
-7	talked	talk	VBN	O	4	ccomp
-8	to	to	TO	O	9	case
-9	Kim	Kim	NNP	PERSON	7	nmod
-10	at	at	IN	O	12	case
-11	the	the	DT	O	12	det
-12	party	party	NN	O	7	nmod
-13	to	to	TO	O	15	case
-14	the	the	DT	O	15	det
-15	police	police	NN	O	7	nmod
-
+# # ok
+# 1	Robin	Robin	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	not	not	RB	O	4	neg
+# 4	identify	identify	VB	O	0	ROOT
+# 5	who	who	WP	O	7	nsubj
+# 6	had	have	VBD	O	7	aux
+# 7	talked	talk	VBN	O	4	ccomp
+# 8	to	to	TO	O	9	case
+# 9	Kim	Kim	NNP	PERSON	7	nmod
+# 10	at	at	IN	O	12	case
+# 11	the	the	DT	O	12	det
+# 12	party	party	NN	O	7	nmod
+# 13	to	to	TO	O	15	case
+# 14	the	the	DT	O	15	det
+# 15	police	police	NN	O	7	nmod
 
 
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	not	not	RB	O	4	neg
-4	explain	explain	VB	O	0	ROOT
-5	how	how	WRB	O	8	advmod
-6	she	she	PRP	O	8	nsubj
-7	had	have	VBD	O	8	aux
-8	opened	open	VBN	O	4	ccomp
-9	the	the	DT	O	10	det
-10	door	door	NN	O	8	dobj
-11	to	to	TO	O	13	case
-12	the	the	DT	O	13	det
-13	detective	detective	NN	O	8	nmod
-14	during	during	IN	O	16	case
-15	the	the	DT	O	16	det
-16	interviews	interview	NNS	O	8	nmod
-17	.	.	.	O	4	punct
+# # ok, but headless relative clause as adjunct: periphery?
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	not	not	RB	O	4	neg
+# 4	explain	explain	VB	O	0	ROOT
+# 5	how	how	WRB	O	8	advmod
+# 6	she	she	PRP	O	8	nsubj
+# 7	had	have	VBD	O	8	aux
+# 8	opened	open	VBN	O	4	ccomp
+# 9	the	the	DT	O	10	det
+# 10	door	door	NN	O	8	dobj
+# 11	to	to	TO	O	13	case
+# 12	the	the	DT	O	13	det
+# 13	detective	detective	NN	O	8	nmod
+# 14	during	during	IN	O	16	case
+# 15	the	the	DT	O	16	det
+# 16	interviews	interview	NNS	O	8	nmod
+# 17	.	.	.	O	4	punct
 
 
-
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	not	not	RB	O	4	neg
-4	explain	explain	VB	O	0	ROOT
-5	why	why	WRB	O	8	advmod
-6	she	she	PRP	O	8	nsubj
-7	had	have	VBD	O	8	aux
-8	opened	open	VBN	O	4	advcl
-9	the	the	DT	O	10	det
-10	door	door	NN	O	8	dobj
-11	to	to	TO	O	13	case
-12	the	the	DT	O	13	det
-13	detective	detective	NN	O	8	nmod
-14	during	during	IN	O	16	case
-15	the	the	DT	O	16	det
-16	interviews	interview	NNS	O	8	nmod
-17	.	.	.	O	4	punct
-
-
-
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	not	not	RB	O	4	neg
-4	explain	explain	VB	O	0	ROOT
-5	to	to	TO	O	7	case
-6	the	the	DT	O	7	det
-7	detective	detective	NN	O	4	nmod
-8	during	during	IN	O	10	case
-9	the	the	DT	O	10	det
-10	interview	interview	NN	O	4	nmod
-11	how	how	WRB	O	14	advmod
-12	she	she	PRP	O	14	nsubj
-13	had	have	VBD	O	14	aux
-14	opened	open	VBN	O	4	ccomp
-15	the	the	DT	O	16	det
-16	door	door	NN	O	14	dobj
-17	.	.	.	O	4	punct
+# # ok, but headless relative clause as adjunct: periphery?
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	not	not	RB	O	4	neg
+# 4	explain	explain	VB	O	0	ROOT
+# 5	why	why	WRB	O	8	advmod
+# 6	she	she	PRP	O	8	nsubj
+# 7	had	have	VBD	O	8	aux
+# 8	opened	open	VBN	O	4	advcl
+# 9	the	the	DT	O	10	det
+# 10	door	door	NN	O	8	dobj
+# 11	to	to	TO	O	13	case
+# 12	the	the	DT	O	13	det
+# 13	detective	detective	NN	O	8	nmod
+# 14	during	during	IN	O	16	case
+# 15	the	the	DT	O	16	det
+# 16	interviews	interview	NNS	O	8	nmod
+# 17	.	.	.	O	4	punct
 
 
-
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	not	not	RB	O	4	neg
-4	explain	explain	VB	O	0	ROOT
-5	to	to	TO	O	7	case
-6	the	the	DT	O	7	det
-7	detective	detective	NN	O	4	nmod
-8	during	during	IN	O	10	case
-9	the	the	DT	O	10	det
-10	interview	interview	NN	O	4	nmod
-11	why	why	WRB	O	14	advmod
-12	she	she	PRP	O	14	nsubj
-13	had	have	VBD	O	14	aux
-14	opened	open	VBN	O	10	acl:relcl
-15	the	the	DT	O	16	det
-16	door	door	NN	O	14	dobj
-17	.	.	.	O	4	punct
-
-
-
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	no	no	DT	O	4	neg
-4	describe	describe	VBP	O	0	ROOT
-5	where	where	WRB	O	8	advmod
-6	she	she	PRP	O	8	nsubj
-7	had	have	VBD	O	8	aux
-8	found	find	VBN	O	4	advcl
-9	the	the	DT	O	10	det
-10	gun	gun	NN	O	8	dobj
-11	to	to	TO	O	13	case
-12	the	the	DT	O	13	det
-13	detective	detective	NN	O	8	nmod
-14	during	during	IN	O	16	case
-15	the	the	DT	O	16	det
-16	interview	interview	NN	O	8	nmod
-17	.	.	.	O	4	punct
+# # ok, but headless relative clause as adjunct: periphery?
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	not	not	RB	O	4	neg
+# 4	explain	explain	VB	O	0	ROOT
+# 5	to	to	TO	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	detective	detective	NN	O	4	nmod
+# 8	during	during	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	interview	interview	NN	O	4	nmod
+# 11	how	how	WRB	O	14	advmod
+# 12	she	she	PRP	O	14	nsubj
+# 13	had	have	VBD	O	14	aux
+# 14	opened	open	VBN	O	4	ccomp
+# 15	the	the	DT	O	16	det
+# 16	door	door	NN	O	14	dobj
+# 17	.	.	.	O	4	punct
 
 
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	not	not	RB	O	4	neg
+# 4	explain	explain	VB	O	0	ROOT
+# 5	to	to	TO	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	detective	detective	NN	O	4	nmod
+# 8	during	during	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	interview	interview	NN	O	4	nmod
+# 11	why	why	WRB	O	14	advmod
+# 12	she	she	PRP	O	14	nsubj
+# 13	had	have	VBD	O	14	aux
+# 14	opened	open	VBN	O	10	acl:relcl
+# 15	the	the	DT	O	16	det
+# 16	door	door	NN	O	14	dobj
+# 17	.	.	.	O	4	punct
 
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	could	could	MD	O	4	aux
-3	no	no	DT	O	4	neg
-4	describe	describe	VBP	O	0	ROOT
-5	during	during	IN	O	7	case
-6	the	the	DT	O	7	det
-7	interview	interview	NN	O	4	nmod
-8	where	where	WRB	O	11	advmod
-9	she	she	PRP	O	11	nsubj
-10	had	have	VBD	O	11	aux
-11	found	find	VBN	O	7	acl:relcl
-12	the	the	DT	O	13	det
-13	gun	gun	NN	O	11	dobj
-14	to	to	TO	O	16	case
-15	the	the	DT	O	16	det
-16	detective	detective	NN	O	11	nmod
-17	.	.	.	O	4	punct
+# # ok, except for parser error: detective -> describe, during -> describe
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	no	no	DT	O	4	neg
+# 4	describe	describe	VBP	O	0	ROOT
+# 5	where	where	WRB	O	8	advmod
+# 6	she	she	PRP	O	8	nsubj
+# 7	had	have	VBD	O	8	aux
+# 8	found	find	VBN	O	4	advcl
+# 9	the	the	DT	O	10	det
+# 10	gun	gun	NN	O	8	dobj
+# 11	to	to	TO	O	13	case
+# 12	the	the	DT	O	13	det
+# 13	detective	detective	NN	O	8	nmod
+# 14	during	during	IN	O	16	case
+# 15	the	the	DT	O	16	det
+# 16	interview	interview	NN	O	8	nmod
+# 17	.	.	.	O	4	punct
 
 
+# # ok, except for parser error: found -> describe
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	could	could	MD	O	4	aux
+# 3	no	no	DT	O	4	neg
+# 4	describe	describe	VBP	O	0	ROOT
+# 5	during	during	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	interview	interview	NN	O	4	nmod
+# 8	where	where	WRB	O	11	advmod
+# 9	she	she	PRP	O	11	nsubj
+# 10	had	have	VBD	O	11	aux
+# 11	found	find	VBN	O	7	acl:relcl
+# 12	the	the	DT	O	13	det
+# 13	gun	gun	NN	O	11	dobj
+# 14	to	to	TO	O	16	case
+# 15	the	the	DT	O	16	det
+# 16	detective	detective	NN	O	11	nmod
+# 17	.	.	.	O	4	punct
 
-1	Kim	Kim	NNP	PERSON	2	nsubj
-2	put	put	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	gun	gun	NN	O	2	dobj
-5	where	where	WRB	O	9	advmod
-6	no	no	DT	O	7	neg
-7	one	one	NN	NUMBER	9	nsubj
-8	could	could	MD	O	9	aux
-9	find	find	VB	O	2	advcl
-10	it	it	PRP	O	9	dobj
-11	after	after	IN	O	13	case
-12	the	the	DT	O	13	det
-13	robbery	robbery	NN	O	9	nmod
-14	.	.	.	O	2	punct
+
+# # ok, except for parser erropr: robbery -> put
+# 1	Kim	Kim	NNP	PERSON	2	nsubj
+# 2	put	put	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	gun	gun	NN	O	2	dobj
+# 5	where	where	WRB	O	9	advmod
+# 6	no	no	DT	O	7	neg
+# 7	one	one	NN	NUMBER	9	nsubj
+# 8	could	could	MD	O	9	aux
+# 9	find	find	VB	O	2	advcl
+# 10	it	it	PRP	O	9	dobj
+# 11	after	after	IN	O	13	case
+# 12	the	the	DT	O	13	det
+# 13	robbery	robbery	NN	O	9	nmod
+# 14	.	.	.	O	2	punct
 
 
 # # ok to the extent possible: disentangling attachment
@@ -3631,7 +3629,8 @@
 # 14	.	.	.	O	2	punct
 
 
-# nok
+# nok: ccomp => 
+# parser error (fixed): won -ccomp-> surprised
 1	That	that	DT	O	2	det
 2	Miguel	Miguel	NNP	PERSON	3	nsubj
 3	won	win	VBD	O	0	ROOT
@@ -3733,7 +3732,7 @@
 # 10	Canberra	Canberra	NNP	LOCATION	4	nmod
 
 
-
+# parser error: may > go
 1	Leslie	Leslie	NNP	PERSON	3	nsubj
 2	may	may	MD	O	3	aux
 3	go	go	VB	O	0	ROOT
@@ -3748,7 +3747,7 @@
 12	.	.	.	O	3	punct
 
 
-
+# parser error: shocked is VBD
 1	That	that	IN	O	3	mark
 2	she	she	PRP	O	3	nsubj
 3	arrived	arrive	VBD	O	0	ROOT
@@ -3758,7 +3757,7 @@
 7	.	.	.	O	3	punct
 
 
-
+# parser error: arrived => shocked
 1	It	it	PRP	O	2	nsubj
 2	shocked	shock	VBD	O	0	ROOT
 3	everyone	everyone	NN	O	2	dobj
@@ -3769,15 +3768,15 @@
 8	.	.	.	O	2	punct
 
 
+# # ok
+# 1	Max	Max	NNP	PERSON	2	nsubj
+# 2	broke	break	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	window	window	NN	O	2	dobj
+# 5	.	.	.	O	2	punct
 
-1	Max	Max	NNP	PERSON	2	nsubj
-2	broke	break	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	window	window	NN	O	2	dobj
-5	.	.	.	O	2	punct
 
-
-
+# parser error: red JJ
 1	John	John	NNP	PERSON	2	nsubj
 2	painted	paint	VBD	O	0	ROOT
 3	the	the	DT	O	5	det
@@ -3786,7 +3785,7 @@
 6	.	.	.	O	2	punct
 
 
-
+# nok: painting receives two parents
 1	Chris	Chris	NNP	PERSON	2	nsubj
 2	regretted	regret	VBD	O	0	ROOT
 3	Dana	Dana	NNP	PERSON	5	nmod:poss
@@ -3797,19 +3796,18 @@
 8	red	red	NN	O	2	xcomp
 9	.	.	.	O	2	punct
 
+# # ok
+# 1	Chris	Chris	NNP	PERSON	2	nsubj
+# 2	tried	try	VBD	O	0	ROOT
+# 3	to	to	TO	O	5	mark
+# 4	be	be	VB	O	5	auxpass
+# 5	seen	see	VBN	O	2	xcomp
+# 6	by	by	IN	O	7	case
+# 7	Pat	Pat	NNP	PERSON	5	nmod
+# 8	.	.	.	O	2	punct
 
 
-1	Chris	Chris	NNP	PERSON	2	nsubj
-2	tried	try	VBD	O	0	ROOT
-3	to	to	TO	O	5	mark
-4	be	be	VB	O	5	auxpass
-5	seen	see	VBN	O	2	xcomp
-6	by	by	IN	O	7	case
-7	Pat	Pat	NNP	PERSON	5	nmod
-8	.	.	.	O	2	punct
-
-
-
+# almost ok: CMPL instead of CLM, CORE coordination instead of cosubordination
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	promised	promise	VBD	O	0	ROOT
 3	Sandy	Sandy	NNP	PERSON	2	dobj
@@ -3820,7 +3818,7 @@
 8	.	.	.	O	2	punct
 
 
-
+# almost ok: CMPL instead of CLM, CORE coordination instead of cosubordination
 1	Aisha	Aisha	NNP	PERSON	2	nsubj
 2	seems	seem	VBZ	O	0	ROOT
 3	to	to	TO	O	4	mark
@@ -3831,7 +3829,7 @@
 8	.	.	.	O	2	punct
 
 
-
+# almost ok: CMPL instead of CLM, CORE coordination instead of cosubordination
 1	What	what	WP	O	4	dobj
 2	does	do	VBZ	O	4	aux
 3	Aisha	Aisha	NNP	PERSON	4	nsubj
@@ -3841,7 +3839,7 @@
 7	?	?	.	O	4	punct
 
 
-
+# almost ok: CMPL instead of CLM, CORE coordination instead of cosubordination
 1	Yolanda	Yolanda	NNP	PERSON	3	nsubjpass
 2	was	be	VBD	O	3	auxpass
 3	believed	believe	VBN	O	0	ROOT
@@ -3855,7 +3853,7 @@
 11	.	.	.	O	3	punct
 
 
-
+# ok, except for ARG_N instead of PERIPHERY_n 
 1	I	I	PRP	O	2	nsubj
 2	liked	like	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -3867,7 +3865,7 @@
 9	.	.	.	O	2	punct
 
 
-
+# parser error: won > surprised
 1	It	it	PRP	O	2	nsubj
 2	surprised	surprise	VBD	O	0	ROOT
 3	Mary	Mary	NNP	PERSON	2	dobj

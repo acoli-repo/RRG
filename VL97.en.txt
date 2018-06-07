@@ -245,7 +245,6 @@
 #p.465,467 John decided yesterday that he will go to the party .
 #p.466 John saw Max after he went to the party .
 #p.468,521 Robin drove out of Phoenix this morning and will arrive in Atlanta tomorrow .
-#p.468,521 Robin drove out of Phoenix this morning and will arrive in Atlanta tomorrow .
 #p.470 As for Sam , Mary saw him last week , and as for Paul , I saw him yesterday .
 #p.470 Sandy told Kim to go to the movies .
 #p.470 Robin asked Pat to apply for a job .
@@ -343,6 +342,7 @@
 #p.636 For Pat to please Chris is easy .
 #p.636 Chris is eager for Pat to please her .
 #p.636 Chris is easy to Pat to please .
+#p.643 The dog bit the cat .
 #p.670 Mary having finished doing the dishes , Pat and Neil could start their next project in the kitchen .
 #p.670 With Sam going to the store for beer and pretzels , the other guys could get the surprise party ready .
 #RRG_overview.pdf_Fig.5 She will be singing .
