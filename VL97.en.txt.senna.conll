@@ -1,3 +1,74 @@
+            The	        DT	      B-NP	         O	              -	      B-A0	(S1(S(NP*
+            man	        NN	      E-NP	         O	              -	      E-A0	*)
+            saw	       VBD	      S-VP	         O	            saw	       S-V	(VP*
+            the	        DT	      B-NP	         O	              -	      B-A1	(NP*
+          woman	        NN	      E-NP	         O	              -	      E-A1	*))
+              .	         .	         O	         O	              -	         O	*))
+
+            The	        DT	      B-NP	         O	              -	      B-A0	(S1(S(NP*
+          woman	        NN	      E-NP	         O	              -	      E-A0	*)
+            saw	       VBD	      S-VP	         O	            saw	       S-V	(VP*
+            the	        DT	      B-NP	         O	              -	      B-A1	(NP*
+            man	        NN	      E-NP	         O	              -	      E-A1	*))
+              .	         .	         O	         O	              -	         O	*))
+
+            Who	        WP	      S-NP	         O	              -	    S-R-A0	    S-R-A1	(S1(SBARQ(WHNP*)
+            did	       VBD	      S-VP	         O	            did	       S-V	         O	(SQ*
+           Mary	       NNP	      S-NP	     S-PER	              -	      S-A1	      S-A0	(NP*)
+            see	        VB	      S-VP	         O	            see	         O	       S-V	(VP*))
+              ?	         .	         O	         O	              -	         O	         O	*))
+
+           Mary	       NNP	      S-NP	     S-PER	              -	      S-A0	(S1(S(NP*)
+            saw	       VBD	      S-VP	         O	            saw	       S-V	(VP*
+            who	        WP	      S-NP	         O	              -	    S-C-A1	(WHNP*))
+              ?	         .	         O	         O	              -	         O	*))
+
+          Sandy	       NNP	      B-NP	     B-PER	              -	      B-A0	(S1(S(NP*
+          Robin	       NNP	      E-NP	     E-PER	              -	      E-A0	*)
+           does	       VBZ	      B-VP	         O	              -	         O	(VP*
+            n't	        RB	      I-VP	         O	              -	  S-AM-NEG	*
+           like	        VB	      E-VP	         O	           like	       S-V	(VP*))
+              .	         .	         O	         O	              -	         O	*))
+
+          Robin	       NNP	      S-NP	     S-PER	              -	      S-A0	(S1(S(NP*)
+           does	       VBZ	      B-VP	         O	              -	         O	(VP*
+            n't	        RB	      I-VP	         O	              -	  S-AM-NEG	*
+           like	        VB	      E-VP	         O	           like	       S-V	(VP*
+          Sandy	       NNP	      S-NP	         O	              -	      S-A1	(NP*)))
+              .	         .	         O	         O	              -	         O	*))
+
+            Pat	       NNP	      S-NP	     S-PER	              -	      S-A0	(S1(S(NP*)
+           sent	       VBD	      S-VP	         O	           sent	       S-V	(VP*
+           them	       PRP	      S-NP	         O	              -	      S-A1	(NP*)
+             to	        TO	      S-PP	         O	              -	      B-A2	(PP*
+             us	       PRP	      S-NP	         O	              -	      E-A2	(NP*)))
+              .	         .	         O	         O	              -	         O	*))
+
+           Whom	        WP	      S-NP	         O	              -	    S-R-A0	(S1(SBARQ(WHNP*)
+            did	       VBD	         O	         O	              -	         O	(SQ*
+            Pat	       NNP	      S-NP	     S-PER	              -	      S-A0	(NP*)
+           send	        VB	      S-VP	         O	           send	       S-V	(VP*
+             to	        TO	      S-PP	         O	              -	      B-A2	(PP*
+             us	       PRP	      S-NP	         O	              -	      E-A2	(NP*))))
+              ?	         .	         O	         O	              -	         O	*))
+
+           Whom	        WP	      S-NP	         O	              -	    S-R-A0	(S1(SBARQ(WHNP*)
+            did	       VBD	         O	         O	              -	         O	(SQ*
+            Pat	       NNP	      S-NP	     S-PER	              -	      S-A0	(NP*)
+           send	        VB	      S-VP	         O	           send	       S-V	(VP*
+           them	       PRP	      S-NP	         O	              -	      S-A1	(NP*)
+             to	        TO	      S-PP	         O	              -	         O	(PP*)))
+              ?	         .	         O	         O	              -	         O	*))
+
+           John	       NNP	      S-NP	     S-PER	              -	      S-A0	(S1(S(NP*)
+            ate	       VBD	      S-VP	         O	            ate	       S-V	(VP*
+            the	        DT	      B-NP	         O	              -	      B-A1	(NP*
+       sandwich	        NN	      E-NP	         O	              -	      E-A1	*)
+             in	        IN	      S-PP	         O	              -	  B-AM-LOC	(PP*
+            the	        DT	      B-NP	         O	              -	  I-AM-LOC	(NP*
+        library	        NN	      E-NP	         O	              -	  E-AM-LOC	*)))
+              .	         .	         O	         O	              -	         O	*))
+
          Scully	       NNP	      S-NP	     S-PER	              -	      S-A0	(S1(S(NP*)
             did	       VBD	      B-VP	         O	              -	         O	(VP*
             not	        RB	      I-VP	         O	              -	  S-AM-NEG	*
@@ -62,19 +133,19 @@
           weeks	       NNS	      E-NP	         O	              -	  E-AM-TMP	*)))
               .	         .	         O	         O	              -	         O	*))
 
-             As	        IN	      S-PP	         O	              -	         O	         O	(S1(SBARQ(PP*
+             As	        IN	      S-PP	         O	              -	         O	         O	(S1(SBAR(PP*
             for	        IN	      S-PP	         O	              -	         O	         O	(PP*
          Felipe	       NNP	      S-NP	     S-PER	              -	         O	         O	(NP*)))
               ,	         ,	         O	         O	              -	         O	         O	*
-           what	        WP	      S-NP	         O	              -	    S-R-A0	    S-R-A1	(WHNP*)
+           what	        WP	      S-NP	         O	              -	    S-R-A0	    S-R-A1	(SBAR(WHNP*)
             did	       VBD	         O	         O	            did	       S-V	         O	(SQ*
           Maria	       NNP	      S-NP	     S-PER	              -	      S-A1	      S-A0	(NP*)
             get	        VB	      S-VP	         O	            get	         O	       S-V	(VP*
-            him	       PRP	      S-NP	         O	              -	         O	      S-A1	(NP(NP*)
-             or	        CC	         O	         O	              -	         O	         O	*
-            his	      PRP$	      B-NP	         O	              -	         O	         O	(NP*
-       birthday	        NN	      E-NP	         O	              -	         O	         O	*))))
-              ?	         .	         O	         O	              -	         O	         O	*))
+            him	       PRP	      S-NP	         O	              -	         O	      S-A1	(NP*)
+            for	        IN	      S-PP	         O	              -	         O	      B-A3	(PP*
+            his	      PRP$	      B-NP	         O	              -	         O	      I-A3	(NP*
+       birthday	        NN	      E-NP	         O	              -	         O	      E-A3	*)))
+              ?	         .	         O	         O	              -	         O	         O	*))))
 
       Yesterday	        NN	      S-NP	         O	              -	(S1(NP(NP*)
               ,	         ,	         O	         O	              -	*
@@ -1021,14 +1092,14 @@
          Leslie	       NNP	      S-NP	     S-PER	              -	      S-A0	         O	(S1(S(NP*)
         brought	       VBD	      S-VP	         O	        brought	       S-V	         O	(VP*
               a	        DT	      B-NP	         O	              -	      B-A1	         O	(NP*
-           kniw	        NN	      E-NP	         O	              -	      E-A1	         O	*)
-            for	        IN	      S-PP	         O	              -	  B-AM-PNC	         O	(SBAR*
-          Bruce	       NNP	      S-NP	     S-PER	              -	  I-AM-PNC	      S-A0	(S(NP*)
-             to	        TO	      B-VP	         O	              -	  I-AM-PNC	         O	(VP*
-          carve	        VB	      E-VP	         O	          carve	  I-AM-PNC	       S-V	(VP*
-            the	        DT	      B-NP	         O	              -	  I-AM-PNC	      B-A1	(NP*
-         turkey	        NN	      E-NP	     S-LOC	              -	  I-AM-PNC	      E-A1	*)
-           with	        IN	      S-PP	         O	              -	  E-AM-PNC	      S-A2	(PP*))))))
+          knife	        NN	      E-NP	         O	              -	      I-A1	         O	*)
+            for	        IN	      S-PP	         O	              -	      I-A1	         O	(SBAR*
+          Bruce	       NNP	      S-NP	     S-PER	              -	      I-A1	      S-A0	(S(NP*)
+             to	        TO	      B-VP	         O	              -	      I-A1	         O	(VP*
+          carve	        VB	      E-VP	         O	          carve	      I-A1	       S-V	(VP*
+            the	        DT	      B-NP	         O	              -	      I-A1	      B-A1	(NP*
+         turkey	        NN	      E-NP	     S-LOC	              -	      I-A1	      E-A1	*)
+           with	        IN	      S-PP	         O	              -	      E-A1	      S-A2	(PP*))))))
               .	         .	         O	         O	              -	         O	         O	*))
 
             The	        DT	      B-NP	         O	              -	      B-A1	         O	(S1(S(NP*
@@ -1652,9 +1723,8 @@
         herself	       PRP	      S-NP	         O	              -	      E-A3	(NP*))))
               .	         .	         O	         O	              -	         O	*))
 
-            For	        IN	      S-PP	         O	              -	  B-AM-DIS	(S1(S(PP*
-        herself	       PRP	      S-NP	         O	              -	  E-AM-DIS	(NP*))
-              ,	         ,	         O	         O	              -	         O	*
+            For	        IN	      S-PP	         O	              -	  B-AM-PNC	(S1(S(PP*
+        herself	       PRP	      S-NP	         O	              -	  E-AM-PNC	(NP*))
           Molly	       NNP	      S-NP	     S-PER	              -	      S-A0	(NP*)
          bought	       VBD	      S-VP	         O	         bought	       S-V	(VP*
         nothing	        NN	      S-NP	         O	              -	      S-A1	(NP*))
@@ -1991,14 +2061,14 @@
            room	        NN	      E-NP	         O	              -	      E-A1	      E-A1	*))))
               .	         .	         O	         O	              -	         O	         O	*))
 
-          Harry	       NNP	      S-NP	     S-PER	              -	      S-A0	(S1(S(NP*)
-            ran	       VBD	      S-VP	         O	            ran	       B-V	(VP*
-           down	        RP	     S-PRT	         O	              -	       E-V	(ADVP*)
-            the	        DT	      B-NP	         O	              -	      B-A1	(SBAR(S(NP*
-           hall	        NN	      E-NP	         O	              -	      I-A1	*)
-        laughin	        NN	      S-VP	         O	              -	      I-A1	(VP*
-         loudly	        RB	    S-ADVP	         O	              -	      E-A1	(ADVP*)))))
-              .	         .	         O	         O	              -	         O	*))
+          Harry	       NNP	      S-NP	     S-PER	              -	      S-A0	         O	(S1(S(NP*)
+            ran	       VBD	      S-VP	         O	            ran	       B-V	         O	(VP*
+           down	        RP	     S-PRT	         O	              -	       E-V	         O	(ADVP*)
+            the	        DT	      B-NP	         O	              -	      B-A1	      B-A0	(NP(NP*
+           hall	        NN	      E-NP	         O	              -	      E-A1	      E-A0	*)
+       laughing	       VBG	      S-VP	         O	       laughing	  B-AM-MNR	       S-V	(VP*
+         loudly	        RB	    S-ADVP	         O	              -	  E-AM-MNR	  S-AM-MNR	(ADVP*))))
+              .	         .	         O	         O	              -	         O	         O	*))
 
            Paul	       NNP	      S-NP	     S-PER	              -	      S-A0	      S-A0	(S1(S(NP*)
           drove	       VBD	      S-VP	         O	          drove	       S-V	         O	(VP(VP*
@@ -2661,7 +2731,7 @@
            died	       VBD	      S-VP	         O	           died	         O	       S-V	(VP*)
               .	         .	         O	         O	              -	         O	         O	*))
 
-           Harr	       NNP	      S-NP	     S-PER	              -	      S-A0	         O	(S1(S(S(NP*)
+          Harry	       NNP	      S-NP	     S-PER	              -	      S-A0	         O	(S1(S(S(NP*)
            shot	       VBD	      S-VP	         O	           shot	       S-V	         O	(VP*
             Tom	       NNP	      S-NP	     S-PER	              -	      S-A1	         O	(NP*)))
               ,	         ,	         O	         O	              -	         O	         O	*
@@ -2730,7 +2800,7 @@
          Carlos	       NNP	      S-NP	     S-PER	              -	      S-A1	(NP*)
            that	        IN	    S-SBAR	         O	              -	      B-A2	(SBAR*
               a	        DT	      B-NP	         O	              -	      I-A2	(S(NP(NP*
-         quantm	        NN	      I-NP	         O	              -	      I-A2	*
+        quantum	        JJ	      I-NP	         O	              -	      I-A2	*
          theory	        NN	      E-NP	         O	              -	      I-A2	*)
              of	        IN	      S-PP	         O	              -	      I-A2	(PP*
         gravity	        NN	      S-NP	         O	              -	      I-A2	(NP*)))
@@ -2929,7 +2999,7 @@
 
           Sandy	       NNP	      S-NP	         O	              -	      S-A0	         O	(S1(S(NP*)
           could	        MD	      B-VP	         O	              -	  S-AM-MOD	         O	(VP*
-             no	        DT	      I-VP	         O	              -	         O	         O	*
+            not	        RB	      I-VP	         O	              -	  S-AM-NEG	         O	*
        describe	        VB	      E-VP	         O	       describe	       S-V	         O	(VP*
           where	       WRB	    S-ADVP	         O	              -	  B-AM-LOC	         O	(SBAR(WHADVP*)
             she	       PRP	      S-NP	         O	              -	  I-AM-LOC	      S-A0	(S(NP*)
@@ -2945,10 +3015,10 @@
       interview	        NN	      E-NP	         O	              -	  E-AM-LOC	         O	*))))))))
               .	         .	         O	         O	              -	         O	         O	*))
 
-          Sandy	       NNP	      S-NP	         O	              -	      S-A1	         O	(S1(S(NP*)
+          Sandy	       NNP	      S-NP	         O	              -	      S-A0	         O	(S1(S(NP*)
           could	        MD	      B-VP	         O	              -	  S-AM-MOD	         O	(VP*
-             no	        RB	      I-VP	         O	              -	  S-AM-MNR	         O	(VP(ADVP*)
-       describe	        VB	      E-VP	         O	       describe	       S-V	         O	*
+            not	        RB	      I-VP	         O	              -	  S-AM-NEG	         O	*
+       describe	        VB	      E-VP	         O	       describe	       S-V	         O	(VP*
          during	        IN	      S-PP	         O	              -	  B-AM-LOC	         O	(PP*
             the	        DT	      B-NP	         O	              -	  I-AM-LOC	         O	(NP(NP*
       interview	        NN	      E-NP	         O	              -	  I-AM-LOC	         O	*)
@@ -2958,9 +3028,9 @@
           found	       VBN	      E-VP	         O	          found	  I-AM-LOC	       S-V	(VP*
             the	        DT	      B-NP	         O	              -	  I-AM-LOC	      B-A1	(NP*
             gun	        NN	      E-NP	         O	              -	  I-AM-LOC	      E-A1	*)
-             to	        TO	      S-PP	         O	              -	  I-AM-LOC	         O	(PP*
-            the	        DT	      B-NP	         O	              -	  I-AM-LOC	         O	(NP*
-      detective	        NN	      E-NP	         O	              -	  E-AM-LOC	         O	*))))))))))
+             to	        TO	      S-PP	         O	              -	  I-AM-LOC	      B-A3	(PP*
+            the	        DT	      B-NP	         O	              -	  I-AM-LOC	      I-A3	(NP*
+      detective	        NN	      E-NP	         O	              -	  E-AM-LOC	      E-A3	*))))))))))
               .	         .	         O	         O	              -	         O	         O	*))
 
             Kim	       NNP	      S-NP	     S-PER	              -	      S-A0	         O	(S1(S(NP*)
@@ -3302,6 +3372,13 @@
              to	        TO	      B-VP	         O	              -	         O	(S(VP*
          please	        VB	      E-VP	         O	         please	       S-V	(VP*)))))
               .	         .	         O	         O	              -	         O	*))
+
+            The	        DT	      B-NP	         O	              -	(S1(NP(NP*
+            dog	        NN	      I-NP	         O	              -	*
+            bit	        NN	      E-NP	         O	              -	*)
+            the	        DT	      B-NP	         O	              -	(NP*
+            cat	        NN	      E-NP	         O	              -	*)
+              .	         .	         O	         O	              -	*))
 
            Mary	       NNP	      S-NP	     S-PER	              -	      S-A0	      S-A0	  B-AM-ADV	(S1(S(S(NP*)
          having	       VBG	      B-VP	         O	              -	         O	         O	  I-AM-ADV	(VP*

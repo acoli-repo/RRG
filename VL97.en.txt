@@ -1,7 +1,18 @@
 # van Valin and Lapolla 1997, English examples (numbered examples and Figs only; examples without syntactic analysis and ungrammatical examples skipped)
 # todo: examples with semantics, chap. 3
 # duplicates (modulo proper names) eliminated
+# todo
 
+#p.1 The man saw the woman .
+#p.1 The woman saw the man .
+#p.6 Who did Mary see ?
+#p.6 Mary saw who ?
+#p.6 Sandy Robin does n't like .
+#p.6 Robin does n't like Sandy .
+#p.18,19 Pat sent them to us .
+#p.18,19 Whom did Pat send to us ?
+#p.18 Whom did Pat send them to ?
+#p.26 John ate the sandwich in the library .
 #p.32 Scully did not show the photo to Mulder in the office yesterday .
 #p.33 The man saw the woman in the mountains .
 #p.34 I killed them .
