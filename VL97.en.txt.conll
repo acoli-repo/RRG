@@ -452,40 +452,40 @@
 	# 10	ceremony	ceremony	NN	O	7	nmod
 	# 11	?	?	.	O	4	punct
 
-# attachment error fixed
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	presented	present	VBD	O	0	ROOT
-3	an	a	DT	O	4	det
-4	award	award	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	at	at	IN	O	9	case
-8	the	the	DT	O	9	det
-9	ceremony	ceremony	NN	O	2	nmod
-10	.	.	.	O	2	punct
-	# # Stanford
-	# 1	Robin	Robin	NNP	PERSON	2	nsubj
-	# 2	presented	present	VBD	O	0	ROOT
-	# 3	an	a	DT	O	4	det
-	# 4	award	award	NN	O	2	dobj
-	# 5	to	to	TO	O	6	case
-	# 6	Pat	Pat	NNP	PERSON	4	nmod
-	# 7	at	at	IN	O	9	case
-	# 8	the	the	DT	O	9	det
-	# 9	ceremony	ceremony	NN	O	2	nmod
-	# 10	.	.	.	O	2	punct
+# # ok, but attachment error fixed
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	presented	present	VBD	O	0	ROOT
+# 3	an	a	DT	O	4	det
+# 4	award	award	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	at	at	IN	O	9	case
+# 8	the	the	DT	O	9	det
+# 9	ceremony	ceremony	NN	O	2	nmod
+# 10	.	.	.	O	2	punct
+	# # # Stanford
+	# # 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# # 2	presented	present	VBD	O	0	ROOT
+	# # 3	an	a	DT	O	4	det
+	# # 4	award	award	NN	O	2	dobj
+	# # 5	to	to	TO	O	6	case
+	# # 6	Pat	Pat	NNP	PERSON	4	nmod
+	# # 7	at	at	IN	O	9	case
+	# # 8	the	the	DT	O	9	det
+	# # 9	ceremony	ceremony	NN	O	2	nmod
+	# # 10	.	.	.	O	2	punct
 
-# go to => ARG
-1	After	after	IN	O	3	case
-2	the	the	DT	O	3	det
-3	party	party	NN	O	6	nmod
-4	,	,	,	O	6	punct
-5	Sandy	Sandy	NNP	PERSON	6	nsubj
-6	went	go	VBD	O	0	ROOT
-7	to	to	TO	O	9	case
-8	a	a	DT	O	9	det
-9	bar	bar	NN	O	6	nmod
-10	.	.	.	O	6	punct
+# # ok
+# 1	After	after	IN	O	3	case
+# 2	the	the	DT	O	3	det
+# 3	party	party	NN	O	6	nmod
+# 4	,	,	,	O	6	punct
+# 5	Sandy	Sandy	NNP	PERSON	6	nsubj
+# 6	went	go	VBD	O	0	ROOT
+# 7	to	to	TO	O	9	case
+# 8	a	a	DT	O	9	det
+# 9	bar	bar	NN	O	6	nmod
+# 10	.	.	.	O	6	punct
 
 # nok
 1	What	what	WP	O	4	dep
@@ -518,25 +518,25 @@
 # 8	break	break	NN	O	5	nmod
 # 9	.	.	.	O	5	punct
 
-# todo: implement assertive copula, cf. emails on RRG list
-1	Sandy	Sandy	NNP	PERSON	5	nsubj
-2	is	be	VBZ	O	5	cop
-3	in	in	IN	O	5	case
-4	the	the	DT	O	5	det
-5	house	house	NN	O	0	ROOT
-6	now	now	RB	DATE	5	advmod
-7	.	.	.	O	5	punct
+# # ok, as assertive copula
+# 1	Sandy	Sandy	NNP	PERSON	5	nsubj
+# 2	is	be	VBZ	O	5	cop
+# 3	in	in	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	house	house	NN	O	0	ROOT
+# 6	now	now	RB	DATE	5	advmod
+# 7	.	.	.	O	5	punct
 
-# todo: ADV > periphery
-1	the	the	DT	O	2	det
-2	capture	capture	NN	O	0	ROOT
-3	of	of	IN	O	5	case
-4	the	the	DT	O	5	det
-5	fugitive	fugitive	JJ	O	2	nmod
-6	by	by	IN	O	8	case
-7	the	the	DT	O	8	det
-8	police	police	NN	O	2	nmod
-9	yesterday	yesterday	NN	DATE	2	nmod:tmod
+# # ok
+# 1	the	the	DT	O	2	det
+# 2	capture	capture	NN	O	0	ROOT
+# 3	of	of	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	fugitive	fugitive	JJ	O	2	nmod
+# 6	by	by	IN	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	police	police	NN	O	2	nmod
+# 9	yesterday	yesterday	NN	DATE	2	nmod:tmod
 
 # # ok
 # 1	the	the	DT	O	2	det
@@ -562,23 +562,23 @@
 # 6	Pat	Pat	NNP	PERSON	2	nmod
 # 7	.	.	.	O	2	punct
 
-# run to => ARG ("AAJ")
-1	Sam	Sam	NNP	PERSON	2	nsubj
-2	ran	run	VBD	O	0	ROOT
-3	to	to	TO	O	5	case
-4	the	the	DT	O	5	det
-5	store	store	NN	O	2	nmod
-6	.	.	.	O	2	punct
+# # ok, except AAJ => ARG
+# 1	Sam	Sam	NNP	PERSON	2	nsubj
+# 2	ran	run	VBD	O	0	ROOT
+# 3	to	to	TO	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	store	store	NN	O	2	nmod
+# 6	.	.	.	O	2	punct
 
-# put in => ARG ("AAJ")
-1	Yolanda	Yolanda	NNP	PERSON	2	nsubj
-2	put	put	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	book	book	NN	O	2	dobj
-5	in	in	IN	O	7	case
-6	the	the	DT	O	7	det
-7	box	box	NN	O	2	nmod
-8	.	.	.	O	2	punct
+# # ok, but AAJ => ARG 
+# 1	Yolanda	Yolanda	NNP	PERSON	2	nsubj
+# 2	put	put	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	book	book	NN	O	2	dobj
+# 5	in	in	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	box	box	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
 # # ok
 # 1	Robin	Robin	NNP	PERSON	2	nsubj
@@ -589,313 +589,339 @@
 # 6	concert	concert	NN	O	2	nmod
 # 7	.	.	.	O	2	punct
 
-# ASP adverb must attach to NUC, not CORE
-1	Evidently	evidently	RB	O	8	advmod
-2	,	,	,	O	8	punct
-3	Leslie	Leslie	NNP	PERSON	8	nsubj
-4	has	have	VBZ	O	8	aux
-5	slowly	slowly	RB	O	8	advmod
-6	been	be	VBN	O	8	aux
-7	completely	completely	RB	O	8	advmod
-8	immersing	immerse	VBG	O	0	ROOT
-9	herself	herself	PRP	O	8	dobj
-10	in	in	IN	O	13	case
-11	the	the	DT	O	13	det
-12	new	new	JJ	O	13	amod
-13	language	language	NN	O	8	nmod
-14	.	.	.	O	8	punct
+# # ok
+# 1	Evidently	evidently	RB	O	8	advmod
+# 2	,	,	,	O	8	punct
+# 3	Leslie	Leslie	NNP	PERSON	8	nsubj
+# 4	has	have	VBZ	O	8	aux
+# 5	slowly	slowly	RB	O	8	advmod
+# 6	been	be	VBN	O	8	aux
+# 7	completely	completely	RB	O	8	advmod
+# 8	immersing	immerse	VBG	O	0	ROOT
+# 9	herself	herself	PRP	O	8	dobj
+# 10	in	in	IN	O	13	case
+# 11	the	the	DT	O	13	det
+# 12	new	new	JJ	O	13	amod
+# 13	language	language	NN	O	8	nmod
+# 14	.	.	.	O	8	punct
+
+# # ok
+# 1	Leslie	Leslie	NNP	PERSON	6	nsubj
+# 2	has	have	VBZ	O	6	aux
+# 3	slowly	slowly	RB	O	6	advmod
+# 4	been	be	VBN	O	6	aux
+# 5	completely	completely	RB	O	6	advmod
+# 6	immersing	immerse	VBG	O	0	ROOT
+# 7	herself	herself	PRP	O	6	dobj
+# 8	in	in	IN	O	11	case
+# 9	the	the	DT	O	11	det
+# 10	new	new	JJ	O	11	amod
+# 11	language	language	NN	O	6	nmod
+# 12	,	,	,	O	6	punct
+# 13	evidently	evidently	RB	O	6	advmod
+# 14	.	.	.	O	6	punct
 
 
-1	Leslie	Leslie	NNP	PERSON	6	nsubj
-2	has	have	VBZ	O	6	aux
-3	slowly	slowly	RB	O	6	advmod
-4	been	be	VBN	O	6	aux
-5	completely	completely	RB	O	6	advmod
-6	immersing	immerse	VBG	O	0	ROOT
-7	herself	herself	PRP	O	6	dobj
-8	in	in	IN	O	11	case
-9	the	the	DT	O	11	det
-10	new	new	JJ	O	11	amod
-11	language	language	NN	O	6	nmod
-12	,	,	,	O	6	punct
-13	evidently	evidently	RB	O	6	advmod
-14	.	.	.	O	6	punct
+# # ok
+# 1	Manuel	Manuel	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	envelope	envelope	NN	O	2	dobj
+# 5	to	to	TO	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	clerk	clerk	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	envelope	envelope	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	given	give	VBN	O	0	ROOT
+# 5	to	to	TO	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	clerk	clerk	NN	O	4	nmod
+# 8	.	.	.	O	4	punct
 
-1	Manuel	Manuel	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	envelope	envelope	NN	O	2	dobj
-5	to	to	TO	O	7	case
-6	the	the	DT	O	7	det
-7	clerk	clerk	NN	O	2	nmod
-8	.	.	.	O	2	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	envelope	envelope	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	given	give	VBN	O	0	ROOT
+# 5	to	to	TO	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	clerk	clerk	NN	O	4	nmod
+# 8	by	by	IN	O	9	case
+# 9	Manuel	Manuel	NNP	PERSON	4	nmod
+# 10	.	.	.	O	4	punct
 
+# # ok
+# 1	What	what	WP	O	4	dobj
+# 2	did	do	VBD	O	4	aux
+# 3	Manuel	Manuel	NNP	PERSON	4	nsubj
+# 4	give	give	VB	O	0	ROOT
+# 5	to	to	TO	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	clerk	clerk	NN	O	4	nmod
+# 8	?	?	.	O	4	punct
 
-1	The	the	DT	O	2	det
-2	envelope	envelope	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	given	give	VBN	O	0	ROOT
-5	to	to	TO	O	7	case
-6	the	the	DT	O	7	det
-7	clerk	clerk	NN	O	4	nmod
-8	.	.	.	O	4	punct
+# # ok
+# 1	To	to	TO	O	2	case
+# 2	whom	whom	WP	O	5	nmod
+# 3	did	do	VBD	O	5	aux
+# 4	Manuel	Manuel	NNP	PERSON	5	nsubj
+# 5	give	give	VB	O	0	ROOT
+# 6	the	the	DT	O	7	det
+# 7	envelope	envelope	NN	O	5	dobj
+# 8	?	?	.	O	5	punct
 
+# # ok
+# 1	Chris	Chris	NNP	PERSON	2	nsubj
+# 2	broke	break	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	coffeepot	coffeepot	NN	O	2	dobj
+# 5	.	.	.	O	2	punct
 
-1	The	the	DT	O	2	det
-2	envelope	envelope	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	given	give	VBN	O	0	ROOT
-5	to	to	TO	O	7	case
-6	the	the	DT	O	7	det
-7	clerk	clerk	NN	O	4	nmod
-8	by	by	IN	O	9	case
-9	Manuel	Manuel	NNP	PERSON	4	nmod
-10	.	.	.	O	4	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	coffeepot	coffeepot	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	broken	break	VBN	O	0	ROOT
+# 5	.	.	.	O	4	punct
 
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	coffeepot	coffeepot	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	broken	break	VBN	O	0	ROOT
+# 5	by	by	IN	O	6	case
+# 6	Chris	Chris	NNP	PERSON	4	nmod
+# 7	.	.	.	O	4	punct
 
-1	What	what	WP	O	4	dobj
-2	did	do	VBD	O	4	aux
-3	Manuel	Manuel	NNP	PERSON	4	nsubj
-4	give	give	VB	O	0	ROOT
-5	to	to	TO	O	7	case
-6	the	the	DT	O	7	det
-7	clerk	clerk	NN	O	4	nmod
-8	?	?	.	O	4	punct
+# # ok
+# 1	Who	who	WP	O	2	nsubj
+# 2	broke	break	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	coffeepot	coffeepot	NN	O	2	dobj
+# 5	?	?	.	O	2	punct
 
+# # ok
+# 1	What	what	WP	O	4	dobj
+# 2	did	do	VBD	O	4	aux
+# 3	Chris	Chris	NNP	PERSON	4	nsubj
+# 4	break	break	VB	O	0	ROOT
+# 5	?	?	.	O	4	punct
 
-1	To	to	TO	O	2	case
-2	whom	whom	WP	O	5	nmod
-3	did	do	VBD	O	5	aux
-4	Manuel	Manuel	NNP	PERSON	5	nsubj
-5	give	give	VB	O	0	ROOT
-6	the	the	DT	O	7	det
-7	envelope	envelope	NN	O	5	dobj
-8	?	?	.	O	5	punct
+# # ok
+# 1	What	what	WP	O	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	broken	break	VBN	O	0	ROOT
+# 4	?	?	.	O	3	punct
 
+# # ok
+# 1	What	what	WP	O	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	broken	break	VBN	O	0	ROOT
+# 4	by	by	IN	O	5	case
+# 5	Chris	Chris	NNP	PERSON	3	nmod
+# 6	?	?	.	O	3	punct
 
-1	Chris	Chris	NNP	PERSON	2	nsubj
-2	broke	break	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	coffeepot	coffeepot	NN	O	2	dobj
-5	.	.	.	O	2	punct
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	presented	present	VBD	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	girl	girl	NN	O	2	dobj
+# 5	with	with	IN	O	7	case
+# 6	some	some	DT	O	7	det
+# 7	flowers	flower	NNS	O	2	nmod
+# 8	.	.	.	O	2	punct
 
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	them	they	PRP	O	2	dobj
+# 4	to	to	TO	O	5	case
+# 5	her	she	PRP	O	2	nmod
+# 6	.	.	.	O	2	punct
 
-1	The	the	DT	O	2	det
-2	coffeepot	coffeepot	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	broken	break	VBN	O	0	ROOT
-5	.	.	.	O	4	punct
+# # ok
+# 1	What	what	WP	O	4	dep
+# 2	did	do	VBD	O	4	aux
+# 3	Dana	Dana	NNP	PERSON	4	nsubj
+# 4	give	give	VB	O	0	ROOT
+# 5	Chris	Chris	NNP	PERSON	4	dobj
+# 6	yesterday	yesterday	NN	DATE	4	nmod:tmod
+# 7	?	?	.	O	4	punct
 
+# # ok
+# 1	What	what	WP	O	4	dobj
+# 2	did	do	VBD	O	4	aux
+# 3	John	John	NNP	PERSON	4	nsubj
+# 4	buy	buy	VB	O	0	ROOT
+# 5	at	at	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	store	store	NN	O	4	nmod
+# 8	?	?	.	O	4	punct
 
-1	The	the	DT	O	2	det
-2	coffeepot	coffeepot	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	broken	break	VBN	O	0	ROOT
-5	by	by	IN	O	6	case
-6	Chris	Chris	NNP	PERSON	4	nmod
-7	.	.	.	O	4	punct
+# # ok
+# 1	As	as	IN	O	3	case
+# 2	for	for	IN	O	3	case
+# 3	Sam	Sam	NNP	PERSON	6	nmod
+# 4	,	,	,	O	6	punct
+# 5	Jane	Jane	NNP	PERSON	6	nsubj
+# 6	met	meet	VBD	O	0	ROOT
+# 7	him	he	PRP	O	6	dobj
+# 8	at	at	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	airport	airport	NN	O	6	nmod
+# 11	.	.	.	O	6	punct
 
+# # ok
+# 1	At	at	IN	O	3	case
+# 2	the	the	DT	O	3	det
+# 3	airport	airport	NN	O	0	ROOT
+# 4	,	,	,	O	3	punct
+# 5	who	who	WP	O	8	dobj
+# 6	did	do	VBD	O	8	aux
+# 7	Jane	Jane	NNP	PERSON	8	nsubj
+# 8	meet	meet	VB	O	3	acl:relcl
+# 9	?	?	.	O	3	punct
 
-1	Who	who	WP	O	2	nsubj
-2	broke	break	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	coffeepot	coffeepot	NN	O	2	dobj
-5	?	?	.	O	2	punct
+# # ok
+# 1	Sam	Sam	NNP	PERSON	2	compound
+# 2	I	I	PRP	O	4	nsubj
+# 3	've	have	VBP	O	4	aux
+# 4	known	know	VBN	O	0	ROOT
+# 5	for	for	IN	O	6	case
+# 6	years	year	NNS	DURATION	4	nmod
+# 7	.	.	.	O	4	punct
 
+# # ok (cohesive copula)
+# 1	In	in	IN	O	4	case
+# 2	Sam	Sam	NNP	PERSON	4	nmod:poss
+# 3	's	's	POS	O	2	case
+# 4	hometown	hometown	NN	O	10	nmod
+# 5	,	,	,	O	10	punct
+# 6	he	he	PRP	O	10	nsubj
+# 7	is	be	VBZ	O	10	cop
+# 8	a	a	DT	O	10	det
+# 9	big	big	JJ	O	10	amod
+# 10	hero	hero	NN	O	0	ROOT
+# 11	.	.	.	O	10	punct
 
-1	What	what	WP	O	4	dobj
-2	did	do	VBD	O	4	aux
-3	Chris	Chris	NNP	PERSON	4	nsubj
-4	break	break	VB	O	0	ROOT
-5	?	?	.	O	4	punct
+# # ok
+# 1	In	in	IN	O	3	case
+# 2	his	he	PRP$	O	3	nmod:poss
+# 3	hometown	hometown	NN	O	9	nmod
+# 4	,	,	,	O	9	punct
+# 5	Sam	Sam	NNP	PERSON	9	nsubj
+# 6	is	be	VBZ	O	9	cop
+# 7	a	a	DT	O	9	det
+# 8	big	big	JJ	O	9	amod
+# 9	hero	hero	NN	O	0	ROOT
+# 10	.	.	.	O	9	punct
 
-
-1	What	what	WP	O	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	broken	break	VBN	O	0	ROOT
-4	?	?	.	O	3	punct
-
-
-1	What	what	WP	O	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	broken	break	VBN	O	0	ROOT
-4	by	by	IN	O	5	case
-5	Chris	Chris	NNP	PERSON	3	nmod
-6	?	?	.	O	3	punct
-
-
-1	John	John	NNP	PERSON	2	nsubj
-2	presented	present	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	girl	girl	NN	O	2	dobj
-5	with	with	IN	O	7	case
-6	some	some	DT	O	7	det
-7	flowers	flower	NNS	O	2	nmod
-8	.	.	.	O	2	punct
-
-
-1	John	John	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	them	they	PRP	O	2	dobj
-4	to	to	TO	O	5	case
-5	her	she	PRP	O	2	nmod
-6	.	.	.	O	2	punct
-
-
-1	What	what	WP	O	4	dep
-2	did	do	VBD	O	4	aux
-3	Dana	Dana	NNP	PERSON	4	nsubj
-4	give	give	VB	O	0	ROOT
-5	Chris	Chris	NNP	PERSON	4	dobj
-6	yesterday	yesterday	NN	DATE	4	nmod:tmod
-7	?	?	.	O	4	punct
-
-
-1	What	what	WP	O	4	dobj
-2	did	do	VBD	O	4	aux
-3	John	John	NNP	PERSON	4	nsubj
-4	buy	buy	VB	O	0	ROOT
-5	at	at	IN	O	7	case
-6	the	the	DT	O	7	det
-7	store	store	NN	O	4	nmod
-8	?	?	.	O	4	punct
-
-
-1	As	as	IN	O	3	case
-2	for	for	IN	O	3	case
-3	Sam	Sam	NNP	PERSON	6	nmod
-4	,	,	,	O	6	punct
-5	Jane	Jane	NNP	PERSON	6	nsubj
-6	met	meet	VBD	O	0	ROOT
-7	him	he	PRP	O	6	dobj
-8	at	at	IN	O	10	case
-9	the	the	DT	O	10	det
-10	airport	airport	NN	O	6	nmod
-11	.	.	.	O	6	punct
-
-
-1	At	at	IN	O	3	case
-2	the	the	DT	O	3	det
-3	airport	airport	NN	O	0	ROOT
-4	,	,	,	O	3	punct
-5	who	who	WP	O	8	dobj
-6	did	do	VBD	O	8	aux
-7	Jane	Jane	NNP	PERSON	8	nsubj
-8	meet	meet	VB	O	3	acl:relcl
-9	?	?	.	O	3	punct
-
-
-1	Sam	Sam	NNP	PERSON	2	compound
-2	I	I	PRP	O	4	nsubj
-3	've	have	VBP	O	4	aux
-4	known	know	VBN	O	0	ROOT
-5	for	for	IN	O	6	case
-6	years	year	NNS	DURATION	4	nmod
-7	.	.	.	O	4	punct
-
-
+# parse fixed
 1	In	in	IN	O	4	case
-2	Sam	Sam	NNP	PERSON	4	nmod:poss
-3	's	's	POS	O	2	case
-4	hometown	hometown	NN	O	10	nmod
-5	,	,	,	O	10	punct
-6	he	he	PRP	O	10	nsubj
-7	is	be	VBZ	O	10	cop
-8	a	a	DT	O	10	det
-9	big	big	JJ	O	10	amod
-10	hero	hero	NN	O	0	ROOT
-11	.	.	.	O	10	punct
-
-
-1	In	in	IN	O	3	case
-2	his	he	PRP$	O	3	nmod:poss
-3	hometown	hometown	NN	O	9	nmod
-4	,	,	,	O	9	punct
-5	Sam	Sam	NNP	PERSON	9	nsubj
-6	is	be	VBZ	O	9	cop
-7	a	a	DT	O	9	det
-8	big	big	JJ	O	9	amod
-9	hero	hero	NN	O	0	ROOT
-10	.	.	.	O	9	punct
-
-
-1	In	in	IN	O	5	case
-2	his	he	PRP$	O	5	nmod:poss
-3	front	front	JJ	O	5	amod
-4	hallway	hallway	NN	O	5	compound
-5	Sam	Sam	NNP	PERSON	6	nmod
+2	his	he	PRP$	O	4	nmod:poss
+3	front	front	JJ	O	4	amod
+4	hallway	hallway	NN	O	6	nmod
+5	Sam	Sam	NNP	PERSON	6	nsubj
 6	put	put	VBD	O	0	ROOT
 7	a	a	DT	O	9	det
 8	big	big	JJ	O	9	amod
 9	vase	vase	NN	O	6	dobj
 10	.	.	.	O	6	punct
+	# # original
+	# 1	In	in	IN	O	5	case
+	# 2	his	he	PRP$	O	5	nmod:poss
+	# 3	front	front	JJ	O	5	amod
+	# 4	hallway	hallway	NN	O	5	compound
+	# 5	Sam	Sam	NNP	PERSON	6	nmod
+	# 6	put	put	VBD	O	0	ROOT
+	# 7	a	a	DT	O	9	det
+	# 8	big	big	JJ	O	9	amod
+	# 9	vase	vase	NN	O	6	dobj
+	# 10	.	.	.	O	6	punct
 
+# # ok
+# 1	With	with	IN	O	5	case
+# 2	Sam	Sam	NNP	PERSON	5	nmod:poss
+# 3	's	's	POS	O	2	case
+# 4	new	new	JJ	O	5	amod
+# 5	job	job	NN	O	9	nmod
+# 6	,	,	,	O	9	punct
+# 7	he	he	PRP	O	9	nsubj
+# 8	'll	will	MD	O	9	aux
+# 9	make	make	VB	O	0	ROOT
+# 10	a	a	DT	O	11	det
+# 11	lot	lot	NN	O	9	dobj
+# 12	of	of	IN	O	13	case
+# 13	money	money	NN	O	11	nmod
+# 14	.	.	.	O	9	punct
 
-1	With	with	IN	O	5	case
-2	Sam	Sam	NNP	PERSON	5	nmod:poss
-3	's	's	POS	O	2	case
-4	new	new	JJ	O	5	amod
-5	job	job	NN	O	9	nmod
-6	,	,	,	O	9	punct
-7	he	he	PRP	O	9	nsubj
-8	'll	will	MD	O	9	aux
-9	make	make	VB	O	0	ROOT
-10	a	a	DT	O	11	det
-11	lot	lot	NN	O	9	dobj
-12	of	of	IN	O	13	case
-13	money	money	NN	O	11	nmod
-14	.	.	.	O	9	punct
+# # ok
+# 1	In	in	IN	O	4	case
+# 2	Sam	Sam	NNP	PERSON	4	nmod:poss
+# 3	's	's	POS	O	2	case
+# 4	house	house	NN	O	9	nmod
+# 5	,	,	,	O	9	punct
+# 6	what	what	WP	O	9	dobj
+# 7	did	do	VBD	O	9	aux
+# 8	Jane	Jane	NNP	PERSON	9	nsubj
+# 9	do	do	VB	O	0	ROOT
+# 10	?	?	.	O	9	punct
 
+# # ok
+# 1	In	in	IN	O	4	case
+# 2	Sam	Sam	NNP	PERSON	4	nmod:poss
+# 3	's	's	POS	O	2	case
+# 4	house	house	NN	O	8	nmod
+# 5	,	,	,	O	8	punct
+# 6	did	do	VBD	O	8	aux
+# 7	Jane	Jane	NNP	PERSON	8	nsubj
+# 8	have	have	VB	O	0	ROOT
+# 9	a	a	DT	O	11	det
+# 10	good	good	JJ	O	11	amod
+# 11	time	time	NN	O	8	dobj
+# 12	?	?	.	O	8	punct
 
-1	In	in	IN	O	4	case
-2	Sam	Sam	NNP	PERSON	4	nmod:poss
-3	's	's	POS	O	2	case
-4	house	house	NN	O	9	nmod
-5	,	,	,	O	9	punct
-6	what	what	WP	O	9	dobj
-7	did	do	VBD	O	9	aux
-8	Jane	Jane	NNP	PERSON	9	nsubj
-9	do	do	VB	O	0	ROOT
-10	?	?	.	O	9	punct
-
-
-1	In	in	IN	O	4	case
-2	Sam	Sam	NNP	PERSON	4	nmod:poss
-3	's	's	POS	O	2	case
-4	house	house	NN	O	8	nmod
-5	,	,	,	O	8	punct
-6	did	do	VBD	O	8	aux
-7	Jane	Jane	NNP	PERSON	8	nsubj
-8	have	have	VB	O	0	ROOT
-9	a	a	DT	O	11	det
-10	good	good	JJ	O	11	amod
-11	time	time	NN	O	8	dobj
-12	?	?	.	O	8	punct
-
-
-1	Near	near	IN	O	6	mark
+# parse fixed, stranded to
+1	Near	near	IN	O	3	case
 2	the	the	DT	O	4	det
-3	girl	girl	NN	O	4	compound
+3	girl	girl	NN	O	12	nmod
 4	John	John	NNP	PERSON	6	nsubj
 5	was	be	VBD	O	6	aux
-6	talking	talk	VBG	O	0	ROOT
-7	to	to	TO	O	12	mark
+6	talking	talk	VBG	O	3	acl
+7	to	to	TO	O	6	nmod
 8	,	,	,	O	12	punct
 9	what	what	WP	O	12	dobj
 10	did	do	VBD	O	12	aux
 11	he	he	PRP	O	12	nsubj
-12	see	see	VB	O	6	xcomp
+12	see	see	VB	O	0	ROOT
 13	?	?	.	O	6	punct
+	# # original
+	# 1	Near	near	IN	O	6	mark
+	# 2	the	the	DT	O	4	det
+	# 3	girl	girl	NN	O	4	compound
+	# 4	John	John	NNP	PERSON	6	nsubj
+	# 5	was	be	VBD	O	6	aux
+	# 6	talking	talk	VBG	O	0	ROOT
+	# 7	to	to	TO	O	12	mark
+	# 8	,	,	,	O	12	punct
+	# 9	what	what	WP	O	12	dobj
+	# 10	did	do	VBD	O	12	aux
+	# 11	he	he	PRP	O	12	nsubj
+	# 12	see	see	VB	O	6	xcomp
+	# 13	?	?	.	O	6	punct
 
-
-1	Near	near	IN	O	6	mark
+# parse fixed, stranded to
+1	Near	near	IN	O	3	case
 2	the	the	DT	O	4	det
-3	girl	girl	NN	O	4	compound
+3	girl	girl	NN	O	11	nmod
 4	John	John	NNP	PERSON	6	nsubj
 5	was	be	VBD	O	6	aux
-6	talking	talk	VBG	O	11	advcl
-7	to	to	TO	O	6	xcomp
+6	talking	talk	VBG	O	3	acl
+7	to	to	TO	O	6	nmod
 8	,	,	,	O	11	punct
 9	did	do	VBD	O	11	aux
 10	he	he	PRP	O	11	nsubj
@@ -903,60 +929,75 @@
 12	a	a	DT	O	13	det
 13	snake	snake	NN	O	11	dobj
 14	?	?	.	O	11	punct
+	# # original
+	# 1	Near	near	IN	O	6	mark
+	# 2	the	the	DT	O	4	det
+	# 3	girl	girl	NN	O	4	compound
+	# 4	John	John	NNP	PERSON	6	nsubj
+	# 5	was	be	VBD	O	6	aux
+	# 6	talking	talk	VBG	O	11	advcl
+	# 7	to	to	TO	O	6	xcomp
+	# 8	,	,	,	O	11	punct
+	# 9	did	do	VBD	O	11	aux
+	# 10	he	he	PRP	O	11	nsubj
+	# 11	see	see	VB	O	0	ROOT
+	# 12	a	a	DT	O	13	det
+	# 13	snake	snake	NN	O	11	dobj
+	# 14	?	?	.	O	11	punct
 
+# # ok
+# 1	Near	near	IN	O	2	case
+# 2	him	he	PRP	O	7	nmod
+# 3	,	,	,	O	7	punct
+# 4	what	what	WP	O	7	dobj
+# 5	did	do	VBD	O	7	aux
+# 6	John	John	NNP	PERSON	7	nsubj
+# 7	see	see	VB	O	0	ROOT
+# 8	?	?	.	O	7	punct
 
-1	Near	near	IN	O	2	case
-2	him	he	PRP	O	7	nmod
-3	,	,	,	O	7	punct
-4	what	what	WP	O	7	dobj
-5	did	do	VBD	O	7	aux
-6	John	John	NNP	PERSON	7	nsubj
-7	see	see	VB	O	0	ROOT
-8	?	?	.	O	7	punct
+# # ok
+# 1	Near	near	IN	O	2	case
+# 2	him	he	PRP	O	6	nmod
+# 3	,	,	,	O	6	punct
+# 4	did	do	VBD	O	6	aux
+# 5	John	John	NNP	PERSON	6	nsubj
+# 6	see	see	VB	O	0	ROOT
+# 7	a	a	DT	O	8	det
+# 8	snake	snake	NN	O	6	dobj
+# 9	?	?	.	O	6	punct
 
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	cat	cat	NN	O	3	nsubj
+# 3	runs	run	VBZ	O	0	ROOT
+# 4	.	.	.	O	3	punct
 
-1	Near	near	IN	O	2	case
-2	him	he	PRP	O	6	nmod
-3	,	,	,	O	6	punct
-4	did	do	VBD	O	6	aux
-5	John	John	NNP	PERSON	6	nsubj
-6	see	see	VB	O	0	ROOT
-7	a	a	DT	O	8	det
-8	snake	snake	NN	O	6	dobj
-9	?	?	.	O	6	punct
-
-
-1	The	the	DT	O	2	det
-2	cat	cat	NN	O	3	nsubj
-3	runs	run	VBZ	O	0	ROOT
-4	.	.	.	O	3	punct
-
-
+# VBP => TNS
 1	The	the	DT	O	2	det
 2	cats	cat	NNS	O	3	nsubj
 3	run	run	VBP	O	0	ROOT
 4	.	.	.	O	3	punct
 
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	dog	dog	NN	O	3	nsubj
+# 3	dies	die	VBZ	O	0	ROOT
+# 4	.	.	.	O	3	punct
 
-1	The	the	DT	O	2	det
-2	dog	dog	NN	O	3	nsubj
-3	dies	die	VBZ	O	0	ROOT
-4	.	.	.	O	3	punct
-
-
+# TNS
 1	The	the	DT	O	2	det
 2	dogs	dog	NNS	O	3	nsubj
 3	die	die	VBP	O	0	ROOT
 4	.	.	.	O	3	punct
 
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	kills	kill	VBZ	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	ducklings	duckling	NNS	O	2	dobj
+# 5	.	.	.	O	2	punct
 
-1	John	John	NNP	PERSON	2	nsubj
-2	kills	kill	VBZ	O	0	ROOT
-3	the	the	DT	O	4	det
-4	ducklings	duckling	NNS	O	2	dobj
-5	.	.	.	O	2	punct
-
-
+# TNS
 1	The	the	DT	O	2	det
 2	ducklings	duckling	NNS	O	4	nsubjpass
 3	are	be	VBP	O	4	auxpass
@@ -965,42 +1006,42 @@
 6	John	John	NNP	PERSON	4	nmod
 7	.	.	.	O	4	punct
 
+# # ok
+# 1	Who	who	WP	O	3	nsubj
+# 2	is	be	VBZ	O	3	aux
+# 3	winning	win	VBG	O	0	ROOT
+# 4	the	the	DT	O	6	det
+# 5	ball	ball	NN	O	6	compound
+# 6	game	game	NN	O	3	dobj
+# 7	?	?	.	O	3	punct
 
-1	Who	who	WP	O	3	nsubj
-2	is	be	VBZ	O	3	aux
-3	winning	win	VBG	O	0	ROOT
-4	the	the	DT	O	6	det
-5	ball	ball	NN	O	6	compound
-6	game	game	NN	O	3	dobj
-7	?	?	.	O	3	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	Giants	Giants	NNPS	ORGANIZATION	4	nsubj
+# 3	are	be	VBP	O	4	aux
+# 4	winning	win	VBG	O	0	ROOT
+# 5	.	.	.	O	4	punct
 
+# # ok
+# 1	Susan	Susan	NNP	PERSON	2	nsubj
+# 2	wants	want	VBZ	O	0	ROOT
+# 3	to	to	TO	O	4	mark
+# 4	run	run	VB	O	2	xcomp
+# 5	in	in	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	park	park	NN	O	4	nmod
+# 8	.	.	.	O	2	punct
 
-1	The	the	DT	O	2	det
-2	Giants	Giants	NNPS	ORGANIZATION	4	nsubj
-3	are	be	VBP	O	4	aux
-4	winning	win	VBG	O	0	ROOT
-5	.	.	.	O	4	punct
+# # ok
+# 1	Susan	Susan	NNP	PERSON	2	nsubj
+# 2	wants	want	VBZ	O	0	ROOT
+# 3	to	to	TO	O	4	mark
+# 4	eat	eat	VB	O	2	xcomp
+# 5	a	a	DT	O	6	det
+# 6	hamburger	hamburger	NN	O	4	dobj
+# 7	.	.	.	O	2	punct
 
-
-1	Susan	Susan	NNP	PERSON	2	nsubj
-2	wants	want	VBZ	O	0	ROOT
-3	to	to	TO	O	4	mark
-4	run	run	VB	O	2	xcomp
-5	in	in	IN	O	7	case
-6	the	the	DT	O	7	det
-7	park	park	NN	O	4	nmod
-8	.	.	.	O	2	punct
-
-
-1	Susan	Susan	NNP	PERSON	2	nsubj
-2	wants	want	VBZ	O	0	ROOT
-3	to	to	TO	O	4	mark
-4	eat	eat	VB	O	2	xcomp
-5	a	a	DT	O	6	det
-6	hamburger	hamburger	NN	O	4	dobj
-7	.	.	.	O	2	punct
-
-
+# what to do about the copula?
 1	Susan	Susan	NNP	PERSON	2	nsubj
 2	wants	want	VBZ	O	0	ROOT
 3	to	to	TO	O	5	mark

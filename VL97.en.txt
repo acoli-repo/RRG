@@ -25,7 +25,7 @@
 #p.45 He may be leaving soon .
 #p.45 She was able to see him .
 #p.45 Will they have to be leaving ?
-#p.50,170 Mulder did not show the book to Skinner yesterday .
+#p.170 Mulder did not show the book to Skinner yesterday .
 #p.51 Sally is tall .
 #p.54 father
 #p.54 father of children
