@@ -1103,57 +1103,57 @@
 # 9	police	police	NN	O	6	nmod
 # 10	.	.	.	O	2	punct
 
-# parse fixed: PP attachment
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	talked	talk	VBD	O	0	ROOT
-3	to	to	TO	O	5	case
-4	the	the	DT	O	5	det
-5	man	man	NN	O	2	nmod
-6	who	who	WP	O	7	nsubj
-7	bought	buy	VBD	O	5	acl:relcl
-8	the	the	DT	O	9	det
-9	house	house	NN	O	7	dobj
-10	down	down	IN	O	12	case
-11	the	the	DT	O	12	det
-12	street	street	NN	O	9	nmod
-13	.	.	.	O	2	punct
-	# # original
-	# 1	Mary	Mary	NNP	PERSON	2	nsubj
-	# 2	talked	talk	VBD	O	0	ROOT
-	# 3	to	to	TO	O	5	case
-	# 4	the	the	DT	O	5	det
-	# 5	man	man	NN	O	2	nmod
-	# 6	who	who	WP	O	7	nsubj
-	# 7	bought	buy	VBD	O	5	acl:relcl
-	# 8	the	the	DT	O	9	det
-	# 9	house	house	NN	O	7	dobj
-	# 10	down	down	IN	O	12	case
-	# 11	the	the	DT	O	12	det
-	# 12	street	street	NN	O	7	nmod
-	# 13	.	.	.	O	2	punct
+# # ok: parse fixed: PP attachment
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	talked	talk	VBD	O	0	ROOT
+# 3	to	to	TO	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	man	man	NN	O	2	nmod
+# 6	who	who	WP	O	7	nsubj
+# 7	bought	buy	VBD	O	5	acl:relcl
+# 8	the	the	DT	O	9	det
+# 9	house	house	NN	O	7	dobj
+# 10	down	down	IN	O	12	case
+# 11	the	the	DT	O	12	det
+# 12	street	street	NN	O	9	nmod
+# 13	.	.	.	O	2	punct
+	# # # original
+	# # 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# # 2	talked	talk	VBD	O	0	ROOT
+	# # 3	to	to	TO	O	5	case
+	# # 4	the	the	DT	O	5	det
+	# # 5	man	man	NN	O	2	nmod
+	# # 6	who	who	WP	O	7	nsubj
+	# # 7	bought	buy	VBD	O	5	acl:relcl
+	# # 8	the	the	DT	O	9	det
+	# # 9	house	house	NN	O	7	dobj
+	# # 10	down	down	IN	O	12	case
+	# # 11	the	the	DT	O	12	det
+	# # 12	street	street	NN	O	7	nmod
+	# # 13	.	.	.	O	2	punct
 
-# parse fixed
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	talked	talk	VBD	O	0	ROOT
-3	to	to	TO	O	5	case
-4	the	the	DT	O	5	det
-5	man	man	NN	O	2	nmod
-6	who	who	WP	O	9	nsubj
-7	the	the	DT	O	9	det
-8	dog	dog	NN	O	9	nsubj
-9	bit	bit	VB	O	5	acl:relcl
-10	.	.	.	O	2	punct
-	# # original
-	# 1	Mary	Mary	NNP	PERSON	2	nsubj
-	# 2	talked	talk	VBD	O	0	ROOT
-	# 3	to	to	TO	O	5	case
-	# 4	the	the	DT	O	5	det
-	# 5	man	man	NN	O	2	nmod
-	# 6	who	who	WP	O	9	nsubj
-	# 7	the	the	DT	O	9	det
-	# 8	dog	dog	NN	O	9	compound
-	# 9	bit	bit	NN	O	5	acl:relcl
-	# 10	.	.	.	O	2	punct
+# # ok? parse fixed, but check treatment of who
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	talked	talk	VBD	O	0	ROOT
+# 3	to	to	TO	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	man	man	NN	O	2	nmod
+# 6	who	who	WP	O	9	nsubj
+# 7	the	the	DT	O	8	det
+# 8	dog	dog	NN	O	9	nsubj
+# 9	bit	bit	VB	O	5	acl:relcl
+# 10	.	.	.	O	2	punct
+	# # # original
+	# # 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# # 2	talked	talk	VBD	O	0	ROOT
+	# # 3	to	to	TO	O	5	case
+	# # 4	the	the	DT	O	5	det
+	# # 5	man	man	NN	O	2	nmod
+	# # 6	who	who	WP	O	9	nsubj
+	# # 7	the	the	DT	O	9	det
+	# # 8	dog	dog	NN	O	9	compound
+	# # 9	bit	bit	NN	O	5	acl:relcl
+	# # 10	.	.	.	O	2	punct
 
 # # ok? (CC: relative pronoun => PrCS?)
 # 1	Mary	Mary	NNP	PERSON	2	nsubj
@@ -1183,38 +1183,38 @@
 # 11	kept	keep	VBN	O	5	acl:relcl
 # 12	.	.	.	O	2	punct
 
-# parse fixed
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	looked	look	VBD	O	0	ROOT
-3	at	at	IN	O	5	case
-4	the	the	DT	O	5	det
-5	box	box	NN	O	2	nmod
-6	out	out	IN	O	8	case
-7	of	of	IN	O	8	case
-8	which	which	WDT	O	13	nmod
-9	the	the	DT	O	10	det
-10	jewelry	jewelry	NN	O	13	nsubjpass
-11	had	have	VBD	O	13	aux
-12	been	be	VBN	O	13	auxpass
-13	taken	take	VBN	O	5	acl:relcl
-14	.	.	.	O	2	punct
-	# # original
-	# 1	Mary	Mary	NNP	PERSON	2	nsubj
-	# 2	looked	look	VBD	O	0	ROOT
-	# 3	at	at	IN	O	5	case
-	# 4	the	the	DT	O	5	det
-	# 5	box	box	NN	O	2	nmod
-	# 6	out	out	IN	O	8	case
-	# 7	of	of	IN	O	8	case
-	# 8	which	which	WDT	O	13	nmod
-	# 9	the	the	DT	O	10	det
-	# 10	jewelry	jewelry	NN	O	13	nsubjpass
-	# 11	had	have	VBD	O	13	aux
-	# 12	been	be	VBN	O	13	auxpass
-	# 13	taken	take	VBN	O	2	ccomp
-	# 14	.	.	.	O	2	punct
+# # ok? parse fixed (relative clause may be periphery, instead)
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	looked	look	VBD	O	0	ROOT
+# 3	at	at	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	box	box	NN	O	2	nmod
+# 6	out	out	IN	O	8	case
+# 7	of	of	IN	O	8	case
+# 8	which	which	WDT	O	13	nmod
+# 9	the	the	DT	O	10	det
+# 10	jewelry	jewelry	NN	O	13	nsubjpass
+# 11	had	have	VBD	O	13	aux
+# 12	been	be	VBN	O	13	auxpass
+# 13	taken	take	VBN	O	5	acl:relcl
+# 14	.	.	.	O	2	punct
+	# # # original
+	# # 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# # 2	looked	look	VBD	O	0	ROOT
+	# # 3	at	at	IN	O	5	case
+	# # 4	the	the	DT	O	5	det
+	# # 5	box	box	NN	O	2	nmod
+	# # 6	out	out	IN	O	8	case
+	# # 7	of	of	IN	O	8	case
+	# # 8	which	which	WDT	O	13	nmod
+	# # 9	the	the	DT	O	10	det
+	# # 10	jewelry	jewelry	NN	O	13	nsubjpass
+	# # 11	had	have	VBD	O	13	aux
+	# # 12	been	be	VBN	O	13	auxpass
+	# # 13	taken	take	VBN	O	2	ccomp
+	# # 14	.	.	.	O	2	punct
 
-
+# no tiger
 1	The	the	DT	O	2	det
 2	man	man	NN	O	3	nsubj
 3	went	go	VBD	O	0	ROOT
@@ -1225,7 +1225,7 @@
 8	dog	dog	NN	O	6	dobj
 9	.	.	.	O	3	punct
 
-
+# no tiger
 1	The	the	DT	O	2	det
 2	dog	dog	NN	O	3	nsubj
 3	went	go	VBD	O	0	ROOT
@@ -1238,63 +1238,63 @@
 10	man	man	NN	O	7	nmod
 11	.	.	.	O	3	punct
 
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	student	student	NN	O	3	nsubj
+# 3	watched	watch	VBD	O	0	ROOT
+# 4	TV	tv	NN	O	3	dobj
+# 5	while	while	IN	O	6	mark
+# 6	eating	eat	VBG	O	3	advcl
+# 7	pizza	pizza	NN	O	6	dobj
+# 8	.	.	.	O	3	punct
 
-1	The	the	DT	O	2	det
-2	student	student	NN	O	3	nsubj
-3	watched	watch	VBD	O	0	ROOT
-4	TV	tv	NN	O	3	dobj
-5	while	while	IN	O	6	mark
-6	eating	eat	VBG	O	3	advcl
-7	pizza	pizza	NN	O	6	dobj
-8	.	.	.	O	3	punct
+# # ok: compound
+# 1	The	the	DT	O	2	det
+# 2	student	student	NN	O	3	nsubj
+# 3	looked	look	VBD	O	0	ROOT
+# 4	out	out	RP	O	3	compound:prt
+# 5	the	the	DT	O	6	det
+# 6	window	window	NN	O	3	dobj
+# 7	while	while	IN	O	9	mark
+# 8	being	be	VBG	O	9	auxpass
+# 9	questioned	question	VBN	O	3	advcl
+# 10	by	by	IN	O	12	case
+# 11	the	the	DT	O	12	det
+# 12	police	police	NN	O	9	nmod
+# 13	.	.	.	O	3	punct
 
+# # ok
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	book	book	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	John	John	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	The	the	DT	O	2	det
-2	student	student	NN	O	3	nsubj
-3	looked	look	VBD	O	0	ROOT
-4	out	out	RP	O	3	compound:prt
-5	the	the	DT	O	6	det
-6	window	window	NN	O	3	dobj
-7	while	while	IN	O	9	mark
-8	being	be	VBG	O	9	auxpass
-9	questioned	question	VBN	O	3	advcl
-10	by	by	IN	O	12	case
-11	the	the	DT	O	12	det
-12	police	police	NN	O	9	nmod
-13	.	.	.	O	3	punct
+# # ok
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	John	John	NNP	PERSON	2	iobj
+# 4	a	a	DT	O	5	det
+# 5	book	book	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
 
+# # ok
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	surprised	surprise	VBD	O	0	ROOT
+# 3	Sally	Sally	NNP	PERSON	2	dobj
+# 4	.	.	.	O	2	punct
 
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	book	book	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	John	John	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Sally	Sally	NNP	PERSON	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	surprised	surprise	VBN	O	0	ROOT
+# 4	by	by	IN	O	5	case
+# 5	Mary	Mary	NNP	PERSON	3	nmod
+# 6	.	.	.	O	3	punct
 
-
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	John	John	NNP	PERSON	2	iobj
-4	a	a	DT	O	5	det
-5	book	book	NN	O	2	dobj
-6	.	.	.	O	2	punct
-
-
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	surprised	surprise	VBD	O	0	ROOT
-3	Sally	Sally	NNP	PERSON	2	dobj
-4	.	.	.	O	2	punct
-
-
-1	Sally	Sally	NNP	PERSON	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	surprised	surprise	VBN	O	0	ROOT
-4	by	by	IN	O	5	case
-5	Mary	Mary	NNP	PERSON	3	nmod
-6	.	.	.	O	3	punct
-
-
+# to unattached, CLM? (cf, COREn)
 1	Pat	Pat	NNP	PERSON	2	nsubj
 2	brought	bring	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -1303,7 +1303,7 @@
 6	read	read	VB	O	2	advcl
 7	.	.	.	O	2	punct
 
-
+# to unattached, CLM? (cf, COREn)
 1	Pat	Pat	NNP	PERSON	2	nsubj
 2	brought	bring	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -1315,7 +1315,7 @@
 9	read	read	VB	O	2	advcl
 10	.	.	.	O	2	punct
 
-
+# to unattached, CLM? (cf, COREn)
 1	John	John	NNP	PERSON	2	nsubj
 2	built	build	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -1327,7 +1327,7 @@
 9	in	in	IN	O	6	compound:prt
 10	.	.	.	O	2	punct
 
-
+# to unattached, CLM? (cf, COREn)
 1	John	John	NNP	PERSON	2	nsubj
 2	build	build	VB	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -1342,7 +1342,7 @@
 12	in	in	IN	O	9	compound:prt
 13	.	.	.	O	2	punct
 
-
+# to unattached, CLM? (cf, COREn)
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	gave	give	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -1353,17 +1353,17 @@
 8	read	read	VB	O	2	advcl
 9	.	.	.	O	2	punct
 
+# # ok?
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	Pat	Pat	NNP	PERSON	2	iobj
+# 4	the	the	DT	O	5	det
+# 5	book	book	NN	O	2	dobj
+# 6	to	to	TO	O	7	mark
+# 7	read	read	VB	O	5	acl
+# 8	.	.	.	O	2	punct
 
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	Pat	Pat	NNP	PERSON	2	iobj
-4	the	the	DT	O	5	det
-5	book	book	NN	O	2	dobj
-6	to	to	TO	O	7	mark
-7	read	read	VB	O	5	acl
-8	.	.	.	O	2	punct
-
-
+# to unattached, CLM? (cf, COREn)
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	gave	give	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -1377,20 +1377,20 @@
 11	read	read	VB	O	2	advcl
 12	.	.	.	O	2	punct
 
+# # ok?
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	Pat	Pat	NNP	PERSON	2	iobj
+# 4	the	the	DT	O	5	det
+# 5	book	book	NN	O	2	dobj
+# 6	for	for	IN	O	10	mark
+# 7	her	she	PRP$	O	8	nmod:poss
+# 8	sister	sister	NN	O	10	nsubj
+# 9	to	to	TO	O	10	mark
+# 10	read	read	VB	O	5	acl
+# 11	.	.	.	O	2	punct
 
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	Pat	Pat	NNP	PERSON	2	iobj
-4	the	the	DT	O	5	det
-5	book	book	NN	O	2	dobj
-6	for	for	IN	O	10	mark
-7	her	she	PRP$	O	8	nmod:poss
-8	sister	sister	NN	O	10	nsubj
-9	to	to	TO	O	10	mark
-10	read	read	VB	O	5	acl
-11	.	.	.	O	2	punct
-
-
+# to unattached, CLM? (cf, COREn), stranded prep
 1	Leslie	Leslie	NNP	PERSON	2	nsubj
 2	brought	bring	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -1402,21 +1402,34 @@
 9	with	with	IN	O	6	nmod
 10	.	.	.	O	2	punct
 
-
+# parse fixed, stranded prep
 1	Leslie	Leslie	NNP	PERSON	2	nsubj
 2	brought	bring	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
 4	knife	knife	NN	O	2	dobj
-5	for	for	IN	O	8	mark
-6	Bruce	Bruce	NNP	PERSON	8	nsubj
+5	for	for	IN	O	6	case
+6	Bruce	Bruce	NNP	PERSON	8	nmod
 7	to	to	TO	O	8	mark
-8	carve	carve	VB	O	4	acl
+8	carve	carve	VB	O	2	advcl
 9	the	the	DT	O	10	det
 10	turkey	turkey	NN	O	8	dobj
 11	with	with	IN	O	8	nmod
 12	.	.	.	O	2	punct
+	# # original
+	# 1	Leslie	Leslie	NNP	PERSON	2	nsubj
+	# 2	brought	bring	VBD	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	knife	knife	NN	O	2	dobj
+	# 5	for	for	IN	O	8	mark
+	# 6	Bruce	Bruce	NNP	PERSON	8	nsubj
+	# 7	to	to	TO	O	8	mark
+	# 8	carve	carve	VB	O	4	acl
+	# 9	the	the	DT	O	10	det
+	# 10	turkey	turkey	NN	O	8	dobj
+	# 11	with	with	IN	O	8	nmod
+	# 12	.	.	.	O	2	punct
 
-
+# to => CLM?
 1	The	the	DT	O	2	det
 2	book	book	NN	O	4	nsubjpass
 3	was	be	VBD	O	4	auxpass
@@ -1429,7 +1442,7 @@
 10	read	read	VB	O	4	advcl
 11	.	.	.	O	4	punct
 
-
+# to => CLM?
 1	The	the	DT	O	2	det
 2	book	book	NN	O	4	nsubjpass
 3	was	be	VBD	O	4	auxpass
@@ -1440,41 +1453,51 @@
 8	read	read	VB	O	4	advcl
 9	.	.	.	O	4	punct
 
+# # ok
+# 1	Chris	Chris	NNP	PERSON	2	nsubj
+# 2	brought	bring	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	watch	watch	NN	O	2	dobj
+# 5	to	to	TO	O	7	mark
+# 6	be	be	VB	O	7	auxpass
+# 7	repaired	repair	VBN	O	2	xcomp
+# 8	by	by	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	jeweler	jeweler	NN	O	7	nmod
+# 11	.	.	.	O	2	punct
 
-1	Chris	Chris	NNP	PERSON	2	nsubj
-2	brought	bring	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	watch	watch	NN	O	2	dobj
-5	to	to	TO	O	7	mark
-6	be	be	VB	O	7	auxpass
-7	repaired	repair	VBN	O	2	xcomp
-8	by	by	IN	O	10	case
-9	the	the	DT	O	10	det
-10	jeweler	jeweler	NN	O	7	nmod
-11	.	.	.	O	2	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	watch	watch	NN	O	4	nsubjpass
+# 3	was	be	VBD	O	4	auxpass
+# 4	brought	bring	VBN	O	0	ROOT
+# 5	to	to	TO	O	7	mark
+# 6	be	be	VB	O	7	auxpass
+# 7	repaired	repair	VBN	O	4	xcomp
+# 8	.	.	.	O	4	punct
 
-
-1	The	the	DT	O	2	det
-2	watch	watch	NN	O	4	nsubjpass
-3	was	be	VBD	O	4	auxpass
-4	brought	bring	VBN	O	0	ROOT
-5	to	to	TO	O	7	mark
-6	be	be	VB	O	7	auxpass
-7	repaired	repair	VBN	O	4	xcomp
-8	.	.	.	O	4	punct
-
-
+# parse fixed
 1	The	the	DT	O	2	det
 2	teacher	teacher	NN	O	3	nsubj
 3	sent	send	VBD	O	0	ROOT
 4	the	the	DT	O	5	det
 5	pupils	pupil	NNS	O	3	dobj
-6	away	away	RB	O	8	advmod
+6	away	away	RB	O	3	advmod
 7	to	to	TO	O	8	mark
 8	study	study	VB	O	3	xcomp
 9	.	.	.	O	3	punct
+	# # original
+	# 1	The	the	DT	O	2	det
+	# 2	teacher	teacher	NN	O	3	nsubj
+	# 3	sent	send	VBD	O	0	ROOT
+	# 4	the	the	DT	O	5	det
+	# 5	pupils	pupil	NNS	O	3	dobj
+	# 6	away	away	RB	O	8	advmod
+	# 7	to	to	TO	O	8	mark
+	# 8	study	study	VB	O	3	xcomp
+	# 9	.	.	.	O	3	punct
 
-
+# away must be the periphery of the first core, not both
 1	The	the	DT	O	2	det
 2	pupils	pupil	NNS	O	4	nsubjpass
 3	were	be	VBD	O	4	auxpass
@@ -1484,7 +1507,7 @@
 7	study	study	VB	O	4	xcomp
 8	.	.	.	O	4	punct
 
-
+# adjective phrases are beyond RRG 1997 ;) => ADJP in RRG 2005
 1	The	the	DT	O	4	det
 2	terminally	terminally	RB	O	3	advmod
 3	ill	ill	JJ	O	4	amod
@@ -1497,9 +1520,9 @@
 10	die	die	VB	O	5	xcomp
 11	.	.	.	O	5	punct
 
-
+# parse fixed
 1	The	the	DT	O	4	det
-2	terminally	terminally	RB	O	4	advmod
+2	terminally	terminally	RB	O	3	advmod
 3	ill	ill	JJ	O	4	amod
 4	patients	patient	NNS	O	6	nsubjpass
 5	were	be	VBD	O	6	auxpass
@@ -1510,8 +1533,21 @@
 10	to	to	TO	O	11	mark
 11	die	die	VB	O	6	xcomp
 12	.	.	.	O	6	punct
+	# # original
+	# 1	The	the	DT	O	4	det
+	# 2	terminally	terminally	RB	O	4	advmod
+	# 3	ill	ill	JJ	O	4	amod
+	# 4	patients	patient	NNS	O	6	nsubjpass
+	# 5	were	be	VBD	O	6	auxpass
+	# 6	sent	send	VBN	O	0	ROOT
+	# 7	to	to	TO	O	9	case
+	# 8	the	the	DT	O	9	det
+	# 9	hospice	hospice	NN	O	6	nmod
+	# 10	to	to	TO	O	11	mark
+	# 11	die	die	VB	O	6	xcomp
+	# 12	.	.	.	O	6	punct
 
-
+# to => CLM?
 1	The	the	DT	O	2	det
 2	company	company	NN	O	3	nsubj
 3	supplied	supply	VBD	O	0	ROOT
@@ -1523,7 +1559,7 @@
 9	wear	wear	VB	O	3	advcl
 10	.	.	.	O	3	punct
 
-
+# parse fixed
 1	The	the	DT	O	2	det
 2	company	company	NN	O	3	nsubj
 3	supplied	supply	VBD	O	0	ROOT
@@ -1531,14 +1567,28 @@
 5	team	team	NN	O	3	dobj
 6	with	with	IN	O	7	case
 7	uniforms	uniform	NNS	O	3	nmod
-8	for	for	IN	O	12	mark
+8	for	for	IN	O	10	case
 9	the	the	DT	O	10	det
-10	players	player	NNS	O	12	nsubj
+10	players	player	NNS	O	7	nmod
 11	to	to	TO	O	12	mark
 12	wear	wear	VB	O	7	acl
 13	.	.	.	O	3	punct
+	# # original
+	# 1	The	the	DT	O	2	det
+	# 2	company	company	NN	O	3	nsubj
+	# 3	supplied	supply	VBD	O	0	ROOT
+	# 4	the	the	DT	O	5	det
+	# 5	team	team	NN	O	3	dobj
+	# 6	with	with	IN	O	7	case
+	# 7	uniforms	uniform	NNS	O	3	nmod
+	# 8	for	for	IN	O	12	mark
+	# 9	the	the	DT	O	10	det
+	# 10	players	player	NNS	O	12	nsubj
+	# 11	to	to	TO	O	12	mark
+	# 12	wear	wear	VB	O	7	acl
+	# 13	.	.	.	O	3	punct
 
-
+# CD => NP
 1	That	that	DT	O	2	det
 2	one	one	CD	NUMBER	0	ROOT
 3	I	I	PRP	O	5	nsubj
@@ -1546,122 +1596,144 @@
 5	eat	eat	VB	O	2	acl:relcl
 6	.	.	.	O	2	punct
 
-
+# parse fixed, p. 383: Sue > baked
 1	Larry	Larry	NNP	PERSON	2	nsubj
-2	baked	baked	JJ	O	0	ROOT
+2	baked	baked	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
 4	cake	cake	NN	O	2	dobj
 5	for	for	IN	O	6	case
-6	Sue	sue	NN	O	4	nmod
+6	Sue	sue	NN	O	2	nmod
 7	.	.	.	O	2	punct
+	# # original
+	# 1	Larry	Larry	NNP	PERSON	2	nsubj
+	# 2	baked	baked	JJ	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	cake	cake	NN	O	2	dobj
+	# 5	for	for	IN	O	6	case
+	# 6	Sue	sue	NN	O	4	nmod
+	# 7	.	.	.	O	2	punct
 
-
-1	Larry	Larry	NNP	PERSON	3	compound
-2	baked	baked	JJ	O	3	amod
-3	Sue	sue	NN	O	0	ROOT
+# parse fixed: Stanford failure
+1	Larry	Larry	NNP	PERSON	2	nsubj
+2	baked	baked	VBD	O	0	ROOT
+3	Sue	sue	NN	O	2	iobj
 4	a	a	DT	O	5	det
-5	cake	cake	NN	O	3	dep
-6	.	.	.	O	3	punct
-
-
-1	Fred	Fred	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	Pamela	Pamela	NNP	PERSON	2	iobj
-4	the	the	DT	O	5	det
-5	flowers	flower	NNS	O	2	dobj
+5	cake	cake	NN	O	2	dobj
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Larry	Larry	NNP	PERSON	3	compound
+	# 2	baked	baked	JJ	O	3	amod
+	# 3	Sue	sue	NN	O	0	ROOT
+	# 4	a	a	DT	O	5	det
+	# 5	cake	cake	NN	O	3	dep
+	# 6	.	.	.	O	3	punct
 
+# # ok
+# 1	Fred	Fred	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	Pamela	Pamela	NNP	PERSON	2	iobj
+# 4	the	the	DT	O	5	det
+# 5	flowers	flower	NNS	O	2	dobj
+# 6	.	.	.	O	2	punct
 
-1	Who	who	WP	O	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	presented	present	VBN	O	0	ROOT
-4	with	with	IN	O	6	case
-5	an	a	DT	O	6	det
-6	award	award	NN	O	3	nmod
-7	by	by	IN	O	8	case
-8	Molly	Molly	NNP	PERSON	3	nmod
-9	?	?	.	O	3	punct
+# # ok
+# 1	Who	who	WP	O	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	presented	present	VBN	O	0	ROOT
+# 4	with	with	IN	O	6	case
+# 5	an	a	DT	O	6	det
+# 6	award	award	NN	O	3	nmod
+# 7	by	by	IN	O	8	case
+# 8	Molly	Molly	NNP	PERSON	3	nmod
+# 9	?	?	.	O	3	punct
 
+# # ok
+# 1	Where	where	WRB	O	4	advmod
+# 2	did	do	VBD	O	4	aux
+# 3	Robin	Robin	NNP	PERSON	4	nsubj
+# 4	see	see	VB	O	0	ROOT
+# 5	Pat	Pat	NNP	PERSON	4	dobj
+# 6	?	?	.	O	4	punct
 
-1	Where	where	WRB	O	4	advmod
-2	did	do	VBD	O	4	aux
-3	Robin	Robin	NNP	PERSON	4	nsubj
-4	see	see	VB	O	0	ROOT
-5	Pat	Pat	NNP	PERSON	4	dobj
-6	?	?	.	O	4	punct
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	box	box	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	showed	show	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	box	box	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	box	box	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	sent	send	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	box	box	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	handed	hand	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	box	box	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	Pat	Pat	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	showed	show	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	box	box	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
-
-
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	sent	send	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	box	box	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
-
-
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	handed	hand	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	box	box	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	Pat	Pat	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
-
-
+# parse fixed
 1	Sally	Sally	NNP	PERSON	2	nsubj
 2	taught	teach	VBD	O	0	ROOT
 3	basketweaving	basketweave	VBG	O	2	xcomp
 4	to	to	TO	O	5	case
-5	Pat	Pat	NNP	PERSON	3	nmod
+5	Pat	Pat	NNP	PERSON	2	nmod
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Sally	Sally	NNP	PERSON	2	nsubj
+	# 2	taught	teach	VBD	O	0	ROOT
+	# 3	basketweaving	basketweave	VBG	O	2	xcomp
+	# 4	to	to	TO	O	5	case
+	# 5	Pat	Pat	NNP	PERSON	3	nmod
+	# 6	.	.	.	O	2	punct
 
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	took	take	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	keys	key	NNS	O	2	dobj
+# 5	from	from	IN	O	6	case
+# 6	Kim	Kim	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	took	take	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	keys	key	NNS	O	2	dobj
-5	from	from	IN	O	6	case
-6	Kim	Kim	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	stole	steal	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	keys	key	NNS	O	2	dobj
+# 5	from	from	IN	O	6	case
+# 6	Kim	Kim	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	brought	bring	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	keys	key	NNS	O	2	dobj
+# 5	from	from	IN	O	6	case
+# 6	Kim	Kim	NNP	PERSON	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	stole	steal	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	keys	key	NNS	O	2	dobj
-5	from	from	IN	O	6	case
-6	Kim	Kim	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
-
-
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	brought	bring	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	keys	key	NNS	O	2	dobj
-5	from	from	IN	O	6	case
-6	Kim	Kim	NNP	PERSON	2	nmod
-7	.	.	.	O	2	punct
-
-
+# arg!
 1	Pat	Pat	NNP	PERSON	2	nsubj
 2	drained	drain	VBD	O	0	ROOT
 3	water	water	NN	O	2	dobj
@@ -1670,43 +1742,52 @@
 6	pool	pool	NN	O	2	nmod
 7	.	.	.	O	2	punct
 
+# # ok
+# 1	Kim	Kim	NNP	PERSON	2	nsubj
+# 2	escaped	escape	VBD	O	0	ROOT
+# 3	from	from	IN	O	6	case
+# 4	the	the	DT	O	6	det
+# 5	burning	burning	NN	O	6	compound
+# 6	house	house	NN	O	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Kim	Kim	NNP	PERSON	2	nsubj
-2	escaped	escape	VBD	O	0	ROOT
-3	from	from	IN	O	6	case
-4	the	the	DT	O	6	det
-5	burning	burning	NN	O	6	compound
-6	house	house	NN	O	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	opened	open	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	drawer	drawer	NN	O	2	dobj
+# 5	with	with	IN	O	7	case
+# 6	a	a	DT	O	7	det
+# 7	knife	knife	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
+# # ok
+# 1	Pam	Pam	NNP	O	2	nsubj
+# 2	filled	fill	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	bag	bag	NN	O	2	dobj
+# 5	with	with	IN	O	6	case
+# 6	presents	present	NNS	O	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	opened	open	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	drawer	drawer	NN	O	2	dobj
-5	with	with	IN	O	7	case
-6	a	a	DT	O	7	det
-7	knife	knife	NN	O	2	nmod
-8	.	.	.	O	2	punct
-
-
-1	Pam	Pam	NNP	O	2	nsubj
-2	filled	fill	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	bag	bag	NN	O	2	dobj
-5	with	with	IN	O	6	case
-6	presents	present	NNS	O	2	nmod
-7	.	.	.	O	2	punct
-
-
+# parse fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	went	go	VBD	O	0	ROOT
 3	to	to	TO	O	5	case
 4	the	the	DT	O	5	det
 5	concert	concert	NN	O	2	nmod
 6	with	with	IN	O	7	case
-7	Pat	Pat	NNP	PERSON	5	nmod
+7	Pat	Pat	NNP	PERSON	2	nmod
 8	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	went	go	VBD	O	0	ROOT
+	# 3	to	to	TO	O	5	case
+	# 4	the	the	DT	O	5	det
+	# 5	concert	concert	NN	O	2	nmod
+	# 6	with	with	IN	O	7	case
+	# 7	Pat	Pat	NNP	PERSON	5	nmod
+	# 8	.	.	.	O	2	punct
 
 
 1	The	the	DT	O	2	det

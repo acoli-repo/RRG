@@ -140,7 +140,7 @@
 #p.310 The company supplied the team with uniforms to wear .
 #p.310 The company supplied the team with uniforms for the players to wear .
 #p.334 That one I would eat .
-#p.337,383 Larry baked a cake for Sue .
+#p.383 Larry baked a cake for Sue .
 #p.337 Larry baked Sue a cake .
 #p.339 Fred gave Pamela the flowers .
 #p.350 Who was presented with an award by Molly ?
