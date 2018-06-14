@@ -820,28 +820,28 @@
 # 9	hero	hero	NN	O	0	ROOT
 # 10	.	.	.	O	9	punct
 
-# parse fixed
-1	In	in	IN	O	4	case
-2	his	he	PRP$	O	4	nmod:poss
-3	front	front	JJ	O	4	amod
-4	hallway	hallway	NN	O	6	nmod
-5	Sam	Sam	NNP	PERSON	6	nsubj
-6	put	put	VBD	O	0	ROOT
-7	a	a	DT	O	9	det
-8	big	big	JJ	O	9	amod
-9	vase	vase	NN	O	6	dobj
-10	.	.	.	O	6	punct
-	# # original
-	# 1	In	in	IN	O	5	case
-	# 2	his	he	PRP$	O	5	nmod:poss
-	# 3	front	front	JJ	O	5	amod
-	# 4	hallway	hallway	NN	O	5	compound
-	# 5	Sam	Sam	NNP	PERSON	6	nmod
-	# 6	put	put	VBD	O	0	ROOT
-	# 7	a	a	DT	O	9	det
-	# 8	big	big	JJ	O	9	amod
-	# 9	vase	vase	NN	O	6	dobj
-	# 10	.	.	.	O	6	punct
+# # ok: parse fixed
+# 1	In	in	IN	O	4	case
+# 2	his	he	PRP$	O	4	nmod:poss
+# 3	front	front	JJ	O	4	amod
+# 4	hallway	hallway	NN	O	6	nmod
+# 5	Sam	Sam	NNP	PERSON	6	nsubj
+# 6	put	put	VBD	O	0	ROOT
+# 7	a	a	DT	O	9	det
+# 8	big	big	JJ	O	9	amod
+# 9	vase	vase	NN	O	6	dobj
+# 10	.	.	.	O	6	punct
+	# # # original
+	# # 1	In	in	IN	O	5	case
+	# # 2	his	he	PRP$	O	5	nmod:poss
+	# # 3	front	front	JJ	O	5	amod
+	# # 4	hallway	hallway	NN	O	5	compound
+	# # 5	Sam	Sam	NNP	PERSON	6	nmod
+	# # 6	put	put	VBD	O	0	ROOT
+	# # 7	a	a	DT	O	9	det
+	# # 8	big	big	JJ	O	9	amod
+	# # 9	vase	vase	NN	O	6	dobj
+	# # 10	.	.	.	O	6	punct
 
 # # ok
 # 1	With	with	IN	O	5	case
@@ -1571,7 +1571,7 @@
 9	the	the	DT	O	10	det
 10	players	player	NNS	O	7	nmod
 11	to	to	TO	O	12	mark
-12	wear	wear	VB	O	7	acl
+12	wear	wear	VB	O	10	acl
 13	.	.	.	O	3	punct
 	# # original
 	# 1	The	the	DT	O	2	det
@@ -1588,12 +1588,12 @@
 	# 12	wear	wear	VB	O	7	acl
 	# 13	.	.	.	O	3	punct
 
-# CD => NP
-1	That	that	DT	O	2	det
-2	one	one	CD	NUMBER	0	ROOT
-3	I	I	PRP	O	5	nsubj
-4	would	would	MD	O	5	aux
-5	eat	eat	VB	O	2	acl:relcl
+# # ok
+# 1	That	that	DT	O	2	det
+# 2	one	one	CD	NUMBER	0	ROOT
+# 3	I	I	PRP	O	5	nsubj
+# 4	would	would	MD	O	5	aux
+# 5	eat	eat	VB	O	2	acl:relcl
 6	.	.	.	O	2	punct
 
 # parse fixed, p. 383: Sue > baked
@@ -3994,13 +3994,13 @@
 7	please	please	VB	O	3	xcomp
 8	.	.	.	O	3	punct
 
-
-1	The	the	DT	O	2	det
-2	dog	dog	NN	O	3	nsubj
-3	bit	bite	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	cat	cat	NN	O	3	dobj
-6	.	.	.	O	3	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	dog	dog	NN	O	3	nsubj
+# 3	bit	bite	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	cat	cat	NN	O	3	dobj
+# 6	.	.	.	O	3	punct
 
 
 1	Mary	Mary	NNP	PERSON	3	nsubj
