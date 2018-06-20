@@ -885,65 +885,65 @@
 # 11	time	time	NN	O	8	dobj
 # 12	?	?	.	O	8	punct
 
-# parse fixed, stranded to
-1	Near	near	IN	O	3	case
-2	the	the	DT	O	4	det
-3	girl	girl	NN	O	12	nmod
-4	John	John	NNP	PERSON	6	nsubj
-5	was	be	VBD	O	6	aux
-6	talking	talk	VBG	O	3	acl
-7	to	to	TO	O	6	nmod
-8	,	,	,	O	12	punct
-9	what	what	WP	O	12	dobj
-10	did	do	VBD	O	12	aux
-11	he	he	PRP	O	12	nsubj
-12	see	see	VB	O	0	ROOT
-13	?	?	.	O	6	punct
-	# # original
-	# 1	Near	near	IN	O	6	mark
-	# 2	the	the	DT	O	4	det
-	# 3	girl	girl	NN	O	4	compound
-	# 4	John	John	NNP	PERSON	6	nsubj
-	# 5	was	be	VBD	O	6	aux
-	# 6	talking	talk	VBG	O	0	ROOT
-	# 7	to	to	TO	O	12	mark
-	# 8	,	,	,	O	12	punct
-	# 9	what	what	WP	O	12	dobj
-	# 10	did	do	VBD	O	12	aux
-	# 11	he	he	PRP	O	12	nsubj
-	# 12	see	see	VB	O	6	xcomp
-	# 13	?	?	.	O	6	punct
+# # ok, parse fixed
+# 1	Near	near	IN	O	3	case
+# 2	the	the	DT	O	4	det
+# 3	girl	girl	NN	O	12	nmod
+# 4	John	John	NNP	PERSON	6	nsubj
+# 5	was	be	VBD	O	6	aux
+# 6	talking	talk	VBG	O	3	acl
+# 7	to	to	TO	O	6	nmod
+# 8	,	,	,	O	12	punct
+# 9	what	what	WP	O	12	dobj
+# 10	did	do	VBD	O	12	aux
+# 11	he	he	PRP	O	12	nsubj
+# 12	see	see	VB	O	0	ROOT
+# 13	?	?	.	O	6	punct
+	# # # original
+	# # 1	Near	near	IN	O	6	mark
+	# # 2	the	the	DT	O	4	det
+	# # 3	girl	girl	NN	O	4	compound
+	# # 4	John	John	NNP	PERSON	6	nsubj
+	# # 5	was	be	VBD	O	6	aux
+	# # 6	talking	talk	VBG	O	0	ROOT
+	# # 7	to	to	TO	O	12	mark
+	# # 8	,	,	,	O	12	punct
+	# # 9	what	what	WP	O	12	dobj
+	# # 10	did	do	VBD	O	12	aux
+	# # 11	he	he	PRP	O	12	nsubj
+	# # 12	see	see	VB	O	6	xcomp
+	# # 13	?	?	.	O	6	punct
 
-# parse fixed, stranded to
-1	Near	near	IN	O	3	case
-2	the	the	DT	O	4	det
-3	girl	girl	NN	O	11	nmod
-4	John	John	NNP	PERSON	6	nsubj
-5	was	be	VBD	O	6	aux
-6	talking	talk	VBG	O	3	acl
-7	to	to	TO	O	6	nmod
-8	,	,	,	O	11	punct
-9	did	do	VBD	O	11	aux
-10	he	he	PRP	O	11	nsubj
-11	see	see	VB	O	0	ROOT
-12	a	a	DT	O	13	det
-13	snake	snake	NN	O	11	dobj
-14	?	?	.	O	11	punct
-	# # original
-	# 1	Near	near	IN	O	6	mark
-	# 2	the	the	DT	O	4	det
-	# 3	girl	girl	NN	O	4	compound
-	# 4	John	John	NNP	PERSON	6	nsubj
-	# 5	was	be	VBD	O	6	aux
-	# 6	talking	talk	VBG	O	11	advcl
-	# 7	to	to	TO	O	6	xcomp
-	# 8	,	,	,	O	11	punct
-	# 9	did	do	VBD	O	11	aux
-	# 10	he	he	PRP	O	11	nsubj
-	# 11	see	see	VB	O	0	ROOT
-	# 12	a	a	DT	O	13	det
-	# 13	snake	snake	NN	O	11	dobj
-	# 14	?	?	.	O	11	punct
+# # ok, parse fixed
+# 1	Near	near	IN	O	3	case
+# 2	the	the	DT	O	4	det
+# 3	girl	girl	NN	O	11	nmod
+# 4	John	John	NNP	PERSON	6	nsubj
+# 5	was	be	VBD	O	6	aux
+# 6	talking	talk	VBG	O	3	acl
+# 7	to	to	TO	O	6	nmod
+# 8	,	,	,	O	11	punct
+# 9	did	do	VBD	O	11	aux
+# 10	he	he	PRP	O	11	nsubj
+# 11	see	see	VB	O	0	ROOT
+# 12	a	a	DT	O	13	det
+# 13	snake	snake	NN	O	11	dobj
+# 14	?	?	.	O	11	punct
+	# # # original
+	# # 1	Near	near	IN	O	6	mark
+	# # 2	the	the	DT	O	4	det
+	# # 3	girl	girl	NN	O	4	compound
+	# # 4	John	John	NNP	PERSON	6	nsubj
+	# # 5	was	be	VBD	O	6	aux
+	# # 6	talking	talk	VBG	O	11	advcl
+	# # 7	to	to	TO	O	6	xcomp
+	# # 8	,	,	,	O	11	punct
+	# # 9	did	do	VBD	O	11	aux
+	# # 10	he	he	PRP	O	11	nsubj
+	# # 11	see	see	VB	O	0	ROOT
+	# # 12	a	a	DT	O	13	det
+	# # 13	snake	snake	NN	O	11	dobj
+	# # 14	?	?	.	O	11	punct
 
 # # ok
 # 1	Near	near	IN	O	2	case
