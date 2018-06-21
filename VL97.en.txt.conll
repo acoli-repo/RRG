@@ -1478,7 +1478,7 @@
 # 7	repaired	repair	VBN	O	4	xcomp
 # 8	.	.	.	O	4	punct
 
-# # ok, parse fixed
+# # ok (away attached), parse fixed
 # 1	The	the	DT	O	2	det
 # 2	teacher	teacher	NN	O	3	nsubj
 # 3	sent	send	VBD	O	0	ROOT
@@ -1499,7 +1499,7 @@
 	# # 8	study	study	VB	O	3	xcomp
 	# # 9	.	.	.	O	3	punct
 
-# # ok
+# # ok (away attached), parse fixed
 # 1	The	the	DT	O	2	det
 # 2	pupils	pupil	NNS	O	4	nsubjpass
 # 3	were	be	VBD	O	4	auxpass
@@ -1523,6 +1523,7 @@
 11	.	.	.	O	5	punct
 
 # parse fixed
+# adjective phrases are beyond RRG 1997 ;) => ADJP in RRG 2005
 1	The	the	DT	O	4	det
 2	terminally	terminally	RB	O	3	advmod
 3	ill	ill	JJ	O	4	amod
@@ -1549,7 +1550,7 @@
 	# 11	die	die	VB	O	6	xcomp
 	# 12	.	.	.	O	6	punct
 
-# to => CLM?
+# to => CLM?, parse fixed
 1	The	the	DT	O	2	det
 2	company	company	NN	O	3	nsubj
 3	supplied	supply	VBD	O	0	ROOT
@@ -1558,10 +1559,22 @@
 6	with	with	IN	O	7	case
 7	uniforms	uniform	NNS	O	3	nmod
 8	to	to	TO	O	9	mark
-9	wear	wear	VB	O	3	advcl
+9	wear	wear	VB	O	7	acl
 10	.	.	.	O	3	punct
+	# # original
+	# 1	The	the	DT	O	2	det
+	# 2	company	company	NN	O	3	nsubj
+	# 3	supplied	supply	VBD	O	0	ROOT
+	# 4	the	the	DT	O	5	det
+	# 5	team	team	NN	O	3	dobj
+	# 6	with	with	IN	O	7	case
+	# 7	uniforms	uniform	NNS	O	3	nmod
+	# 8	to	to	TO	O	9	mark
+	# 9	wear	wear	VB	O	3	advcl
+	# 10	.	.	.	O	3	punct
 
-# parse fixed
+
+# attachment fail, parse fixed
 1	The	the	DT	O	2	det
 2	company	company	NN	O	3	nsubj
 3	supplied	supply	VBD	O	0	ROOT
@@ -1596,11 +1609,11 @@
 # 3	I	I	PRP	O	5	nsubj
 # 4	would	would	MD	O	5	aux
 # 5	eat	eat	VB	O	2	acl:relcl
-6	.	.	.	O	2	punct
+# 6	.	.	.	O	2	punct
 
-# parse fixed, p. 383: Sue > baked
+# parse fixed, p. 383: Sue > baked; lemma of baked fixed
 1	Larry	Larry	NNP	PERSON	2	nsubj
-2	baked	baked	VBD	O	0	ROOT
+2	baked	bake	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
 4	cake	cake	NN	O	2	dobj
 5	for	for	IN	O	6	case
@@ -1615,20 +1628,20 @@
 	# 6	Sue	sue	NN	O	4	nmod
 	# 7	.	.	.	O	2	punct
 
-# parse fixed: Stanford failure
-1	Larry	Larry	NNP	PERSON	2	nsubj
-2	baked	baked	VBD	O	0	ROOT
-3	Sue	sue	NN	O	2	iobj
-4	a	a	DT	O	5	det
-5	cake	cake	NN	O	2	dobj
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Larry	Larry	NNP	PERSON	3	compound
-	# 2	baked	baked	JJ	O	3	amod
-	# 3	Sue	sue	NN	O	0	ROOT
-	# 4	a	a	DT	O	5	det
-	# 5	cake	cake	NN	O	3	dep
-	# 6	.	.	.	O	3	punct
+# # ok; parse fixed: Stanford failure
+# 1	Larry	Larry	NNP	PERSON	2	nsubj
+# 2	baked	baked	VBD	O	0	ROOT
+# 3	Sue	sue	NN	O	2	iobj
+# 4	a	a	DT	O	5	det
+# 5	cake	cake	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Larry	Larry	NNP	PERSON	3	compound
+	# # 2	baked	baked	JJ	O	3	amod
+	# # 3	Sue	sue	NN	O	0	ROOT
+	# # 4	a	a	DT	O	5	det
+	# # 5	cake	cake	NN	O	3	dep
+	# # 6	.	.	.	O	3	punct
 
 # # ok
 # 1	Fred	Fred	NNP	PERSON	2	nsubj
@@ -1696,7 +1709,7 @@
 # parse fixed
 1	Sally	Sally	NNP	PERSON	2	nsubj
 2	taught	teach	VBD	O	0	ROOT
-3	basketweaving	basketweave	VBG	O	2	xcomp
+3	basketweaving	basketweave	VBG	O	2	dobj
 4	to	to	TO	O	5	case
 5	Pat	Pat	NNP	PERSON	2	nmod
 6	.	.	.	O	2	punct
@@ -1735,14 +1748,14 @@
 # 6	Kim	Kim	NNP	PERSON	2	nmod
 # 7	.	.	.	O	2	punct
 
-# arg!
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	drained	drain	VBD	O	0	ROOT
-3	water	water	NN	O	2	dobj
-4	from	from	IN	O	6	case
-5	the	the	DT	O	6	det
-6	pool	pool	NN	O	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	drained	drain	VBD	O	0	ROOT
+# 3	water	water	NN	O	2	dobj
+# 4	from	from	IN	O	6	case
+# 5	the	the	DT	O	6	det
+# 6	pool	pool	NN	O	2	nmod
+# 7	.	.	.	O	2	punct
 
 # # ok
 # 1	Kim	Kim	NNP	PERSON	2	nsubj
@@ -1772,26 +1785,26 @@
 # 6	presents	present	NNS	O	2	nmod
 # 7	.	.	.	O	2	punct
 
-# parse fixed
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	went	go	VBD	O	0	ROOT
-3	to	to	TO	O	5	case
-4	the	the	DT	O	5	det
-5	concert	concert	NN	O	2	nmod
-6	with	with	IN	O	7	case
-7	Pat	Pat	NNP	PERSON	2	nmod
-8	.	.	.	O	2	punct
-	# # original
-	# 1	Robin	Robin	NNP	PERSON	2	nsubj
-	# 2	went	go	VBD	O	0	ROOT
-	# 3	to	to	TO	O	5	case
-	# 4	the	the	DT	O	5	det
-	# 5	concert	concert	NN	O	2	nmod
-	# 6	with	with	IN	O	7	case
-	# 7	Pat	Pat	NNP	PERSON	5	nmod
-	# 8	.	.	.	O	2	punct
+# # ok; parse fixed
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	went	go	VBD	O	0	ROOT
+# 3	to	to	TO	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	concert	concert	NN	O	2	nmod
+# 6	with	with	IN	O	7	case
+# 7	Pat	Pat	NNP	PERSON	2	nmod
+# 8	.	.	.	O	2	punct
+	# # # original
+	# # 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# # 2	went	go	VBD	O	0	ROOT
+	# # 3	to	to	TO	O	5	case
+	# # 4	the	the	DT	O	5	det
+	# # 5	concert	concert	NN	O	2	nmod
+	# # 6	with	with	IN	O	7	case
+	# # 7	Pat	Pat	NNP	PERSON	5	nmod
+	# # 8	.	.	.	O	2	punct
 
-
+# PP attachment fixed
 1	The	the	DT	O	2	det
 2	woman	woman	NN	O	6	nsubj
 3	with	with	IN	O	5	case
@@ -1804,113 +1817,132 @@
 10	hay	hay	NN	O	6	nmod
 11	with	with	IN	O	13	case
 12	a	a	DT	O	13	det
-13	pitchfork	pitchfork	NN	O	10	nmod
+13	pitchfork	pitchfork	NN	O	6	nmod
 14	with	with	IN	O	15	case
-15	Bill	Bill	NNP	PERSON	13	nmod
+15	Bill	Bill	NNP	PERSON	6	nmod
 16	with	with	IN	O	17	case
-17	enthusiasm	enthusiasm	NN	O	13	nmod
+17	enthusiasm	enthusiasm	NN	O	6	nmod
 18	.	.	.	O	6	punct
+	# # original
+	# 1	The	the	DT	O	2	det
+	# 2	woman	woman	NN	O	6	nsubj
+	# 3	with	with	IN	O	5	case
+	# 4	strong	strong	JJ	O	5	amod
+	# 5	arms	arm	NNS	O	2	nmod
+	# 6	loaded	load	VBD	O	0	ROOT
+	# 7	the	the	DT	O	8	det
+	# 8	truck	truck	NN	O	6	dobj
+	# 9	with	with	IN	O	10	case
+	# 10	hay	hay	NN	O	6	nmod
+	# 11	with	with	IN	O	13	case
+	# 12	a	a	DT	O	13	det
+	# 13	pitchfork	pitchfork	NN	O	10	nmod
+	# 14	with	with	IN	O	15	case
+	# 15	Bill	Bill	NNP	PERSON	13	nmod
+	# 16	with	with	IN	O	17	case
+	# 17	enthusiasm	enthusiasm	NN	O	13	nmod
+	# 18	.	.	.	O	6	punct
 
+# # ok
+# 1	Tom	Tom	NNP	PERSON	2	nsubj
+# 2	cut	cut	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	bread	bread	NN	O	2	dobj
+# 5	with	with	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	knife	knife	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
-1	Tom	Tom	NNP	PERSON	2	nsubj
-2	cut	cut	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	bread	bread	NN	O	2	dobj
-5	with	with	IN	O	7	case
-6	the	the	DT	O	7	det
-7	knife	knife	NN	O	2	nmod
-8	.	.	.	O	2	punct
+# # ok
+# 1	Abdul	Abdul	NNP	PERSON	2	nsubj
+# 2	ate	eat	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	cereal	cereal	NN	O	2	dobj
+# 5	with	with	IN	O	7	case
+# 6	a	a	DT	O	7	det
+# 7	spoon	spoon	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
+# # ok
+# 1	Tanisha	Tanisha	NNP	PERSON	2	nsubj
+# 2	looked	look	VBD	O	0	ROOT
+# 3	at	at	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	comet	comet	NN	O	2	nmod
+# 6	with	with	IN	O	8	case
+# 7	a	a	DT	O	8	det
+# 8	telescope	telescope	NN	O	2	nmod
+# 9	.	.	.	O	2	punct
 
-1	Abdul	Abdul	NNP	PERSON	2	nsubj
-2	ate	eat	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	cereal	cereal	NN	O	2	dobj
-5	with	with	IN	O	7	case
-6	a	a	DT	O	7	det
-7	spoon	spoon	NN	O	2	nmod
-8	.	.	.	O	2	punct
+# # ok
+# 1	The	the	DT	O	3	det
+# 2	mechanized	mechanized	JJ	O	3	amod
+# 3	pitchfork	pitchfork	NN	O	4	nsubj
+# 4	loaded	load	VBD	O	0	ROOT
+# 5	the	the	DT	O	6	det
+# 6	truck	truck	NN	O	4	dobj
+# 7	with	with	IN	O	8	case
+# 8	hay	hay	NN	O	4	nmod
+# 9	.	.	.	O	4	punct
 
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 2	and	and	CC	O	1	cc
+# 3	Kim	Kim	NNP	PERSON	1	conj
+# 4	loaded	load	VBD	O	0	ROOT
+# 5	hay	hay	NN	O	4	dobj
+# 6	on	on	IN	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	truck	truck	NN	O	4	nmod
+# 9	.	.	.	O	4	punct
 
-1	Tanisha	Tanisha	NNP	PERSON	2	nsubj
-2	looked	look	VBD	O	0	ROOT
-3	at	at	IN	O	5	case
-4	the	the	DT	O	5	det
-5	comet	comet	NN	O	2	nmod
-6	with	with	IN	O	8	case
-7	a	a	DT	O	8	det
-8	telescope	telescope	NN	O	2	nmod
-9	.	.	.	O	2	punct
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	loaded	load	VBD	O	0	ROOT
+# 3	hay	hay	NN	O	2	dobj
+# 4	on	on	IN	O	6	case
+# 5	the	the	DT	O	6	det
+# 6	truck	truck	NN	O	2	nmod
+# 7	with	with	IN	O	8	case
+# 8	Kim	Kim	NNP	PERSON	2	nmod
+# 9	.	.	.	O	2	punct
 
+# # ok
+# 1	Kim	Kim	NNP	PERSON	2	nsubj
+# 2	loaded	load	VBD	O	0	ROOT
+# 3	hay	hay	NN	O	2	dobj
+# 4	on	on	IN	O	6	case
+# 5	the	the	DT	O	6	det
+# 6	truck	truck	NN	O	2	nmod
+# 7	with	with	IN	O	8	case
+# 8	Sandy	Sandy	NNP	PERSON	2	nmod
+# 9	.	.	.	O	2	punct
 
-1	The	the	DT	O	3	det
-2	mechanized	mechanized	JJ	O	3	amod
-3	pitchfork	pitchfork	NN	O	4	nsubj
-4	loaded	load	VBD	O	0	ROOT
-5	the	the	DT	O	6	det
-6	truck	truck	NN	O	4	dobj
-7	with	with	IN	O	8	case
-8	hay	hay	NN	O	4	nmod
-9	.	.	.	O	4	punct
+# # ok
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	served	serve	VBD	O	0	ROOT
+# 3	wine	wine	NN	O	2	dobj
+# 4	and	and	CC	O	3	cc
+# 5	cheese	cheese	NN	O	3	conj
+# 6	.	.	.	O	2	punct
 
+# # ok
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	served	serve	VBD	O	0	ROOT
+# 3	wine	wine	NN	O	2	dobj
+# 4	with	with	IN	O	5	case
+# 5	cheese	cheese	NN	O	2	nmod
+# 6	.	.	.	O	2	punct
 
-1	Sandy	Sandy	NNP	PERSON	4	nsubj
-2	and	and	CC	O	1	cc
-3	Kim	Kim	NNP	PERSON	1	conj
-4	loaded	load	VBD	O	0	ROOT
-5	hay	hay	NN	O	4	dobj
-6	on	on	IN	O	8	case
-7	the	the	DT	O	8	det
-8	truck	truck	NN	O	4	nmod
-9	.	.	.	O	4	punct
+# # ok
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	served	serve	VBD	O	0	ROOT
+# 3	cheese	cheese	NN	O	2	dobj
+# 4	with	with	IN	O	5	case
+# 5	wine	wine	NN	O	2	nmod
+# 6	.	.	.	O	2	punct
 
-
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	loaded	load	VBD	O	0	ROOT
-3	hay	hay	NN	O	2	dobj
-4	on	on	IN	O	6	case
-5	the	the	DT	O	6	det
-6	truck	truck	NN	O	2	nmod
-7	with	with	IN	O	8	case
-8	Kim	Kim	NNP	PERSON	2	nmod
-9	.	.	.	O	2	punct
-
-
-1	Kim	Kim	NNP	PERSON	2	nsubj
-2	loaded	load	VBD	O	0	ROOT
-3	hay	hay	NN	O	2	dobj
-4	on	on	IN	O	6	case
-5	the	the	DT	O	6	det
-6	truck	truck	NN	O	2	nmod
-7	with	with	IN	O	8	case
-8	Sandy	Sandy	NNP	PERSON	2	nmod
-9	.	.	.	O	2	punct
-
-
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	served	serve	VBD	O	0	ROOT
-3	wine	wine	NN	O	2	dobj
-4	and	and	CC	O	3	cc
-5	cheese	cheese	NN	O	3	conj
-6	.	.	.	O	2	punct
-
-
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	served	serve	VBD	O	0	ROOT
-3	wine	wine	NN	O	2	dobj
-4	with	with	IN	O	5	case
-5	cheese	cheese	NN	O	2	nmod
-6	.	.	.	O	2	punct
-
-
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	served	serve	VBD	O	0	ROOT
-3	cheese	cheese	NN	O	2	dobj
-4	with	with	IN	O	5	case
-5	wine	wine	NN	O	2	nmod
-6	.	.	.	O	2	punct
-
-
+# parse fixed (attachment [and number agreement in original sentence)
 1	Bill	Bill	NNP	PERSON	8	nsubj
 2	and	and	CC	O	1	cc
 3	the	the	DT	O	4	det
@@ -1923,31 +1955,49 @@
 10	truck	truck	NN	O	8	dobj
 11	with	with	IN	O	12	case
 12	hay	hay	NN	O	8	nmod
-13	with	with	IN	O	15	case
-14	a	a	DT	O	15	det
-15	pitchfork	pitchfork	NN	O	12	nmod
-16	with	with	IN	O	17	case
-17	enthusiasm	enthusiasm	NN	O	15	nmod
-18	.	.	.	O	8	punct
+13	with	with	IN	O	14	case
+14	pitchforks	pitchfork	NNS	O	8	nmod
+15	with	with	IN	O	16	case
+16	enthusiasm	enthusiasm	NN	O	8	nmod
+17	.	.	.	O	8	punct
+	# # original
+	# 1	Bill	Bill	NNP	PERSON	8	nsubj
+	# 2	and	and	CC	O	1	cc
+	# 3	the	the	DT	O	4	det
+	# 4	woman	woman	NN	O	1	conj
+	# 5	with	with	IN	O	7	case
+	# 6	strong	strong	JJ	O	7	amod
+	# 7	arms	arm	NNS	O	4	nmod
+	# 8	loaded	load	VBD	O	0	ROOT
+	# 9	the	the	DT	O	10	det
+	# 10	truck	truck	NN	O	8	dobj
+	# 11	with	with	IN	O	12	case
+	# 12	hay	hay	NN	O	8	nmod
+	# 13	with	with	IN	O	15	case
+	# 14	a	a	DT	O	15	det
+	# 15	pitchfork	pitchfork	NN	O	12	nmod
+	# 16	with	with	IN	O	17	case
+	# 17	enthusiasm	enthusiasm	NN	O	15	nmod
+	# 18	.	.	.	O	8	punct
 
+# # ok
+# 1	Lucy	Lucy	NNP	PERSON	2	nsubj
+# 2	longs	long	VBZ	O	0	ROOT
+# 3	for	for	IN	O	6	case
+# 4	a	a	DT	O	6	det
+# 5	diamond	diamond	NN	O	6	compound
+# 6	ring	ring	NN	O	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Lucy	Lucy	NNP	PERSON	2	nsubj
-2	longs	long	VBZ	O	0	ROOT
-3	for	for	IN	O	6	case
-4	a	a	DT	O	6	det
-5	diamond	diamond	NN	O	6	compound
-6	ring	ring	NN	O	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Rita	Rita	NNP	PERSON	2	nsubj
+# 2	sang	sing	VBD	O	0	ROOT
+# 3	for	for	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	students	student	NNS	O	2	nmod
+# 6	.	.	.	O	2	punct
 
-
-1	Rita	Rita	NNP	PERSON	2	nsubj
-2	sang	sing	VBD	O	0	ROOT
-3	for	for	IN	O	5	case
-4	the	the	DT	O	5	det
-5	students	student	NNS	O	2	nmod
-6	.	.	.	O	2	punct
-
-
+# parse fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	baked	baked	JJ	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -1959,9 +2009,24 @@
 9	her	she	PRP$	O	8	dobj
 10	she	she	PRP	O	12	nsubj
 11	could	could	MD	O	12	aux
-12	do	do	VB	O	9	acl:relcl
+12	do	do	VB	O	8	ccomp
 13	it	it	PRP	O	12	dobj
 14	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	baked	baked	JJ	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	cake	cake	NN	O	2	dobj
+	# 5	for	for	IN	O	8	mark
+	# 6	Sandy	Sandy	NNP	PERSON	8	nsubj
+	# 7	to	to	TO	O	8	mark
+	# 8	show	show	VB	O	4	acl
+	# 9	her	she	PRP$	O	8	dobj
+	# 10	she	she	PRP	O	12	nsubj
+	# 11	could	could	MD	O	12	aux
+	# 12	do	do	VB	O	9	acl:relcl
+	# 13	it	it	PRP	O	12	dobj
+	# 14	.	.	.	O	2	punct
 
 
 1	Robin	Robin	NNP	PERSON	2	nsubj
