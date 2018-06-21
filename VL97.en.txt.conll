@@ -1804,45 +1804,44 @@
 	# # 7	Pat	Pat	NNP	PERSON	5	nmod
 	# # 8	.	.	.	O	2	punct
 
-# PrCS failed
-# PP attachment fixed
-1	The	the	DT	O	2	det
-2	woman	woman	NN	O	6	nsubj
-3	with	with	IN	O	5	case
-4	strong	strong	JJ	O	5	amod
-5	arms	arm	NNS	O	2	nmod
-6	loaded	load	VBD	O	0	ROOT
-7	the	the	DT	O	8	det
-8	truck	truck	NN	O	6	dobj
-9	with	with	IN	O	10	case
-10	hay	hay	NN	O	6	nmod
-11	with	with	IN	O	13	case
-12	a	a	DT	O	13	det
-13	pitchfork	pitchfork	NN	O	6	nmod
-14	with	with	IN	O	15	case
-15	Bill	Bill	NNP	PERSON	6	nmod
-16	with	with	IN	O	17	case
-17	enthusiasm	enthusiasm	NN	O	6	nmod
-18	.	.	.	O	6	punct
-	# # original
-	# 1	The	the	DT	O	2	det
-	# 2	woman	woman	NN	O	6	nsubj
-	# 3	with	with	IN	O	5	case
-	# 4	strong	strong	JJ	O	5	amod
-	# 5	arms	arm	NNS	O	2	nmod
-	# 6	loaded	load	VBD	O	0	ROOT
-	# 7	the	the	DT	O	8	det
-	# 8	truck	truck	NN	O	6	dobj
-	# 9	with	with	IN	O	10	case
-	# 10	hay	hay	NN	O	6	nmod
-	# 11	with	with	IN	O	13	case
-	# 12	a	a	DT	O	13	det
-	# 13	pitchfork	pitchfork	NN	O	10	nmod
-	# 14	with	with	IN	O	15	case
-	# 15	Bill	Bill	NNP	PERSON	13	nmod
-	# 16	with	with	IN	O	17	case
-	# 17	enthusiasm	enthusiasm	NN	O	13	nmod
-	# 18	.	.	.	O	6	punct
+# # ok, PP attachment fixed
+# 1	The	the	DT	O	2	det
+# 2	woman	woman	NN	O	6	nsubj
+# 3	with	with	IN	O	5	case
+# 4	strong	strong	JJ	O	5	amod
+# 5	arms	arm	NNS	O	2	nmod
+# 6	loaded	load	VBD	O	0	ROOT
+# 7	the	the	DT	O	8	det
+# 8	truck	truck	NN	O	6	dobj
+# 9	with	with	IN	O	10	case
+# 10	hay	hay	NN	O	6	nmod
+# 11	with	with	IN	O	13	case
+# 12	a	a	DT	O	13	det
+# 13	pitchfork	pitchfork	NN	O	6	nmod
+# 14	with	with	IN	O	15	case
+# 15	Bill	Bill	NNP	PERSON	6	nmod
+# 16	with	with	IN	O	17	case
+# 17	enthusiasm	enthusiasm	NN	O	6	nmod
+# 18	.	.	.	O	6	punct
+	# # # original
+	# # 1	The	the	DT	O	2	det
+	# # 2	woman	woman	NN	O	6	nsubj
+	# # 3	with	with	IN	O	5	case
+	# # 4	strong	strong	JJ	O	5	amod
+	# # 5	arms	arm	NNS	O	2	nmod
+	# # 6	loaded	load	VBD	O	0	ROOT
+	# # 7	the	the	DT	O	8	det
+	# # 8	truck	truck	NN	O	6	dobj
+	# # 9	with	with	IN	O	10	case
+	# # 10	hay	hay	NN	O	6	nmod
+	# # 11	with	with	IN	O	13	case
+	# # 12	a	a	DT	O	13	det
+	# # 13	pitchfork	pitchfork	NN	O	10	nmod
+	# # 14	with	with	IN	O	15	case
+	# # 15	Bill	Bill	NNP	PERSON	13	nmod
+	# # 16	with	with	IN	O	17	case
+	# # 17	enthusiasm	enthusiasm	NN	O	13	nmod
+	# # 18	.	.	.	O	6	punct
 
 # # ok
 # 1	Tom	Tom	NNP	PERSON	2	nsubj
@@ -1998,6 +1997,7 @@
 # 5	students	student	NNS	O	2	nmod
 # 6	.	.	.	O	2	punct
 
+# dobj attachment
 # parse fixed, her/PRP$ => her/PRP
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	baked	baked	JJ	O	0	ROOT
@@ -2037,7 +2037,7 @@
 5	for	for	IN	O	8	case
 6	Sandy	Sandy	NNP	PERSON	2	nmod
 7	to	to	TO	O	8	mark
-8	amuse	amuse	VB	O	2	xcomp
+8	amuse	amuse	VB	O	2	advcl
 9	her	she	PRP	O	8	dobj
 10	.	.	.	O	2	punct
 	# # original
@@ -2052,7 +2052,7 @@
 	# 9	her	she	PRP	O	8	dobj
 	# 10	.	.	.	O	2	punct
 
-# to is a stranded complementizer, how to represent that?
+# to is a stranded complementizer, this representation is analoguos to that
 # probably not a NUC coordination !
 # lemmatization/POS of baked fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
@@ -2085,37 +2085,37 @@
 	# 13	to	to	TO	O	12	xcomp
 	# 14	.	.	.	O	2	punct
 
-# attach currency symbol
-1	The	the	DT	O	2	det
-2	thief	thief	NN	O	3	nsubj
-3	stole	steal	VBD	O	0	ROOT
-4	$	$	$	MONEY	5	dep
-5	5,000	5,000	CD	MONEY	3	dobj
-6	from	from	IN	O	8	case
-7	the	the	DT	O	8	det
-8	store	store	NN	O	3	nmod
-9	.	.	.	O	3	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	thief	thief	NN	O	3	nsubj
+# 3	stole	steal	VBD	O	0	ROOT
+# 4	$	$	$	MONEY	5	dep
+# 5	5,000	5,000	CD	MONEY	3	dobj
+# 6	from	from	IN	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	store	store	NN	O	3	nmod
+# 9	.	.	.	O	3	punct
 
-# parse fixed, attachment error
-1	The	the	DT	O	2	det
-2	thief	thief	NN	O	3	nsubj
-3	robbed	rob	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	store	store	NN	O	3	dobj
-6	of	of	IN	O	8	case
-7	$	$	$	MONEY	8	dep
-8	5,000	5,000	CD	MONEY	3	nmod
-9	.	.	.	O	3	punct
-	# # original
-	# 1	The	the	DT	O	2	det
-	# 2	thief	thief	NN	O	3	nsubj
-	# 3	robbed	rob	VBD	O	0	ROOT
-	# 4	the	the	DT	O	5	det
-	# 5	store	store	NN	O	3	dobj
-	# 6	of	of	IN	O	8	case
-	# 7	$	$	$	MONEY	8	dep
-	# 8	5,000	5,000	CD	MONEY	5	nmod
-	# 9	.	.	.	O	3	punct
+# # ok, parse fixed, attachment error
+# 1	The	the	DT	O	2	det
+# 2	thief	thief	NN	O	3	nsubj
+# 3	robbed	rob	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	store	store	NN	O	3	dobj
+# 6	of	of	IN	O	8	case
+# 7	$	$	$	MONEY	8	dep
+# 8	5,000	5,000	CD	MONEY	3	nmod
+# 9	.	.	.	O	3	punct
+	# # # original
+	# # 1	The	the	DT	O	2	det
+	# # 2	thief	thief	NN	O	3	nsubj
+	# # 3	robbed	rob	VBD	O	0	ROOT
+	# # 4	the	the	DT	O	5	det
+	# # 5	store	store	NN	O	3	dobj
+	# # 6	of	of	IN	O	8	case
+	# # 7	$	$	$	MONEY	8	dep
+	# # 8	5,000	5,000	CD	MONEY	5	nmod
+	# # 9	.	.	.	O	3	punct
 
 # # ok
 # 1	Sally	Sally	NNP	PERSON	2	nsubj
@@ -2154,22 +2154,22 @@
 # 7	herself	herself	PRP	O	3	nmod
 # 8	.	.	.	O	3	punct
 
-# parse fixed (attachment error)
-1	Barbara	Barbara	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	snake	snake	NN	O	2	dobj
-5	near	near	IN	O	6	case
-6	her	she	PRP	O	2	nmod
-7	.	.	.	O	2	punct
-	# # original
-	# 1	Barbara	Barbara	NNP	PERSON	2	nsubj
-	# 2	saw	see	VBD	O	0	ROOT
-	# 3	a	a	DT	O	4	det
-	# 4	snake	snake	NN	O	2	dobj
-	# 5	near	near	IN	O	6	case
-	# 6	her	she	PRP	O	4	nmod
-	# 7	.	.	.	O	2	punct
+# # ok, parse fixed (attachment error)
+# 1	Barbara	Barbara	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	snake	snake	NN	O	2	dobj
+# 5	near	near	IN	O	6	case
+# 6	her	she	PRP	O	2	nmod
+# 7	.	.	.	O	2	punct
+	# # # original
+	# # 1	Barbara	Barbara	NNP	PERSON	2	nsubj
+	# # 2	saw	see	VBD	O	0	ROOT
+	# # 3	a	a	DT	O	4	det
+	# # 4	snake	snake	NN	O	2	dobj
+	# # 5	near	near	IN	O	6	case
+	# # 6	her	she	PRP	O	4	nmod
+	# # 7	.	.	.	O	2	punct
 
 # # ok
 # 1	Pamela	Pamela	NNP	PERSON	2	nsubj
@@ -2244,6 +2244,7 @@
 # 5	himself	himself	PRP	O	2	nmod:npmod
 # 6	.	.	.	O	2	punct
 
+# attach dobj
 # parse fixed (dep)
 1	The	the	DT	O	2	det
 2	photo	photo	NN	O	8	nsubj
@@ -2300,16 +2301,16 @@
 # 7	herself	herself	PRP	O	5	nmod
 # 8	.	.	.	O	3	punct
 
-# PrCS missing
-1	Molly	Molly	NNP	PERSON	2	nsubj
-2	bought	buy	VBD	O	0	ROOT
-3	nothing	nothing	NN	O	2	dobj
-4	for	for	IN	O	5	case
-5	herself	herself	PRP	O	2	nmod
-6	.	.	.	O	2	punct
+# # ok
+# 1	Molly	Molly	NNP	PERSON	2	nsubj
+# 2	bought	buy	VBD	O	0	ROOT
+# 3	nothing	nothing	NN	O	2	dobj
+# 4	for	for	IN	O	5	case
+# 5	herself	herself	PRP	O	2	nmod
+# 6	.	.	.	O	2	punct
 
 # parse fixed (dep)
-1	For	for	IN	O	4	case
+1	For	for	IN	O	2	case
 2	herself	herself	PRP	O	4	nmod
 3	Molly	Molly	NNP	PERSON	4	nsubj
 4	bought	buy	VBD	O	0	ROOT
@@ -2323,18 +2324,18 @@
 	# 5	nothing	nothing	NN	O	4	dobj
 	# 6	.	.	.	O	4	punct
 
-# parataxis
-1	Jim	Jim	NNP	PERSON	2	nsubj
-2	likes	like	VBZ	O	0	ROOT
-3	himself	himself	PRP	O	2	dobj
-4	;	;	:	O	2	punct
-5	he	he	PRP	O	8	nsubj
-6	ca	can	MD	O	8	aux
-7	n't	not	RB	O	8	neg
-8	stand	stand	VB	O	2	parataxis
-9	other	other	JJ	O	10	amod
-10	people	people	NNS	O	8	dobj
-11	.	.	.	O	2	punct
+# # ok (parataxis)
+# 1	Jim	Jim	NNP	PERSON	2	nsubj
+# 2	likes	like	VBZ	O	0	ROOT
+# 3	himself	himself	PRP	O	2	dobj
+# 4	;	;	:	O	2	punct
+# 5	he	he	PRP	O	8	nsubj
+# 6	ca	can	MD	O	8	aux
+# 7	n't	not	RB	O	8	neg
+# 8	stand	stand	VB	O	2	parataxis
+# 9	other	other	JJ	O	10	amod
+# 10	people	people	NNS	O	8	dobj
+# 11	.	.	.	O	2	punct
 
 # stand must modify people in nominal periphery
 # negation fixed
@@ -2352,30 +2353,30 @@
 12	stand	stand	NN	O	8	acl:relcl
 13	.	.	.	O	1	punct
 
+# # ok
+# 1	Dana	Dana	NNP	PERSON	2	nsubj
+# 2	went	go	VBD	O	0	ROOT
+# 3	to	to	TO	O	4	case
+# 4	Toronto	Toronto	NNP	LOCATION	2	nmod
+# 5	yesterday	yesterday	NN	DATE	2	nmod:tmod
+# 6	.	.	.	O	2	punct
 
-1	Dana	Dana	NNP	PERSON	2	nsubj
-2	went	go	VBD	O	0	ROOT
-3	to	to	TO	O	4	case
-4	Toronto	Toronto	NNP	LOCATION	2	nmod
-5	yesterday	yesterday	NN	DATE	2	nmod:tmod
-6	.	.	.	O	2	punct
+# # ok
+# 1	Yesterday	yesterday	NN	DATE	4	nmod:tmod
+# 2	,	,	,	O	4	punct
+# 3	Dana	Dana	NNP	PERSON	4	nsubj
+# 4	went	go	VBD	O	0	ROOT
+# 5	to	to	TO	O	6	case
+# 6	Toronto	Toronto	NNP	LOCATION	4	nmod
+# 7	and	and	CC	O	4	cc
+# 8	did	do	VBD	O	4	conj
+# 9	a	a	DT	O	10	det
+# 10	lot	lot	NN	O	8	dobj
+# 11	of	of	IN	O	12	case
+# 12	shopping	shopping	NN	O	10	nmod
+# 13	.	.	.	O	4	punct
 
-
-1	Yesterday	yesterday	NN	DATE	4	nmod:tmod
-2	,	,	,	O	4	punct
-3	Dana	Dana	NNP	PERSON	4	nsubj
-4	went	go	VBD	O	0	ROOT
-5	to	to	TO	O	6	case
-6	Toronto	Toronto	NNP	LOCATION	4	nmod
-7	and	and	CC	O	4	cc
-8	did	do	VBD	O	4	conj
-9	a	a	DT	O	10	det
-10	lot	lot	NN	O	8	dobj
-11	of	of	IN	O	12	case
-12	shopping	shopping	NN	O	10	nmod
-13	.	.	.	O	4	punct
-
-
+# no tiger
 1	Dana	Dana	NNP	PERSON	2	nsubj
 2	went	go	VBD	O	0	ROOT
 3	to	to	TO	O	4	case
@@ -2391,99 +2392,124 @@
 13	Montreal	Montreal	NNP	LOCATION	11	nmod
 14	.	.	.	O	2	punct
 
+# # ok
+# 1	When	when	WRB	O	4	advmod
+# 2	is	be	VBZ	O	4	aux
+# 3	Dana	Dana	NNP	PERSON	4	nsubj
+# 4	going	go	VBG	O	0	ROOT
+# 5	to	to	TO	O	6	case
+# 6	Montreal	Montreal	NNP	LOCATION	4	nmod
+# 7	?	?	.	O	4	punct
 
-1	When	when	WRB	O	4	advmod
-2	is	be	VBZ	O	4	aux
-3	Dana	Dana	NNP	PERSON	4	nsubj
-4	going	go	VBG	O	0	ROOT
-5	to	to	TO	O	6	case
-6	Montreal	Montreal	NNP	LOCATION	4	nmod
-7	?	?	.	O	4	punct
-
-
+# parse fixed: incorrect compound
 1	Where	where	WRB	O	4	advmod
 2	is	be	VBZ	O	4	aux
 3	Dana	Dana	NNP	PERSON	4	nsubj
 4	going	go	VBG	O	0	ROOT
-5	shopping	shopping	NN	O	6	compound
+5	shopping	shopping	NN	O	4	dobj
 6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
 7	?	?	.	O	4	punct
+	# # orig
+	# 1	Where	where	WRB	O	4	advmod
+	# 2	is	be	VBZ	O	4	aux
+	# 3	Dana	Dana	NNP	PERSON	4	nsubj
+	# 4	going	go	VBG	O	0	ROOT
+	# 5	shopping	shopping	NN	O	6	compound
+	# 6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
+	# 7	?	?	.	O	4	punct
 
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	forced	force	VBD	O	0	ROOT
+# 3	open	open	JJ	O	5	amod
+# 4	the	the	DT	O	5	det
+# 5	door	door	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
 
-1	John	John	NNP	PERSON	2	nsubj
-2	forced	force	VBD	O	0	ROOT
-3	open	open	JJ	O	5	amod
-4	the	the	DT	O	5	det
-5	door	door	NN	O	2	dobj
-6	.	.	.	O	2	punct
-
-
+# parse fixed, must be nuclear juncture
 1	John	John	NNP	PERSON	2	nsubj
 2	forced	force	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
-4	door	door	NN	O	5	nsubj
-5	open	open	JJ	O	2	xcomp
+4	door	door	NN	O	2	dobj
+5	open	open	JJ	O	2	amod
 6	.	.	.	O	2	punct
+	# # original
+	# 1	John	John	NNP	PERSON	2	nsubj
+	# 2	forced	force	VBD	O	0	ROOT
+	# 3	the	the	DT	O	4	det
+	# 4	door	door	NN	O	5	nsubj
+	# 5	open	open	JJ	O	2	xcomp
+	# 6	.	.	.	O	2	punct
 
+# # ok
+# 1	Bill	Bill	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	open	open	JJ	O	5	amod
+# 4	the	the	DT	O	5	det
+# 5	door	door	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
 
-1	Bill	Bill	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	open	open	JJ	O	5	amod
-4	the	the	DT	O	5	det
-5	door	door	NN	O	2	dobj
-6	.	.	.	O	2	punct
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	broke	break	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	vase	vase	NN	O	2	dobj
+# 5	.	.	.	O	2	punct
 
-
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	broke	break	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	vase	vase	NN	O	2	dobj
-5	.	.	.	O	2	punct
-
-
+# parse fixed, must be nuclear junction
 1	I	I	PRP	O	2	nsubj
 2	ordered	order	VBD	O	0	ROOT
 3	Fred	Fred	NNP	PERSON	2	dobj
 4	to	to	TO	O	5	mark
 5	force	force	VB	O	2	xcomp
 6	the	the	DT	O	7	det
-7	door	door	NN	O	8	nsubj
-8	open	open	JJ	O	5	xcomp
+7	door	door	NN	O	5	dobj
+8	open	open	JJ	O	5	amod
 9	.	.	.	O	2	punct
+	# # original
+	# 1	I	I	PRP	O	2	nsubj
+	# 2	ordered	order	VBD	O	0	ROOT
+	# 3	Fred	Fred	NNP	PERSON	2	dobj
+	# 4	to	to	TO	O	5	mark
+	# 5	force	force	VB	O	2	xcomp
+	# 6	the	the	DT	O	7	det
+	# 7	door	door	NN	O	8	nsubj
+	# 8	open	open	JJ	O	5	xcomp
+	# 9	.	.	.	O	2	punct
 
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	forced	force	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	door	door	NN	O	2	dobj
+# 5	to	to	TO	O	6	mark
+# 6	open	open	VB	O	2	xcomp
+# 7	.	.	.	O	2	punct
 
-1	John	John	NNP	PERSON	2	nsubj
-2	forced	force	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	door	door	NN	O	2	dobj
-5	to	to	TO	O	6	mark
-6	open	open	VB	O	2	xcomp
-7	.	.	.	O	2	punct
+# # ok
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	persuaded	persuade	VBD	O	0	ROOT
+# 3	Sally	Sally	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	leave	leave	VB	O	2	xcomp
+# 6	.	.	.	O	2	punct
 
-
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	persuaded	persuade	VBD	O	0	ROOT
-3	Sally	Sally	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	leave	leave	VB	O	2	xcomp
-6	.	.	.	O	2	punct
-
-
+# should be core juncture, here: redundant subordinate clause node
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	made	make	VBD	O	0	ROOT
 3	Sally	Sally	NNP	PERSON	4	nsubj
 4	leave	leave	VB	O	2	ccomp
 5	.	.	.	O	2	punct
 
+# # ok?
+# 1	Bill	Bill	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	door	door	NN	O	5	nsubj
+# 5	open	open	JJ	O	2	xcomp
+# 6	.	.	.	O	2	punct
 
-1	Bill	Bill	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	door	door	NN	O	5	nsubj
-5	open	open	JJ	O	2	xcomp
-6	.	.	.	O	2	punct
-
-
+# should be core junction, here: clausal subordinatinh, instead
 1	Bill	Bill	NNP	PERSON	2	nsubj
 2	pushed	push	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -2491,119 +2517,155 @@
 5	closed	close	VBD	O	2	ccomp
 6	.	.	.	O	2	punct
 
+# # ok?
+# 1	Bill	Bill	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	the	the	DT	O	5	det
+# 4	heavy	heavy	JJ	O	5	amod
+# 5	door	door	NN	O	2	dobj
+# 6	that	that	WDT	O	10	nsubjpass
+# 7	had	have	VBD	O	10	aux
+# 8	just	just	RB	O	10	advmod
+# 9	been	be	VBN	O	10	auxpass
+# 10	repainted	repaint	VBN	O	5	acl:relcl
+# 11	after	after	IN	O	13	case
+# 12	the	the	DT	O	13	det
+# 13	storm	storm	NN	O	10	nmod
+# 14	.	.	.	O	2	punct
 
-1	Bill	Bill	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	the	the	DT	O	5	det
-4	heavy	heavy	JJ	O	5	amod
-5	door	door	NN	O	2	dobj
-6	that	that	WDT	O	10	nsubjpass
-7	had	have	VBD	O	10	aux
-8	just	just	RB	O	10	advmod
-9	been	be	VBN	O	10	auxpass
-10	repainted	repaint	VBN	O	5	acl:relcl
-11	after	after	IN	O	13	case
-12	the	the	DT	O	13	det
-13	storm	storm	NN	O	10	nmod
-14	.	.	.	O	2	punct
-
-
+# should be junction, irreplicable
+# we can, however, consider over a particle, as in "knock out the guy!"
+# will become part of NUC, then, fixed to that
 1	Bobby	Bobby	NNP	PERSON	2	nsubj
 2	pushed	push	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
 4	table	table	NN	O	2	dobj
-5	over	over	IN	O	2	advmod
+5	over	over	IN	O	2	compound:prt
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Bobby	Bobby	NNP	PERSON	2	nsubj
+	# 2	pushed	push	VBD	O	0	ROOT
+	# 3	the	the	DT	O	4	det
+	# 4	table	table	NN	O	2	dobj
+	# 5	over	over	IN	O	2	advmod
+	# 6	.	.	.	O	2	punct
 
-
+# parse fixed, not PP, but compound:prt
 1	Bobby	Bobby	NNP	PERSON	2	nsubj
 2	pushed	push	VBD	O	0	ROOT
-3	over	over	IN	O	5	case
+3	over	over	IN	O	2	compound:prt
 4	the	the	DT	O	5	det
 5	table	table	NN	O	2	nmod
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Bobby	Bobby	NNP	PERSON	2	nsubj
+	# 2	pushed	push	VBD	O	0	ROOT
+	# 3	over	over	IN	O	5	case
+	# 4	the	the	DT	O	5	det
+	# 5	table	table	NN	O	2	nmod
+	# 6	.	.	.	O	2	punct
 
+# # ok? should this have a second nuc in into?
+# 1	Kevin	Kevin	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	chair	chair	NN	O	2	dobj
+# 5	into	into	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	room	room	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
-1	Kevin	Kevin	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	chair	chair	NN	O	2	dobj
-5	into	into	IN	O	7	case
-6	the	the	DT	O	7	det
-7	room	room	NN	O	2	nmod
-8	.	.	.	O	2	punct
+# # # ok? should this have a second nuc in into?
+# 1	Kevin	Kevin	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	into	into	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	room	room	NN	O	2	nmod
+# 6	the	the	DT	O	10	det
+# 7	old	old	JJ	O	10	amod
+# 8	,	,	,	O	10	punct
+# 9	overstuffed	overstuffed	JJ	O	10	amod
+# 10	chair	chair	NN	O	2	dobj
+# 11	that	that	IN	O	15	mark
+# 12	his	he	PRP$	O	13	nmod:poss
+# 13	grandmother	grandmother	NN	O	15	nsubj
+# 14	had	have	VBD	O	15	aux
+# 15	left	leave	VBN	O	10	ccomp
+# 16	him	he	PRP	O	15	dobj
+# 17	.	.	.	O	2	punct
 
-
-1	Kevin	Kevin	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	into	into	IN	O	5	case
-4	the	the	DT	O	5	det
-5	room	room	NN	O	2	nmod
-6	the	the	DT	O	10	det
-7	old	old	JJ	O	10	amod
-8	,	,	,	O	10	punct
-9	overstuffed	overstuffed	JJ	O	10	amod
-10	chair	chair	NN	O	2	dobj
-11	that	that	IN	O	15	mark
-12	his	he	PRP$	O	13	nmod:poss
-13	grandmother	grandmother	NN	O	15	nsubj
-14	had	have	VBD	O	15	aux
-15	left	leave	VBN	O	10	ccomp
-16	him	he	PRP	O	15	dobj
-17	.	.	.	O	2	punct
-
-
+# parse fixed, should be nuclear juncture
 1	Yvonne	Yvonne	NNP	PERSON	2	nsubj
 2	painted	paint	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
-4	table	table	NN	O	5	nsubj
+4	table	table	NN	O	2	dobj
 5	white	white	JJ	O	2	xcomp
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Yvonne	Yvonne	NNP	PERSON	2	nsubj
+	# 2	painted	paint	VBD	O	0	ROOT
+	# 3	the	the	DT	O	4	det
+	# 4	table	table	NN	O	5	nsubj
+	# 5	white	white	JJ	O	2	xcomp
+	# 6	.	.	.	O	2	punct
 
-
+# parse fixed, should be nuclear juncture
 1	Sally	Sally	NNP	PERSON	2	nsubj
 2	made	make	VBD	O	0	ROOT
-3	herself	herself	PRP	O	4	nsubj
+3	herself	herself	PRP	O	2	dobj
 4	sad	sad	JJ	O	2	xcomp
 5	.	.	.	O	2	punct
+	# # original
+	# 1	Sally	Sally	NNP	PERSON	2	nsubj
+	# 2	made	make	VBD	O	0	ROOT
+	# 3	herself	herself	PRP	O	4	nsubj
+	# 4	sad	sad	JJ	O	2	xcomp
+	# 5	.	.	.	O	2	punct
 
+# # ok?
+# 1	Fred	Fred	NNP	PERSON	2	nsubj
+# 2	told	tell	VBD	O	0	ROOT
+# 3	himself	himself	PRP	O	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	ask	ask	VB	O	2	xcomp
+# 6	Pam	Pam	NNP	PERSON	5	dobj
+# 7	out	out	RP	O	5	compound:prt
+# 8	.	.	.	O	2	punct
 
-1	Fred	Fred	NNP	PERSON	2	nsubj
-2	told	tell	VBD	O	0	ROOT
-3	himself	himself	PRP	O	2	dobj
-4	to	to	TO	O	5	mark
-5	ask	ask	VB	O	2	xcomp
-6	Pam	Pam	NNP	PERSON	5	dobj
-7	out	out	RP	O	5	compound:prt
-8	.	.	.	O	2	punct
+# # ok?
+# 1	Fred	Fred	NNP	PERSON	2	nsubj
+# 2	asked	ask	VBD	O	0	ROOT
+# 3	Pam	Pam	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	help	help	VB	O	2	xcomp
+# 6	him	he	PRP	O	5	dobj
+# 7	.	.	.	O	2	punct
 
-
-1	Fred	Fred	NNP	PERSON	2	nsubj
-2	asked	ask	VBD	O	0	ROOT
-3	Pam	Pam	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	help	help	VB	O	2	xcomp
-6	him	he	PRP	O	5	dobj
-7	.	.	.	O	2	punct
-
-
+# must be core juncture, parse fixed
 1	Fred	Fred	NNP	PERSON	2	nsubj
 2	made	make	VBD	O	0	ROOT
-3	Pam	Pam	NNP	PERSON	4	nsubj
-4	help	help	VB	O	2	ccomp
+3	Pam	Pam	NNP	PERSON	2	dobj
+4	help	help	VB	O	2	xcomp
 5	him	he	PRP	O	4	dobj
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Fred	Fred	NNP	PERSON	2	nsubj
+	# 2	made	make	VBD	O	0	ROOT
+	# 3	Pam	Pam	NNP	PERSON	4	nsubj
+	# 4	help	help	VB	O	2	ccomp
+	# 5	him	he	PRP	O	4	dobj
+	# 6	.	.	.	O	2	punct
 
+# # ok
+# 1	Sam	Sam	NNP	PERSON	2	nsubj
+# 2	asked	ask	VBD	O	0	ROOT
+# 3	Fred	Fred	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	leave	leave	VB	O	2	xcomp
+# 6	tomorrow	tomorrow	NN	DATE	5	nmod:tmod
+# 7	.	.	.	O	2	punct
 
-1	Sam	Sam	NNP	PERSON	2	nsubj
-2	asked	ask	VBD	O	0	ROOT
-3	Fred	Fred	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	leave	leave	VB	O	2	xcomp
-6	tomorrow	tomorrow	NN	DATE	5	nmod:tmod
-7	.	.	.	O	2	punct
-
-
+# tiger fail
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	called	call	VBD	O	0	ROOT
 3	Fred	Fred	NNP	PERSON	2	dobj
@@ -2620,32 +2682,39 @@
 14	white	white	JJ	O	11	xcomp
 15	.	.	.	O	2	punct
 
+# # ok
+# 1	Max	Max	NNP	PERSON	2	nsubj
+# 2	made	make	VBD	O	0	ROOT
+# 3	the	the	DT	O	5	det
+# 4	woman	woman	NN	O	5	compound
+# 5	leave	leave	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
 
-1	Max	Max	NNP	PERSON	2	nsubj
-2	made	make	VBD	O	0	ROOT
-3	the	the	DT	O	5	det
-4	woman	woman	NN	O	5	compound
-5	leave	leave	NN	O	2	dobj
-6	.	.	.	O	2	punct
-
-
+# must be nuclear cosubordination, fixed parse
 1	Vince	Vince	NNP	PERSON	2	nsubj
 2	wiped	wipe	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
-4	table	table	NN	O	5	nsubj
+4	table	table	NN	O	2	dobj
 5	clean	clean	JJ	O	2	xcomp
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Vince	Vince	NNP	PERSON	2	nsubj
+	# 2	wiped	wipe	VBD	O	0	ROOT
+	# 3	the	the	DT	O	4	det
+	# 4	table	table	NN	O	5	nsubj
+	# 5	clean	clean	JJ	O	2	xcomp
+	# 6	.	.	.	O	2	punct
 
+# # ok
+# 1	Ted	Ted	NNP	PERSON	2	nsubj
+# 2	tried	try	VBD	O	0	ROOT
+# 3	to	to	TO	O	4	mark
+# 4	open	open	VB	O	2	xcomp
+# 5	the	the	DT	O	6	det
+# 6	door	door	NN	O	4	dobj
+# 7	.	.	.	O	2	punct
 
-1	Ted	Ted	NNP	PERSON	2	nsubj
-2	tried	try	VBD	O	0	ROOT
-3	to	to	TO	O	4	mark
-4	open	open	VB	O	2	xcomp
-5	the	the	DT	O	6	det
-6	door	door	NN	O	4	dobj
-7	.	.	.	O	2	punct
-
-
+# must be core cosubordination, but is coordination
 1	Sam	Sam	NNP	PERSON	2	nsubj
 2	sat	sit	VBD	O	0	ROOT
 3	playing	play	VBG	O	2	xcomp
@@ -2653,27 +2722,36 @@
 5	guitar	guitar	NN	O	3	dobj
 6	.	.	.	O	2	punct
 
+# # ok
+# 1	David	David	NNP	PERSON	2	nsubj
+# 2	regretted	regret	VBD	O	0	ROOT
+# 3	Amy	Amy	NNP	PERSON	5	nsubj
+# 4	's	's	POS	O	3	case
+# 5	losing	lose	VBG	O	2	ccomp
+# 6	the	the	DT	O	7	det
+# 7	race	race	NN	O	5	dobj
+# 8	.	.	.	O	2	punct
 
-1	David	David	NNP	PERSON	2	nsubj
-2	regretted	regret	VBD	O	0	ROOT
-3	Amy	Amy	NNP	PERSON	5	nsubj
-4	's	's	POS	O	3	case
-5	losing	lose	VBG	O	2	ccomp
-6	the	the	DT	O	7	det
-7	race	race	NN	O	5	dobj
-8	.	.	.	O	2	punct
-
-
+# parse fixed
 1	That	that	DT	O	2	det
 2	Amy	Amy	NNP	PERSON	3	nsubj
-3	lost	lose	VBD	O	0	ROOT
+3	lost	lose	VBD	O	6	ccomp
 4	the	the	DT	O	5	det
 5	race	race	NN	O	3	dobj
-6	shocked	shocked	JJ	O	7	amod
+6	shocked	shocked	JJ	O	0	ROOT
 7	everyone	everyone	NN	O	5	dep
 8	.	.	.	O	3	punct
+	# # original
+	# 1	That	that	DT	O	2	det
+	# 2	Amy	Amy	NNP	PERSON	3	nsubj
+	# 3	lost	lose	VBD	O	0	ROOT
+	# 4	the	the	DT	O	5	det
+	# 5	race	race	NN	O	3	dobj
+	# 6	shocked	shocked	JJ	O	7	amod
+	# 7	everyone	everyone	NN	O	5	dep
+	# 8	.	.	.	O	3	punct
 
-
+# should be core coordination, but is cosubordination
 1	Louisa	Louisa	NNP	PERSON	2	nsubj
 2	told	tell	VBD	O	0	ROOT
 3	Bob	Bob	NNP	PERSON	2	dobj
@@ -2683,48 +2761,76 @@
 7	window	window	NN	O	5	dobj
 8	.	.	.	O	2	punct
 
-
+# parse fixed, must be core coordination
+# Harry must be dobj, because for first person, that would be "me"
 1	Fred	Fred	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
-3	Harry	Harry	NNP	PERSON	4	nsubj
-4	leave	leave	VB	O	2	ccomp
+3	Harry	Harry	NNP	PERSON	2	dobj
+4	leave	leave	VB	O	2	xcomp
 5	the	the	DT	O	6	det
 6	room	room	NN	O	4	dobj
 7	.	.	.	O	2	punct
+	# # original
+	# 1	Fred	Fred	NNP	PERSON	2	nsubj
+	# 2	saw	see	VBD	O	0	ROOT
+	# 3	Harry	Harry	NNP	PERSON	4	nsubj
+	# 4	leave	leave	VB	O	2	ccomp
+	# 5	the	the	DT	O	6	det
+	# 6	room	room	NN	O	4	dobj
+	# 7	.	.	.	O	2	punct
 
-
+# must be clausal cosubordination
+# parse fixed (dep)
 1	Harry	Harry	NNP	PERSON	2	nsubj
 2	ran	run	VBD	O	0	ROOT
-3	down	down	RP	O	2	compound:prt
+3	down	down	RP	O	2	case
 4	the	the	DT	O	5	det
-5	hall	hall	NN	O	6	nsubj
-6	laughing	laugh	VBG	O	2	dep
+5	hall	hall	NN	O	2	nmod
+6	laughing	laugh	VBG	O	2	xcomp
 7	loudly	loudly	RB	O	6	advmod
 8	.	.	.	O	2	punct
+	# # original
+	# 1	Harry	Harry	NNP	PERSON	2	nsubj
+	# 2	ran	run	VBD	O	0	ROOT
+	# 3	down	down	RP	O	2	compound:prt
+	# 4	the	the	DT	O	5	det
+	# 5	hall	hall	NN	O	6	nsubj
+	# 6	laughing	laugh	VBG	O	2	dep
+	# 7	loudly	loudly	RB	O	6	advmod
+	# 8	.	.	.	O	2	punct
 
+# # ok
+# 1	Paul	Paul	NNP	PERSON	2	nsubj
+# 2	drove	drive	VBD	O	0	ROOT
+# 3	to	to	TO	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	store	store	NN	O	2	nmod
+# 6	and	and	CC	O	2	cc
+# 7	brought	bring	VBD	O	2	conj
+# 8	some	some	DT	O	9	det
+# 9	beer	beer	NN	O	7	dobj
+# 10	.	.	.	O	2	punct
 
-1	Paul	Paul	NNP	PERSON	2	nsubj
-2	drove	drive	VBD	O	0	ROOT
-3	to	to	TO	O	5	case
-4	the	the	DT	O	5	det
-5	store	store	NN	O	2	nmod
-6	and	and	CC	O	2	cc
-7	brought	bring	VBD	O	2	conj
-8	some	some	DT	O	9	det
-9	beer	beer	NN	O	7	dobj
-10	.	.	.	O	2	punct
-
-
+# parse fixed (relative clause is argument)
 1	John	John	NNP	PERSON	2	nsubj
 2	persuaded	persuade	VBD	O	0	ROOT
 3	Leon	Leon	NNP	PERSON	2	dobj
 4	that	that	IN	O	7	dobj
 5	Amy	Amy	NNP	PERSON	7	nsubj
 6	had	have	VBD	O	7	aux
-7	lost	lose	VBN	O	3	acl:relcl
+7	lost	lose	VBN	O	2	ccomp
 8	.	.	.	O	2	punct
+	# # original
+	# 1	John	John	NNP	PERSON	2	nsubj
+	# 2	persuaded	persuade	VBD	O	0	ROOT
+	# 3	Leon	Leon	NNP	PERSON	2	dobj
+	# 4	that	that	IN	O	7	dobj
+	# 5	Amy	Amy	NNP	PERSON	7	nsubj
+	# 6	had	have	VBD	O	7	aux
+	# 7	lost	lose	VBN	O	3	acl:relcl
+	# 8	.	.	.	O	2	punct
 
-
+# should be clausal subordination, not core subordination
 1	Bill	Bill	NNP	PERSON	2	nsubj
 2	went	go	VBD	O	0	ROOT
 3	to	to	TO	O	5	case
@@ -2737,7 +2843,7 @@
 10	Mary	Mary	NNP	PERSON	8	nmod
 11	.	.	.	O	2	punct
 
-
+# tiger fail, should be clausal coordination
 1	Anna	Anna	NNP	PERSON	2	nsubj
 2	read	read	VBD	O	0	ROOT
 3	for	for	IN	O	6	case
@@ -2752,51 +2858,51 @@
 12	out	out	RB	O	11	advmod
 13	.	.	.	O	2	punct
 
+# # ok
+# 1	John	John	NNP	PERSON	3	nsubj
+# 2	must	must	MD	O	3	aux
+# 3	try	try	VB	O	0	ROOT
+# 4	to	to	TO	O	5	mark
+# 5	wash	wash	VB	O	3	xcomp
+# 6	the	the	DT	O	7	det
+# 7	car	car	NN	O	5	dobj
+# 8	.	.	.	O	3	punct
 
-1	John	John	NNP	PERSON	3	nsubj
-2	must	must	MD	O	3	aux
-3	try	try	VB	O	0	ROOT
-4	to	to	TO	O	5	mark
-5	wash	wash	VB	O	3	xcomp
-6	the	the	DT	O	7	det
-7	car	car	NN	O	5	dobj
-8	.	.	.	O	3	punct
+# # ok
+# 1	John	John	NNP	PERSON	3	nsubj
+# 2	must	must	MD	O	3	aux
+# 3	tell	tell	VB	O	0	ROOT
+# 4	Bill	Bill	NNP	PERSON	3	dobj
+# 5	to	to	TO	O	6	mark
+# 6	wash	wash	VB	O	3	xcomp
+# 7	the	the	DT	O	8	det
+# 8	car	car	NN	O	6	dobj
+# 9	.	.	.	O	3	punct
 
+# # ok?
+# 1	John	John	NNP	PERSON	3	nsubj
+# 2	can	can	MD	O	3	aux
+# 3	promise	promise	VB	O	0	ROOT
+# 4	Bill	Bill	NNP	PERSON	3	dobj
+# 5	to	to	TO	O	6	mark
+# 6	wash	wash	VB	O	3	xcomp
+# 7	the	the	DT	O	8	det
+# 8	car	car	NN	O	6	dobj
+# 9	.	.	.	O	3	punct
 
-1	John	John	NNP	PERSON	3	nsubj
-2	must	must	MD	O	3	aux
-3	tell	tell	VB	O	0	ROOT
-4	Bill	Bill	NNP	PERSON	3	dobj
-5	to	to	TO	O	6	mark
-6	wash	wash	VB	O	3	xcomp
-7	the	the	DT	O	8	det
-8	car	car	NN	O	6	dobj
-9	.	.	.	O	3	punct
+# # ok
+# 1	Fred	Fred	NNP	PERSON	3	nsubj
+# 2	's	's	POS	O	1	case
+# 3	winning	win	VBG	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	race	race	NN	O	3	dobj
+# 6	surprised	surprise	VBD	O	3	dep
+# 7	Mary	Mary	NNP	PERSON	6	dobj
+# 8	.	.	.	O	3	punct
 
-
-1	John	John	NNP	PERSON	3	nsubj
-2	can	can	MD	O	3	aux
-3	promise	promise	VB	O	0	ROOT
-4	Bill	Bill	NNP	PERSON	3	dobj
-5	to	to	TO	O	6	mark
-6	wash	wash	VB	O	3	xcomp
-7	the	the	DT	O	8	det
-8	car	car	NN	O	6	dobj
-9	.	.	.	O	3	punct
-
-
-1	Fred	Fred	NNP	PERSON	3	nsubj
-2	's	's	POS	O	1	case
-3	winning	win	VBG	O	0	ROOT
-4	the	the	DT	O	5	det
-5	race	race	NN	O	3	dobj
-6	surprised	surprise	VBD	O	3	dep
-7	Mary	Mary	NNP	PERSON	6	dobj
-8	.	.	.	O	3	punct
-
-
-1	For	for	IN	O	4	mark
-2	Fred	Fred	NNP	PERSON	4	nsubj
+# parse fixed
+1	For	for	IN	O	2	case
+2	Fred	Fred	NNP	PERSON	10	nmod
 3	to	to	TO	O	4	mark
 4	win	win	VB	O	10	csubj
 5	the	the	DT	O	6	det
@@ -2809,42 +2915,76 @@
 12	the	the	DT	O	13	det
 13	experts	expert	NNS	O	10	nmod
 14	.	.	.	O	10	punct
+	# # original
+	# 1	For	for	IN	O	4	mark
+	# 2	Fred	Fred	NNP	PERSON	4	nsubj
+	# 3	to	to	TO	O	4	mark
+	# 4	win	win	VB	O	10	csubj
+	# 5	the	the	DT	O	6	det
+	# 6	race	race	NN	O	4	dobj
+	# 7	would	would	MD	O	10	aux
+	# 8	be	be	VB	O	10	cop
+	# 9	a	a	DT	O	10	det
+	# 10	shock	shock	NN	O	0	ROOT
+	# 11	to	to	TO	O	13	case
+	# 12	the	the	DT	O	13	det
+	# 13	experts	expert	NNS	O	10	nmod
+	# 14	.	.	.	O	10	punct
 
-
+# parse fixed
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	hoped	hope	VBD	O	0	ROOT
-3	for	for	IN	O	6	mark
-4	Fred	Fred	NNP	PERSON	6	nsubj
+3	for	for	IN	O	4	case
+4	Fred	Fred	NNP	PERSON	2	nmod
 5	to	to	TO	O	6	mark
 6	win	win	VB	O	2	advcl
 7	the	the	DT	O	8	det
 8	race	race	NN	O	6	dobj
 9	.	.	.	O	2	punct
+	# # original
+	# 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# 2	hoped	hope	VBD	O	0	ROOT
+	# 3	for	for	IN	O	6	mark
+	# 4	Fred	Fred	NNP	PERSON	6	nsubj
+	# 5	to	to	TO	O	6	mark
+	# 6	win	win	VB	O	2	advcl
+	# 7	the	the	DT	O	8	det
+	# 8	race	race	NN	O	6	dobj
+	# 9	.	.	.	O	2	punct
 
-
-1	That	that	DT	O	2	det
+# parse fixed
+1	That	that	IN	O	3	mark
 2	Fred	Fred	NNP	PERSON	3	nsubj
-3	won	win	VBD	O	0	ROOT
+3	won	win	VBD	O	6	csubj
 4	the	the	DT	O	5	det
-5	race	race	NN	O	6	nsubj
-6	surprised	surprise	VBD	O	3	ccomp
+5	race	race	NN	O	3	dobj
+6	surprised	surprise	VBD	O	0	ROOT
 7	Mary	Mary	NNP	PERSON	6	dobj
 8	.	.	.	O	3	punct
+	# # original
+	# 1	That	that	DT	O	2	det
+	# 2	Fred	Fred	NNP	PERSON	3	nsubj
+	# 3	won	win	VBD	O	0	ROOT
+	# 4	the	the	DT	O	5	det
+	# 5	race	race	NN	O	6	nsubj
+	# 6	surprised	surprise	VBD	O	3	ccomp
+	# 7	Mary	Mary	NNP	PERSON	6	dobj
+	# 8	.	.	.	O	3	punct
 
+# # ok?
+# 1	It	it	PRP	O	5	nsubj
+# 2	was	be	VBD	O	5	aux
+# 3	Fred	Fred	NNP	PERSON	5	nsubj
+# 4	's	's	POS	O	3	case
+# 5	loosing	loose	VBG	O	0	ROOT
+# 6	the	the	DT	O	7	det
+# 7	race	race	NN	O	5	dobj
+# 8	that	that	WDT	O	10	dobj
+# 9	Mary	Mary	NNP	PERSON	10	nsubj
+# 10	regretted	regret	VBD	O	7	acl:relcl
+# 11	.	.	.	O	5	punct
 
-1	It	it	PRP	O	5	nsubj
-2	was	be	VBD	O	5	aux
-3	Fred	Fred	NNP	PERSON	5	nsubj
-4	's	's	POS	O	3	case
-5	loosing	loose	VBG	O	0	ROOT
-6	the	the	DT	O	7	det
-7	race	race	NN	O	5	dobj
-8	that	that	WDT	O	10	dobj
-9	Mary	Mary	NNP	PERSON	10	nsubj
-10	regretted	regret	VBD	O	7	acl:relcl
-11	.	.	.	O	5	punct
-
-
+# todo: fix parse
 1	It	it	PRP	O	6	nsubj
 2	was	be	VBD	O	6	cop
 3	for	for	IN	O	6	mark
