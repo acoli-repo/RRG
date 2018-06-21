@@ -1550,58 +1550,58 @@
 	# 11	die	die	VB	O	6	xcomp
 	# 12	.	.	.	O	6	punct
 
-# to => CLM?, parse fixed
-1	The	the	DT	O	2	det
-2	company	company	NN	O	3	nsubj
-3	supplied	supply	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	team	team	NN	O	3	dobj
-6	with	with	IN	O	7	case
-7	uniforms	uniform	NNS	O	3	nmod
-8	to	to	TO	O	9	mark
-9	wear	wear	VB	O	7	acl
-10	.	.	.	O	3	punct
-	# # original
-	# 1	The	the	DT	O	2	det
-	# 2	company	company	NN	O	3	nsubj
-	# 3	supplied	supply	VBD	O	0	ROOT
-	# 4	the	the	DT	O	5	det
-	# 5	team	team	NN	O	3	dobj
-	# 6	with	with	IN	O	7	case
-	# 7	uniforms	uniform	NNS	O	3	nmod
-	# 8	to	to	TO	O	9	mark
-	# 9	wear	wear	VB	O	3	advcl
-	# 10	.	.	.	O	3	punct
+# # ok, parse fixed
+# 1	The	the	DT	O	2	det
+# 2	company	company	NN	O	3	nsubj
+# 3	supplied	supply	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	team	team	NN	O	3	dobj
+# 6	with	with	IN	O	7	case
+# 7	uniforms	uniform	NNS	O	3	nmod
+# 8	to	to	TO	O	9	mark
+# 9	wear	wear	VB	O	7	acl
+# 10	.	.	.	O	3	punct
+	# # # original
+	# # 1	The	the	DT	O	2	det
+	# # 2	company	company	NN	O	3	nsubj
+	# # 3	supplied	supply	VBD	O	0	ROOT
+	# # 4	the	the	DT	O	5	det
+	# # 5	team	team	NN	O	3	dobj
+	# # 6	with	with	IN	O	7	case
+	# # 7	uniforms	uniform	NNS	O	3	nmod
+	# # 8	to	to	TO	O	9	mark
+	# # 9	wear	wear	VB	O	3	advcl
+	# # 10	.	.	.	O	3	punct
 
 
-# attachment fail, parse fixed
-1	The	the	DT	O	2	det
-2	company	company	NN	O	3	nsubj
-3	supplied	supply	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	team	team	NN	O	3	dobj
-6	with	with	IN	O	7	case
-7	uniforms	uniform	NNS	O	3	nmod
-8	for	for	IN	O	10	case
-9	the	the	DT	O	10	det
-10	players	player	NNS	O	7	nmod
-11	to	to	TO	O	12	mark
-12	wear	wear	VB	O	10	acl
-13	.	.	.	O	3	punct
-	# # original
-	# 1	The	the	DT	O	2	det
-	# 2	company	company	NN	O	3	nsubj
-	# 3	supplied	supply	VBD	O	0	ROOT
-	# 4	the	the	DT	O	5	det
-	# 5	team	team	NN	O	3	dobj
-	# 6	with	with	IN	O	7	case
-	# 7	uniforms	uniform	NNS	O	3	nmod
-	# 8	for	for	IN	O	12	mark
-	# 9	the	the	DT	O	10	det
-	# 10	players	player	NNS	O	12	nsubj
-	# 11	to	to	TO	O	12	mark
-	# 12	wear	wear	VB	O	7	acl
-	# 13	.	.	.	O	3	punct
+# # ok, attachment fail, parse fixed
+# 1	The	the	DT	O	2	det
+# 2	company	company	NN	O	3	nsubj
+# 3	supplied	supply	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	team	team	NN	O	3	dobj
+# 6	with	with	IN	O	7	case
+# 7	uniforms	uniform	NNS	O	3	nmod
+# 8	for	for	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	players	player	NNS	O	7	nmod
+# 11	to	to	TO	O	12	mark
+# 12	wear	wear	VB	O	10	acl
+# 13	.	.	.	O	3	punct
+	# # # original
+	# # 1	The	the	DT	O	2	det
+	# # 2	company	company	NN	O	3	nsubj
+	# # 3	supplied	supply	VBD	O	0	ROOT
+	# # 4	the	the	DT	O	5	det
+	# # 5	team	team	NN	O	3	dobj
+	# # 6	with	with	IN	O	7	case
+	# # 7	uniforms	uniform	NNS	O	3	nmod
+	# # 8	for	for	IN	O	12	mark
+	# # 9	the	the	DT	O	10	det
+	# # 10	players	player	NNS	O	12	nsubj
+	# # 11	to	to	TO	O	12	mark
+	# # 12	wear	wear	VB	O	7	acl
+	# # 13	.	.	.	O	3	punct
 
 # # ok
 # 1	That	that	DT	O	2	det
@@ -1611,22 +1611,22 @@
 # 5	eat	eat	VB	O	2	acl:relcl
 # 6	.	.	.	O	2	punct
 
-# parse fixed, p. 383: Sue > baked; lemma of baked fixed
-1	Larry	Larry	NNP	PERSON	2	nsubj
-2	baked	bake	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	6	case
-6	Sue	sue	NN	O	2	nmod
-7	.	.	.	O	2	punct
-	# # original
-	# 1	Larry	Larry	NNP	PERSON	2	nsubj
-	# 2	baked	baked	JJ	O	0	ROOT
-	# 3	a	a	DT	O	4	det
-	# 4	cake	cake	NN	O	2	dobj
-	# 5	for	for	IN	O	6	case
-	# 6	Sue	sue	NN	O	4	nmod
-	# 7	.	.	.	O	2	punct
+# # ok, parse fixed, p. 383: Sue > baked; lemma of baked fixed
+# 1	Larry	Larry	NNP	PERSON	2	nsubj
+# 2	baked	bake	VBD	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	cake	cake	NN	O	2	dobj
+# 5	for	for	IN	O	6	case
+# 6	Sue	sue	NN	O	2	nmod
+# 7	.	.	.	O	2	punct
+	# # # original
+	# # 1	Larry	Larry	NNP	PERSON	2	nsubj
+	# # 2	baked	baked	JJ	O	0	ROOT
+	# # 3	a	a	DT	O	4	det
+	# # 4	cake	cake	NN	O	2	dobj
+	# # 5	for	for	IN	O	6	case
+	# # 6	Sue	sue	NN	O	4	nmod
+	# # 7	.	.	.	O	2	punct
 
 # # ok; parse fixed: Stanford failure
 # 1	Larry	Larry	NNP	PERSON	2	nsubj
@@ -1706,20 +1706,20 @@
 # 6	Pat	Pat	NNP	PERSON	2	nmod
 # 7	.	.	.	O	2	punct
 
-# parse fixed
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	taught	teach	VBD	O	0	ROOT
-3	basketweaving	basketweave	VBG	O	2	dobj
-4	to	to	TO	O	5	case
-5	Pat	Pat	NNP	PERSON	2	nmod
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Sally	Sally	NNP	PERSON	2	nsubj
-	# 2	taught	teach	VBD	O	0	ROOT
-	# 3	basketweaving	basketweave	VBG	O	2	xcomp
-	# 4	to	to	TO	O	5	case
-	# 5	Pat	Pat	NNP	PERSON	3	nmod
-	# 6	.	.	.	O	2	punct
+# # ok, parse fixed
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	taught	teach	VBD	O	0	ROOT
+# 3	basketweaving	basketweave	VBG	O	2	dobj
+# 4	to	to	TO	O	5	case
+# 5	Pat	Pat	NNP	PERSON	2	nmod
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Sally	Sally	NNP	PERSON	2	nsubj
+	# # 2	taught	teach	VBD	O	0	ROOT
+	# # 3	basketweaving	basketweave	VBG	O	2	xcomp
+	# # 4	to	to	TO	O	5	case
+	# # 5	Pat	Pat	NNP	PERSON	3	nmod
+	# # 6	.	.	.	O	2	punct
 
 # # ok
 # 1	Sandy	Sandy	NNP	PERSON	2	nsubj
@@ -1804,6 +1804,7 @@
 	# # 7	Pat	Pat	NNP	PERSON	5	nmod
 	# # 8	.	.	.	O	2	punct
 
+# PrCS failed
 # PP attachment fixed
 1	The	the	DT	O	2	det
 2	woman	woman	NN	O	6	nsubj
@@ -1942,43 +1943,43 @@
 # 5	wine	wine	NN	O	2	nmod
 # 6	.	.	.	O	2	punct
 
-# parse fixed (attachment [and number agreement in original sentence)
-1	Bill	Bill	NNP	PERSON	8	nsubj
-2	and	and	CC	O	1	cc
-3	the	the	DT	O	4	det
-4	woman	woman	NN	O	1	conj
-5	with	with	IN	O	7	case
-6	strong	strong	JJ	O	7	amod
-7	arms	arm	NNS	O	4	nmod
-8	loaded	load	VBD	O	0	ROOT
-9	the	the	DT	O	10	det
-10	truck	truck	NN	O	8	dobj
-11	with	with	IN	O	12	case
-12	hay	hay	NN	O	8	nmod
-13	with	with	IN	O	14	case
-14	pitchforks	pitchfork	NNS	O	8	nmod
-15	with	with	IN	O	16	case
-16	enthusiasm	enthusiasm	NN	O	8	nmod
-17	.	.	.	O	8	punct
-	# # original
-	# 1	Bill	Bill	NNP	PERSON	8	nsubj
-	# 2	and	and	CC	O	1	cc
-	# 3	the	the	DT	O	4	det
-	# 4	woman	woman	NN	O	1	conj
-	# 5	with	with	IN	O	7	case
-	# 6	strong	strong	JJ	O	7	amod
-	# 7	arms	arm	NNS	O	4	nmod
-	# 8	loaded	load	VBD	O	0	ROOT
-	# 9	the	the	DT	O	10	det
-	# 10	truck	truck	NN	O	8	dobj
-	# 11	with	with	IN	O	12	case
-	# 12	hay	hay	NN	O	8	nmod
-	# 13	with	with	IN	O	15	case
-	# 14	a	a	DT	O	15	det
-	# 15	pitchfork	pitchfork	NN	O	12	nmod
-	# 16	with	with	IN	O	17	case
-	# 17	enthusiasm	enthusiasm	NN	O	15	nmod
-	# 18	.	.	.	O	8	punct
+# # ok, parse fixed (attachment [and number agreement in original sentence)
+# 1	Bill	Bill	NNP	PERSON	8	nsubj
+# 2	and	and	CC	O	1	cc
+# 3	the	the	DT	O	4	det
+# 4	woman	woman	NN	O	1	conj
+# 5	with	with	IN	O	7	case
+# 6	strong	strong	JJ	O	7	amod
+# 7	arms	arm	NNS	O	4	nmod
+# 8	loaded	load	VBD	O	0	ROOT
+# 9	the	the	DT	O	10	det
+# 10	truck	truck	NN	O	8	dobj
+# 11	with	with	IN	O	12	case
+# 12	hay	hay	NN	O	8	nmod
+# 13	with	with	IN	O	14	case
+# 14	pitchforks	pitchfork	NNS	O	8	nmod
+# 15	with	with	IN	O	16	case
+# 16	enthusiasm	enthusiasm	NN	O	8	nmod
+# 17	.	.	.	O	8	punct
+	# # # original
+	# # 1	Bill	Bill	NNP	PERSON	8	nsubj
+	# # 2	and	and	CC	O	1	cc
+	# # 3	the	the	DT	O	4	det
+	# # 4	woman	woman	NN	O	1	conj
+	# # 5	with	with	IN	O	7	case
+	# # 6	strong	strong	JJ	O	7	amod
+	# # 7	arms	arm	NNS	O	4	nmod
+	# # 8	loaded	load	VBD	O	0	ROOT
+	# # 9	the	the	DT	O	10	det
+	# # 10	truck	truck	NN	O	8	dobj
+	# # 11	with	with	IN	O	12	case
+	# # 12	hay	hay	NN	O	8	nmod
+	# # 13	with	with	IN	O	15	case
+	# # 14	a	a	DT	O	15	det
+	# # 15	pitchfork	pitchfork	NN	O	12	nmod
+	# # 16	with	with	IN	O	17	case
+	# # 17	enthusiasm	enthusiasm	NN	O	15	nmod
+	# # 18	.	.	.	O	8	punct
 
 # # ok
 # 1	Lucy	Lucy	NNP	PERSON	2	nsubj
@@ -1997,16 +1998,16 @@
 # 5	students	student	NNS	O	2	nmod
 # 6	.	.	.	O	2	punct
 
-# parse fixed
+# parse fixed, her/PRP$ => her/PRP
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	baked	baked	JJ	O	0	ROOT
 3	a	a	DT	O	4	det
 4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	8	mark
-6	Sandy	Sandy	NNP	PERSON	8	nsubj
+5	for	for	IN	O	6	case
+6	Sandy	Sandy	NNP	PERSON	2	nmod
 7	to	to	TO	O	8	mark
-8	show	show	VB	O	4	acl
-9	her	she	PRP$	O	8	dobj
+8	show	show	VB	O	2	xcomp
+9	her	she	PRP	O	8	dobj
 10	she	she	PRP	O	12	nsubj
 11	could	could	MD	O	12	aux
 12	do	do	VB	O	8	ccomp
@@ -2028,21 +2029,34 @@
 	# 13	it	it	PRP	O	12	dobj
 	# 14	.	.	.	O	2	punct
 
-
+# parse fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
-2	baked	baked	JJ	O	0	ROOT
+2	baked	bake	VB	O	0	ROOT
 3	a	a	DT	O	4	det
 4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	8	mark
-6	Sandy	Sandy	NNP	PERSON	8	nsubj
+5	for	for	IN	O	8	case
+6	Sandy	Sandy	NNP	PERSON	2	nmod
 7	to	to	TO	O	8	mark
-8	amuse	amuse	VB	O	4	acl
+8	amuse	amuse	VB	O	2	xcomp
 9	her	she	PRP	O	8	dobj
 10	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	baked	baked	JJ	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	cake	cake	NN	O	2	dobj
+	# 5	for	for	IN	O	8	mark
+	# 6	Sandy	Sandy	NNP	PERSON	8	nsubj
+	# 7	to	to	TO	O	8	mark
+	# 8	amuse	amuse	VB	O	4	acl
+	# 9	her	she	PRP	O	8	dobj
+	# 10	.	.	.	O	2	punct
 
-
+# to is a stranded complementizer, how to represent that?
+# probably not a NUC coordination !
+# lemmatization/POS of baked fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
-2	baked	baked	JJ	O	0	ROOT
+2	baked	bake	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
 4	cake	cake	NN	O	2	dobj
 5	for	for	IN	O	6	case
@@ -2055,8 +2069,23 @@
 12	have	have	VB	O	2	advcl
 13	to	to	TO	O	12	xcomp
 14	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	baked	baked	JJ	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	cake	cake	NN	O	2	dobj
+	# 5	for	for	IN	O	6	case
+	# 6	Sandy	Sandy	NNP	PERSON	4	nmod
+	# 7	so	so	IN	O	12	mark
+	# 8	that	that	IN	O	7	mwe
+	# 9	she	she	PRP	O	12	nsubj
+	# 10	would	would	MD	O	12	aux
+	# 11	n't	not	RB	O	12	neg
+	# 12	have	have	VB	O	2	advcl
+	# 13	to	to	TO	O	12	xcomp
+	# 14	.	.	.	O	2	punct
 
-
+# attach currency symbol
 1	The	the	DT	O	2	det
 2	thief	thief	NN	O	3	nsubj
 3	stole	steal	VBD	O	0	ROOT
@@ -2067,7 +2096,7 @@
 8	store	store	NN	O	3	nmod
 9	.	.	.	O	3	punct
 
-
+# parse fixed, attachment error
 1	The	the	DT	O	2	det
 2	thief	thief	NN	O	3	nsubj
 3	robbed	rob	VBD	O	0	ROOT
@@ -2075,76 +2104,94 @@
 5	store	store	NN	O	3	dobj
 6	of	of	IN	O	8	case
 7	$	$	$	MONEY	8	dep
-8	5,000	5,000	CD	MONEY	5	nmod
+8	5,000	5,000	CD	MONEY	3	nmod
 9	.	.	.	O	3	punct
+	# # original
+	# 1	The	the	DT	O	2	det
+	# 2	thief	thief	NN	O	3	nsubj
+	# 3	robbed	rob	VBD	O	0	ROOT
+	# 4	the	the	DT	O	5	det
+	# 5	store	store	NN	O	3	dobj
+	# 6	of	of	IN	O	8	case
+	# 7	$	$	$	MONEY	8	dep
+	# 8	5,000	5,000	CD	MONEY	5	nmod
+	# 9	.	.	.	O	3	punct
 
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	talked	talk	VBD	O	0	ROOT
+# 3	to	to	TO	O	4	case
+# 4	Harry	Harry	NNP	PERSON	2	nmod
+# 5	about	about	IN	O	6	case
+# 6	herself	herself	PRP	O	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	talked	talk	VBD	O	0	ROOT
-3	to	to	TO	O	4	case
-4	Harry	Harry	NNP	PERSON	2	nmod
-5	about	about	IN	O	6	case
-6	herself	herself	PRP	O	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	talked	talk	VBD	O	0	ROOT
+# 3	to	to	TO	O	4	case
+# 4	Harry	Harry	NNP	PERSON	2	nmod
+# 5	about	about	IN	O	6	case
+# 6	himself	himself	PRP	O	2	nmod
+# 7	.	.	.	O	2	punct
 
+# # ok
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	gave	give	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	flowers	flower	NNS	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	herself	herself	PRP	O	2	nmod
+# 7	.	.	.	O	2	punct
 
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	talked	talk	VBD	O	0	ROOT
-3	to	to	TO	O	4	case
-4	Harry	Harry	NNP	PERSON	2	nmod
-5	about	about	IN	O	6	case
-6	himself	himself	PRP	O	2	nmod
-7	.	.	.	O	2	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	woman	woman	NN	O	3	nsubj
+# 3	sent	send	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	book	book	NN	O	3	dobj
+# 6	to	to	TO	O	7	case
+# 7	herself	herself	PRP	O	3	nmod
+# 8	.	.	.	O	3	punct
 
-
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	gave	give	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	flowers	flower	NNS	O	2	dobj
-5	to	to	TO	O	6	case
-6	herself	herself	PRP	O	2	nmod
-7	.	.	.	O	2	punct
-
-
-1	The	the	DT	O	2	det
-2	woman	woman	NN	O	3	nsubj
-3	sent	send	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	book	book	NN	O	3	dobj
-6	to	to	TO	O	7	case
-7	herself	herself	PRP	O	3	nmod
-8	.	.	.	O	3	punct
-
-
+# parse fixed (attachment error)
 1	Barbara	Barbara	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
 4	snake	snake	NN	O	2	dobj
 5	near	near	IN	O	6	case
-6	her	she	PRP	O	4	nmod
+6	her	she	PRP	O	2	nmod
 7	.	.	.	O	2	punct
+	# # original
+	# 1	Barbara	Barbara	NNP	PERSON	2	nsubj
+	# 2	saw	see	VBD	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	snake	snake	NN	O	2	dobj
+	# 5	near	near	IN	O	6	case
+	# 6	her	she	PRP	O	4	nmod
+	# 7	.	.	.	O	2	punct
 
+# # ok
+# 1	Pamela	Pamela	NNP	PERSON	2	nsubj
+# 2	got	get	VBD	O	0	ROOT
+# 3	some	some	DT	O	5	det
+# 4	spaghetti	spaghetti	NNS	O	5	compound
+# 5	sauce	sauce	NN	O	2	dobj
+# 6	on	on	IN	O	7	case
+# 7	her	she	PRP	O	2	nmod
+# 8	.	.	.	O	2	punct
 
-1	Pamela	Pamela	NNP	PERSON	2	nsubj
-2	got	get	VBD	O	0	ROOT
-3	some	some	DT	O	5	det
-4	spaghetti	spaghetti	NNS	O	5	compound
-5	sauce	sauce	NN	O	2	dobj
-6	on	on	IN	O	7	case
-7	her	she	PRP	O	2	nmod
-8	.	.	.	O	2	punct
+# # ok
+# 1	Pamela	Pamela	NNP	PERSON	2	nsubj
+# 2	got	get	VBD	O	0	ROOT
+# 3	some	some	DT	O	5	det
+# 4	spaghetti	spaghetti	NNS	O	5	compound
+# 5	sauce	sauce	NN	O	2	dobj
+# 6	on	on	IN	O	7	case
+# 7	herself	herself	PRP	O	2	nmod
+# 8	.	.	.	O	2	punct
 
-
-1	Pamela	Pamela	NNP	PERSON	2	nsubj
-2	got	get	VBD	O	0	ROOT
-3	some	some	DT	O	5	det
-4	spaghetti	spaghetti	NNS	O	5	compound
-5	sauce	sauce	NN	O	2	dobj
-6	on	on	IN	O	7	case
-7	herself	herself	PRP	O	2	nmod
-8	.	.	.	O	2	punct
-
-
+# juncture
 1	John	John	NNP	PERSON	2	nsubj
 2	built	build	VBD	O	0	ROOT
 3	a	a	DT	O	4	det
@@ -2159,90 +2206,101 @@
 12	in	in	IN	O	9	compound:prt
 13	.	.	.	O	2	punct
 
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	company	company	NN	O	3	nsubj
+# 3	supplied	supply	VBD	O	0	ROOT
+# 4	the	the	DT	O	5	det
+# 5	coach	coach	NN	O	3	dobj
+# 6	with	with	IN	O	7	case
+# 7	uniforms	uniform	NNS	O	3	nmod
+# 8	for	for	IN	O	10	case
+# 9	her	she	PRP$	O	10	nmod:poss
+# 10	team	team	NN	O	7	nmod
+# 11	to	to	TO	O	12	mark
+# 12	wear	wear	VB	O	10	acl
+# 13	.	.	.	O	3	punct
 
+# # ok
+# 1	Molly	Molly	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	herself	herself	PRP	O	2	dobj
+# 4	.	.	.	O	2	punct
+
+# # ok
+# 1	I	I	PRP	O	2	nsubj
+# 2	sold	sell	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	slave	slave	NN	O	2	dobj
+# 5	to	to	TO	O	6	case
+# 6	himself	himself	PRP	O	2	nmod
+# 7	.	.	.	O	2	punct
+
+# # ok
+# 1	I	I	PRP	O	2	nsubj
+# 2	sold	sell	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	slave	slave	NN	O	2	dobj
+# 5	himself	himself	PRP	O	2	nmod:npmod
+# 6	.	.	.	O	2	punct
+
+# parse fixed (dep)
 1	The	the	DT	O	2	det
-2	company	company	NN	O	3	nsubj
-3	supplied	supply	VBD	O	0	ROOT
-4	the	the	DT	O	5	det
-5	coach	coach	NN	O	3	dobj
-6	with	with	IN	O	7	case
-7	uniforms	uniform	NNS	O	3	nmod
-8	for	for	IN	O	10	case
-9	her	she	PRP$	O	10	nmod:poss
-10	team	team	NN	O	7	nmod
-11	to	to	TO	O	12	mark
-12	wear	wear	VB	O	10	acl
-13	.	.	.	O	3	punct
-
-
-1	Molly	Molly	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	herself	herself	PRP	O	2	dobj
-4	.	.	.	O	2	punct
-
-
-1	I	I	PRP	O	2	nsubj
-2	sold	sell	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	slave	slave	NN	O	2	dobj
-5	to	to	TO	O	6	case
-6	himself	himself	PRP	O	2	nmod
-7	.	.	.	O	2	punct
-
-
-1	I	I	PRP	O	2	nsubj
-2	sold	sell	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	slave	slave	NN	O	2	dobj
-5	himself	himself	PRP	O	2	nmod:npmod
-6	.	.	.	O	2	punct
-
-
-1	The	the	DT	O	2	det
-2	photo	photo	NN	O	0	ROOT
+2	photo	photo	NN	O	8	nsubj
 3	of	of	IN	O	4	case
 4	himself	himself	PRP	O	2	nmod
-5	in	in	IN	O	8	case
-6	the	the	DT	O	8	det
-7	newspaper	newspaper	NN	O	8	compound
-8	upsets	upset	NNS	O	2	nmod
-9	James	James	NNP	PERSON	8	dep
+5	in	in	IN	O	7	case
+6	the	the	DT	O	7	det
+7	newspaper	newspaper	NN	O	2	nmod
+8	upsets	upset	VBZ	O	0	ROOT
+9	James	James	NNP	PERSON	8	dobj
 10	.	.	.	O	2	punct
+	# # original
+	# 1	The	the	DT	O	2	det
+	# 2	photo	photo	NN	O	0	ROOT
+	# 3	of	of	IN	O	4	case
+	# 4	himself	himself	PRP	O	2	nmod
+	# 5	in	in	IN	O	8	case
+	# 6	the	the	DT	O	8	det
+	# 7	newspaper	newspaper	NN	O	8	compound
+	# 8	upsets	upset	NNS	O	2	nmod
+	# 9	James	James	NNP	PERSON	8	dep
+	# 10	.	.	.	O	2	punct
 
+# # ok
+# 1	James	James	NNP	PERSON	3	nsubjpass
+# 2	is	be	VBZ	O	3	auxpass
+# 3	upset	upset	VBN	O	0	ROOT
+# 4	about	about	IN	O	6	case
+# 5	the	the	DT	O	6	det
+# 6	photo	photo	NN	O	3	nmod
+# 7	of	of	IN	O	8	case
+# 8	himself	himself	PRP	O	6	nmod
+# 9	in	in	IN	O	11	case
+# 10	the	the	DT	O	11	det
+# 11	newspaper	newspaper	NN	O	6	nmod
+# 12	.	.	.	O	3	punct
 
-1	James	James	NNP	PERSON	3	nsubjpass
-2	is	be	VBZ	O	3	auxpass
-3	upset	upset	VBN	O	0	ROOT
-4	about	about	IN	O	6	case
-5	the	the	DT	O	6	det
-6	photo	photo	NN	O	3	nmod
-7	of	of	IN	O	8	case
-8	himself	himself	PRP	O	6	nmod
-9	in	in	IN	O	11	case
-10	the	the	DT	O	11	det
-11	newspaper	newspaper	NN	O	6	nmod
-12	.	.	.	O	3	punct
+# # ok
+# 1	The	the	DT	O	2	det
+# 2	rumor	rumor	NN	O	5	nsubj
+# 3	about	about	IN	O	4	case
+# 4	herself	herself	PRP	O	2	nmod
+# 5	amuses	amuse	VBZ	O	0	ROOT
+# 6	Sally	Sally	NNP	PERSON	5	dobj
+# 7	.	.	.	O	5	punct
 
+# # ok
+# 1	Sally	Sally	NNP	PERSON	3	nsubjpass
+# 2	is	be	VBZ	O	3	auxpass
+# 3	amused	amuse	VBN	O	0	ROOT
+# 4	by	by	IN	O	5	case
+# 5	rumors	rumor	NNS	O	3	nmod
+# 6	about	about	IN	O	7	case
+# 7	herself	herself	PRP	O	5	nmod
+# 8	.	.	.	O	3	punct
 
-1	The	the	DT	O	2	det
-2	rumor	rumor	NN	O	5	nsubj
-3	about	about	IN	O	4	case
-4	herself	herself	PRP	O	2	nmod
-5	amuses	amuse	VBZ	O	0	ROOT
-6	Sally	Sally	NNP	PERSON	5	dobj
-7	.	.	.	O	5	punct
-
-
-1	Sally	Sally	NNP	PERSON	3	nsubjpass
-2	is	be	VBZ	O	3	auxpass
-3	amused	amuse	VBN	O	0	ROOT
-4	by	by	IN	O	5	case
-5	rumors	rumor	NNS	O	3	nmod
-6	about	about	IN	O	7	case
-7	herself	herself	PRP	O	5	nmod
-8	.	.	.	O	3	punct
-
-
+# PrCS missing
 1	Molly	Molly	NNP	PERSON	2	nsubj
 2	bought	buy	VBD	O	0	ROOT
 3	nothing	nothing	NN	O	2	dobj
@@ -2250,15 +2308,22 @@
 5	herself	herself	PRP	O	2	nmod
 6	.	.	.	O	2	punct
 
-
-1	For	for	IN	O	4	mark
-2	herself	herself	PRP	O	4	dep
+# parse fixed (dep)
+1	For	for	IN	O	4	case
+2	herself	herself	PRP	O	4	nmod
 3	Molly	Molly	NNP	PERSON	4	nsubj
 4	bought	buy	VBD	O	0	ROOT
 5	nothing	nothing	NN	O	4	dobj
 6	.	.	.	O	4	punct
+	# # original
+	# 1	For	for	IN	O	4	mark
+	# 2	herself	herself	PRP	O	4	dep
+	# 3	Molly	Molly	NNP	PERSON	4	nsubj
+	# 4	bought	buy	VBD	O	0	ROOT
+	# 5	nothing	nothing	NN	O	4	dobj
+	# 6	.	.	.	O	4	punct
 
-
+# parataxis
 1	Jim	Jim	NNP	PERSON	2	nsubj
 2	likes	like	VBZ	O	0	ROOT
 3	himself	himself	PRP	O	2	dobj
@@ -2271,7 +2336,8 @@
 10	people	people	NNS	O	8	dobj
 11	.	.	.	O	2	punct
 
-
+# stand must modify people in nominal periphery
+# negation fixed
 1	Himself	himself	PRP	O	0	ROOT
 2	Jim	Jim	NNP	PERSON	3	nsubj
 3	likes	like	VBZ	O	1	acl:relcl
@@ -2281,11 +2347,10 @@
 7	other	other	JJ	O	8	amod
 8	people	people	NNS	O	1	parataxis
 9	he	he	PRP	O	13	nsubj
-10	can	can	MD	O	13	aux
-11	'	'	''	O	13	punct
-12	t	t	NN	O	13	compound
-13	stand	stand	NN	O	8	acl:relcl
-14	.	.	.	O	1	punct
+10	ca	can	MD	O	13	aux
+11	n't	not	RB	O	13	neg
+12	stand	stand	NN	O	8	acl:relcl
+13	.	.	.	O	1	punct
 
 
 1	Dana	Dana	NNP	PERSON	2	nsubj

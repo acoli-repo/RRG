@@ -196,7 +196,7 @@
 #p.407 Molly bought nothing for herself .
 #p.407 For herself Molly bought nothing .
 #p.407 Jim likes himself ; he can't stand other people .
-#p.407 Himself Jim likes ; it 's other people he can 't stand .
+#p.407 Himself Jim likes ; it 's other people he can't stand .
 #p.426 Dana went to Toronto yesterday .
 #p.426 Yesterday , Dana went to Toronto and did a lot of shopping .
 #p.426 Dana went to Toronto yesterday , and tomorrow she is going to Montreal .
