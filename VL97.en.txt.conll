@@ -1555,46 +1555,45 @@
 # 7	study	study	VB	O	4	xcomp
 # 8	.	.	.	O	4	punct
 
-# adjective phrases are beyond RRG 1997 ;) => ADJP in RRG 2005
-1	The	the	DT	O	4	det
-2	terminally	terminally	RB	O	3	advmod
-3	ill	ill	JJ	O	4	amod
-4	patients	patient	NNS	O	5	nsubj
-5	went	go	VBD	O	0	ROOT
-6	to	to	TO	O	8	case
-7	the	the	DT	O	8	det
-8	hospice	hospice	NN	O	5	nmod
-9	to	to	TO	O	10	mark
-10	die	die	VB	O	5	xcomp
-11	.	.	.	O	5	punct
+# # adjective phrases are beyond RRG 1997 ;) => ADJP in RRG 2005
+# 1	The	the	DT	O	4	det
+# 2	terminally	terminally	RB	O	3	advmod
+# 3	ill	ill	JJ	O	4	amod
+# 4	patients	patient	NNS	O	5	nsubj
+# 5	went	go	VBD	O	0	ROOT
+# 6	to	to	TO	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	hospice	hospice	NN	O	5	nmod
+# 9	to	to	TO	O	10	mark
+# 10	die	die	VB	O	5	xcomp
+# 11	.	.	.	O	5	punct
 
-# parse fixed
-# adjective phrases are beyond RRG 1997 ;) => ADJP in RRG 2005
-1	The	the	DT	O	4	det
-2	terminally	terminally	RB	O	3	advmod
-3	ill	ill	JJ	O	4	amod
-4	patients	patient	NNS	O	6	nsubjpass
-5	were	be	VBD	O	6	auxpass
-6	sent	send	VBN	O	0	ROOT
-7	to	to	TO	O	9	case
-8	the	the	DT	O	9	det
-9	hospice	hospice	NN	O	6	nmod
-10	to	to	TO	O	11	mark
-11	die	die	VB	O	6	xcomp
-12	.	.	.	O	6	punct
-	# # original
-	# 1	The	the	DT	O	4	det
-	# 2	terminally	terminally	RB	O	4	advmod
-	# 3	ill	ill	JJ	O	4	amod
-	# 4	patients	patient	NNS	O	6	nsubjpass
-	# 5	were	be	VBD	O	6	auxpass
-	# 6	sent	send	VBN	O	0	ROOT
-	# 7	to	to	TO	O	9	case
-	# 8	the	the	DT	O	9	det
-	# 9	hospice	hospice	NN	O	6	nmod
-	# 10	to	to	TO	O	11	mark
-	# 11	die	die	VB	O	6	xcomp
-	# 12	.	.	.	O	6	punct
+# # adjective phrases are beyond RRG 1997 ;) => ADJP in RRG 2005
+# 1	The	the	DT	O	4	det
+# 2	terminally	terminally	RB	O	3	advmod
+# 3	ill	ill	JJ	O	4	amod
+# 4	patients	patient	NNS	O	6	nsubjpass
+# 5	were	be	VBD	O	6	auxpass
+# 6	sent	send	VBN	O	0	ROOT
+# 7	to	to	TO	O	9	case
+# 8	the	the	DT	O	9	det
+# 9	hospice	hospice	NN	O	6	nmod
+# 10	to	to	TO	O	11	mark
+# 11	die	die	VB	O	6	xcomp
+# 12	.	.	.	O	6	punct
+	# # # original
+	# # 1	The	the	DT	O	4	det
+	# # 2	terminally	terminally	RB	O	4	advmod
+	# # 3	ill	ill	JJ	O	4	amod
+	# # 4	patients	patient	NNS	O	6	nsubjpass
+	# # 5	were	be	VBD	O	6	auxpass
+	# # 6	sent	send	VBN	O	0	ROOT
+	# # 7	to	to	TO	O	9	case
+	# # 8	the	the	DT	O	9	det
+	# # 9	hospice	hospice	NN	O	6	nmod
+	# # 10	to	to	TO	O	11	mark
+	# # 11	die	die	VB	O	6	xcomp
+	# # 12	.	.	.	O	6	punct
 
 # # ok, parse fixed
 # 1	The	the	DT	O	2	det
