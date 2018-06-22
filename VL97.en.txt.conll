@@ -2080,7 +2080,7 @@
 2	baked	bake	VB	O	0	ROOT
 3	a	a	DT	O	4	det
 4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	8	case
+5	for	for	IN	O	6	case
 6	Sandy	Sandy	NNP	PERSON	2	nmod
 7	to	to	TO	O	8	mark
 8	amuse	amuse	VB	O	2	advcl
