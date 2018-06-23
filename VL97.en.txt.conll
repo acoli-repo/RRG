@@ -2042,94 +2042,59 @@
 # 5	students	student	NNS	O	2	nmod
 # 6	.	.	.	O	2	punct
 
-# dobj attachment
-# parse fixed, her/PRP$ => her/PRP
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	baked	baked	JJ	O	0	ROOT
-3	a	a	DT	O	4	det
-4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	6	case
-6	Sandy	Sandy	NNP	PERSON	2	nmod
-7	to	to	TO	O	8	mark
-8	show	show	VB	O	2	xcomp
-9	her	she	PRP	O	8	dobj
-10	she	she	PRP	O	12	nsubj
-11	could	could	MD	O	12	aux
-12	do	do	VB	O	8	ccomp
-13	it	it	PRP	O	12	dobj
-14	.	.	.	O	2	punct
-	# # original
-	# 1	Robin	Robin	NNP	PERSON	2	nsubj
-	# 2	baked	baked	JJ	O	0	ROOT
-	# 3	a	a	DT	O	4	det
-	# 4	cake	cake	NN	O	2	dobj
-	# 5	for	for	IN	O	8	mark
-	# 6	Sandy	Sandy	NNP	PERSON	8	nsubj
-	# 7	to	to	TO	O	8	mark
-	# 8	show	show	VB	O	4	acl
-	# 9	her	she	PRP$	O	8	dobj
-	# 10	she	she	PRP	O	12	nsubj
-	# 11	could	could	MD	O	12	aux
-	# 12	do	do	VB	O	9	acl:relcl
-	# 13	it	it	PRP	O	12	dobj
-	# 14	.	.	.	O	2	punct
+# # ok, parse fixed, her/PRP$ => her/PRP
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	baked	baked	JJ	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	cake	cake	NN	O	2	dobj
+# 5	for	for	IN	O	6	case
+# 6	Sandy	Sandy	NNP	PERSON	2	nmod
+# 7	to	to	TO	O	8	mark
+# 8	show	show	VB	O	2	xcomp
+# 9	her	she	PRP	O	8	dobj
+# 10	she	she	PRP	O	12	nsubj
+# 11	could	could	MD	O	12	aux
+# 12	do	do	VB	O	8	ccomp
+# 13	it	it	PRP	O	12	dobj
+# 14	.	.	.	O	2	punct
+	# # # original
+	# # 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# # 2	baked	baked	JJ	O	0	ROOT
+	# # 3	a	a	DT	O	4	det
+	# # 4	cake	cake	NN	O	2	dobj
+	# # 5	for	for	IN	O	8	mark
+	# # 6	Sandy	Sandy	NNP	PERSON	8	nsubj
+	# # 7	to	to	TO	O	8	mark
+	# # 8	show	show	VB	O	4	acl
+	# # 9	her	she	PRP$	O	8	dobj
+	# # 10	she	she	PRP	O	12	nsubj
+	# # 11	could	could	MD	O	12	aux
+	# # 12	do	do	VB	O	9	acl:relcl
+	# # 13	it	it	PRP	O	12	dobj
+	# # 14	.	.	.	O	2	punct
 
-# parse fixed
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	baked	bake	VB	O	0	ROOT
-3	a	a	DT	O	4	det
-4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	6	case
-6	Sandy	Sandy	NNP	PERSON	2	nmod
-7	to	to	TO	O	8	mark
-8	amuse	amuse	VB	O	2	advcl
-9	her	she	PRP	O	8	dobj
-10	.	.	.	O	2	punct
-	# # original
-	# 1	Robin	Robin	NNP	PERSON	2	nsubj
-	# 2	baked	baked	JJ	O	0	ROOT
-	# 3	a	a	DT	O	4	det
-	# 4	cake	cake	NN	O	2	dobj
-	# 5	for	for	IN	O	8	mark
-	# 6	Sandy	Sandy	NNP	PERSON	8	nsubj
-	# 7	to	to	TO	O	8	mark
-	# 8	amuse	amuse	VB	O	4	acl
-	# 9	her	she	PRP	O	8	dobj
-	# 10	.	.	.	O	2	punct
-
-# so that must be CLM, not PP NUC
-# to is a stranded complementizer, this representation is analoguos to that
-# probably not a NUC coordination !
-# lemmatization/POS of baked fixed
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	baked	bake	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	cake	cake	NN	O	2	dobj
-5	for	for	IN	O	6	case
-6	Sandy	Sandy	NNP	PERSON	4	nmod
-7	so	so	IN	O	12	mark
-8	that	that	IN	O	7	mwe
-9	she	she	PRP	O	12	nsubj
-10	would	would	MD	O	12	aux
-11	n't	not	RB	O	12	neg
-12	have	have	VB	O	2	advcl
-13	to	to	TO	O	12	xcomp
-14	.	.	.	O	2	punct
-	# # original
-	# 1	Robin	Robin	NNP	PERSON	2	nsubj
-	# 2	baked	baked	JJ	O	0	ROOT
-	# 3	a	a	DT	O	4	det
-	# 4	cake	cake	NN	O	2	dobj
-	# 5	for	for	IN	O	6	case
-	# 6	Sandy	Sandy	NNP	PERSON	4	nmod
-	# 7	so	so	IN	O	12	mark
-	# 8	that	that	IN	O	7	mwe
-	# 9	she	she	PRP	O	12	nsubj
-	# 10	would	would	MD	O	12	aux
-	# 11	n't	not	RB	O	12	neg
-	# 12	have	have	VB	O	2	advcl
-	# 13	to	to	TO	O	12	xcomp
-	# 14	.	.	.	O	2	punct
+# # ok, parse fixed
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	baked	bake	VB	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	cake	cake	NN	O	2	dobj
+# 5	for	for	IN	O	6	case
+# 6	Sandy	Sandy	NNP	PERSON	2	nmod
+# 7	to	to	TO	O	8	mark
+# 8	amuse	amuse	VB	O	2	advcl
+# 9	her	she	PRP	O	8	dobj
+# 10	.	.	.	O	2	punct
+	# # # original
+	# # 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# # 2	baked	baked	JJ	O	0	ROOT
+	# # 3	a	a	DT	O	4	det
+	# # 4	cake	cake	NN	O	2	dobj
+	# # 5	for	for	IN	O	8	mark
+	# # 6	Sandy	Sandy	NNP	PERSON	8	nsubj
+	# # 7	to	to	TO	O	8	mark
+	# # 8	amuse	amuse	VB	O	4	acl
+	# # 9	her	she	PRP	O	8	dobj
+	# # 10	.	.	.	O	2	punct
 
 # # ok
 # 1	The	the	DT	O	2	det
@@ -2237,20 +2202,20 @@
 # 7	herself	herself	PRP	O	2	nmod
 # 8	.	.	.	O	2	punct
 
-# juncture
-1	John	John	NNP	PERSON	2	nsubj
-2	built	build	VBD	O	0	ROOT
-3	a	a	DT	O	4	det
-4	chest	chest	NN	O	2	dobj
-5	for	for	IN	O	7	case
-6	his	he	PRP$	O	7	nmod:poss
-7	wife	wife	NN	O	4	nmod
-8	to	to	TO	O	9	mark
-9	put	put	VB	O	2	advcl
-10	her	she	PRP$	O	11	nmod:poss
-11	clothes	clothes	NNS	O	9	dobj
-12	in	in	IN	O	9	compound:prt
-13	.	.	.	O	2	punct
+# # ok ?
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	built	build	VBD	O	0	ROOT
+# 3	a	a	DT	O	4	det
+# 4	chest	chest	NN	O	2	dobj
+# 5	for	for	IN	O	7	case
+# 6	his	he	PRP$	O	7	nmod:poss
+# 7	wife	wife	NN	O	4	nmod
+# 8	to	to	TO	O	9	mark
+# 9	put	put	VB	O	2	advcl
+# 10	her	she	PRP$	O	11	nmod:poss
+# 11	clothes	clothes	NNS	O	9	dobj
+# 12	in	in	IN	O	9	compound:prt
+# 13	.	.	.	O	2	punct
 
 # # ok
 # 1	The	the	DT	O	2	det
@@ -4364,4 +4329,38 @@
 20	ready	ready	JJ	O	16	xcomp
 21	.	.	.	O	16	punct
 
+
+# TBC: so that must be CLM, not PP NUC
+# to is a stranded complementizer, this representation is analoguos to that
+# probably not a NUC coordination !
+# lemmatization/POS of baked fixed
+1	Robin	Robin	NNP	PERSON	2	nsubj
+2	baked	bake	VBD	O	0	ROOT
+3	a	a	DT	O	4	det
+4	cake	cake	NN	O	2	dobj
+5	for	for	IN	O	6	case
+6	Sandy	Sandy	NNP	PERSON	4	nmod
+7	so	so	IN	O	12	mark
+8	that	that	IN	O	7	mwe
+9	she	she	PRP	O	12	nsubj
+10	would	would	MD	O	12	aux
+11	n't	not	RB	O	12	neg
+12	have	have	VB	O	2	advcl
+13	to	to	TO	O	12	xcomp
+14	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	baked	baked	JJ	O	0	ROOT
+	# 3	a	a	DT	O	4	det
+	# 4	cake	cake	NN	O	2	dobj
+	# 5	for	for	IN	O	6	case
+	# 6	Sandy	Sandy	NNP	PERSON	4	nmod
+	# 7	so	so	IN	O	12	mark
+	# 8	that	that	IN	O	7	mwe
+	# 9	she	she	PRP	O	12	nsubj
+	# 10	would	would	MD	O	12	aux
+	# 11	n't	not	RB	O	12	neg
+	# 12	have	have	VB	O	2	advcl
+	# 13	to	to	TO	O	12	xcomp
+	# 14	.	.	.	O	2	punct
 

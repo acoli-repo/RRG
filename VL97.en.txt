@@ -174,7 +174,6 @@
 #p.383 Rita sang for the students .
 #p.384 Robin baked a cake for Sandy to show her she could do it .
 #p.384 Robin baked a cake for Sandy to amuse her .
-#p.384 Robin baked a cake for Sandy so that she would n't have to .
 #p.387 The thief stole $5,000 from the store .
 #p.387 The thief robbed the store of $5,000 .
 #p.390 Sally talked to Harry about herself .
@@ -357,3 +356,4 @@
 #p.670 Mary having finished doing the dishes , Pat and Neil could start their next project in the kitchen .
 #p.670 With Sam going to the store for beer and pretzels , the other guys could get the surprise party ready .
 #RRG_overview.pdf_Fig.5 She will be singing .
+#p.384 Robin baked a cake for Sandy so that she would n't have to .
