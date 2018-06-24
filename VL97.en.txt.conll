@@ -2551,21 +2551,21 @@
 # 5	open	open	JJ	O	2	xcomp
 # 6	.	.	.	O	2	punct
 
-# todo: core junction
-# (optional/unneccessary?) parse fix: JJ correction to block interference with TNS feature
-1	Bill	Bill	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	door	door	NN	O	5	nsubj
-5	closed	closed	JJ	O	2	ccomp
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Bill	Bill	NNP	PERSON	2	nsubj
-	# 2	pushed	push	VBD	O	0	ROOT
-	# 3	the	the	DT	O	4	det
-	# 4	door	door	NN	O	5	nsubj
-	# 5	closed	close	VBD	O	2	ccomp
-	# 6	.	.	.	O	2	punct
+# # ok: core junction
+# # (optional/unneccessary?) parse fix: JJ correction to block interference with TNS feature
+# 1	Bill	Bill	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	door	door	NN	O	5	nsubj
+# 5	closed	closed	JJ	O	2	ccomp
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Bill	Bill	NNP	PERSON	2	nsubj
+	# # 2	pushed	push	VBD	O	0	ROOT
+	# # 3	the	the	DT	O	4	det
+	# # 4	door	door	NN	O	5	nsubj
+	# # 5	closed	close	VBD	O	2	ccomp
+	# # 6	.	.	.	O	2	punct
 
 
 # # ok?
@@ -2696,20 +2696,13 @@
 # 6	him	he	PRP	O	5	dobj
 # 7	.	.	.	O	2	punct
 
-# must be core juncture, parse fixed
-1	Fred	Fred	NNP	PERSON	2	nsubj
-2	made	make	VBD	O	0	ROOT
-3	Pam	Pam	NNP	PERSON	2	dobj
-4	help	help	VB	O	2	xcomp
-5	him	he	PRP	O	4	dobj
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Fred	Fred	NNP	PERSON	2	nsubj
-	# 2	made	make	VBD	O	0	ROOT
-	# 3	Pam	Pam	NNP	PERSON	4	nsubj
-	# 4	help	help	VB	O	2	ccomp
-	# 5	him	he	PRP	O	4	dobj
-	# 6	.	.	.	O	2	punct
+# # ok: core juncture
+# 1	Fred	Fred	NNP	PERSON	2	nsubj
+# 2	made	make	VBD	O	0	ROOT
+# 3	Pam	Pam	NNP	PERSON	4	nsubj
+# 4	help	help	VB	O	2	ccomp
+# 5	him	he	PRP	O	4	dobj
+# 6	.	.	.	O	2	punct
 
 # # ok
 # 1	Sam	Sam	NNP	PERSON	2	nsubj
@@ -2720,22 +2713,38 @@
 # 6	tomorrow	tomorrow	NN	DATE	5	nmod:tmod
 # 7	.	.	.	O	2	punct
 
-# tiger fail
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	called	call	VBD	O	0	ROOT
-3	Fred	Fred	NNP	PERSON	2	dobj
-4	yesterday	yesterday	NN	DATE	2	nmod:tmod
-5	,	,	,	O	2	punct
-6	and	and	CC	O	2	cc
-7	she	she	PRP	O	8	nsubj
-8	asked	ask	VBD	O	2	conj
-9	him	he	PRP	O	8	dobj
-10	to	to	TO	O	11	mark
-11	paint	paint	VB	O	8	xcomp
-12	her	she	PRP$	O	13	nmod:poss
-13	room	room	NN	O	14	nsubj
-14	white	white	JJ	O	11	xcomp
-15	.	.	.	O	2	punct
+# # ok: parse fixed to yield nuc coordination (paint ... white)
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	called	call	VBD	O	0	ROOT
+# 3	Fred	Fred	NNP	PERSON	2	dobj
+# 4	yesterday	yesterday	NN	DATE	2	nmod:tmod
+# 5	,	,	,	O	2	punct
+# 6	and	and	CC	O	2	cc
+# 7	she	she	PRP	O	8	nsubj
+# 8	asked	ask	VBD	O	2	conj
+# 9	him	he	PRP	O	8	dobj
+# 10	to	to	TO	O	11	mark
+# 11	paint	paint	VB	O	8	xcomp
+# 12	her	she	PRP$	O	13	nmod:poss
+# 13	room	room	NN	O	11	dobj
+# 14	white	white	JJ	O	11	xcomp
+# 15	.	.	.	O	2	punct
+	# # # original
+	# # 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# # 2	called	call	VBD	O	0	ROOT
+	# # 3	Fred	Fred	NNP	PERSON	2	dobj
+	# # 4	yesterday	yesterday	NN	DATE	2	nmod:tmod
+	# # 5	,	,	,	O	2	punct
+	# # 6	and	and	CC	O	2	cc
+	# # 7	she	she	PRP	O	8	nsubj
+	# # 8	asked	ask	VBD	O	2	conj
+	# # 9	him	he	PRP	O	8	dobj
+	# # 10	to	to	TO	O	11	mark
+	# # 11	paint	paint	VB	O	8	xcomp
+	# # 12	her	she	PRP$	O	13	nmod:poss
+	# # 13	room	room	NN	O	14	nsubj
+	# # 14	white	white	JJ	O	11	xcomp
+	# # 15	.	.	.	O	2	punct
 
 # # ok
 # 1	Max	Max	NNP	PERSON	2	nsubj
@@ -2745,20 +2754,20 @@
 # 5	leave	leave	NN	O	2	dobj
 # 6	.	.	.	O	2	punct
 
-# must be nuclear cosubordination, fixed parse
-1	Vince	Vince	NNP	PERSON	2	nsubj
-2	wiped	wipe	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	table	table	NN	O	2	dobj
-5	clean	clean	JJ	O	2	xcomp
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Vince	Vince	NNP	PERSON	2	nsubj
-	# 2	wiped	wipe	VBD	O	0	ROOT
-	# 3	the	the	DT	O	4	det
-	# 4	table	table	NN	O	5	nsubj
-	# 5	clean	clean	JJ	O	2	xcomp
-	# 6	.	.	.	O	2	punct
+# # ok: nuclear cosubordination, fixed parse
+# 1	Vince	Vince	NNP	PERSON	2	nsubj
+# 2	wiped	wipe	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	table	table	NN	O	2	dobj
+# 5	clean	clean	JJ	O	2	xcomp
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Vince	Vince	NNP	PERSON	2	nsubj
+	# # 2	wiped	wipe	VBD	O	0	ROOT
+	# # 3	the	the	DT	O	4	det
+	# # 4	table	table	NN	O	5	nsubj
+	# # 5	clean	clean	JJ	O	2	xcomp
+	# # 6	.	.	.	O	2	punct
 
 # # ok
 # 1	Ted	Ted	NNP	PERSON	2	nsubj
