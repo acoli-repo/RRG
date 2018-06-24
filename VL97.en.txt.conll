@@ -2551,9 +2551,8 @@
 # 5	open	open	JJ	O	2	xcomp
 # 6	.	.	.	O	2	punct
 
-# parse-constituents yields core junction, as required
-# operator projection, however, infers a TNS property and thus introduces a separate CLAUSE node (i.e., clausal subordination)
-# hack: suppressed in the parse by tagging closed as JJ (hence tense information suppressed)
+# todo: core junction
+# (optional/unneccessary?) parse fix: JJ correction to block interference with TNS feature
 1	Bill	Bill	NNP	PERSON	2	nsubj
 2	pushed	push	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
