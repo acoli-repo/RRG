@@ -2401,21 +2401,21 @@
 # 12	shopping	shopping	NN	O	10	nmod
 # 13	.	.	.	O	4	punct
 
-# no tiger
-1	Dana	Dana	NNP	PERSON	2	nsubj
-2	went	go	VBD	O	0	ROOT
-3	to	to	TO	O	4	case
-4	Toronto	Toronto	NNP	LOCATION	2	nmod
-5	yesterday	yesterday	NN	DATE	2	nmod:tmod
-6	,	,	,	O	2	punct
-7	and	and	CC	O	2	cc
-8	tomorrow	tomorrow	NN	DATE	11	nmod:tmod
-9	she	she	PRP	O	11	nsubj
-10	is	be	VBZ	O	11	aux
-11	going	go	VBG	O	2	conj
-12	to	to	TO	O	13	case
-13	Montreal	Montreal	NNP	LOCATION	11	nmod
-14	.	.	.	O	2	punct
+# # ok
+# 1	Dana	Dana	NNP	PERSON	2	nsubj
+# 2	went	go	VBD	O	0	ROOT
+# 3	to	to	TO	O	4	case
+# 4	Toronto	Toronto	NNP	LOCATION	2	nmod
+# 5	yesterday	yesterday	NN	DATE	2	nmod:tmod
+# 6	,	,	,	O	2	punct
+# 7	and	and	CC	O	2	cc
+# 8	tomorrow	tomorrow	NN	DATE	11	nmod:tmod
+# 9	she	she	PRP	O	11	nsubj
+# 10	is	be	VBZ	O	11	aux
+# 11	going	go	VBG	O	2	conj
+# 12	to	to	TO	O	13	case
+# 13	Montreal	Montreal	NNP	LOCATION	11	nmod
+# 14	.	.	.	O	2	punct
 
 # # ok
 # 1	When	when	WRB	O	4	advmod
@@ -2426,37 +2426,38 @@
 # 6	Montreal	Montreal	NNP	LOCATION	4	nmod
 # 7	?	?	.	O	4	punct
 
-# parse fixed: incorrect compound
-1	Where	where	WRB	O	4	advmod
-2	is	be	VBZ	O	4	aux
-3	Dana	Dana	NNP	PERSON	4	nsubj
-4	going	go	VBG	O	0	ROOT
-5	shopping	shopping	NN	O	4	dobj
-6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
-7	?	?	.	O	4	punct
-	# # orig
-	# 1	Where	where	WRB	O	4	advmod
-	# 2	is	be	VBZ	O	4	aux
-	# 3	Dana	Dana	NNP	PERSON	4	nsubj
-	# 4	going	go	VBG	O	0	ROOT
-	# 5	shopping	shopping	NN	O	6	compound
-	# 6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
-	# 7	?	?	.	O	4	punct
+# # ok; parse fixed: incorrect compound
+# 1	Where	where	WRB	O	4	advmod
+# 2	is	be	VBZ	O	4	aux
+# 3	Dana	Dana	NNP	PERSON	4	nsubj
+# 4	going	go	VBG	O	0	ROOT
+# 5	shopping	shopping	NN	O	4	dobj
+# 6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
+# 7	?	?	.	O	4	punct
+	# # # orig
+	# # 1	Where	where	WRB	O	4	advmod
+	# # 2	is	be	VBZ	O	4	aux
+	# # 3	Dana	Dana	NNP	PERSON	4	nsubj
+	# # 4	going	go	VBG	O	0	ROOT
+	# # 5	shopping	shopping	NN	O	6	compound
+	# # 6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
+	# # 7	?	?	.	O	4	punct
 
-# # ok
-# 1	John	John	NNP	PERSON	2	nsubj
-# 2	forced	force	VBD	O	0	ROOT
-# 3	open	open	JJ	O	5	amod
-# 4	the	the	DT	O	5	det
-# 5	door	door	NN	O	2	dobj
-# 6	.	.	.	O	2	punct
+# parse fixed (amod > xcomp), cf. John forced the door open
+# todo: nuclear juncture; possibly to be fixed after operator projection
+1	John	John	NNP	PERSON	2	nsubj
+2	forced	force	VBD	O	0	ROOT
+3	open	open	JJ	O	2	xcomp
+4	the	the	DT	O	5	det
+5	door	door	NN	O	2	dobj
+6	.	.	.	O	2	punct
 
-# parse fixed, must be nuclear juncture
+# parse fixed (dobj), must be nuclear juncture
 1	John	John	NNP	PERSON	2	nsubj
 2	forced	force	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
 4	door	door	NN	O	2	dobj
-5	open	open	JJ	O	2	amod
+5	open	open	JJ	O	2	xcomp
 6	.	.	.	O	2	punct
 	# # original
 	# 1	John	John	NNP	PERSON	2	nsubj
@@ -2466,7 +2467,7 @@
 	# 5	open	open	JJ	O	2	xcomp
 	# 6	.	.	.	O	2	punct
 
-# # ok
+# # ok?
 # 1	Bill	Bill	NNP	PERSON	2	nsubj
 # 2	pushed	push	VBD	O	0	ROOT
 # 3	open	open	JJ	O	5	amod
@@ -2481,7 +2482,7 @@
 # 4	vase	vase	NN	O	2	dobj
 # 5	.	.	.	O	2	punct
 
-# parse fixed, must be nuclear junction
+# parse fixed, must be nuclear junction, hence no own arguments
 1	I	I	PRP	O	2	nsubj
 2	ordered	order	VBD	O	0	ROOT
 3	Fred	Fred	NNP	PERSON	2	dobj
@@ -2489,7 +2490,7 @@
 5	force	force	VB	O	2	xcomp
 6	the	the	DT	O	7	det
 7	door	door	NN	O	5	dobj
-8	open	open	JJ	O	5	amod
+8	open	open	JJ	O	5	xcomp
 9	.	.	.	O	2	punct
 	# # original
 	# 1	I	I	PRP	O	2	nsubj
@@ -2520,6 +2521,7 @@
 # 6	.	.	.	O	2	punct
 
 # should be core juncture, here: redundant subordinate clause node
+# to be fixed after operators?: clause juncture only if that-marked or explicit clause features
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	made	make	VBD	O	0	ROOT
 3	Sally	Sally	NNP	PERSON	4	nsubj
@@ -2559,7 +2561,7 @@
 # 14	.	.	.	O	2	punct
 
 # should be junction, irreplicable
-# we can, however, consider over a particle, as in "knock out the guy!"
+# we can, however, consider "over" as a particle, as in "knock out the guy!"
 # will become part of NUC, then, fixed to that
 1	Bobby	Bobby	NNP	PERSON	2	nsubj
 2	pushed	push	VBD	O	0	ROOT
