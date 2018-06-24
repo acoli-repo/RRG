@@ -2778,13 +2778,13 @@
 # 6	door	door	NN	O	4	dobj
 # 7	.	.	.	O	2	punct
 
-# must be core cosubordination, but is coordination
-1	Sam	Sam	NNP	PERSON	2	nsubj
-2	sat	sit	VBD	O	0	ROOT
-3	playing	play	VBG	O	2	xcomp
-4	the	the	DT	O	5	det
-5	guitar	guitar	NN	O	3	dobj
-6	.	.	.	O	2	punct
+# # ok: core cosubordination
+# 1	Sam	Sam	NNP	PERSON	2	nsubj
+# 2	sat	sit	VBD	O	0	ROOT
+# 3	playing	play	VBG	O	2	xcomp
+# 4	the	the	DT	O	5	det
+# 5	guitar	guitar	NN	O	3	dobj
+# 6	.	.	.	O	2	punct
 
 # # ok
 # 1	David	David	NNP	PERSON	2	nsubj
@@ -2799,7 +2799,7 @@
 # parse fixed
 1	That	that	DT	O	2	det
 2	Amy	Amy	NNP	PERSON	3	nsubj
-3	lost	lose	VBD	O	6	ccomp
+3	lost	lose	VBD	O	6	csubj
 4	the	the	DT	O	5	det
 5	race	race	NN	O	3	dobj
 6	shocked	shocked	JJ	O	0	ROOT
@@ -2825,20 +2825,20 @@
 # 7	window	window	NN	O	5	dobj
 # 8	.	.	.	O	2	punct
 
-# must be core coordination
-1	Fred	Fred	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	Harry	Harry	NNP	PERSON	4	nsubj
-4	leave	leave	VB	O	2	ccomp
-5	the	the	DT	O	6	det
-6	room	room	NN	O	4	dobj
-7	.	.	.	O	2	punct
+# # ok: core coordination
+# 1	Fred	Fred	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	Harry	Harry	NNP	PERSON	4	nsubj
+# 4	leave	leave	VB	O	2	ccomp
+# 5	the	the	DT	O	6	det
+# 6	room	room	NN	O	4	dobj
+# 7	.	.	.	O	2	punct
 
-# must be clausal cosubordination
+# ok? (core coordination, should be clausal cosubordination (why???)
 # parse fixed (dep)
 1	Harry	Harry	NNP	PERSON	2	nsubj
 2	ran	run	VBD	O	0	ROOT
-3	down	down	RP	O	2	case
+3	down	down	RP	O	5	case
 4	the	the	DT	O	5	det
 5	hall	hall	NN	O	2	nmod
 6	laughing	laugh	VBG	O	2	xcomp
@@ -2866,6 +2866,7 @@
 # 9	beer	beer	NN	O	7	dobj
 # 10	.	.	.	O	2	punct
 
+# should be core argument
 # parse fixed (relative clause is argument; that is mark, not dobj)
 1	John	John	NNP	PERSON	2	nsubj
 2	persuaded	persuade	VBD	O	0	ROOT
