@@ -2255,29 +2255,28 @@
 # 5	himself	himself	PRP	O	2	nmod:npmod
 # 6	.	.	.	O	2	punct
 
-# attach dobj
-# parse fixed (dep)
-1	The	the	DT	O	2	det
-2	photo	photo	NN	O	8	nsubj
-3	of	of	IN	O	4	case
-4	himself	himself	PRP	O	2	nmod
-5	in	in	IN	O	7	case
-6	the	the	DT	O	7	det
-7	newspaper	newspaper	NN	O	2	nmod
-8	upsets	upset	VBZ	O	0	ROOT
-9	James	James	NNP	PERSON	8	dobj
-10	.	.	.	O	2	punct
-	# # original
-	# 1	The	the	DT	O	2	det
-	# 2	photo	photo	NN	O	0	ROOT
-	# 3	of	of	IN	O	4	case
-	# 4	himself	himself	PRP	O	2	nmod
-	# 5	in	in	IN	O	8	case
-	# 6	the	the	DT	O	8	det
-	# 7	newspaper	newspaper	NN	O	8	compound
-	# 8	upsets	upset	NNS	O	2	nmod
-	# 9	James	James	NNP	PERSON	8	dep
-	# 10	.	.	.	O	2	punct
+# # ok, parse fixed (dep)
+# 1	The	the	DT	O	2	det
+# 2	photo	photo	NN	O	8	nsubj
+# 3	of	of	IN	O	4	case
+# 4	himself	himself	PRP	O	2	nmod
+# 5	in	in	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	newspaper	newspaper	NN	O	2	nmod
+# 8	upsets	upset	VBZ	O	0	ROOT
+# 9	James	James	NNP	PERSON	8	dobj
+# 10	.	.	.	O	2	punct
+	# # # original
+	# # 1	The	the	DT	O	2	det
+	# # 2	photo	photo	NN	O	0	ROOT
+	# # 3	of	of	IN	O	4	case
+	# # 4	himself	himself	PRP	O	2	nmod
+	# # 5	in	in	IN	O	8	case
+	# # 6	the	the	DT	O	8	det
+	# # 7	newspaper	newspaper	NN	O	8	compound
+	# # 8	upsets	upset	NNS	O	2	nmod
+	# # 9	James	James	NNP	PERSON	8	dep
+	# # 10	.	.	.	O	2	punct
 
 # # ok
 # 1	James	James	NNP	PERSON	3	nsubjpass
@@ -2320,20 +2319,20 @@
 # 5	herself	herself	PRP	O	2	nmod
 # 6	.	.	.	O	2	punct
 
-# parse fixed (dep)
-1	For	for	IN	O	2	case
-2	herself	herself	PRP	O	4	nmod
-3	Molly	Molly	NNP	PERSON	4	nsubj
-4	bought	buy	VBD	O	0	ROOT
-5	nothing	nothing	NN	O	4	dobj
-6	.	.	.	O	4	punct
-	# # original
-	# 1	For	for	IN	O	4	mark
-	# 2	herself	herself	PRP	O	4	dep
-	# 3	Molly	Molly	NNP	PERSON	4	nsubj
-	# 4	bought	buy	VBD	O	0	ROOT
-	# 5	nothing	nothing	NN	O	4	dobj
-	# 6	.	.	.	O	4	punct
+# # ok, parse fixed (dep)
+# 1	For	for	IN	O	2	case
+# 2	herself	herself	PRP	O	4	nmod
+# 3	Molly	Molly	NNP	PERSON	4	nsubj
+# 4	bought	buy	VBD	O	0	ROOT
+# 5	nothing	nothing	NN	O	4	dobj
+# 6	.	.	.	O	4	punct
+	# # # original
+	# # 1	For	for	IN	O	4	mark
+	# # 2	herself	herself	PRP	O	4	dep
+	# # 3	Molly	Molly	NNP	PERSON	4	nsubj
+	# # 4	bought	buy	VBD	O	0	ROOT
+	# # 5	nothing	nothing	NN	O	4	dobj
+	# # 6	.	.	.	O	4	punct
 
 # # ok (parataxis)
 # 1	Jim	Jim	NNP	PERSON	2	nsubj
@@ -2349,20 +2348,35 @@
 # 11	.	.	.	O	2	punct
 
 # stand must modify people in nominal periphery
-# negation fixed
-1	Himself	himself	PRP	O	0	ROOT
+# parse fixed: likes is root (as in "Jim likes himself"); stand as VB
+1	Himself	himself	PRP	O	3	dobj
 2	Jim	Jim	NNP	PERSON	3	nsubj
-3	likes	like	VBZ	O	1	acl:relcl
+3	likes	like	VBZ	O	0	ROOT
 4	;	;	:	O	1	punct
 5	it	it	PRP	O	8	nsubj
 6	's	be	VBZ	O	8	cop
 7	other	other	JJ	O	8	amod
-8	people	people	NNS	O	1	parataxis
-9	he	he	PRP	O	13	nsubj
-10	ca	can	MD	O	13	aux
-11	n't	not	RB	O	13	neg
-12	stand	stand	NN	O	8	acl:relcl
+8	people	people	NNS	O	3	parataxis
+9	he	he	PRP	O	12	nsubj
+10	ca	can	MD	O	12	aux
+11	n't	not	RB	O	12	neg
+12	stand	stand	VB	O	8	acl:relcl
 13	.	.	.	O	1	punct
+	# # original parse (negation manually fixed -- typo)
+	# 1	Himself	himself	PRP	O	0	ROOT
+	# 2	Jim	Jim	NNP	PERSON	3	nsubj
+	# 3	likes	like	VBZ	O	1	acl:relcl
+	# 4	;	;	:	O	1	punct
+	# 5	it	it	PRP	O	8	nsubj
+	# 6	's	be	VBZ	O	8	cop
+	# 7	other	other	JJ	O	8	amod
+	# 8	people	people	NNS	O	1	parataxis
+	# 9	he	he	PRP	O	12	nsubj
+	# 10	ca	can	MD	O	12	aux
+	# 11	n't	not	RB	O	12	neg
+	# 12	stand	stand	NN	O	8	acl:relcl
+	# 13	.	.	.	O	1	punct
+
 
 # # ok
 # 1	Dana	Dana	NNP	PERSON	2	nsubj
