@@ -2347,35 +2347,35 @@
 # 10	people	people	NNS	O	8	dobj
 # 11	.	.	.	O	2	punct
 
-# stand must modify people in nominal periphery
-# parse fixed: likes is root (as in "Jim likes himself"); stand as VB
-1	Himself	himself	PRP	O	3	dobj
-2	Jim	Jim	NNP	PERSON	3	nsubj
-3	likes	like	VBZ	O	0	ROOT
-4	;	;	:	O	1	punct
-5	it	it	PRP	O	8	nsubj
-6	's	be	VBZ	O	8	cop
-7	other	other	JJ	O	8	amod
-8	people	people	NNS	O	3	parataxis
-9	he	he	PRP	O	12	nsubj
-10	ca	can	MD	O	12	aux
-11	n't	not	RB	O	12	neg
-12	stand	stand	VB	O	8	acl:relcl
-13	.	.	.	O	1	punct
-	# # original parse (negation manually fixed -- typo)
-	# 1	Himself	himself	PRP	O	0	ROOT
-	# 2	Jim	Jim	NNP	PERSON	3	nsubj
-	# 3	likes	like	VBZ	O	1	acl:relcl
-	# 4	;	;	:	O	1	punct
-	# 5	it	it	PRP	O	8	nsubj
-	# 6	's	be	VBZ	O	8	cop
-	# 7	other	other	JJ	O	8	amod
-	# 8	people	people	NNS	O	1	parataxis
-	# 9	he	he	PRP	O	12	nsubj
-	# 10	ca	can	MD	O	12	aux
-	# 11	n't	not	RB	O	12	neg
-	# 12	stand	stand	NN	O	8	acl:relcl
-	# 13	.	.	.	O	1	punct
+# # stand must modify people in nominal periphery
+# # parse fixed: likes is root (as in "Jim likes himself"); stand as VB
+# 1	Himself	himself	PRP	O	3	dobj
+# 2	Jim	Jim	NNP	PERSON	3	nsubj
+# 3	likes	like	VBZ	O	0	ROOT
+# 4	;	;	:	O	1	punct
+# 5	it	it	PRP	O	8	nsubj
+# 6	's	be	VBZ	O	8	cop
+# 7	other	other	JJ	O	8	amod
+# 8	people	people	NNS	O	3	parataxis
+# 9	he	he	PRP	O	12	nsubj
+# 10	ca	can	MD	O	12	aux
+# 11	n't	not	RB	O	12	neg
+# 12	stand	stand	VB	O	8	acl:relcl
+# 13	.	.	.	O	1	punct
+	# # # original parse (negation manually fixed -- typo)
+	# # 1	Himself	himself	PRP	O	0	ROOT
+	# # 2	Jim	Jim	NNP	PERSON	3	nsubj
+	# # 3	likes	like	VBZ	O	1	acl:relcl
+	# # 4	;	;	:	O	1	punct
+	# # 5	it	it	PRP	O	8	nsubj
+	# # 6	's	be	VBZ	O	8	cop
+	# # 7	other	other	JJ	O	8	amod
+	# # 8	people	people	NNS	O	1	parataxis
+	# # 9	he	he	PRP	O	12	nsubj
+	# # 10	ca	can	MD	O	12	aux
+	# # 11	n't	not	RB	O	12	neg
+	# # 12	stand	stand	NN	O	8	acl:relcl
+	# # 13	.	.	.	O	1	punct
 
 
 # # ok
@@ -2443,29 +2443,35 @@
 	# # 6	tomorrow	tomorrow	NN	DATE	4	nmod:tmod
 	# # 7	?	?	.	O	4	punct
 
-# parse fixed (amod > xcomp), cf. John forced the door open
-# todo: nuclear juncture; possibly to be fixed after operator projection
-1	John	John	NNP	PERSON	2	nsubj
-2	forced	force	VBD	O	0	ROOT
-3	open	open	JJ	O	2	xcomp
-4	the	the	DT	O	5	det
-5	door	door	NN	O	2	dobj
-6	.	.	.	O	2	punct
+# # ok, parse fixed (amod > xcomp), cf. John forced the door open
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	forced	force	VBD	O	0	ROOT
+# 3	open	open	JJ	O	2	xcomp
+# 4	the	the	DT	O	5	det
+# 5	door	door	NN	O	2	dobj
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	John	John	NNP	PERSON	2	nsubj
+	# # 2	forced	force	VBD	O	0	ROOT
+	# # 3	open	open	JJ	O	5	amod
+	# # 4	the	the	DT	O	5	det
+	# # 5	door	door	NN	O	2	dobj
+	# # 6	.	.	.	O	2	punct
 
-# parse fixed (dobj), must be nuclear juncture
-1	John	John	NNP	PERSON	2	nsubj
-2	forced	force	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	door	door	NN	O	2	dobj
-5	open	open	JJ	O	2	xcomp
-6	.	.	.	O	2	punct
-	# # original
-	# 1	John	John	NNP	PERSON	2	nsubj
-	# 2	forced	force	VBD	O	0	ROOT
-	# 3	the	the	DT	O	4	det
-	# 4	door	door	NN	O	5	nsubj
-	# 5	open	open	JJ	O	2	xcomp
-	# 6	.	.	.	O	2	punct
+# # ok, parse fixed (dobj), cf. John forced open the door
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	forced	force	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	door	door	NN	O	2	dobj
+# 5	open	open	JJ	O	2	xcomp
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	John	John	NNP	PERSON	2	nsubj
+	# # 2	forced	force	VBD	O	0	ROOT
+	# # 3	the	the	DT	O	4	det
+	# # 4	door	door	NN	O	5	nsubj
+	# # 5	open	open	JJ	O	2	xcomp
+	# # 6	.	.	.	O	2	punct
 
 # # ok?
 # 1	Bill	Bill	NNP	PERSON	2	nsubj
@@ -2482,26 +2488,26 @@
 # 4	vase	vase	NN	O	2	dobj
 # 5	.	.	.	O	2	punct
 
-# parse fixed, must be nuclear junction, hence no own arguments
-1	I	I	PRP	O	2	nsubj
-2	ordered	order	VBD	O	0	ROOT
-3	Fred	Fred	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	force	force	VB	O	2	xcomp
-6	the	the	DT	O	7	det
-7	door	door	NN	O	5	dobj
-8	open	open	JJ	O	5	xcomp
-9	.	.	.	O	2	punct
-	# # original
-	# 1	I	I	PRP	O	2	nsubj
-	# 2	ordered	order	VBD	O	0	ROOT
-	# 3	Fred	Fred	NNP	PERSON	2	dobj
-	# 4	to	to	TO	O	5	mark
-	# 5	force	force	VB	O	2	xcomp
-	# 6	the	the	DT	O	7	det
-	# 7	door	door	NN	O	8	nsubj
-	# 8	open	open	JJ	O	5	xcomp
-	# 9	.	.	.	O	2	punct
+# # ok: parse fixed, must be nuclear junction, hence no own arguments
+# 1	I	I	PRP	O	2	nsubj
+# 2	ordered	order	VBD	O	0	ROOT
+# 3	Fred	Fred	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	force	force	VB	O	2	xcomp
+# 6	the	the	DT	O	7	det
+# 7	door	door	NN	O	5	dobj
+# 8	open	open	JJ	O	5	xcomp
+# 9	.	.	.	O	2	punct
+	# # # original
+	# # 1	I	I	PRP	O	2	nsubj
+	# # 2	ordered	order	VBD	O	0	ROOT
+	# # 3	Fred	Fred	NNP	PERSON	2	dobj
+	# # 4	to	to	TO	O	5	mark
+	# # 5	force	force	VB	O	2	xcomp
+	# # 6	the	the	DT	O	7	det
+	# # 7	door	door	NN	O	8	nsubj
+	# # 8	open	open	JJ	O	5	xcomp
+	# # 9	.	.	.	O	2	punct
 
 # # ok
 # 1	John	John	NNP	PERSON	2	nsubj
@@ -2520,13 +2526,22 @@
 # 5	leave	leave	VB	O	2	xcomp
 # 6	.	.	.	O	2	punct
 
-# should be core juncture, here: redundant subordinate clause node
-# to be fixed after operators?: clause juncture only if that-marked or explicit clause features
-1	Mary	Mary	NNP	PERSON	2	nsubj
-2	made	make	VBD	O	0	ROOT
-3	Sally	Sally	NNP	PERSON	4	nsubj
-4	leave	leave	VB	O	2	ccomp
-5	.	.	.	O	2	punct
+# # ok: parse fixed:
+# # if Sally is dobj to make, then => NUC juncture
+# # if Sally is nsubj to leave (Stanford default) => CORE juncture
+# # should be nuclear  juncture
+# 1	Mary	Mary	NNP	PERSON	2	nsubj
+# 2	made	make	VBD	O	0	ROOT
+# 3	Sally	Sally	NNP	PERSON	2	dobj
+# 4	leave	leave	VB	O	2	ccomp
+# 5	.	.	.	O	2	punct
+	# # # original
+	# # 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# # 2	made	make	VBD	O	0	ROOT
+	# # 3	Sally	Sally	NNP	PERSON	4	nsubj
+	# # 4	leave	leave	VB	O	2	ccomp
+	# # 5	.	.	.	O	2	punct
+
 
 # # ok?
 # 1	Bill	Bill	NNP	PERSON	2	nsubj
@@ -2536,13 +2551,23 @@
 # 5	open	open	JJ	O	2	xcomp
 # 6	.	.	.	O	2	punct
 
-# should be core junction, here: clausal subordinatinh, instead
+# parse-constituents yields core junction, as required
+# operator projection, however, infers a TNS property and thus introduces a separate CLAUSE node (i.e., clausal subordination)
+# hack: suppressed in the parse by tagging closed as JJ (hence tense information suppressed)
 1	Bill	Bill	NNP	PERSON	2	nsubj
 2	pushed	push	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
 4	door	door	NN	O	5	nsubj
-5	closed	close	VBD	O	2	ccomp
+5	closed	closed	JJ	O	2	ccomp
 6	.	.	.	O	2	punct
+	# # original
+	# 1	Bill	Bill	NNP	PERSON	2	nsubj
+	# 2	pushed	push	VBD	O	0	ROOT
+	# 3	the	the	DT	O	4	det
+	# 4	door	door	NN	O	5	nsubj
+	# 5	closed	close	VBD	O	2	ccomp
+	# 6	.	.	.	O	2	punct
+
 
 # # ok?
 # 1	Bill	Bill	NNP	PERSON	2	nsubj
@@ -2560,37 +2585,39 @@
 # 13	storm	storm	NN	O	10	nmod
 # 14	.	.	.	O	2	punct
 
-# should be junction, irreplicable
-# we can, however, consider "over" as a particle, as in "knock out the guy!"
-# will become part of NUC, then, fixed to that
-1	Bobby	Bobby	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	table	table	NN	O	2	dobj
-5	over	over	IN	O	2	compound:prt
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Bobby	Bobby	NNP	PERSON	2	nsubj
-	# 2	pushed	push	VBD	O	0	ROOT
-	# 3	the	the	DT	O	4	det
-	# 4	table	table	NN	O	2	dobj
-	# 5	over	over	IN	O	2	advmod
-	# 6	.	.	.	O	2	punct
+# # approximatively ok
+# # should be junction, irreplicable
+# # we can, however, consider "over" as a particle, as in "knock out the guy!"
+# # will become part of NUC, then, fixed to that
+# 1	Bobby	Bobby	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	table	table	NN	O	2	dobj
+# 5	over	over	IN	O	2	compound:prt
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Bobby	Bobby	NNP	PERSON	2	nsubj
+	# # 2	pushed	push	VBD	O	0	ROOT
+	# # 3	the	the	DT	O	4	det
+	# # 4	table	table	NN	O	2	dobj
+	# # 5	over	over	IN	O	2	advmod
+	# # 6	.	.	.	O	2	punct
 
-# parse fixed, not PP, but compound:prt
-1	Bobby	Bobby	NNP	PERSON	2	nsubj
-2	pushed	push	VBD	O	0	ROOT
-3	over	over	IN	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	table	table	NN	O	2	nmod
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Bobby	Bobby	NNP	PERSON	2	nsubj
-	# 2	pushed	push	VBD	O	0	ROOT
-	# 3	over	over	IN	O	5	case
-	# 4	the	the	DT	O	5	det
-	# 5	table	table	NN	O	2	nmod
-	# 6	.	.	.	O	2	punct
+# # approximatively ok: should be NUC juncture
+# # parse fixed, not PP, but compound:prt
+# 1	Bobby	Bobby	NNP	PERSON	2	nsubj
+# 2	pushed	push	VBD	O	0	ROOT
+# 3	over	over	IN	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	table	table	NN	O	2	nmod
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Bobby	Bobby	NNP	PERSON	2	nsubj
+	# # 2	pushed	push	VBD	O	0	ROOT
+	# # 3	over	over	IN	O	5	case
+	# # 4	the	the	DT	O	5	det
+	# # 5	table	table	NN	O	2	nmod
+	# # 6	.	.	.	O	2	punct
 
 # # ok? should this have a second nuc in into?
 # 1	Kevin	Kevin	NNP	PERSON	2	nsubj
@@ -2621,33 +2648,35 @@
 # 16	him	he	PRP	O	15	dobj
 # 17	.	.	.	O	2	punct
 
-# parse fixed, should be nuclear juncture
-1	Yvonne	Yvonne	NNP	PERSON	2	nsubj
-2	painted	paint	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	table	table	NN	O	2	dobj
-5	white	white	JJ	O	2	xcomp
-6	.	.	.	O	2	punct
-	# # original
-	# 1	Yvonne	Yvonne	NNP	PERSON	2	nsubj
-	# 2	painted	paint	VBD	O	0	ROOT
-	# 3	the	the	DT	O	4	det
-	# 4	table	table	NN	O	5	nsubj
-	# 5	white	white	JJ	O	2	xcomp
-	# 6	.	.	.	O	2	punct
+# # ok
+# # parse fixed, should be nuclear juncture
+# 1	Yvonne	Yvonne	NNP	PERSON	2	nsubj
+# 2	painted	paint	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	table	table	NN	O	2	dobj
+# 5	white	white	JJ	O	2	xcomp
+# 6	.	.	.	O	2	punct
+	# # # original
+	# # 1	Yvonne	Yvonne	NNP	PERSON	2	nsubj
+	# # 2	painted	paint	VBD	O	0	ROOT
+	# # 3	the	the	DT	O	4	det
+	# # 4	table	table	NN	O	5	nsubj
+	# # 5	white	white	JJ	O	2	xcomp
+	# # 6	.	.	.	O	2	punct
 
-# parse fixed, should be nuclear juncture
-1	Sally	Sally	NNP	PERSON	2	nsubj
-2	made	make	VBD	O	0	ROOT
-3	herself	herself	PRP	O	2	dobj
-4	sad	sad	JJ	O	2	xcomp
-5	.	.	.	O	2	punct
-	# # original
-	# 1	Sally	Sally	NNP	PERSON	2	nsubj
-	# 2	made	make	VBD	O	0	ROOT
-	# 3	herself	herself	PRP	O	4	nsubj
-	# 4	sad	sad	JJ	O	2	xcomp
-	# 5	.	.	.	O	2	punct
+# # ok
+# # parse fixed, should be nuclear juncture
+# 1	Sally	Sally	NNP	PERSON	2	nsubj
+# 2	made	make	VBD	O	0	ROOT
+# 3	herself	herself	PRP	O	2	dobj
+# 4	sad	sad	JJ	O	2	xcomp
+# 5	.	.	.	O	2	punct
+	# # # original
+	# # 1	Sally	Sally	NNP	PERSON	2	nsubj
+	# # 2	made	make	VBD	O	0	ROOT
+	# # 3	herself	herself	PRP	O	4	nsubj
+	# # 4	sad	sad	JJ	O	2	xcomp
+	# # 5	.	.	.	O	2	punct
 
 # # ok?
 # 1	Fred	Fred	NNP	PERSON	2	nsubj
