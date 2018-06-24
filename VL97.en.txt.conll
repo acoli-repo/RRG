@@ -2797,7 +2797,7 @@
 # 8	.	.	.	O	2	punct
 
 # parse fixed
-1	That	that	DT	O	2	det
+1	That	that	IN	O	2	mark
 2	Amy	Amy	NNP	PERSON	3	nsubj
 3	lost	lose	VBD	O	6	csubj
 4	the	the	DT	O	5	det
@@ -2834,25 +2834,25 @@
 # 6	room	room	NN	O	4	dobj
 # 7	.	.	.	O	2	punct
 
-# ok? (core coordination, should be clausal cosubordination (why???)
-# parse fixed (dep)
-1	Harry	Harry	NNP	PERSON	2	nsubj
-2	ran	run	VBD	O	0	ROOT
-3	down	down	RP	O	5	case
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	nmod
-6	laughing	laugh	VBG	O	2	xcomp
-7	loudly	loudly	RB	O	6	advmod
-8	.	.	.	O	2	punct
-	# # original
-	# 1	Harry	Harry	NNP	PERSON	2	nsubj
-	# 2	ran	run	VBD	O	0	ROOT
-	# 3	down	down	RP	O	2	compound:prt
-	# 4	the	the	DT	O	5	det
-	# 5	hall	hall	NN	O	6	nsubj
-	# 6	laughing	laugh	VBG	O	2	dep
-	# 7	loudly	loudly	RB	O	6	advmod
-	# 8	.	.	.	O	2	punct
+# # ok? (core cosubordination, should be clausal cosubordination (why???)
+# # parse fixed (dep)
+# 1	Harry	Harry	NNP	PERSON	2	nsubj
+# 2	ran	run	VBD	O	0	ROOT
+# 3	down	down	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	nmod
+# 6	laughing	laugh	VBG	O	2	xcomp
+# 7	loudly	loudly	RB	O	6	advmod
+# 8	.	.	.	O	2	punct
+	# # # original
+	# # 1	Harry	Harry	NNP	PERSON	2	nsubj
+	# # 2	ran	run	VBD	O	0	ROOT
+	# # 3	down	down	RP	O	2	compound:prt
+	# # 4	the	the	DT	O	5	det
+	# # 5	hall	hall	NN	O	6	nsubj
+	# # 6	laughing	laugh	VBG	O	2	dep
+	# # 7	loudly	loudly	RB	O	6	advmod
+	# # 8	.	.	.	O	2	punct
 
 # # ok
 # 1	Paul	Paul	NNP	PERSON	2	nsubj
@@ -3040,47 +3040,73 @@
 # 10	regretted	regret	VBD	O	7	acl:relcl
 # 11	.	.	.	O	5	punct
 
-# todo: fix parse
+# parse fixed
 1	It	it	PRP	O	6	nsubj
 2	was	be	VBD	O	6	cop
-3	for	for	IN	O	6	mark
-4	Fred	Fred	NNP	PERSON	6	nsubj
+3	for	for	IN	O	4	case
+4	Fred	Fred	NNP	PERSON	0	ROOT
 5	to	to	TO	O	6	mark
-6	win	win	VB	O	0	ROOT
+6	win	win	VB	O	4	ccomp
 7	the	the	DT	O	8	det
 8	race	race	NN	O	6	dobj
-9	that	that	WDT	O	11	dobj
+9	that	that	IN	O	11	mark
 10	Mary	Mary	NNP	PERSON	11	nsubj
-11	hoped	hope	VBD	O	8	acl:relcl
+11	hoped	hope	VBD	O	6	ccomp
 12	.	.	.	O	6	punct
+	# # original
+	# 1	It	it	PRP	O	6	nsubj
+	# 2	was	be	VBD	O	6	cop
+	# 3	for	for	IN	O	6	mark
+	# 4	Fred	Fred	NNP	PERSON	6	nsubj
+	# 5	to	to	TO	O	6	mark
+	# 6	win	win	VB	O	0	ROOT
+	# 7	the	the	DT	O	8	det
+	# 8	race	race	NN	O	6	dobj
+	# 9	that	that	WDT	O	11	dobj
+	# 10	Mary	Mary	NNP	PERSON	11	nsubj
+	# 11	hoped	hope	VBD	O	8	acl:relcl
+	# 12	.	.	.	O	6	punct
 
+# # ok
+# 1	Fred	Fred	NNP	PERSON	7	nsubjpass
+# 2	's	's	POS	O	1	case
+# 3	loosing	loose	VBG	O	1	acl
+# 4	the	the	DT	O	5	det
+# 5	race	race	NN	O	3	dobj
+# 6	was	be	VBD	O	7	auxpass
+# 7	regretted	regret	VBN	O	0	ROOT
+# 8	by	by	IN	O	9	case
+# 9	Mary	Mary	NNP	PERSON	7	nmod
+# 10	.	.	.	O	7	punct
 
-1	Fred	Fred	NNP	PERSON	7	nsubjpass
-2	's	's	POS	O	1	case
-3	loosing	loose	VBG	O	1	acl
-4	the	the	DT	O	5	det
-5	race	race	NN	O	3	dobj
-6	was	be	VBD	O	7	auxpass
-7	regretted	regret	VBN	O	0	ROOT
-8	by	by	IN	O	9	case
-9	Mary	Mary	NNP	PERSON	7	nmod
-10	.	.	.	O	7	punct
-
-
-1	For	for	IN	O	4	mark
-2	Fred	Fred	NNP	PERSON	4	nsubj
+# parse fixed, with stranded preposition
+1	For	for	IN	O	2	case
+2	Fred	Fred	NNP	PERSON	4	nmod
 3	to	to	TO	O	4	mark
-4	win	win	VB	O	0	ROOT
+4	win	win	VB	O	8	csubjpass
 5	the	the	DT	O	6	det
-6	race	race	NN	O	8	nsubjpass
+6	race	race	NN	O	4	dobj
 7	was	be	VBD	O	8	auxpass
-8	hoped	hope	VBN	O	4	ccomp
-9	for	for	IN	O	11	case
+8	hoped	hope	VBN	O	0	ROOT
+9	for	for	IN	O	8	nmod
 10	by	by	IN	O	11	case
 11	Mary	Mary	NNP	PERSON	8	nmod
 12	.	.	.	O	4	punct
+	# # original
+	# 1	For	for	IN	O	4	mark
+	# 2	Fred	Fred	NNP	PERSON	4	nsubj
+	# 3	to	to	TO	O	4	mark
+	# 4	win	win	VB	O	0	ROOT
+	# 5	the	the	DT	O	6	det
+	# 6	race	race	NN	O	8	nsubjpass
+	# 7	was	be	VBD	O	8	auxpass
+	# 8	hoped	hope	VBN	O	4	ccomp
+	# 9	for	for	IN	O	11	case
+	# 10	by	by	IN	O	11	case
+	# 11	Mary	Mary	NNP	PERSON	8	nmod
+	# 12	.	.	.	O	4	punct
 
-
+# for liking should be arg
 1	Robin	Robin	NNP	PERSON	3	nsubjpass
 2	is	be	VBZ	O	3	auxpass
 3	known	know	VBN	O	0	ROOT
@@ -3099,7 +3125,7 @@
 16	club	club	NN	O	13	dobj
 17	?	?	.	O	3	punct
 
-
+# ok?
 1	Sit	sit	VB	O	0	ROOT
 2	down	down	RP	O	1	compound:prt
 3	and	and	CC	O	1	cc
@@ -3111,7 +3137,7 @@
 9	drink	drink	NN	O	6	dobj
 10	.	.	.	O	1	punct
 
-
+# ok?
 1	John	John	NNP	PERSON	2	nsubj
 2	ate	eat	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -3121,7 +3147,7 @@
 7	library	library	NN	O	2	nmod
 8	.	.	.	O	2	punct
 
-
+# ok?
 1	Kim	Kim	NNP	PERSON	2	nsubj
 2	introduced	introduce	VBD	O	0	ROOT
 3	Sandy	Sandy	NNP	PERSON	2	dobj
@@ -3132,7 +3158,7 @@
 8	library	library	NN	O	2	nmod
 9	.	.	.	O	2	punct
 
-
+# clausal argument?
 1	John	John	NNP	PERSON	2	nsubj
 2	decided	decide	VBD	O	0	ROOT
 3	that	that	IN	O	6	mark
@@ -3145,7 +3171,7 @@
 10	yesterday	yesterday	NN	DATE	6	nmod:tmod
 11	.	.	.	O	2	punct
 
-
+# clausal argument?
 1	John	John	NNP	PERSON	2	nsubj
 2	decided	decide	VBD	O	0	ROOT
 3	yesterday	yesterday	NN	DATE	2	nmod:tmod
@@ -3158,7 +3184,7 @@
 10	party	party	NN	O	7	nmod
 11	.	.	.	O	2	punct
 
-
+# ok?
 1	John	John	NNP	PERSON	2	nsubj
 2	saw	see	VBD	O	0	ROOT
 3	Max	Max	NNP	PERSON	2	dobj
@@ -3170,7 +3196,7 @@
 9	party	party	NN	O	6	nmod
 10	.	.	.	O	2	punct
 
-
+# "drive out of" as ARG?
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	drove	drive	VBD	O	0	ROOT
 3	out	out	IN	O	5	case
@@ -3186,7 +3212,7 @@
 13	tomorrow	tomorrow	NN	DATE	10	nmod:tmod
 14	.	.	.	O	2	punct
 
-
+# text juncture?
 1	As	as	IN	O	3	case
 2	for	for	IN	O	3	case
 3	Sam	Sam	NNP	PERSON	6	nmod
@@ -3208,7 +3234,7 @@
 19	yesterday	yesterday	NN	DATE	17	nmod:tmod
 20	.	.	.	O	6	punct
 
-
+# tell to => argument ?
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	told	tell	VBD	O	0	ROOT
 3	Kim	Kim	NNP	PERSON	2	dobj
@@ -3219,7 +3245,7 @@
 8	movies	movie	NNS	O	5	nmod
 9	.	.	.	O	2	punct
 
-
+# ask to => argument ?
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	asked	ask	VBD	O	0	ROOT
 3	Pat	Pat	NNP	PERSON	2	dobj
@@ -3230,7 +3256,7 @@
 8	job	job	NN	O	5	nmod
 9	.	.	.	O	2	punct
 
-
+# ok ?
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	stopped	stop	VBD	O	0	ROOT
 3	Kim	Kim	NNP	PERSON	2	dobj
@@ -3241,7 +3267,7 @@
 8	movies	movie	NNS	O	5	nmod
 9	.	.	.	O	2	punct
 
-
+# ok ?
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	prevented	prevent	VBD	O	0	ROOT
 3	Pat	Pat	NNP	PERSON	2	dobj
@@ -3252,7 +3278,7 @@
 8	job	job	NN	O	5	nmod
 9	.	.	.	O	2	punct
 
-
+# ok?
 1	Pam	Pam	NNP	PERSON	2	nsubj
 2	kept	keep	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -3260,7 +3286,7 @@
 5	barking	bark	VBG	O	2	dep
 6	.	.	.	O	2	punct
 
-
+# ok?
 1	Pam	Pam	NNP	PERSON	2	nsubj
 2	kept	keep	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -3269,17 +3295,26 @@
 6	barking	bark	VBG	O	2	advcl
 7	.	.	.	O	2	punct
 
-
+# parse fixed
 1	Will	will	MD	O	3	aux
 2	you	you	PRP	O	3	nsubj
 3	help	help	VB	O	0	ROOT
-4	me	I	PRP	O	5	nsubj
+4	me	I	PRP	O	3	dobj
 5	clear	clear	VB	O	3	ccomp
 6	the	the	DT	O	7	det
 7	table	table	NN	O	5	dobj
 8	?	?	.	O	3	punct
+	# # original
+	# 1	Will	will	MD	O	3	aux
+	# 2	you	you	PRP	O	3	nsubj
+	# 3	help	help	VB	O	0	ROOT
+	# 4	me	I	PRP	O	5	nsubj
+	# 5	clear	clear	VB	O	3	ccomp
+	# 6	the	the	DT	O	7	det
+	# 7	table	table	NN	O	5	dobj
+	# 8	?	?	.	O	3	punct
 
-
+# ok?
 1	This	this	DT	O	2	det
 2	book	book	NN	O	3	nsubj
 3	helped	help	VBD	O	0	ROOT
@@ -3290,11 +3325,11 @@
 8	truth	truth	NN	O	6	dobj
 9	.	.	.	O	3	punct
 
-
+# parse fixed: embedded subj is matrix argument
 1	Sam	Sam	NNP	PERSON	2	nsubj
 2	helped	help	VBD	O	0	ROOT
 3	his	he	PRP$	O	4	nmod:poss
-4	neighbor	neighbor	NN	O	5	nsubj
+4	neighbor	neighbor	NN	O	2	dobj
 5	build	build	VB	O	2	ccomp
 6	his	he	PRP$	O	8	nmod:poss
 7	new	new	JJ	O	8	amod
@@ -3304,8 +3339,22 @@
 11	the	the	DT	O	12	det
 12	foundation	foundation	NN	O	10	dobj
 13	.	.	.	O	2	punct
+	# # original
+	# 1	Sam	Sam	NNP	PERSON	2	nsubj
+	# 2	helped	help	VBD	O	0	ROOT
+	# 3	his	he	PRP$	O	4	nmod:poss
+	# 4	neighbor	neighbor	NN	O	5	nsubj
+	# 5	build	build	VB	O	2	ccomp
+	# 6	his	he	PRP$	O	8	nmod:poss
+	# 7	new	new	JJ	O	8	amod
+	# 8	barn	barn	NN	O	5	dobj
+	# 9	by	by	IN	O	10	mark
+	# 10	pouring	pour	VBG	O	5	advcl
+	# 11	the	the	DT	O	12	det
+	# 12	foundation	foundation	NN	O	10	dobj
+	# 13	.	.	.	O	2	punct
 
-
+# ok?
 1	Sam	Sam	NNP	PERSON	2	nsubj
 2	helped	help	VBD	O	0	ROOT
 3	his	he	PRP$	O	4	nmod:poss
@@ -3321,7 +3370,7 @@
 13	foundation	foundation	NN	O	11	dobj
 14	.	.	.	O	2	punct
 
-
+# ok?
 1	Sam	Sam	NNP	PERSON	2	nsubj
 2	helped	help	VBD	O	0	ROOT
 3	his	he	PRP$	O	4	nmod:poss
@@ -3337,32 +3386,55 @@
 13	money	money	NN	O	11	dobj
 14	.	.	.	O	2	punct
 
-
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	stopped	stop	VBD	O	0	ROOT
-3	Kim	Kim	NNP	PERSON	4	compound
-4	singing	singing	NN	O	2	dobj
-5	'	'	''	O	4	punct
-6	Advance	Advance	NNP	O	8	compound
-7	Australian	Australian	NNP	MISC	8	compound
-8	Fair	Fair	NNP	O	4	dep
-9	'	'	POS	O	8	case
-10	.	.	.	O	2	punct
-
-
+# parse fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	stopped	stop	VBD	O	0	ROOT
 3	Kim	Kim	NNP	PERSON	2	dobj
-4	from	from	IN	O	5	case
-5	singing	singing	NN	O	2	nmod
+4	singing	sing	VBN	O	2	ccomp
+5	'	'	''	O	4	punct
+6	Advance	Advance	NNP	O	8	compound
+7	Australian	Australian	NNP	MISC	8	compound
+8	Fair	Fair	NNP	O	4	dobj
+9	'	'	''	O	4	punct
+10	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	stopped	stop	VBD	O	0	ROOT
+	# 3	Kim	Kim	NNP	PERSON	4	compound
+	# 4	singing	singing	NN	O	2	dobj
+	# 5	'	'	''	O	4	punct
+	# 6	Advance	Advance	NNP	O	8	compound
+	# 7	Australian	Australian	NNP	MISC	8	compound
+	# 8	Fair	Fair	NNP	O	4	dep
+	# 9	'	'	POS	O	8	case
+	# 10	.	.	.	O	2	punct
+
+# parse fixed
+1	Robin	Robin	NNP	PERSON	2	nsubj
+2	stopped	stop	VBD	O	0	ROOT
+3	Kim	Kim	NNP	PERSON	2	dobj
+4	from	from	IN	O	5	mark
+5	singing	singing	NN	O	2	ccomp
 6	'	'	''	O	5	punct
 7	Advance	Advance	NNP	O	9	compound
 8	Australian	Australian	NNP	MISC	9	compound
-9	Fair	Fair	NNP	O	5	dep
-10	'	'	POS	O	9	case
+9	Fair	Fair	NNP	O	5	dobj
+10	'	'	''	O	5	punct
 11	.	.	.	O	2	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	2	nsubj
+	# 2	stopped	stop	VBD	O	0	ROOT
+	# 3	Kim	Kim	NNP	PERSON	2	dobj
+	# 4	from	from	IN	O	5	case
+	# 5	singing	singing	NN	O	2	nmod
+	# 6	'	'	''	O	5	punct
+	# 7	Advance	Advance	NNP	O	9	compound
+	# 8	Australian	Australian	NNP	MISC	9	compound
+	# 9	Fair	Fair	NNP	O	5	dep
+	# 10	'	'	POS	O	9	case
+	# 11	.	.	.	O	2	punct
 
-
+# first to should modify the parent core => attach to started
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	started	start	VBD	O	0	ROOT
 3	to	to	TO	O	4	mark
@@ -3371,13 +3443,14 @@
 6	work	work	VB	O	4	xcomp
 7	.	.	.	O	2	punct
 
-
+# parse fixed (in the last sentence, to work could be verbal; but it can be nominal, I kept the parse, and fixed the POS)
+# attach before
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	started	start	VBD	O	0	ROOT
 3	to	to	TO	O	4	mark
 4	drive	drive	VB	O	2	xcomp
 5	to	to	TO	O	6	case
-6	work	work	VB	O	4	nmod
+6	work	work	NN	O	4	nmod
 7	but	but	CC	O	2	cc
 8	before	before	IN	O	10	mark
 9	she	she	PRP	O	10	nsubj
@@ -3393,8 +3466,30 @@
 19	the	the	DT	O	20	det
 20	bus	bus	NN	O	18	dobj
 21	.	.	.	O	2	punct
+	# # original
+	# 1	Mary	Mary	NNP	PERSON	2	nsubj
+	# 2	started	start	VBD	O	0	ROOT
+	# 3	to	to	TO	O	4	mark
+	# 4	drive	drive	VB	O	2	xcomp
+	# 5	to	to	TO	O	6	case
+	# 6	work	work	VB	O	4	nmod
+	# 7	but	but	CC	O	2	cc
+	# 8	before	before	IN	O	10	mark
+	# 9	she	she	PRP	O	10	nsubj
+	# 10	got	get	VBD	O	2	conj
+	# 11	the	the	DT	O	12	det
+	# 12	car	car	NN	O	10	dobj
+	# 13	she	she	PRP	O	14	nsubj
+	# 14	changed	change	VBD	O	12	acl:relcl
+	# 15	her	she	PRP$	O	16	nmod:poss
+	# 16	mind	mind	NN	O	14	dobj
+	# 17	and	and	CC	O	10	cc
+	# 18	took	take	VBD	O	10	conj
+	# 19	the	the	DT	O	20	det
+	# 20	bus	bus	NN	O	18	dobj
+	# 21	.	.	.	O	2	punct
 
-
+# detached
 1	Mary	Mary	NNP	PERSON	2	nsubj
 2	started	start	VBD	O	0	ROOT
 3	driving	drive	VBG	O	2	xcomp
