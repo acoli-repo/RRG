@@ -2796,24 +2796,26 @@
 # 7	race	race	NN	O	5	dobj
 # 8	.	.	.	O	2	punct
 
-# parse fixed
-1	That	that	IN	O	2	mark
-2	Amy	Amy	NNP	PERSON	3	nsubj
-3	lost	lose	VBD	O	6	csubj
-4	the	the	DT	O	5	det
-5	race	race	NN	O	3	dobj
-6	shocked	shocked	JJ	O	0	ROOT
-7	everyone	everyone	NN	O	6	dobj
-8	.	.	.	O	3	punct
-	# # original
-	# 1	That	that	DT	O	2	det
-	# 2	Amy	Amy	NNP	PERSON	3	nsubj
-	# 3	lost	lose	VBD	O	0	ROOT
-	# 4	the	the	DT	O	5	det
-	# 5	race	race	NN	O	3	dobj
-	# 6	shocked	shocked	JJ	O	7	amod
-	# 7	everyone	everyone	NN	O	5	dep
-	# 8	.	.	.	O	3	punct
+# # roughly ok
+# # should be core subordination, probably because of synthetic TNS marking rather than analytic TNS marking; I do not find this convincing
+# # parse fixed
+# 1	That	that	IN	O	3	mark
+# 2	Amy	Amy	NNP	PERSON	3	nsubj
+# 3	lost	lose	VBD	O	6	csubj
+# 4	the	the	DT	O	5	det
+# 5	race	race	NN	O	3	dobj
+# 6	shocked	shocked	JJ	O	0	ROOT
+# 7	everyone	everyone	NN	O	6	dobj
+# 8	.	.	.	O	3	punct
+	# # # original
+	# # 1	That	that	DT	O	2	det
+	# # 2	Amy	Amy	NNP	PERSON	3	nsubj
+	# # 3	lost	lose	VBD	O	0	ROOT
+	# # 4	the	the	DT	O	5	det
+	# # 5	race	race	NN	O	3	dobj
+	# # 6	shocked	shocked	JJ	O	7	amod
+	# # 7	everyone	everyone	NN	O	5	dep
+	# # 8	.	.	.	O	3	punct
 
 # # ok
 # 1	Louisa	Louisa	NNP	PERSON	2	nsubj
@@ -2866,25 +2868,25 @@
 # 9	beer	beer	NN	O	7	dobj
 # 10	.	.	.	O	2	punct
 
-# should be core argument
-# parse fixed (relative clause is argument; that is mark, not dobj)
-1	John	John	NNP	PERSON	2	nsubj
-2	persuaded	persuade	VBD	O	0	ROOT
-3	Leon	Leon	NNP	PERSON	2	dobj
-4	that	that	IN	O	7	mark
-5	Amy	Amy	NNP	PERSON	7	nsubj
-6	had	have	VBD	O	7	aux
-7	lost	lose	VBN	O	2	ccomp
-8	.	.	.	O	2	punct
-	# # original
-	# 1	John	John	NNP	PERSON	2	nsubj
-	# 2	persuaded	persuade	VBD	O	0	ROOT
-	# 3	Leon	Leon	NNP	PERSON	2	dobj
-	# 4	that	that	IN	O	7	dobj
-	# 5	Amy	Amy	NNP	PERSON	7	nsubj
-	# 6	had	have	VBD	O	7	aux
-	# 7	lost	lose	VBN	O	3	acl:relcl
-	# 8	.	.	.	O	2	punct
+# # ok
+# # parse fixed (relative clause is argument; that is mark, not dobj)
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	persuaded	persuade	VBD	O	0	ROOT
+# 3	Leon	Leon	NNP	PERSON	2	dobj
+# 4	that	that	IN	O	7	mark
+# 5	Amy	Amy	NNP	PERSON	7	nsubj
+# 6	had	have	VBD	O	7	aux
+# 7	lost	lose	VBN	O	2	ccomp
+# 8	.	.	.	O	2	punct
+	# # # original
+	# # 1	John	John	NNP	PERSON	2	nsubj
+	# # 2	persuaded	persuade	VBD	O	0	ROOT
+	# # 3	Leon	Leon	NNP	PERSON	2	dobj
+	# # 4	that	that	IN	O	7	dobj
+	# # 5	Amy	Amy	NNP	PERSON	7	nsubj
+	# # 6	had	have	VBD	O	7	aux
+	# # 7	lost	lose	VBN	O	3	acl:relcl
+	# # 8	.	.	.	O	2	punct
 
 # # ok: clausal subordination
 # 1	Bill	Bill	NNP	PERSON	2	nsubj
@@ -2956,36 +2958,36 @@
 # 7	Mary	Mary	NNP	PERSON	6	dobj
 # 8	.	.	.	O	3	punct
 
-# attach to; parse fixed
-1	For	for	IN	O	2	case
-2	Fred	Fred	NNP	PERSON	4	nmod
-3	to	to	TO	O	4	mark
-4	win	win	VB	O	10	csubj
-5	the	the	DT	O	6	det
-6	race	race	NN	O	4	dobj
-7	would	would	MD	O	10	aux
-8	be	be	VB	O	10	cop
-9	a	a	DT	O	10	det
-10	shock	shock	NN	O	0	ROOT
-11	to	to	TO	O	13	case
-12	the	the	DT	O	13	det
-13	experts	expert	NNS	O	10	nmod
-14	.	.	.	O	10	punct
-	# # original
-	# 1	For	for	IN	O	4	mark
-	# 2	Fred	Fred	NNP	PERSON	4	nsubj
-	# 3	to	to	TO	O	4	mark
-	# 4	win	win	VB	O	10	csubj
-	# 5	the	the	DT	O	6	det
-	# 6	race	race	NN	O	4	dobj
-	# 7	would	would	MD	O	10	aux
-	# 8	be	be	VB	O	10	cop
-	# 9	a	a	DT	O	10	det
-	# 10	shock	shock	NN	O	0	ROOT
-	# 11	to	to	TO	O	13	case
-	# 12	the	the	DT	O	13	det
-	# 13	experts	expert	NNS	O	10	nmod
-	# 14	.	.	.	O	10	punct
+# # ok (?); parse fixed
+# 1	For	for	IN	O	2	case
+# 2	Fred	Fred	NNP	PERSON	4	nmod
+# 3	to	to	TO	O	4	mark
+# 4	win	win	VB	O	10	csubj
+# 5	the	the	DT	O	6	det
+# 6	race	race	NN	O	4	dobj
+# 7	would	would	MD	O	10	aux
+# 8	be	be	VB	O	10	cop
+# 9	a	a	DT	O	10	det
+# 10	shock	shock	NN	O	0	ROOT
+# 11	to	to	TO	O	13	case
+# 12	the	the	DT	O	13	det
+# 13	experts	expert	NNS	O	10	nmod
+# 14	.	.	.	O	10	punct
+	# # # original
+	# # 1	For	for	IN	O	4	mark
+	# # 2	Fred	Fred	NNP	PERSON	4	nsubj
+	# # 3	to	to	TO	O	4	mark
+	# # 4	win	win	VB	O	10	csubj
+	# # 5	the	the	DT	O	6	det
+	# # 6	race	race	NN	O	4	dobj
+	# # 7	would	would	MD	O	10	aux
+	# # 8	be	be	VB	O	10	cop
+	# # 9	a	a	DT	O	10	det
+	# # 10	shock	shock	NN	O	0	ROOT
+	# # 11	to	to	TO	O	13	case
+	# # 12	the	the	DT	O	13	det
+	# # 13	experts	expert	NNS	O	10	nmod
+	# # 14	.	.	.	O	10	punct
 
 # # ok, parse fixed
 # 1	Mary	Mary	NNP	PERSON	2	nsubj
@@ -3008,24 +3010,24 @@
 	# # 8	race	race	NN	O	6	dobj
 	# # 9	.	.	.	O	2	punct
 
-# parse fixed
-1	That	that	IN	O	3	mark
-2	Fred	Fred	NNP	PERSON	3	nsubj
-3	won	win	VBD	O	6	csubj
-4	the	the	DT	O	5	det
-5	race	race	NN	O	3	dobj
-6	surprised	surprise	VBD	O	0	ROOT
-7	Mary	Mary	NNP	PERSON	6	dobj
-8	.	.	.	O	3	punct
-	# # original
-	# 1	That	that	DT	O	2	det
-	# 2	Fred	Fred	NNP	PERSON	3	nsubj
-	# 3	won	win	VBD	O	0	ROOT
-	# 4	the	the	DT	O	5	det
-	# 5	race	race	NN	O	6	nsubj
-	# 6	surprised	surprise	VBD	O	3	ccomp
-	# 7	Mary	Mary	NNP	PERSON	6	dobj
-	# 8	.	.	.	O	3	punct
+# # ok, parse fixed
+# 1	That	that	IN	O	3	mark
+# 2	Fred	Fred	NNP	PERSON	3	nsubj
+# 3	won	win	VBD	O	6	csubj
+# 4	the	the	DT	O	5	det
+# 5	race	race	NN	O	3	dobj
+# 6	surprised	surprise	VBD	O	0	ROOT
+# 7	Mary	Mary	NNP	PERSON	6	dobj
+# 8	.	.	.	O	3	punct
+	# # # original
+	# # 1	That	that	DT	O	2	det
+	# # 2	Fred	Fred	NNP	PERSON	3	nsubj
+	# # 3	won	win	VBD	O	0	ROOT
+	# # 4	the	the	DT	O	5	det
+	# # 5	race	race	NN	O	6	nsubj
+	# # 6	surprised	surprise	VBD	O	3	ccomp
+	# # 7	Mary	Mary	NNP	PERSON	6	dobj
+	# # 8	.	.	.	O	3	punct
 
 # # ok?
 # 1	It	it	PRP	O	5	nsubj
@@ -3044,9 +3046,9 @@
 1	It	it	PRP	O	6	nsubj
 2	was	be	VBD	O	6	cop
 3	for	for	IN	O	4	case
-4	Fred	Fred	NNP	PERSON	0	ROOT
+4	Fred	Fred	NNP	PERSON	2	nmod
 5	to	to	TO	O	6	mark
-6	win	win	VB	O	4	ccomp
+6	win	win	VB	O	0	ROOT
 7	the	the	DT	O	8	det
 8	race	race	NN	O	6	dobj
 9	that	that	IN	O	11	mark
@@ -3079,7 +3081,7 @@
 # 9	Mary	Mary	NNP	PERSON	7	nmod
 # 10	.	.	.	O	7	punct
 
-# parse fixed, with stranded preposition
+# parse fixed, with stranded preposition as ARG
 1	For	for	IN	O	2	case
 2	Fred	Fred	NNP	PERSON	4	nmod
 3	to	to	TO	O	4	mark
@@ -3106,7 +3108,7 @@
 	# 11	Mary	Mary	NNP	PERSON	8	nmod
 	# 12	.	.	.	O	4	punct
 
-# for liking should be arg
+# for liking should be arg, parse fixed (=> for as PP)
 1	Robin	Robin	NNP	PERSON	3	nsubjpass
 2	is	be	VBZ	O	3	auxpass
 3	known	know	VBN	O	0	ROOT
@@ -3124,93 +3126,126 @@
 15	entire	entire	JJ	O	16	amod
 16	club	club	NN	O	13	dobj
 17	?	?	.	O	3	punct
+	# # original
+	# 1	Robin	Robin	NNP	PERSON	3	nsubjpass
+	# 2	is	be	VBZ	O	3	auxpass
+	# 3	known	know	VBN	O	0	ROOT
+	# 4	for	for	IN	O	5	mark
+	# 5	liking	like	VBG	O	3	advcl
+	# 6	big	big	JJ	O	7	amod
+	# 7	parties	party	NNS	O	5	dobj
+	# 8	,	,	,	O	3	punct
+	# 9	but	but	CC	O	3	cc
+	# 10	why	why	WRB	O	13	advmod
+	# 11	did	do	VBD	O	13	aux
+	# 12	she	she	PRP	O	13	nsubj
+	# 13	invite	invite	VB	O	3	conj
+	# 14	the	the	DT	O	16	det
+	# 15	entire	entire	JJ	O	16	amod
+	# 16	club	club	NN	O	13	dobj
+	# 17	?	?	.	O	3	punct
 
-# ok?
-1	Sit	sit	VB	O	0	ROOT
-2	down	down	RP	O	1	compound:prt
-3	and	and	CC	O	1	cc
-4	I	I	PRP	O	6	nsubj
-5	'll	will	MD	O	6	aux
-6	fix	fix	VB	O	1	conj
-7	you	you	PRP	O	6	iobj
-8	a	a	DT	O	9	det
-9	drink	drink	NN	O	6	dobj
-10	.	.	.	O	1	punct
 
-# ok?
-1	John	John	NNP	PERSON	2	nsubj
-2	ate	eat	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	sandwich	sandwich	NN	O	2	dobj
-5	in	in	IN	O	7	case
-6	the	the	DT	O	7	det
-7	library	library	NN	O	2	nmod
-8	.	.	.	O	2	punct
+# # ok
+# 1	Sit	sit	VB	O	0	ROOT
+# 2	down	down	RP	O	1	compound:prt
+# 3	and	and	CC	O	1	cc
+# 4	I	I	PRP	O	6	nsubj
+# 5	'll	will	MD	O	6	aux
+# 6	fix	fix	VB	O	1	conj
+# 7	you	you	PRP	O	6	iobj
+# 8	a	a	DT	O	9	det
+# 9	drink	drink	NN	O	6	dobj
+# 10	.	.	.	O	1	punct
 
-# ok?
-1	Kim	Kim	NNP	PERSON	2	nsubj
-2	introduced	introduce	VBD	O	0	ROOT
-3	Sandy	Sandy	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	case
-5	Robin	Robin	NNP	PERSON	2	nmod
-6	in	in	IN	O	8	case
-7	the	the	DT	O	8	det
-8	library	library	NN	O	2	nmod
-9	.	.	.	O	2	punct
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	ate	eat	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	sandwich	sandwich	NN	O	2	dobj
+# 5	in	in	IN	O	7	case
+# 6	the	the	DT	O	7	det
+# 7	library	library	NN	O	2	nmod
+# 8	.	.	.	O	2	punct
 
-# clausal argument?
-1	John	John	NNP	PERSON	2	nsubj
-2	decided	decide	VBD	O	0	ROOT
-3	that	that	IN	O	6	mark
-4	he	he	PRP	O	6	nsubj
-5	will	will	MD	O	6	aux
-6	go	go	VB	O	2	ccomp
-7	to	to	TO	O	9	case
-8	the	the	DT	O	9	det
-9	party	party	NN	O	6	nmod
-10	yesterday	yesterday	NN	DATE	6	nmod:tmod
-11	.	.	.	O	2	punct
+# # ok
+# 1	Kim	Kim	NNP	PERSON	2	nsubj
+# 2	introduced	introduce	VBD	O	0	ROOT
+# 3	Sandy	Sandy	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	case
+# 5	Robin	Robin	NNP	PERSON	2	nmod
+# 6	in	in	IN	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	library	library	NN	O	2	nmod
+# 9	.	.	.	O	2	punct
 
-# clausal argument?
-1	John	John	NNP	PERSON	2	nsubj
-2	decided	decide	VBD	O	0	ROOT
-3	yesterday	yesterday	NN	DATE	2	nmod:tmod
-4	that	that	IN	O	7	mark
-5	he	he	PRP	O	7	nsubj
-6	will	will	MD	O	7	aux
-7	go	go	VB	O	2	ccomp
-8	to	to	TO	O	10	case
-9	the	the	DT	O	10	det
-10	party	party	NN	O	7	nmod
-11	.	.	.	O	2	punct
+# # ok, parse fixed: attachment
+# # p.466: "The example (...) is very odd and unnatural"
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	decided	decide	VBD	O	0	ROOT
+# 3	that	that	IN	O	6	mark
+# 4	he	he	PRP	O	6	nsubj
+# 5	will	will	MD	O	6	aux
+# 6	go	go	VB	O	2	ccomp
+# 7	to	to	TO	O	9	case
+# 8	the	the	DT	O	9	det
+# 9	party	party	NN	O	6	nmod
+# 10	yesterday	yesterday	NN	DATE	2	nmod:tmod
+# 11	.	.	.	O	2	punct
+	# # # original
+	# # 1	John	John	NNP	PERSON	2	nsubj
+	# # 2	decided	decide	VBD	O	0	ROOT
+	# # 3	that	that	IN	O	6	mark
+	# # 4	he	he	PRP	O	6	nsubj
+	# # 5	will	will	MD	O	6	aux
+	# # 6	go	go	VB	O	2	ccomp
+	# # 7	to	to	TO	O	9	case
+	# # 8	the	the	DT	O	9	det
+	# # 9	party	party	NN	O	6	nmod
+	# # 10	yesterday	yesterday	NN	DATE	6	nmod:tmod
+	# # 11	.	.	.	O	2	punct
 
-# ok?
-1	John	John	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	Max	Max	NNP	PERSON	2	dobj
-4	after	after	IN	O	6	mark
-5	he	he	PRP	O	6	nsubj
-6	went	go	VBD	O	2	advcl
-7	to	to	TO	O	9	case
-8	the	the	DT	O	9	det
-9	party	party	NN	O	6	nmod
-10	.	.	.	O	2	punct
 
-# "drive out of" as ARG?
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	drove	drive	VBD	O	0	ROOT
-3	out	out	IN	O	5	case
-4	of	of	IN	O	5	case
-5	Phoenix	Phoenix	NNP	LOCATION	2	nmod
-6	this	this	DT	TIME	7	det
-7	morning	morning	NN	TIME	2	nmod:tmod
-8	and	and	CC	O	2	cc
-9	will	will	MD	O	10	aux
-10	arrive	arrive	VB	O	2	conj
-11	in	in	IN	O	12	case
-12	Atlanta	Atlanta	NNP	LOCATION	10	nmod
-13	tomorrow	tomorrow	NN	DATE	10	nmod:tmod
-14	.	.	.	O	2	punct
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	decided	decide	VBD	O	0	ROOT
+# 3	yesterday	yesterday	NN	DATE	2	nmod:tmod
+# 4	that	that	IN	O	7	mark
+# 5	he	he	PRP	O	7	nsubj
+# 6	will	will	MD	O	7	aux
+# 7	go	go	VB	O	2	ccomp
+# 8	to	to	TO	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	party	party	NN	O	7	nmod
+# 11	.	.	.	O	2	punct
+
+# # ok
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	Max	Max	NNP	PERSON	2	dobj
+# 4	after	after	IN	O	6	mark
+# 5	he	he	PRP	O	6	nsubj
+# 6	went	go	VBD	O	2	advcl
+# 7	to	to	TO	O	9	case
+# 8	the	the	DT	O	9	det
+# 9	party	party	NN	O	6	nmod
+# 10	.	.	.	O	2	punct
+
+# # ok, except that "drive out of" could be ARG rather than periphery
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	drove	drive	VBD	O	0	ROOT
+# 3	out	out	IN	O	5	case
+# 4	of	of	IN	O	5	case
+# 5	Phoenix	Phoenix	NNP	LOCATION	2	nmod
+# 6	this	this	DT	TIME	7	det
+# 7	morning	morning	NN	TIME	2	nmod:tmod
+# 8	and	and	CC	O	2	cc
+# 9	will	will	MD	O	10	aux
+# 10	arrive	arrive	VB	O	2	conj
+# 11	in	in	IN	O	12	case
+# 12	Atlanta	Atlanta	NNP	LOCATION	10	nmod
+# 13	tomorrow	tomorrow	NN	DATE	10	nmod:tmod
+# 14	.	.	.	O	2	punct
 
 # text juncture?
 1	As	as	IN	O	3	case
@@ -3234,59 +3269,59 @@
 19	yesterday	yesterday	NN	DATE	17	nmod:tmod
 20	.	.	.	O	6	punct
 
-# tell to => argument ?
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	told	tell	VBD	O	0	ROOT
-3	Kim	Kim	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	go	go	VB	O	2	xcomp
-6	to	to	TO	O	8	case
-7	the	the	DT	O	8	det
-8	movies	movie	NNS	O	5	nmod
-9	.	.	.	O	2	punct
+# # ok? tell to => no argument, cf. decide to
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	told	tell	VBD	O	0	ROOT
+# 3	Kim	Kim	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	go	go	VB	O	2	xcomp
+# 6	to	to	TO	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	movies	movie	NNS	O	5	nmod
+# 9	.	.	.	O	2	punct
 
-# ask to => argument ?
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	asked	ask	VBD	O	0	ROOT
-3	Pat	Pat	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	apply	apply	VB	O	2	xcomp
-6	for	for	IN	O	8	case
-7	a	a	DT	O	8	det
-8	job	job	NN	O	5	nmod
-9	.	.	.	O	2	punct
+# # ok? ask to => no argument, cf. decide to
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	asked	ask	VBD	O	0	ROOT
+# 3	Pat	Pat	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	apply	apply	VB	O	2	xcomp
+# 6	for	for	IN	O	8	case
+# 7	a	a	DT	O	8	det
+# 8	job	job	NN	O	5	nmod
+# 9	.	.	.	O	2	punct
 
-# ok ?
-1	Sandy	Sandy	NNP	PERSON	2	nsubj
-2	stopped	stop	VBD	O	0	ROOT
-3	Kim	Kim	NNP	PERSON	2	dobj
-4	from	from	IN	O	5	mark
-5	going	go	VBG	O	2	advcl
-6	to	to	TO	O	8	case
-7	the	the	DT	O	8	det
-8	movies	movie	NNS	O	5	nmod
-9	.	.	.	O	2	punct
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	2	nsubj
+# 2	stopped	stop	VBD	O	0	ROOT
+# 3	Kim	Kim	NNP	PERSON	2	dobj
+# 4	from	from	IN	O	5	mark
+# 5	going	go	VBG	O	2	advcl
+# 6	to	to	TO	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	movies	movie	NNS	O	5	nmod
+# 9	.	.	.	O	2	punct
 
-# ok ?
-1	Robin	Robin	NNP	PERSON	2	nsubj
-2	prevented	prevent	VBD	O	0	ROOT
-3	Pat	Pat	NNP	PERSON	2	dobj
-4	from	from	IN	O	5	mark
-5	applying	apply	VBG	O	2	advcl
-6	for	for	IN	O	8	case
-7	the	the	DT	O	8	det
-8	job	job	NN	O	5	nmod
-9	.	.	.	O	2	punct
+# # ok
+# 1	Robin	Robin	NNP	PERSON	2	nsubj
+# 2	prevented	prevent	VBD	O	0	ROOT
+# 3	Pat	Pat	NNP	PERSON	2	dobj
+# 4	from	from	IN	O	5	mark
+# 5	applying	apply	VBG	O	2	advcl
+# 6	for	for	IN	O	8	case
+# 7	the	the	DT	O	8	det
+# 8	job	job	NN	O	5	nmod
+# 9	.	.	.	O	2	punct
 
-# ok?
-1	Pam	Pam	NNP	PERSON	2	nsubj
-2	kept	keep	VBD	O	0	ROOT
-3	the	the	DT	O	4	det
-4	dogs	dog	NNS	O	5	nsubj
-5	barking	bark	VBG	O	2	dep
-6	.	.	.	O	2	punct
+# # ok
+# 1	Pam	Pam	NNP	PERSON	2	nsubj
+# 2	kept	keep	VBD	O	0	ROOT
+# 3	the	the	DT	O	4	det
+# 4	dogs	dog	NNS	O	5	nsubj
+# 5	barking	bark	VBG	O	2	dep
+# 6	.	.	.	O	2	punct
 
-# ok?
+# from => CLM
 1	Pam	Pam	NNP	PERSON	2	nsubj
 2	kept	keep	VBD	O	0	ROOT
 3	the	the	DT	O	4	det
@@ -3295,6 +3330,7 @@
 6	barking	bark	VBG	O	2	advcl
 7	.	.	.	O	2	punct
 
+# must be CORE coordination
 # parse fixed
 1	Will	will	MD	O	3	aux
 2	you	you	PRP	O	3	nsubj
@@ -3314,17 +3350,18 @@
 	# 7	table	table	NN	O	5	dobj
 	# 8	?	?	.	O	3	punct
 
-# ok?
-1	This	this	DT	O	2	det
-2	book	book	NN	O	3	nsubj
-3	helped	help	VBD	O	0	ROOT
-4	me	I	PRP	O	3	dobj
-5	to	to	TO	O	6	mark
-6	see	see	VB	O	3	xcomp
-7	the	the	DT	O	8	det
-8	truth	truth	NN	O	6	dobj
-9	.	.	.	O	3	punct
+# # ok?
+# 1	This	this	DT	O	2	det
+# 2	book	book	NN	O	3	nsubj
+# 3	helped	help	VBD	O	0	ROOT
+# 4	me	I	PRP	O	3	dobj
+# 5	to	to	TO	O	6	mark
+# 6	see	see	VB	O	3	xcomp
+# 7	the	the	DT	O	8	det
+# 8	truth	truth	NN	O	6	dobj
+# 9	.	.	.	O	3	punct
 
+# core coordination?
 # parse fixed: embedded subj is matrix argument
 1	Sam	Sam	NNP	PERSON	2	nsubj
 2	helped	help	VBD	O	0	ROOT
@@ -3354,38 +3391,39 @@
 	# 12	foundation	foundation	NN	O	10	dobj
 	# 13	.	.	.	O	2	punct
 
-# ok?
-1	Sam	Sam	NNP	PERSON	2	nsubj
-2	helped	help	VBD	O	0	ROOT
-3	his	he	PRP$	O	4	nmod:poss
-4	neighbor	neighbor	NN	O	2	dobj
-5	to	to	TO	O	6	mark
-6	build	build	VB	O	2	xcomp
-7	his	he	PRP$	O	9	nmod:poss
-8	new	new	JJ	O	9	amod
-9	barn	barn	NN	O	6	dobj
-10	by	by	IN	O	11	mark
-11	pouring	pour	VBG	O	6	advcl
-12	the	the	DT	O	13	det
-13	foundation	foundation	NN	O	11	dobj
-14	.	.	.	O	2	punct
+# # ok
+# 1	Sam	Sam	NNP	PERSON	2	nsubj
+# 2	helped	help	VBD	O	0	ROOT
+# 3	his	he	PRP$	O	4	nmod:poss
+# 4	neighbor	neighbor	NN	O	2	dobj
+# 5	to	to	TO	O	6	mark
+# 6	build	build	VB	O	2	xcomp
+# 7	his	he	PRP$	O	9	nmod:poss
+# 8	new	new	JJ	O	9	amod
+# 9	barn	barn	NN	O	6	dobj
+# 10	by	by	IN	O	11	mark
+# 11	pouring	pour	VBG	O	6	advcl
+# 12	the	the	DT	O	13	det
+# 13	foundation	foundation	NN	O	11	dobj
+# 14	.	.	.	O	2	punct
 
-# ok?
-1	Sam	Sam	NNP	PERSON	2	nsubj
-2	helped	help	VBD	O	0	ROOT
-3	his	he	PRP$	O	4	nmod:poss
-4	neighbor	neighbor	NN	O	2	dobj
-5	to	to	TO	O	6	mark
-6	build	build	VB	O	2	xcomp
-7	his	he	PRP$	O	9	nmod:poss
-8	new	new	JJ	O	9	amod
-9	barn	barn	NN	O	6	dobj
-10	by	by	IN	O	11	mark
-11	loaning	loan	VBG	O	6	advcl
-12	him	he	PRP	O	11	iobj
-13	money	money	NN	O	11	dobj
-14	.	.	.	O	2	punct
+# # ok
+# 1	Sam	Sam	NNP	PERSON	2	nsubj
+# 2	helped	help	VBD	O	0	ROOT
+# 3	his	he	PRP$	O	4	nmod:poss
+# 4	neighbor	neighbor	NN	O	2	dobj
+# 5	to	to	TO	O	6	mark
+# 6	build	build	VB	O	2	xcomp
+# 7	his	he	PRP$	O	9	nmod:poss
+# 8	new	new	JJ	O	9	amod
+# 9	barn	barn	NN	O	6	dobj
+# 10	by	by	IN	O	11	mark
+# 11	loaning	loan	VBG	O	6	advcl
+# 12	him	he	PRP	O	11	iobj
+# 13	money	money	NN	O	11	dobj
+# 14	.	.	.	O	2	punct
 
+# core coordination!
 # parse fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	stopped	stop	VBD	O	0	ROOT
@@ -3409,12 +3447,13 @@
 	# 9	'	'	POS	O	8	case
 	# 10	.	.	.	O	2	punct
 
+# core coordination!
 # parse fixed
 1	Robin	Robin	NNP	PERSON	2	nsubj
 2	stopped	stop	VBD	O	0	ROOT
 3	Kim	Kim	NNP	PERSON	2	dobj
 4	from	from	IN	O	5	mark
-5	singing	singing	NN	O	2	ccomp
+5	singing	singing	VBN	O	2	ccomp
 6	'	'	''	O	5	punct
 7	Advance	Advance	NNP	O	9	compound
 8	Australian	Australian	NNP	MISC	9	compound
