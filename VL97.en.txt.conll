@@ -3042,32 +3042,32 @@
 # 10	regretted	regret	VBD	O	7	acl:relcl
 # 11	.	.	.	O	5	punct
 
-# parse fixed
-1	It	it	PRP	O	6	nsubj
-2	was	be	VBD	O	6	cop
-3	for	for	IN	O	4	case
-4	Fred	Fred	NNP	PERSON	6	nmod
-5	to	to	TO	O	6	mark
-6	win	win	VB	O	0	ROOT
-7	the	the	DT	O	8	det
-8	race	race	NN	O	6	dobj
-9	that	that	IN	O	11	mark
-10	Mary	Mary	NNP	PERSON	11	nsubj
-11	hoped	hope	VBD	O	6	ccomp
-12	.	.	.	O	6	punct
-	# # original
-	# 1	It	it	PRP	O	6	nsubj
-	# 2	was	be	VBD	O	6	cop
-	# 3	for	for	IN	O	6	mark
-	# 4	Fred	Fred	NNP	PERSON	6	nsubj
-	# 5	to	to	TO	O	6	mark
-	# 6	win	win	VB	O	0	ROOT
-	# 7	the	the	DT	O	8	det
-	# 8	race	race	NN	O	6	dobj
-	# 9	that	that	WDT	O	11	dobj
-	# 10	Mary	Mary	NNP	PERSON	11	nsubj
-	# 11	hoped	hope	VBD	O	8	acl:relcl
-	# 12	.	.	.	O	6	punct
+# # ok, parse fixed
+# 1	It	it	PRP	O	6	nsubj
+# 2	was	be	VBD	O	6	cop
+# 3	for	for	IN	O	4	case
+# 4	Fred	Fred	NNP	PERSON	6	nmod
+# 5	to	to	TO	O	6	mark
+# 6	win	win	VB	O	0	ROOT
+# 7	the	the	DT	O	8	det
+# 8	race	race	NN	O	6	dobj
+# 9	that	that	IN	O	11	mark
+# 10	Mary	Mary	NNP	PERSON	11	nsubj
+# 11	hoped	hope	VBD	O	6	ccomp
+# 12	.	.	.	O	6	punct
+	# # # original
+	# # 1	It	it	PRP	O	6	nsubj
+	# # 2	was	be	VBD	O	6	cop
+	# # 3	for	for	IN	O	6	mark
+	# # 4	Fred	Fred	NNP	PERSON	6	nsubj
+	# # 5	to	to	TO	O	6	mark
+	# # 6	win	win	VB	O	0	ROOT
+	# # 7	the	the	DT	O	8	det
+	# # 8	race	race	NN	O	6	dobj
+	# # 9	that	that	WDT	O	11	dobj
+	# # 10	Mary	Mary	NNP	PERSON	11	nsubj
+	# # 11	hoped	hope	VBD	O	8	acl:relcl
+	# # 12	.	.	.	O	6	punct
 
 # # ok
 # 1	Fred	Fred	NNP	PERSON	7	nsubjpass
@@ -3228,27 +3228,27 @@
 # 13	tomorrow	tomorrow	NN	DATE	10	nmod:tmod
 # 14	.	.	.	O	2	punct
 
-# sentence coordination
-1	As	as	IN	O	3	case
-2	for	for	IN	O	3	case
-3	Sam	Sam	NNP	PERSON	6	nmod
-4	,	,	,	O	6	punct
-5	Mary	Mary	NNP	PERSON	6	nsubj
-6	saw	see	VBD	O	0	ROOT
-7	him	he	PRP	O	6	dobj
-8	last	last	JJ	DATE	9	amod
-9	week	week	NN	DATE	6	nmod:tmod
-10	,	,	,	O	6	punct
-11	and	and	CC	O	6	cc
-12	as	as	IN	O	14	case
-13	for	for	IN	O	14	case
-14	Paul	Paul	NNP	PERSON	17	nmod
-15	,	,	,	O	17	punct
-16	I	I	PRP	O	17	nsubj
-17	saw	see	VBD	O	6	conj
-18	him	he	PRP	O	17	dobj
-19	yesterday	yesterday	NN	DATE	17	nmod:tmod
-20	.	.	.	O	6	punct
+# # ok
+# 1	As	as	IN	O	3	case
+# 2	for	for	IN	O	3	case
+# 3	Sam	Sam	NNP	PERSON	6	nmod
+# 4	,	,	,	O	6	punct
+# 5	Mary	Mary	NNP	PERSON	6	nsubj
+# 6	saw	see	VBD	O	0	ROOT
+# 7	him	he	PRP	O	6	dobj
+# 8	last	last	JJ	DATE	9	amod
+# 9	week	week	NN	DATE	6	nmod:tmod
+# 10	,	,	,	O	6	punct
+# 11	and	and	CC	O	6	cc
+# 12	as	as	IN	O	14	case
+# 13	for	for	IN	O	14	case
+# 14	Paul	Paul	NNP	PERSON	17	nmod
+# 15	,	,	,	O	17	punct
+# 16	I	I	PRP	O	17	nsubj
+# 17	saw	see	VBD	O	6	conj
+# 18	him	he	PRP	O	17	dobj
+# 19	yesterday	yesterday	NN	DATE	17	nmod:tmod
+# 20	.	.	.	O	6	punct
 
 # # ok? tell to => no argument, cf. decide to
 # 1	Sandy	Sandy	NNP	PERSON	2	nsubj
