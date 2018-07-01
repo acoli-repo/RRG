@@ -308,7 +308,7 @@
 #p.496 the attempt by the prisoners to escape
 #p.496 the two tall duck hunters
 #p.499 the two red cars which were sold yesterday
-#p.503 I can 't remember who Jose saw .
+#p.503 I can't remember who Jose saw .
 #p.503 What Mary brought is a mystery to me .
 #p.504 Robin could not identify who had talked to Kim at the party to the police
 #p.505 Sandy could not explain how she had opened the door to the detective during the interviews .
