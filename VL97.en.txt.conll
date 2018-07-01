@@ -3592,67 +3592,76 @@
 	# # 17	longer	longer	RBR	O	13	advmod
 	# # 18	.	.	.	O	2	punct
 
-# parse fixed (scope of conjunction)
-1	Kim	Kim	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	Sandy	Sandy	NNP	PERSON	4	nsubj
-4	leave	leave	VB	O	2	ccomp
-5	early	early	RB	O	4	advmod
-6	and	and	CC	O	2	cc
-7	called	call	VBD	O	2	conj
-8	her	she	PRP	O	7	dobj
-9	and	and	CC	O	7	cc
-10	asked	ask	VBD	O	7	conj
-11	her	she	PRP	O	10	dobj
-12	to	to	TO	O	13	mark
-13	come	come	VB	O	10	xcomp
-14	back	back	RB	O	13	advmod
-15	.	.	.	O	2	punct
-	# # original
-	# 1	Kim	Kim	NNP	PERSON	2	nsubj
-	# 2	saw	see	VBD	O	0	ROOT
-	# 3	Sandy	Sandy	NNP	PERSON	4	nsubj
-	# 4	leave	leave	VB	O	2	ccomp
-	# 5	early	early	RB	O	4	advmod
-	# 6	and	and	CC	O	4	cc
-	# 7	called	call	VBD	O	4	conj
-	# 8	her	she	PRP	O	7	dobj
-	# 9	and	and	CC	O	7	cc
-	# 10	asked	ask	VBD	O	7	conj
-	# 11	her	she	PRP	O	10	dobj
-	# 12	to	to	TO	O	13	mark
-	# 13	come	come	VB	O	10	xcomp
-	# 14	back	back	RB	O	13	advmod
-	# 15	.	.	.	O	2	punct
+# # ok: parse fixed (scope of conjunction)
+# 1	Kim	Kim	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	Sandy	Sandy	NNP	PERSON	4	nsubj
+# 4	leave	leave	VB	O	2	ccomp
+# 5	early	early	RB	O	4	advmod
+# 6	and	and	CC	O	2	cc
+# 7	called	call	VBD	O	2	conj
+# 8	her	she	PRP	O	7	dobj
+# 9	and	and	CC	O	7	cc
+# 10	asked	ask	VBD	O	7	conj
+# 11	her	she	PRP	O	10	dobj
+# 12	to	to	TO	O	13	mark
+# 13	come	come	VB	O	10	xcomp
+# 14	back	back	RB	O	13	advmod
+# 15	.	.	.	O	2	punct
+	# # # original
+	# # 1	Kim	Kim	NNP	PERSON	2	nsubj
+	# # 2	saw	see	VBD	O	0	ROOT
+	# # 3	Sandy	Sandy	NNP	PERSON	4	nsubj
+	# # 4	leave	leave	VB	O	2	ccomp
+	# # 5	early	early	RB	O	4	advmod
+	# # 6	and	and	CC	O	4	cc
+	# # 7	called	call	VBD	O	4	conj
+	# # 8	her	she	PRP	O	7	dobj
+	# # 9	and	and	CC	O	7	cc
+	# # 10	asked	ask	VBD	O	7	conj
+	# # 11	her	she	PRP	O	10	dobj
+	# # 12	to	to	TO	O	13	mark
+	# # 13	come	come	VB	O	10	xcomp
+	# # 14	back	back	RB	O	13	advmod
+	# # 15	.	.	.	O	2	punct
 
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	seen	see	VBN	O	0	ROOT
+# 4	leaving	leave	VBG	O	3	xcomp
+# 5	early	early	RB	O	4	advmod
+# 6	.	.	.	O	3	punct
 
-1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	seen	see	VBN	O	0	ROOT
-4	leaving	leave	VBG	O	3	xcomp
-5	early	early	RB	O	4	advmod
-6	.	.	.	O	3	punct
+# # ok? parse fixed: attachment
+# 1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	seen	see	VBN	O	0	ROOT
+# 4	leaving	leave	VBG	O	3	xcomp
+# 5	early	early	RB	O	4	advmod
+# 6	by	by	IN	O	7	case
+# 7	Kim	Kim	NNP	PERSON	3	nmod
+# 8	.	.	.	O	3	punct
+	# # # original
+	# # 1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
+	# # 2	was	be	VBD	O	3	auxpass
+	# # 3	seen	see	VBN	O	0	ROOT
+	# # 4	leaving	leave	VBG	O	3	xcomp
+	# # 5	early	early	RB	O	7	advmod
+	# # 6	by	by	IN	O	7	case
+	# # 7	Kim	Kim	NNP	PERSON	4	nmod
+	# # 8	.	.	.	O	3	punct
 
+# # ok
+# 1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
+# 2	was	be	VBD	O	3	auxpass
+# 3	seen	see	VBN	O	0	ROOT
+# 4	to	to	TO	O	5	mark
+# 5	leave	leave	VB	O	3	xcomp
+# 6	early	early	RB	O	5	advmod
+# 7	.	.	.	O	3	punct
 
-1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	seen	see	VBN	O	0	ROOT
-4	leaving	leave	VBG	O	3	xcomp
-5	early	early	RB	O	7	advmod
-6	by	by	IN	O	7	case
-7	Kim	Kim	NNP	PERSON	4	nmod
-8	.	.	.	O	3	punct
-
-
-1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
-2	was	be	VBD	O	3	auxpass
-3	seen	see	VBN	O	0	ROOT
-4	to	to	TO	O	5	mark
-5	leave	leave	VB	O	3	xcomp
-6	early	early	RB	O	5	advmod
-7	.	.	.	O	3	punct
-
-
+# parse fixed: PP attachment
 1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
 2	was	be	VBD	O	3	auxpass
 3	seen	see	VBN	O	0	ROOT
@@ -3660,181 +3669,206 @@
 5	leave	leave	VB	O	3	xcomp
 6	early	early	RB	O	5	advmod
 7	by	by	IN	O	8	case
-8	Kim	Kim	NNP	PERSON	6	nmod
+8	Kim	Kim	NNP	PERSON	3	nmod
 9	.	.	.	O	3	punct
+	# # original
+	# 1	Sandy	Sandy	NNP	PERSON	3	nsubjpass
+	# 2	was	be	VBD	O	3	auxpass
+	# 3	seen	see	VBN	O	0	ROOT
+	# 4	to	to	TO	O	5	mark
+	# 5	leave	leave	VB	O	3	xcomp
+	# 6	early	early	RB	O	5	advmod
+	# 7	by	by	IN	O	8	case
+	# 8	Kim	Kim	NNP	PERSON	6	nmod
+	# 9	.	.	.	O	3	punct
 
+# # ok ? (could be LDP as next)
+# 1	Running	run	VBG	O	7	advcl
+# 2	down	down	RP	O	1	compound:prt
+# 3	the	the	DT	O	4	det
+# 4	hall	hall	NN	O	1	dobj
+# 5	,	,	,	O	7	punct
+# 6	Sandy	Sandy	NNP	PERSON	7	nsubj
+# 7	waved	wave	VBD	O	0	ROOT
+# 8	to	to	TO	O	9	mark
+# 9	Sue	sue	VB	PERSON	7	xcomp
+# 10	.	.	.	O	7	punct
 
-1	Running	run	VBG	O	7	advcl
-2	down	down	RP	O	1	compound:prt
-3	the	the	DT	O	4	det
-4	hall	hall	NN	O	1	dobj
-5	,	,	,	O	7	punct
-6	Sandy	Sandy	NNP	PERSON	7	nsubj
-7	waved	wave	VBD	O	0	ROOT
-8	to	to	TO	O	9	mark
-9	Sue	sue	VB	PERSON	7	xcomp
-10	.	.	.	O	7	punct
+# # ok? (should be clause juncture, but after is a PP)
+# # this may be an RRG-1997 inconsistency
+# 1	After	after	IN	O	2	mark
+# 2	running	run	VBG	O	8	advcl
+# 3	down	down	RP	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	dobj
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
+# # ok?, cf last
+# 1	Before	before	IN	O	2	mark
+# 2	running	run	VBG	O	8	advcl
+# 3	down	down	RP	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	dobj
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
-1	After	after	IN	O	2	mark
-2	running	run	VBG	O	8	advcl
-3	down	down	RP	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	dobj
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
+# # ok? restored from PP (hence LDP), should be clause juncture
+# 1	While	while	IN	O	2	mark
+# 2	running	run	VBG	O	8	advcl
+# 3	down	down	RP	O	2	compound:prt
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	dobj
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
+# # ok?
+# 1	Having	have	VBG	O	2	aux
+# 2	run	run	VBN	O	8	advcl
+# 3	down	down	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	hall	hall	NN	O	2	nmod
+# 6	,	,	,	O	8	punct
+# 7	Sandy	Sandy	NNP	PERSON	8	nsubj
+# 8	waved	wave	VBD	O	0	ROOT
+# 9	to	to	TO	O	10	mark
+# 10	Sue	sue	VB	PERSON	8	xcomp
+# 11	.	.	.	O	8	punct
 
-1	Before	before	IN	O	2	mark
-2	running	run	VBG	O	8	advcl
-3	down	down	RP	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	dobj
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
-
-
-1	While	while	IN	O	2	mark
-2	running	run	VBG	O	8	advcl
-3	down	down	RP	O	2	compound:prt
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	dobj
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
-
-
-1	Having	have	VBG	O	2	aux
-2	run	run	VBN	O	8	advcl
-3	down	down	IN	O	5	case
-4	the	the	DT	O	5	det
-5	hall	hall	NN	O	2	nmod
-6	,	,	,	O	8	punct
-7	Sandy	Sandy	NNP	PERSON	8	nsubj
-8	waved	wave	VBD	O	0	ROOT
-9	to	to	TO	O	10	mark
-10	Sue	sue	VB	PERSON	8	xcomp
-11	.	.	.	O	8	punct
-
-
+# parse fixed, must be nuclear cosubordination
 1	Harry	Harry	NNP	PERSON	2	nsubj
 2	shot	shoot	VBD	O	0	ROOT
-3	Tom	Tom	NNP	PERSON	4	nsubj
+3	Tom	Tom	NNP	PERSON	2	dobj
 4	dead	dead	JJ	O	2	xcomp
 5	.	.	.	O	2	punct
+	# # original
+	# 1	Harry	Harry	NNP	PERSON	2	nsubj
+	# 2	shot	shoot	VBD	O	0	ROOT
+	# 3	Tom	Tom	NNP	PERSON	4	nsubj
+	# 4	dead	dead	JJ	O	2	xcomp
+	# 5	.	.	.	O	2	punct
 
+# # ok: core coordination
+# 1	Harry	Harry	NNP	PERSON	2	nsubj
+# 2	caused	cause	VBD	O	0	ROOT
+# 3	Tom	Tom	NNP	PERSON	2	dobj
+# 4	to	to	TO	O	5	mark
+# 5	die	die	VB	O	2	xcomp
+# 6	.	.	.	O	2	punct
 
-1	Harry	Harry	NNP	PERSON	2	nsubj
-2	caused	cause	VBD	O	0	ROOT
-3	Tom	Tom	NNP	PERSON	2	dobj
-4	to	to	TO	O	5	mark
-5	die	die	VB	O	2	xcomp
-6	.	.	.	O	2	punct
+# # ok: clausal cosubordination
+# 1	Having	have	VBG	O	3	aux
+# 2	been	be	VBN	O	3	auxpass
+# 3	shot	shoot	VBN	O	8	advcl
+# 4	by	by	IN	O	5	case
+# 5	Harry	Harry	NNP	PERSON	3	nmod
+# 6	,	,	,	O	8	punct
+# 7	Tom	Tom	NNP	PERSON	8	nsubj
+# 8	died	die	VBD	O	0	ROOT
+# 9	.	.	.	O	8	punct
 
+# # ok: clausal subordination
+# 1	Tom	Tom	NNP	PERSON	2	nsubj
+# 2	died	die	VBD	O	0	ROOT
+# 3	,	,	,	O	2	punct
+# 4	because	because	IN	O	6	mark
+# 5	Harry	Harry	NNP	PERSON	6	nsubj
+# 6	shot	shoot	VBD	O	2	advcl
+# 7	him	he	PRP	O	6	dobj
+# 8	.	.	.	O	2	punct
 
-1	Having	have	VBG	O	3	aux
-2	been	be	VBN	O	3	auxpass
-3	shot	shoot	VBN	O	8	advcl
-4	by	by	IN	O	5	case
-5	Harry	Harry	NNP	PERSON	3	nmod
-6	,	,	,	O	8	punct
-7	Tom	Tom	NNP	PERSON	8	nsubj
-8	died	die	VBD	O	0	ROOT
-9	.	.	.	O	8	punct
+# # ok: clausal subordination
+# 1	After	after	IN	O	3	mark
+# 2	Harry	Harry	NNP	PERSON	3	nsubj
+# 3	shot	shoot	VBD	O	7	advcl
+# 4	him	he	PRP	O	3	dobj
+# 5	,	,	,	O	7	punct
+# 6	Tom	Tom	NNP	PERSON	7	nsubj
+# 7	died	die	VBD	O	0	ROOT
+# 8	.	.	.	O	7	punct
 
+# # ok: clausal coordination
+# 1	Harry	Harry	NNP	PERSON	2	nsubj
+# 2	shot	shoot	VBD	O	0	ROOT
+# 3	Tom	Tom	NNP	PERSON	2	dobj
+# 4	,	,	,	O	2	punct
+# 5	and	and	CC	O	2	cc
+# 6	he	he	PRP	O	7	nsubj
+# 7	died	die	VBD	O	2	conj
+# 8	.	.	.	O	2	punct
 
-1	Tom	Tom	NNP	PERSON	2	nsubj
-2	died	die	VBD	O	0	ROOT
-3	,	,	,	O	2	punct
-4	because	because	IN	O	6	mark
-5	Harry	Harry	NNP	PERSON	6	nsubj
-6	shot	shoot	VBD	O	2	advcl
-7	him	he	PRP	O	6	dobj
-8	.	.	.	O	2	punct
+# # ok? should be core subordination, but "That Jim" is clearly a clause
+# 1	That	that	DT	O	2	det
+# 2	Jim	Jim	NNP	PERSON	4	nsubj
+# 3	will	will	MD	O	4	aux
+# 4	win	win	VB	O	8	csubj
+# 5	the	the	DT	O	6	det
+# 6	race	race	NN	O	4	dobj
+# 7	is	be	VBZ	O	8	cop
+# 8	likely	likely	JJ	O	0	ROOT
+# 9	.	.	.	O	8	punct
 
+# # ok: clausal subordination
+# 1	It	it	PRP	O	3	nsubj
+# 2	is	be	VBZ	O	3	cop
+# 3	likely	likely	JJ	O	0	ROOT
+# 4	that	that	IN	O	7	mark
+# 5	Jim	Jim	NNP	PERSON	7	nsubj
+# 6	will	will	MD	O	7	aux
+# 7	win	win	VB	O	3	ccomp
+# 8	the	the	DT	O	9	det
+# 9	race	race	NN	O	7	dobj
+# 10	.	.	.	O	3	punct
 
-1	After	after	IN	O	3	mark
-2	Harry	Harry	NNP	PERSON	3	nsubj
-3	shot	shoot	VBD	O	7	advcl
-4	him	he	PRP	O	3	dobj
-5	,	,	,	O	7	punct
-6	Tom	Tom	NNP	PERSON	7	nsubj
-7	died	die	VBD	O	0	ROOT
-8	.	.	.	O	7	punct
+# # ok: core cosubordintion
+# 1	Jim	Jim	NNP	PERSON	3	nsubj
+# 2	is	be	VBZ	O	3	cop
+# 3	likely	likely	JJ	O	0	ROOT
+# 4	to	to	TO	O	5	mark
+# 5	win	win	VB	O	3	xcomp
+# 6	the	the	DT	O	7	det
+# 7	race	race	NN	O	5	dobj
+# 8	.	.	.	O	3	punct
 
+# # ok: core cosubordination
+# 1	Morris	Morris	NNP	PERSON	2	nsubj
+# 2	remembered	remember	VBD	O	0	ROOT
+# 3	to	to	TO	O	4	mark
+# 4	apply	apply	VB	O	2	xcomp
+# 5	the	the	DT	O	6	det
+# 6	rule	rule	NN	O	4	dobj
+# 7	.	.	.	O	2	punct
 
-1	Harry	Harry	NNP	PERSON	2	nsubj
-2	shot	shoot	VBD	O	0	ROOT
-3	Tom	Tom	NNP	PERSON	2	dobj
-4	,	,	,	O	2	punct
-5	and	and	CC	O	2	cc
-6	he	he	PRP	O	7	nsubj
-7	died	die	VBD	O	2	conj
-8	.	.	.	O	2	punct
-
-
-1	That	that	DT	O	2	det
-2	Jim	Jim	NNP	PERSON	4	nsubj
-3	will	will	MD	O	4	aux
-4	win	win	VB	O	8	csubj
-5	the	the	DT	O	6	det
-6	race	race	NN	O	4	dobj
-7	is	be	VBZ	O	8	cop
-8	likely	likely	JJ	O	0	ROOT
-9	.	.	.	O	8	punct
-
-
-1	It	it	PRP	O	3	nsubj
-2	is	be	VBZ	O	3	cop
-3	likely	likely	JJ	O	0	ROOT
-4	that	that	IN	O	7	mark
-5	Jim	Jim	NNP	PERSON	7	nsubj
-6	will	will	MD	O	7	aux
-7	win	win	VB	O	3	ccomp
-8	the	the	DT	O	9	det
-9	race	race	NN	O	7	dobj
-10	.	.	.	O	3	punct
-
-
-1	Jim	Jim	NNP	PERSON	3	nsubj
-2	is	be	VBZ	O	3	cop
-3	likely	likely	JJ	O	0	ROOT
-4	to	to	TO	O	5	mark
-5	win	win	VB	O	3	xcomp
-6	the	the	DT	O	7	det
-7	race	race	NN	O	5	dobj
-8	.	.	.	O	3	punct
-
-
+# parse fixed: core coordination, dep
 1	Morris	Morris	NNP	PERSON	2	nsubj
 2	remembered	remember	VBD	O	0	ROOT
-3	to	to	TO	O	4	mark
-4	apply	apply	VB	O	2	xcomp
+3	Abe	Abe	NNP	PERSON	2	dobj
+4	applying	apply	VBG	O	2	xcomp
 5	the	the	DT	O	6	det
 6	rule	rule	NN	O	4	dobj
 7	.	.	.	O	2	punct
+	# # original
+	# 1	Morris	Morris	NNP	PERSON	2	nsubj
+	# 2	remembered	remember	VBD	O	0	ROOT
+	# 3	Abe	Abe	NNP	PERSON	4	nsubj
+	# 4	applying	apply	VBG	O	2	dep
+	# 5	the	the	DT	O	6	det
+	# 6	rule	rule	NN	O	4	dobj
+	# 7	.	.	.	O	2	punct
 
-
-1	Morris	Morris	NNP	PERSON	2	nsubj
-2	remembered	remember	VBD	O	0	ROOT
-3	Abe	Abe	NNP	PERSON	4	nsubj
-4	applying	apply	VBG	O	2	dep
-5	the	the	DT	O	6	det
-6	rule	rule	NN	O	4	dobj
-7	.	.	.	O	2	punct
-
-
+# must be clausal subordination
 1	Morris	Morris	NNP	PERSON	2	nsubj
 2	remembered	remember	VBD	O	0	ROOT
 3	that	that	IN	O	5	mark
@@ -3844,101 +3878,103 @@
 7	rule	rule	NN	O	5	dobj
 8	.	.	.	O	2	punct
 
+# # ok?
+# 1	Alicia	Alicia	NNP	PERSON	2	nsubj
+# 2	persuaded	persuade	VBD	O	0	ROOT
+# 3	Carlos	Carlos	NNP	PERSON	2	dobj
+# 4	that	that	IN	O	11	mark
+# 5	a	a	DT	O	7	det
+# 6	quantum	quantum	NN	O	7	compound
+# 7	theory	theory	NN	O	11	nsubj
+# 8	of	of	IN	O	9	case
+# 9	gravity	gravity	NN	O	7	nmod
+# 10	is	be	VBZ	O	11	cop
+# 11	possible	possible	JJ	O	2	ccomp
+# 12	.	.	.	O	2	punct
 
-1	Alicia	Alicia	NNP	PERSON	2	nsubj
-2	persuaded	persuade	VBD	O	0	ROOT
-3	Carlos	Carlos	NNP	PERSON	2	dobj
-4	that	that	IN	O	11	mark
-5	a	a	DT	O	7	det
-6	quantum	quantum	NN	O	7	compound
-7	theory	theory	NN	O	11	nsubj
-8	of	of	IN	O	9	case
-9	gravity	gravity	NN	O	7	nmod
-10	is	be	VBZ	O	11	cop
-11	possible	possible	JJ	O	2	ccomp
-12	.	.	.	O	2	punct
+# # roughly ok; clausal subordination
+# # should be clausal complement, we have it as an argument because the that-clause is obligatory (in line with FrameNet)
+# 1	John	John	NNP	PERSON	2	nsubj
+# 2	told	tell	VBD	O	0	ROOT
+# 3	Mary	Mary	NNP	PERSON	2	dobj
+# 4	that	that	IN	O	7	mark
+# 5	he	he	PRP	O	7	nsubj
+# 6	will	will	MD	O	7	aux
+# 7	arrive	arrive	VB	O	2	ccomp
+# 8	at	at	IN	O	10	case
+# 9	the	the	DT	O	10	det
+# 10	party	party	NN	O	7	nmod
+# 11	late	late	RB	O	7	advmod
+# 12	.	.	.	O	2	punct
 
+# # ok
+# 1	Pat	Pat	NNP	PERSON	2	nsubj
+# 2	saw	see	VBD	O	0	ROOT
+# 3	Mary	Mary	NNP	PERSON	2	dobj
+# 4	after	after	IN	O	6	mark
+# 5	she	she	PRP	O	6	nsubj
+# 6	arrived	arrive	VBD	O	2	advcl
+# 7	at	at	IN	O	9	case
+# 8	the	the	DT	O	9	det
+# 9	party	party	NN	O	6	nmod
+# 10	.	.	.	O	2	punct
 
-1	John	John	NNP	PERSON	2	nsubj
-2	told	tell	VBD	O	0	ROOT
-3	Mary	Mary	NNP	PERSON	2	dobj
-4	that	that	IN	O	7	mark
-5	he	he	PRP	O	7	nsubj
-6	will	will	MD	O	7	aux
-7	arrive	arrive	VB	O	2	ccomp
-8	at	at	IN	O	10	case
-9	the	the	DT	O	10	det
-10	party	party	NN	O	7	nmod
-11	late	late	RB	O	7	advmod
-12	.	.	.	O	2	punct
+# # ok, NP coordination
+# 1	the	the	DT	O	4	det
+# 2	two	two	CD	NUMBER	4	nummod
+# 3	tall	tall	JJ	O	4	amod
+# 4	sisters	sister	NNS	O	0	ROOT
+# 5	of	of	IN	O	8	case
+# 6	Tom	Tom	NNP	PERSON	8	nmod:poss
+# 7	's	's	POS	O	6	case
+# 8	neighbor	neighbor	NN	O	4	nmod
+# 9	and	and	CC	O	4	cc
+# 10	the	the	DT	O	13	det
+# 11	two	two	CD	NUMBER	13	nummod
+# 12	short	short	JJ	O	13	amod
+# 13	brothers	brother	NNS	O	4	conj
+# 14	of	of	IN	O	17	case
+# 15	Sam	Sam	NNP	PERSON	17	nmod:poss
+# 16	's	's	POS	O	15	case
+# 17	friend	friend	NN	O	13	nmod
 
+# # roughly ok, in particular operator projection
+# # should be NP cosubordination, but why not COREn coordination? there aren't any non-shared NP features
+# 1	the	the	DT	O	4	det
+# 2	three	three	CD	NUMBER	4	nummod
+# 3	green	green	JJ	O	4	amod
+# 4	cars	car	NNS	O	0	ROOT
+# 5	and	and	CC	O	4	cc
+# 6	two	two	CD	NUMBER	8	nummod
+# 7	red	red	JJ	O	8	amod
+# 8	cars	car	NNS	O	4	conj
 
-1	Pat	Pat	NNP	PERSON	2	nsubj
-2	saw	see	VBD	O	0	ROOT
-3	Mary	Mary	NNP	PERSON	2	dobj
-4	after	after	IN	O	6	mark
-5	she	she	PRP	O	6	nsubj
-6	arrived	arrive	VBD	O	2	advcl
-7	at	at	IN	O	9	case
-8	the	the	DT	O	9	det
-9	party	party	NN	O	6	nmod
-10	.	.	.	O	2	punct
+# # roughly ok (subordination in periphery): why is the that-clause an argument on p.495?
+# 1	the	the	DT	O	2	det
+# 2	rumor	rumor	NN	O	0	ROOT
+# 3	that	that	WDT	O	5	dobj
+# 4	Fred	Fred	NNP	PERSON	5	nsubj
+# 5	saw	see	VBD	O	2	acl:relcl
+# 6	a	a	DT	O	7	det
+# 7	UFO	UFO	NNP	O	5	dobj
 
+# # ok
+# 1	the	the	DT	O	2	det
+# 2	attempt	attempt	NN	O	0	ROOT
+# 3	by	by	IN	O	5	case
+# 4	the	the	DT	O	5	det
+# 5	prisoners	prisoner	NNS	O	2	nmod
+# 6	to	to	TO	O	7	mark
+# 7	escape	escape	VB	O	2	acl
 
-1	the	the	DT	O	4	det
-2	two	two	CD	NUMBER	4	nummod
-3	tall	tall	JJ	O	4	amod
-4	sisters	sister	NNS	O	0	ROOT
-5	of	of	IN	O	8	case
-6	Tom	Tom	NNP	PERSON	8	nmod:poss
-7	's	's	POS	O	6	case
-8	neighbor	neighbor	NN	O	4	nmod
-9	and	and	CC	O	4	cc
-10	the	the	DT	O	13	det
-11	two	two	CD	NUMBER	13	nummod
-12	short	short	JJ	O	13	amod
-13	brothers	brother	NNS	O	4	conj
-14	of	of	IN	O	17	case
-15	Sam	Sam	NNP	PERSON	17	nmod:poss
-16	's	's	POS	O	15	case
-17	friend	friend	NN	O	13	nmod
+# # ok, no explicit REF node, though
+# 1	the	the	DT	O	5	det
+# 2	two	two	CD	NUMBER	5	nummod
+# 3	tall	tall	JJ	O	5	amod
+# 4	duck	duck	NN	O	5	compound
+# 5	hunters	hunter	NNS	O	0	ROOT
 
-
-1	the	the	DT	O	4	det
-2	three	three	CD	NUMBER	4	nummod
-3	green	green	JJ	O	4	amod
-4	cars	car	NNS	O	0	ROOT
-5	and	and	CC	O	4	cc
-6	two	two	CD	NUMBER	8	nummod
-7	red	red	JJ	O	8	amod
-8	cars	car	NNS	O	4	conj
-
-
-1	the	the	DT	O	2	det
-2	rumor	rumor	NN	O	0	ROOT
-3	that	that	WDT	O	5	dobj
-4	Fred	Fred	NNP	PERSON	5	nsubj
-5	saw	see	VBD	O	2	acl:relcl
-6	a	a	DT	O	7	det
-7	UFO	UFO	NNP	O	5	dobj
-
-
-1	the	the	DT	O	2	det
-2	attempt	attempt	NN	O	0	ROOT
-3	by	by	IN	O	5	case
-4	the	the	DT	O	5	det
-5	prisoners	prisoner	NNS	O	2	nmod
-6	to	to	TO	O	7	mark
-7	escape	escape	VB	O	2	acl
-
-
-1	the	the	DT	O	5	det
-2	two	two	CD	NUMBER	5	nummod
-3	tall	tall	JJ	O	5	amod
-4	duck	duck	NN	O	5	compound
-5	hunters	hunter	NNS	O	0	ROOT
-
-
+# duplicate ADV node
 1	the	the	DT	O	4	det
 2	two	two	CD	NUMBER	4	nummod
 3	red	red	JJ	O	4	amod
