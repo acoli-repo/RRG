@@ -18896,12 +18896,12 @@
 </nt>
 <nt id="s274_512" cat="CORE">
 	<edge idref="s274_511"/>
-	<edge idref="s274_522"/>
 	<edge idref="s274_509"/>
 </nt>
 <nt id="s274_513" cat="CORE">
-	<edge idref="s274_517"/>
 	<edge idref="s274_512"/>
+	<edge idref="s274_516"/>
+	<edge idref="s274_518"/>
 </nt>
 <nt id="s274_514" cat="CLAUSE">
 	<edge idref="s274_513"/>
@@ -18910,29 +18910,29 @@
 <nt id="s274_515" cat="SENTENCE">
 	<edge idref="s274_514"/>
 </nt>
-<nt id="s274_516" cat="NUC">
+<nt id="s274_516" cat="PERIPHERY">
+	<edge idref="s274_521"/>
+</nt>
+<nt id="s274_517" cat="NUC">
 	<edge idref="s274_4"/>
 	<secedge idref="s274_4" label="ASP"/>
 </nt>
-<nt id="s274_517" cat="CORE">
-	<edge idref="s274_518"/>
-	<edge idref="s274_516"/>
-</nt>
-<nt id="s274_518" cat="PERIPHERY">
+<nt id="s274_518" cat="CORE">
+	<edge idref="s274_517"/>
 	<edge idref="s274_519"/>
 </nt>
-<nt id="s274_519" cat="ADV">
+<nt id="s274_519" cat="PERIPHERY">
+	<edge idref="s274_520"/>
+</nt>
+<nt id="s274_520" cat="ADV">
 	<edge idref="s274_5"/>
 </nt>
-<nt id="s274_520" cat="PP">
-	<edge idref="s274_521"/>
+<nt id="s274_521" cat="PP">
+	<edge idref="s274_522"/>
 	<edge idref="s274_6"/>
 </nt>
-<nt id="s274_521" cat="NP">
+<nt id="s274_522" cat="NP">
 	<edge idref="s274_7"/>
-</nt>
-<nt id="s274_522" cat="PERIPHERY">
-	<edge idref="s274_520"/>
 </nt>
 </nonterminals></graph></s>
 <s id="s275"><graph><terminals>
@@ -19012,11 +19012,11 @@
 </nt>
 <nt id="s276_513" cat="CORE">
 	<edge idref="s276_512"/>
-	<edge idref="s276_524"/>
 	<edge idref="s276_510"/>
 </nt>
 <nt id="s276_514" cat="CORE">
-	<edge idref="s276_519"/>
+	<edge idref="s276_520"/>
+	<edge idref="s276_517"/>
 	<edge idref="s276_513"/>
 </nt>
 <nt id="s276_515" cat="CLAUSE">
@@ -19026,32 +19026,32 @@
 <nt id="s276_516" cat="SENTENCE">
 	<edge idref="s276_515"/>
 </nt>
-<nt id="s276_517" cat="CLM">
-	<edge idref="s276_4"/>
-</nt>
-<nt id="s276_518" cat="NUC">
-	<edge idref="s276_5"/>
-</nt>
-<nt id="s276_519" cat="CORE">
-	<edge idref="s276_520"/>
-	<edge idref="s276_518"/>
-	<edge idref="s276_517"/>
-</nt>
-<nt id="s276_520" cat="PERIPHERY">
-	<edge idref="s276_521"/>
-</nt>
-<nt id="s276_521" cat="ADV">
-	<edge idref="s276_6"/>
-</nt>
-<nt id="s276_522" cat="PP">
-	<edge idref="s276_7"/>
+<nt id="s276_517" cat="PERIPHERY">
 	<edge idref="s276_523"/>
 </nt>
-<nt id="s276_523" cat="NP">
-	<edge idref="s276_8"/>
+<nt id="s276_518" cat="CLM">
+	<edge idref="s276_4"/>
 </nt>
-<nt id="s276_524" cat="PERIPHERY">
+<nt id="s276_519" cat="NUC">
+	<edge idref="s276_5"/>
+</nt>
+<nt id="s276_520" cat="CORE">
+	<edge idref="s276_518"/>
+	<edge idref="s276_521"/>
+	<edge idref="s276_519"/>
+</nt>
+<nt id="s276_521" cat="PERIPHERY">
 	<edge idref="s276_522"/>
+</nt>
+<nt id="s276_522" cat="ADV">
+	<edge idref="s276_6"/>
+</nt>
+<nt id="s276_523" cat="PP">
+	<edge idref="s276_524"/>
+	<edge idref="s276_7"/>
+</nt>
+<nt id="s276_524" cat="NP">
+	<edge idref="s276_8"/>
 </nt>
 </nonterminals></graph></s>
 <s id="s277"><graph><terminals>
@@ -22749,11 +22749,11 @@
 <nt id="s321_514" cat="CORE">
 	<edge idref="s321_511"/>
 	<edge idref="s321_513"/>
-	<edge idref="s321_534"/>
 </nt>
 <nt id="s321_515" cat="CORE">
+	<edge idref="s321_521"/>
 	<edge idref="s321_514"/>
-	<edge idref="s321_520"/>
+	<edge idref="s321_518"/>
 	<secedge idref="s321_513" label="MOD"/>
 </nt>
 <nt id="s321_516" cat="CLAUSE">
@@ -22763,63 +22763,63 @@
 <nt id="s321_517" cat="SENTENCE">
 	<edge idref="s321_516"/>
 </nt>
-<nt id="s321_518" cat="CLM">
+<nt id="s321_518" cat="PERIPHERY">
+	<edge idref="s321_523"/>
+</nt>
+<nt id="s321_519" cat="CLM">
 	<edge idref="s321_3"/>
 </nt>
-<nt id="s321_519" cat="NUC">
+<nt id="s321_520" cat="NUC">
 	<edge idref="s321_4"/>
 </nt>
-<nt id="s321_520" cat="CORE">
-	<edge idref="s321_518"/>
+<nt id="s321_521" cat="CORE">
+	<edge idref="s321_520"/>
 	<edge idref="s321_519"/>
 </nt>
-<nt id="s321_521" cat="NUC">
+<nt id="s321_522" cat="NUC">
 	<edge idref="s321_5"/>
 </nt>
-<nt id="s321_522" cat="PP">
-	<edge idref="s321_533"/>
+<nt id="s321_523" cat="PP">
+	<edge idref="s321_534"/>
 </nt>
-<nt id="s321_523" cat="ARG">
-	<edge idref="s321_524"/>
-</nt>
-<nt id="s321_524" cat="NP">
-	<edge idref="s321_6"/>
-</nt>
-<nt id="s321_525" cat="NUC">
-	<edge idref="s321_7"/>
-</nt>
-<nt id="s321_526" cat="CORE">
-	<edge idref="s321_528"/>
-	<edge idref="s321_523"/>
+<nt id="s321_524" cat="ARG">
 	<edge idref="s321_525"/>
 </nt>
-<nt id="s321_527" cat="CLAUSE">
-	<edge idref="s321_526"/>
-	<secedge idref="s321_7" label="TNS"/>
+<nt id="s321_525" cat="NP">
+	<edge idref="s321_6"/>
 </nt>
-<nt id="s321_528" cat="ARG">
+<nt id="s321_526" cat="NUC">
+	<edge idref="s321_7"/>
+</nt>
+<nt id="s321_527" cat="CORE">
+	<edge idref="s321_524"/>
+	<edge idref="s321_526"/>
 	<edge idref="s321_529"/>
 </nt>
-<nt id="s321_529" cat="NP">
+<nt id="s321_528" cat="CLAUSE">
+	<edge idref="s321_527"/>
+	<secedge idref="s321_7" label="TNS"/>
+</nt>
+<nt id="s321_529" cat="ARG">
 	<edge idref="s321_530"/>
+</nt>
+<nt id="s321_530" cat="NP">
+	<edge idref="s321_531"/>
 	<secedge idref="s321_8" label="DEF"/>
 </nt>
-<nt id="s321_530" cat="COREn">
-	<edge idref="s321_531"/>
+<nt id="s321_531" cat="COREn">
+	<edge idref="s321_532"/>
 	<secedge idref="s321_9" label="NUM"/>
 </nt>
-<nt id="s321_531" cat="NUCn">
+<nt id="s321_532" cat="NUCn">
 	<edge idref="s321_9"/>
 </nt>
-<nt id="s321_532" cat="ARG">
-	<edge idref="s321_527"/>
+<nt id="s321_533" cat="ARG">
+	<edge idref="s321_528"/>
 </nt>
-<nt id="s321_533" cat="CORE">
-	<edge idref="s321_521"/>
-	<edge idref="s321_532"/>
-</nt>
-<nt id="s321_534" cat="PERIPHERY">
+<nt id="s321_534" cat="CORE">
 	<edge idref="s321_522"/>
+	<edge idref="s321_533"/>
 </nt>
 </nonterminals></graph></s>
 <s id="s322"><graph><terminals>

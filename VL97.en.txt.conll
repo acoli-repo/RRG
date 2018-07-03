@@ -4361,7 +4361,8 @@
 10	problem	problem	NN	O	8	dobj
 11	.	.	.	O	2	punct
 
-# ok: variant of the preceding example: my feeling is that the comma is weird, here, this enforces a RDP analysis 
+# ok: in cosubordination, detached periphery should go to the parent
+# my own variant of the preceding example: my feeling is that the comma is weird, here, this enforces a RDP analysis 
 1	Sandy	Sandy	NNP	PERSON	2	nsubj
 2	wanted	want	VBD	O	0	ROOT
 3	to	to	TO	O	4	mark
