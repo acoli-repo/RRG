@@ -351,7 +351,7 @@
 #p.636 To please Chris is easy .
 #p.636 For Pat to please Chris is easy .
 #p.636 Chris is eager for Pat to please her .
-#p.636 Chris is easy to Pat to please .
+#p.636 Chris is easy for Pat to please .
 #p.643 The dog bit the cat .
 #p.670 Mary having finished doing the dishes , Pat and Neil could start their next project in the kitchen .
 #p.670 With Sam going to the store for beer and pretzels , the other guys could get the surprise party ready .
