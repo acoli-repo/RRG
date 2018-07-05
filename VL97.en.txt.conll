@@ -378,8 +378,7 @@
 2	book	book	NN	O	0	ROOT
 
 # ok
-1	She	she	PRP	O	2	nsubj
-2	likes	like	VBZ	O	0	ROOT
+1	She	she	PRP	O	2	nsubj2	likes	like	VBZ	O	0	ROOT
 3	that	that	IN	O	2	dobj
 4	.	.	.	O	2	punct
 
@@ -3033,7 +3032,7 @@
 
 # ok (?); parse fixed
 1	For	for	IN	O	2	case
-2	Fred	Fred	NNP	PERSON	4	nmod
+2	Fred	Fred	NNP	PERSON	10	nmod
 3	to	to	TO	O	4	mark
 4	win	win	VB	O	10	csubj
 5	the	the	DT	O	6	det
@@ -3115,11 +3114,41 @@
 10	regretted	regret	VBD	O	7	acl:relcl
 11	.	.	.	O	5	punct
 
-# ok, parse fixed
+# parse fixed
+# problem is that we would need nested cores here
+# with "regular" matrix treatment of for Fred, it ends up in periphery
+	# correct target structure is probably as follows
+	#
+	# [ CORE
+		# [ ARG 
+	# 1	It	it	PRP	O	6	nsubj
+		# ]
+	# 2	was	be	VBD	O	6	cop
+		# [ PERIPHERY [ PP
+	# 3	for	for	IN	O	4	case
+	# 4	Fred	Fred	NNP	PERSON	6	nmod
+		# ] ]
+		# [ NUC	# in the same way as a NP becomes NUC
+			# [ CORE
+	# 5	to	to	TO	O	6	mark
+	# 6	win	win	VB	O	0	ROOT
+	# 7	the	the	DT	O	8	det
+	# 8	race	race	NN	O	6	dobj
+		# ] ]
+		# [ CLAUSE
+	# 9	that	that	IN	O	11	mark
+	# 10	Mary	Mary	NNP	PERSON	11	nsubj
+	# 11	hoped	hope	VBD	O	6	ccomp
+	# 12	.	.	.	O	6	punct
+		# ] 
+	# ]
+	#
+# back to double CLM encoding
+# roughly ok, passing template validation
 1	It	it	PRP	O	6	nsubj
 2	was	be	VBD	O	6	cop
-3	for	for	IN	O	4	case
-4	Fred	Fred	NNP	PERSON	6	nmod
+3	for	for	IN	O	6	mark
+4	Fred	Fred	NNP	PERSON	6	nsubj
 5	to	to	TO	O	6	mark
 6	win	win	VB	O	0	ROOT
 7	the	the	DT	O	8	det
@@ -3128,6 +3157,22 @@
 10	Mary	Mary	NNP	PERSON	11	nsubj
 11	hoped	hope	VBD	O	6	ccomp
 12	.	.	.	O	6	punct
+	#
+	# fixed parse I: conversion works, but for Fred becomes pre-CLM periphery; should be on the matrix clause
+	# non-valid
+	# 1	It	it	PRP	O	6	nsubj
+	# 2	was	be	VBD	O	6	cop
+	# 3	for	for	IN	O	4	case
+	# 4	Fred	Fred	NNP	PERSON	6	nmod
+	# 5	to	to	TO	O	6	mark
+	# 6	win	win	VB	O	0	ROOT
+	# 7	the	the	DT	O	8	det
+	# 8	race	race	NN	O	6	dobj
+	# 9	that	that	IN	O	11	mark
+	# 10	Mary	Mary	NNP	PERSON	11	nsubj
+	# 11	hoped	hope	VBD	O	6	ccomp
+	# 12	.	.	.	O	6	punct
+	#
 	# # original
 	# 1	It	it	PRP	O	6	nsubj
 	# 2	was	be	VBD	O	6	cop
@@ -3154,9 +3199,10 @@
 9	Mary	Mary	NNP	PERSON	7	nmod
 10	.	.	.	O	7	punct
 
-# ok, parse fixed, with stranded preposition as ARG
+# For Fred should be PrCS
+# parse fixed, with stranded preposition as ARG
 1	For	for	IN	O	2	case
-2	Fred	Fred	NNP	PERSON	4	nmod
+2	Fred	Fred	NNP	PERSON	8	nmod
 3	to	to	TO	O	4	mark
 4	win	win	VB	O	8	csubjpass
 5	the	the	DT	O	6	det
@@ -4841,4 +4887,4 @@
 	# 11	n't	not	RB	O	12	neg
 	# 12	have	have	VB	O	2	advcl
 	# 13	to	to	TO	O	12	xcomp
-	# 14	.	.	.	O	2	punct
+	# 14	.	.	.	O	2	pun t
