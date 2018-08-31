@@ -28,9 +28,9 @@ Robert D. Van Valin (2005), Exploring the Syntax-Semanrics Interface. CUP
 Note that unlike the RRG theory, we preserve AAJ and ARG labels as well as explicit operators for selected adverbs
 Note that these are frozen at v.013
 
-EWT.*.xml
+ewt*.zip
 TIGER edition of RRG parses derived from UD + PropBank (EWT corpus)
-v.014 edition (currently being compiled) based on UD, only
+v.014 edition based on UD, only
 v.015 edition (yet to come) integrating PB
 
 scripts*xml
@@ -38,7 +38,8 @@ sh and sparql scripts for conversion
 
 history
 -------
-- 2018-08-10 v.014 (EWT/UD conversion, developed on dev/answers) -- CC
+- ????-??-?? v.015 (EWT/UD+PB, developed on dev/answers) in preparation
+- 2018-08-10 v.014 (EWT/UD, developed on dev/answers) -- CC
 - 2018-07-15 v.013 (RRG1997+RRG2005, keeping ARG/AAJ as in RRG1997) -- CC
 - 2018-07-08 v.012 (RRG1997, RRG template validation ok except for treatment of "have to" as core cosubordination) -- CC
 - 2018-07-04 v.011 (RRG1997, structural validation) -- CC
