@@ -1,0 +1,358 @@
+# van Valin and Lapolla 1997, English examples (numbered examples and Figs only; examples without syntactic analysis and ungrammatical examples skipped)
+# todo: examples with semantics, chap. 3
+# duplicates (modulo proper names) eliminated
+
+#p.1 The man saw the woman .
+#p.1 The woman saw the man .
+#p.6 Who did Mary see ?
+#p.6 Mary saw who ?
+#p.6 Sandy Robin does n't like .
+#p.6 Robin does n't like Sandy .
+#p.18,19 Pat sent them to us .
+#p.18,19 Whom did Pat send to us ?
+#p.18 Whom did Pat send them to ?
+#p.26 John ate the sandwich in the library .
+#p.32 Scully did not show the photo to Mulder at the office yesterday .
+#p.33 The man saw the woman in the mountains .
+#p.34 I killed them .
+#p.36 At the park , I talked to Leslie .
+#p.36 Yesterday , I walked on the beach with Kim .
+#p.36 As for Sam , I haven't seen him in two weeks .
+#p.36 As for Felipe , what did Maria get him for his birthday ?
+#p.51,53 Yesterday , what did Robin show to Pat in the library ?
+#RRG_overview.pdf_Fig.4 Yesterday , what did John give to Mary in the library ?
+#p.45 He may be leaving soon .
+#p.45 She was able to see him .
+#p.45 Will they have to be leaving ?
+#p.170 Mulder did not show the book to Skinner yesterday .
+#p.51 Sally is tall .
+#p.54 father
+#p.54 father of children
+#p.55 the attack of the killer bees
+#p.55 the gift of a new car
+#p.55 the destruction of the city
+#p.55 the leg of the table
+#p.55 the resupplying of the troops
+#p.55 the resupplying of the troops with ammunition
+#p.55 arrest of Bill by FBI agents in New York
+#p.59 the three big books
+#cf.RRG_overview.pdf_Fig.6 the three bridges
+#p.61 Fred 's book
+#p.62 that book
+#p.62 She likes that .
+#p.75,178,235,236,319,324,430 What did Robin give to Leslie yesterday ?
+#cf.RRG_overview.pdf_Fig.12 What did Dana give Chris yesterday ?
+#p.76 Yesterday , Dana read two magazines in the library .
+#p.76 Chris placed the notebook on the bench .
+#p.76 Who did Robin present with an award at the ceremony ?
+#p.76 Robin presented an award to Pat at the ceremony .
+#p.76 After the party , Sandy went to a bar .
+#p.79 What did Robin present to Pat at the ceremony ?
+#p.79 Who is Larry threatening now ?
+#p.79 Max might have been interrogated during the break .
+#p.79 Sandy is in the house now .
+#p.80 the capture of the fugitive by the police yesterday
+#p.80 the sister of Mary 's tall neighbor
+#p.80 that new tall building
+#p.161,339 Robin gave the flowers to Pat .
+#p.162,403 Sam ran to the store .
+#p.162 Yolanda put the book in the box .
+#p.163,335,349 Robin saw Pat after the concert .
+#p.166 Evidently , Leslie has slowly been completely immersing herself in the new language .
+#p.167 Leslie has slowly been completely immersing herself in the new language , evidently .
+#p.174 Manuel gave the envelope to the clerk .
+#p.174 The envelope was given to the clerk .
+#p.174 The envelope was given to the clerk by Manuel .
+#p.175 What did Manuel give to the clerk ?
+#p.175 To whom did Manuel give the envelope ?
+#p.175 Chris broke the coffeepot .
+#p.175 The coffeepot was broken .
+#p.175 The coffeepot was broken by Chris .
+#p.175 Who broke the coffeepot ?
+#p.175 What did Chris break ?
+#p.175 What was broken ?
+#p.175 What was broken by Chris ?
+#p.215 John presented a girl with some flowers .
+#p.216 John gave them to her .
+#p.217 What did Dana give Chris yesterday ?
+#p.228 What did John buy at the store ?
+#p.228 As for Sam , Jane met him at the airport .
+#p.228 At the airport , who did Jane meet ?
+#p.228 Sam I 've known for years .
+#p.228 In Sam 's hometown , he is a big hero .
+#p.228 In his hometown , Sam is a big hero .
+#p.228 In his front hallway Sam put a big vase .
+#p.228 With Sam 's new job , he 'll make a lot of money .
+#p.230 In Sam 's house , what did Jane do ?
+#p.230 In Sam 's house , did Jane have a good time ?
+#p.230 Near the girl John was talking to , what did he see ?
+#p.230 Near the girl John was talking to , did he see a snake ?
+#p.230 Near him , what did John see ?
+#p.230 Near him , did John see a snake ?
+#p.250 The cat runs .
+#p.250 The cats run .
+#p.250 The dog dies .
+#p.250 The dogs die .
+#p.251 John kills the ducklings .
+#p.251 The ducklings are killed by John .
+#p.252 Who is winning the ball game ?
+#p.252 The Giants are winning .
+#p.252 Susan wants to run in the park .
+#p.252 Susan wants to eat a hamburger .
+#p.252 Susan wants to be taller .
+#p.252 Susan does n't want to be arrested by the police .
+#p.252 Jack seems to be running in the park .
+#p.252 Jack seems to be eating a hamburger .
+#p.252 Jack seems to be taller .
+#p.252 Jack seems to have been arrested by the police .
+#p.253 Mary talked to the man who bought the house down the street .
+#p.253 Mary talked to the man who the dog bit .
+#p.253 Mary talked to the man to whom Bill sold the house .
+#p.253 Mary looked at the box in which the jewelry was kept .
+#p.253 Mary looked at the box out of which the jewelry had been taken .
+#p.260 The man went downhill and saw the dog .
+#p.260 The dog went downhill and was seen by the man .
+#p.264 The student watched TV while eating pizza .
+#p.264 The student looked out the window while being questioned by the police .
+#p.271 Mary gave a book to John . 
+#p.271 Mary gave John a book .
+#p.291 Mary surprised Sally .
+#p.291 Sally was surprised by Mary .
+#p.309 Pat brought the book to read .
+#p.309 Pat brought the book for her sister to read .
+#p.309 John built a chest to put his clothes in .
+#p.309 John build a chest for his wife to put her clothes in .
+#p.309 Sandy gave the book to Pat to read .
+#p.309 Sandy gave Pat the book to read .
+#p.309 Sandy gave the book to Pat for her sister to read .
+#p.309 Sandy gave Pat the book for her sister to read .
+#p.309 Leslie brought a knife to carve the turkey with .
+#p.309 Leslie brought a knife for Bruce to carve the turkey with .
+#p.310 The book was brought by Sandy for Pat to read .
+#p.310 The book was brought for Pat to read .
+#p.310 Chris brought the watch to be repaired by the jeweler .
+#p.310 The watch was brought to be repaired .
+#p.310 The teacher sent the pupils away to study .
+#p.310 The pupils were sent away to study .
+#p.310 The terminally ill patients went to the hospice to die .
+#p.310 The terminally ill patients were sent to the hospice to die .
+#p.310 The company supplied the team with uniforms to wear .
+#p.310 The company supplied the team with uniforms for the players to wear .
+#p.334 That one I would eat .
+#p.383 Larry baked a cake for Sue .
+#p.337 Larry baked Sue a cake .
+#p.339 Fred gave Pamela the flowers .
+#p.350 Who was presented with an award by Molly ?
+#p.351 Where did Robin see Pat ?
+#p.376 Sally gave the box to Pat .
+#p.376 Sally showed the box to Pat .
+#p.376 Sally sent the box to Pat .
+#p.376 Sally handed the box to Pat .
+#p.376 Sally taught basketweaving to Pat .
+#p.376 Sandy took the keys from Kim .
+#p.376 Sandy stole the keys from Kim .
+#p.376 Sandy brought the keys from Kim .
+#p.376 Pat drained water from the pool .
+#p.376 Kim escaped from the burning house .
+#p.376 Mary opened the drawer with a knife .
+#p.376 Pam filled the bag with presents .
+#p.376 Robin went to the concert with Pat .
+#p.377,382 The woman with strong arms loaded the truck with hay with a pitchfork with Bill with enthusiasm .
+#p.378 Tom cut the bread with the knife .
+#p.378 Abdul ate the cereal with a spoon .
+#p.378 Tanisha looked at the comet with a telescope .
+#p.379 The mechanized pitchfork loaded the truck with hay .
+#p.379 Sandy and Kim loaded hay on the truck .
+#p.379 Sandy loaded hay on the truck with Kim .
+#p.379 Kim loaded hay on the truck with Sandy .
+#p.380 Pat served wine and cheese .
+#p.380 Pat served wine with cheese .
+#p.380 Pat served cheese with wine .
+#p.382 Bill and the woman with strong arms loaded the truck with hay with a pitchfork with enthusiasm .
+#p.383 Lucy longs for a diamond ring .
+#p.383 Rita sang for the students .
+#p.384 Robin baked a cake for Sandy to show her she could do it .
+#p.384 Robin baked a cake for Sandy to amuse her .
+#p.387 The thief stole $5,000 from the store .
+#p.387 The thief robbed the store of $5,000 .
+#p.390 Sally talked to Harry about herself .
+#p.390 Sally talked to Harry about himself .
+#p.390 Sally gave the flowers to herself .
+#p.396,405 The woman sent the book to herself .
+#p.396,405 Barbara saw a snake near her .
+#p.396,405 Pamela got some spaghetti sauce on her .
+#p.396,405 Pamela got some spaghetti sauce on herself .
+#p.398 John built a chest for his wife to put her clothes in .
+#p.398 The company supplied the coach with uniforms for her team to wear .
+#p.399 Molly saw herself .
+#p.401 I sold the slave to himself .
+#p.401 I sold the slave himself .
+#p.402 The photo of himself in the newspaper upsets James .
+#p.402 James is upset about the photo of himself in the newspaper .
+#p.402,404 The rumor about herself amuses Sally .
+#p.402 Sally is amused by rumors about herself .
+#p.407 Molly bought nothing for herself .
+#p.407 For herself Molly bought nothing .
+#p.407 Jim likes himself ; he can't stand other people .
+#p.407 Himself Jim likes ; it 's other people he can't stand .
+#p.426 Dana went to Toronto yesterday .
+#p.426 Yesterday , Dana went to Toronto and did a lot of shopping .
+#p.426 Dana went to Toronto yesterday , and tomorrow she is going to Montreal .
+#p.426 When is Dana going to Montreal ?
+#p.426 Where is Dana going shopping tomorrow ?
+#p.442,443 John forced open the door .
+#p.442 John forced the door open .
+#p.443,446 Bill pushed open the door .
+#p.443 Sally broke the vase .
+#p.444,445 I ordered Fred to force the door open .
+#p.444 John forced the door to open .
+#p.445,482 Mary persuaded Sally to leave .
+#p.445 Mary made Sally leave .
+#p.446 Bill pushed the door open .
+#p.446 Bill pushed the door closed .
+#p.446 Bill pushed the heavy door that had just been repainted after the storm .
+#p.446 Bobby pushed the table over .
+#p.446 Bobby pushed over the table .
+#p.446 Kevin pushed the chair into the room .
+#p.446 Kevin pushed into the room the old , overstuffed chair that his grandmother had left him .
+#p.446 Yvonne painted the table white .
+#p.446 Sally made herself sad .
+#p.446 Fred told himself to ask Pam out .
+#p.446 Fred asked Pam to help him .
+#p.446 Fred made Pam help him .
+#p.447 Sam asked Fred to leave tomorrow .
+#p.464 Mary called Fred yesterday , and she asked him to paint her room white .
+#p.455 Max made the woman leave .
+#p.455 Vince wiped the table clean .
+#p.455,548 Ted tried to open the door .
+#p.455 Sam sat playing the guitar .
+#p.455,462 David regretted Amy 's losing the race .
+#p.455 That Amy lost the race shocked everyone .
+#p.455 Louisa told Bob to close the window .
+#p.455 Fred saw Harry leave the room .
+#p.455 Harry ran down the hall laughing loudly .
+#p.455 Paul drove to the store and brought some beer .
+#p.455 John persuaded Leon that Amy had lost .
+#p.455 Bill went to the party after he talked to Mary .
+#p.455 Anna read for a few minutes , and then she went out .
+#p.459 John must try to wash the car .
+#p.459 John must tell Bill to wash the car .
+#p.460 John can promise Bill to wash the car .
+#p.462,463 Fred 's winning the race surprised Mary .
+#p.462 For Fred to win the race would be a shock to the experts .
+#p.462 Mary hoped for Fred to win the race .
+#p.462,463,623 That Fred won the race surprised Mary .
+#p.462 It was Fred 's loosing the race that Mary regretted .
+#p.462 It was for Fred to win the race that Mary hoped .
+#p.462 Fred 's loosing the race was regretted by Mary .
+#p.462 For Fred to win the race was hoped for by Mary .
+#p.463 Robin is known for liking big parties , but why did she invite the entire club ?
+#p.463 Sit down and I 'll fix you a drink .
+#p.465 John ate the sandwich in the library .
+#p.465 Kim introduced Sandy to Robin in the library .
+#p.465 John decided that he will go to the party yesterday .
+#p.465,467 John decided yesterday that he will go to the party .
+#p.466 John saw Max after he went to the party .
+#p.468,521 Robin drove out of Phoenix this morning and will arrive in Atlanta tomorrow .
+#p.470 As for Sam , Mary saw him last week , and as for Paul , I saw him yesterday .
+#p.470 Sandy told Kim to go to the movies .
+#p.470 Robin asked Pat to apply for a job .
+#p.470 Sandy stopped Kim from going to the movies .
+#p.470 Robin prevented Pat from applying for the job .
+#p.471 Pam kept the dogs barking .
+#p.471 Pam kept the dogs from barking .
+#p.471 Will you help me clear the table ?
+#p.471 This book helped me to see the truth .
+#p.471 Sam helped his neighbor build his new barn by pouring the foundation .
+#p.471 Sam helped his neighbor to build his new barn by pouring the foundation .
+#p.471 Sam helped his neighbor to build his new barn by loaning him money .
+#p.472 Robin stopped Kim singing ' Advance Australian Fair ' .
+#p.472 Robin stopped Kim from singing ' Advance Australian Fair ' .
+#p.472 Mary started to drive to work .
+#p.472 Mary started to drive to work but before she got the car she changed her mind and took the bus .
+#p.472 Mary started driving to work .
+#p.473 Kim saw Sandy leave early .
+#p.473 Kim heard Sandy leave early .
+#p.473 Kim saw Sandy leaving early .
+#p.473 Kim heard Sandy leaving early .
+#p.473 Kim saw Sandy leaving early and stopped her and asked her to stay a few minutes longer .
+#p.473 Kim saw Sandy leave early and called her and asked her to come back .
+#p.473 Sandy was seen leaving early .
+#p.473 Sandy was seen leaving early by Kim .
+#p.473 Sandy was seen to leave early .
+#p.473 Sandy was seen to leave early by Kim .
+#p.476 Running down the hall , Sandy waved to Sue .
+#p.476 After running down the hall , Sandy waved to Sue .
+#p.476 Before running down the hall , Sandy waved to Sue .
+#p.476 While running down the hall , Sandy waved to Sue .
+#p.476 Having run down the hall , Sandy waved to Sue .
+#p.481 Harry shot Tom dead .
+#p.481 Harry caused Tom to die .
+#p.481 Having been shot by Harry , Tom died .
+#p.481 Tom died , because Harry shot him .
+#p.481 After Harry shot him , Tom died .
+#p.481 Harry shot Tom , and he died .
+#p.482 That Jim will win the race is likely .
+#p.482 It is likely that Jim will win the race .
+#p.482 Jim is likely to win the race .
+#p.482 Morris remembered to apply the rule .
+#p.482 Morris remembered Abe applying the rule .
+#p.482 Morris remembered that Abe applied the rule .
+#p.482 Alicia persuaded Carlos that a quantum theory of gravity is possible .
+#p.486 John told Mary that he will arrive at the party late .
+#p.487 Pat saw Mary after she arrived at the party .
+#p.493 the two tall sisters of Tom 's neighbor and the two short brothers of Sam 's friend
+#p.494 the three green cars and two red cars
+#p.495 the rumor that Fred saw a UFO
+#p.496 the attempt by the prisoners to escape
+#p.496 the two tall duck hunters
+#p.499 the two red cars which were sold yesterday
+#p.503 I can't remember who Jose saw .
+#p.503 What Mary brought is a mystery to me .
+#p.504 Robin could not identify who had talked to Kim at the party to the police
+#p.505 Sandy could not explain how she had opened the door to the detective during the interviews .
+#p.505 Sandy could not explain why she had opened the door to the detective during the interviews .
+#p.505 Sandy could not explain to the detective during the interview how she had opened the door .
+#p.505 Sandy could not explain to the detective during the interview why she had opened the door .
+#p.505 Sandy could not describe where she had found the gun to the detective during the interview .
+#p.505 Sandy could not describe during the interview where she had found the gun to the detective .
+#p.505 Kim put the gun where no one could find it after the robbery .
+#p.508 Sandy tried to persuade Kim to visit Robin .
+#p.509 Pat asked Robin to try to visit Kim .
+#p.510 Robin decided to go to the movies .
+#p.510 Kim talked to Leslie yesterday , but they could n't agree on anything .
+#p.510 That Miguel won the lottery surprised his family .
+#p.510 Kim will ask Pat to help during the party .
+#p.510 Sam forgot that he had agreed to babysit for Robin .
+#p.510 Sandy wanted to rest , after she solved the problem .
+#p.516 the order by the king to release the prisoners
+#p.516 the controversial claim that global warming has already begun 
+#p.516 the two famous singers that Sally talked to yesterday
+#p.516 the three tall buildings and two big hotels in Canberra
+#p.524 Leslie may go to the concert and Pat may , too .
+#p.528 That she arrived late shocked everyone .
+#p.528 It shocked everyone that she arrived late .
+#p.530 Max broke the window .
+#p.531 John painted the table red .
+#p.538 Chris regretted Dana 's painting the house red .
+#p.550 Chris tried to be seen by Pat .
+#p.552,555 Robin promised Sandy to clean the birdcage .
+#p.563 Aisha seems to like her new computer .
+#p.564 What does Aisha seem to like ?
+#p.572,574 Yolanda was believed by Tyrone to have eaten his sandwich .
+#p.597,598 I liked the cars which were destroyed yesterday .
+#p.623 It surprised Mary that Fred won the race .
+#p.636 Pat is eager to please .
+#p.636 Pat is easy to please .
+#p.636 Pat is eager to please Chris .
+#p.636 It is easy to please Chris .
+#p.636 It is easy for Pat to please Chris .
+#p.636 To please Chris is easy .
+#p.636 For Pat to please Chris is easy .
+#p.636 Chris is eager for Pat to please her .
+#p.636 Chris is easy for Pat to please .
+#p.643 The dog bit the cat .
+#p.670 Mary having finished doing the dishes , Pat and Neil could start their next project in the kitchen .
+#p.670 With Sam going to the store for beer and pretzels , the other guys could get the surprise party ready .
+#RRG_overview.pdf_Fig.5 She will be singing .
+#p.384 Robin baked a cake for Sandy so that she would n't have to .

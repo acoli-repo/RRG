@@ -1,0 +1,6164 @@
+<corpus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id=""><body><s id="s1"><graph><terminals>
+<t id="s1_1" word="What" pos="WP" ner="_"></t>
+<t id="s1_2" word="did" pos="VBD" ner="_"></t>
+<t id="s1_3" word="Robin" pos="NNP" ner="PERSON"></t>
+<t id="s1_4" word="show" pos="VB" ner="_"></t>
+<t id="s1_5" word="to" pos="TO" ner="_"></t>
+<t id="s1_6" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s1_7" word="in" pos="IN" ner="_"></t>
+<t id="s1_8" word="the" pos="DT" ner="_"></t>
+<t id="s1_9" word="library" pos="NN" ner="_"></t>
+<t id="s1_10" word="yesterday" pos="RB" ner="DATE"></t>
+<t id="s1_11" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s1_512" cat="NP">
+	<edge idref="s1_1"/>
+</nt>
+<nt id="s1_513" cat="PrCS">
+	<edge idref="s1_512"/>
+</nt>
+<nt id="s1_514" cat="ARG">
+	<edge idref="s1_515"/>
+</nt>
+<nt id="s1_515" cat="NP">
+	<edge idref="s1_516"/>
+</nt>
+<nt id="s1_516" cat="COREn">
+	<edge idref="s1_517"/>
+</nt>
+<nt id="s1_517" cat="NUCn">
+	<edge idref="s1_3"/>
+</nt>
+<nt id="s1_518" cat="NUC">
+	<edge idref="s1_4"/>
+</nt>
+<nt id="s1_519" cat="CORE">
+	<edge idref="s1_526"/>
+	<edge idref="s1_518"/>
+	<edge idref="s1_535"/>
+	<edge idref="s1_514"/>
+	<secedge idref="s1_10" label="TEMP"/>
+</nt>
+<nt id="s1_520" cat="CLAUSE">
+	<edge idref="s1_513"/>
+	<edge idref="s1_519"/>
+	<secedge idref="s1_2" label="TNS+IF"/>
+</nt>
+<nt id="s1_521" cat="SENTENCE">
+	<edge idref="s1_520"/>
+</nt>
+<nt id="s1_522" cat="PP">
+	<edge idref="s1_523"/>
+	<edge idref="s1_5"/>
+</nt>
+<nt id="s1_523" cat="NP">
+	<edge idref="s1_524"/>
+</nt>
+<nt id="s1_524" cat="COREn">
+	<edge idref="s1_525"/>
+</nt>
+<nt id="s1_525" cat="NUCn">
+	<edge idref="s1_6"/>
+</nt>
+<nt id="s1_526" cat="ARG">
+	<edge idref="s1_522"/>
+</nt>
+<nt id="s1_527" cat="NUC">
+	<edge idref="s1_7"/>
+</nt>
+<nt id="s1_528" cat="CORE">
+	<edge idref="s1_527"/>
+	<edge idref="s1_531"/>
+</nt>
+<nt id="s1_529" cat="PP">
+	<edge idref="s1_528"/>
+</nt>
+<nt id="s1_530" cat="NP">
+	<edge idref="s1_532"/>
+	<secedge idref="s1_8" label="DEF"/>
+</nt>
+<nt id="s1_531" cat="ARG">
+	<edge idref="s1_530"/>
+</nt>
+<nt id="s1_532" cat="COREn">
+	<edge idref="s1_533"/>
+	<secedge idref="s1_9" label="NUM"/>
+</nt>
+<nt id="s1_533" cat="NUCn">
+	<edge idref="s1_9"/>
+</nt>
+<nt id="s1_534" cat="ADV">
+	<edge idref="s1_10"/>
+</nt>
+<nt id="s1_535" cat="PERIPHERY">
+	<edge idref="s1_534"/>
+	<edge idref="s1_529"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s2"><graph><terminals>
+<t id="s2_1" word="Will" pos="MD" ner="_"></t>
+<t id="s2_2" word="they" pos="PRP" ner="_"></t>
+<t id="s2_3" word="have" pos="VB" ner="_"></t>
+<t id="s2_4" word="to" pos="TO" ner="_"></t>
+<t id="s2_5" word="be" pos="VB" ner="_"></t>
+<t id="s2_6" word="leaving" pos="VBG" ner="_"></t>
+<t id="s2_7" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s2_508" cat="ARG">
+	<edge idref="s2_509"/>
+</nt>
+<nt id="s2_509" cat="NP">
+	<edge idref="s2_2"/>
+</nt>
+<nt id="s2_510" cat="NUC">
+	<edge idref="s2_3"/>
+</nt>
+<nt id="s2_511" cat="CORE">
+	<edge idref="s2_510"/>
+	<edge idref="s2_508"/>
+	<edge idref="s2_514"/>
+</nt>
+<nt id="s2_512" cat="CLAUSE">
+	<edge idref="s2_511"/>
+	<secedge idref="s2_1" label="IF+TNS"/>
+</nt>
+<nt id="s2_513" cat="SENTENCE">
+	<edge idref="s2_512"/>
+</nt>
+<nt id="s2_514" cat="ARG">
+	<edge idref="s2_516"/>
+</nt>
+<nt id="s2_515" cat="NUC">
+	<edge idref="s2_6"/>
+	<secedge idref="s2_5" label="ASP"/>
+	<secedge idref="s2_6" label="ASP"/>
+</nt>
+<nt id="s2_516" cat="CORE">
+	<edge idref="s2_515"/>
+	<secedge idref="s2_3" label="MOD"/>
+	<secedge idref="s2_4" label="MOD"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s3"><graph><terminals>
+<t id="s3_1" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s3_2" word="was" pos="VBD" ner="_"></t>
+<t id="s3_3" word="in" pos="IN" ner="_"></t>
+<t id="s3_4" word="the" pos="DT" ner="_"></t>
+<t id="s3_5" word="library" pos="NN" ner="_"></t>
+<t id="s3_6" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s3_507" cat="ARG">
+	<edge idref="s3_508"/>
+</nt>
+<nt id="s3_508" cat="NP">
+	<edge idref="s3_509"/>
+</nt>
+<nt id="s3_509" cat="COREn">
+	<edge idref="s3_510"/>
+</nt>
+<nt id="s3_510" cat="NUCn">
+	<edge idref="s3_1"/>
+</nt>
+<nt id="s3_511" cat="AUX">
+	<edge idref="s3_2"/>
+</nt>
+<nt id="s3_512" cat="NUC">
+	<edge idref="s3_511"/>
+	<edge idref="s3_516"/>
+</nt>
+<nt id="s3_513" cat="CORE">
+	<edge idref="s3_512"/>
+	<edge idref="s3_507"/>
+</nt>
+<nt id="s3_514" cat="CLAUSE">
+	<edge idref="s3_513"/>
+	<secedge idref="s3_2" label="IF+TNS"/>
+</nt>
+<nt id="s3_515" cat="SENTENCE">
+	<edge idref="s3_514"/>
+</nt>
+<nt id="s3_516" cat="PP">
+	<edge idref="s3_517"/>
+	<edge idref="s3_3"/>
+</nt>
+<nt id="s3_517" cat="NP">
+	<edge idref="s3_518"/>
+	<secedge idref="s3_4" label="DEF"/>
+</nt>
+<nt id="s3_518" cat="COREn">
+	<edge idref="s3_519"/>
+	<secedge idref="s3_5" label="NUM"/>
+</nt>
+<nt id="s3_519" cat="NUCn">
+	<edge idref="s3_5"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s4"><graph><terminals>
+<t id="s4_1" word="Yesterday" pos="RB" ner="DATE"></t>
+<t id="s4_2" word="," pos="," ner="_"></t>
+<t id="s4_3" word="what" pos="WP" ner="_"></t>
+<t id="s4_4" word="did" pos="VBD" ner="_"></t>
+<t id="s4_5" word="Robin" pos="NNP" ner="PERSON"></t>
+<t id="s4_6" word="show" pos="VB" ner="_"></t>
+<t id="s4_7" word="to" pos="TO" ner="_"></t>
+<t id="s4_8" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s4_9" word="in" pos="IN" ner="_"></t>
+<t id="s4_10" word="the" pos="DT" ner="_"></t>
+<t id="s4_11" word="library" pos="NN" ner="_"></t>
+<t id="s4_12" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s4_513" cat="ADV">
+	<edge idref="s4_1"/>
+</nt>
+<nt id="s4_514" cat="NP">
+	<edge idref="s4_3"/>
+</nt>
+<nt id="s4_515" cat="PrCS">
+	<edge idref="s4_514"/>
+</nt>
+<nt id="s4_516" cat="ARG">
+	<edge idref="s4_517"/>
+</nt>
+<nt id="s4_517" cat="NP">
+	<edge idref="s4_518"/>
+</nt>
+<nt id="s4_518" cat="COREn">
+	<edge idref="s4_519"/>
+</nt>
+<nt id="s4_519" cat="NUCn">
+	<edge idref="s4_5"/>
+</nt>
+<nt id="s4_520" cat="NUC">
+	<edge idref="s4_6"/>
+</nt>
+<nt id="s4_521" cat="CORE">
+	<edge idref="s4_520"/>
+	<edge idref="s4_516"/>
+	<edge idref="s4_537"/>
+	<edge idref="s4_529"/>
+</nt>
+<nt id="s4_522" cat="CLAUSE">
+	<edge idref="s4_515"/>
+	<edge idref="s4_521"/>
+	<secedge idref="s4_4" label="IF+TNS"/>
+</nt>
+<nt id="s4_523" cat="SENTENCE">
+	<edge idref="s4_522"/>
+	<edge idref="s4_524"/>
+</nt>
+<nt id="s4_524" cat="LDP">
+	<edge idref="s4_513"/>
+</nt>
+<nt id="s4_525" cat="PP">
+	<edge idref="s4_526"/>
+	<edge idref="s4_7"/>
+</nt>
+<nt id="s4_526" cat="NP">
+	<edge idref="s4_527"/>
+</nt>
+<nt id="s4_527" cat="COREn">
+	<edge idref="s4_528"/>
+</nt>
+<nt id="s4_528" cat="NUCn">
+	<edge idref="s4_8"/>
+</nt>
+<nt id="s4_529" cat="ARG">
+	<edge idref="s4_525"/>
+</nt>
+<nt id="s4_530" cat="NUC">
+	<edge idref="s4_9"/>
+</nt>
+<nt id="s4_531" cat="CORE">
+	<edge idref="s4_534"/>
+	<edge idref="s4_530"/>
+</nt>
+<nt id="s4_532" cat="PP">
+	<edge idref="s4_531"/>
+</nt>
+<nt id="s4_533" cat="NP">
+	<edge idref="s4_535"/>
+	<secedge idref="s4_10" label="DEF"/>
+</nt>
+<nt id="s4_534" cat="ARG">
+	<edge idref="s4_533"/>
+</nt>
+<nt id="s4_535" cat="COREn">
+	<edge idref="s4_536"/>
+	<secedge idref="s4_11" label="NUM"/>
+</nt>
+<nt id="s4_536" cat="NUCn">
+	<edge idref="s4_11"/>
+</nt>
+<nt id="s4_537" cat="PERIPHERY">
+	<edge idref="s4_532"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s5"><graph><terminals>
+<t id="s5_1" word="He" pos="PRP" ner="_"></t>
+<t id="s5_2" word="carried" pos="VBD" ner="_"></t>
+<t id="s5_3" word="her" pos="PRP" ner="_"></t>
+<t id="s5_4" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s5_505" cat="ARG">
+	<edge idref="s5_506"/>
+</nt>
+<nt id="s5_506" cat="NP">
+	<edge idref="s5_1"/>
+</nt>
+<nt id="s5_507" cat="NUC">
+	<edge idref="s5_2"/>
+</nt>
+<nt id="s5_508" cat="CORE">
+	<edge idref="s5_511"/>
+	<edge idref="s5_505"/>
+	<edge idref="s5_507"/>
+</nt>
+<nt id="s5_509" cat="CLAUSE">
+	<edge idref="s5_508"/>
+	<secedge idref="s5_2" label="IF+TNS"/>
+</nt>
+<nt id="s5_510" cat="SENTENCE">
+	<edge idref="s5_509"/>
+</nt>
+<nt id="s5_511" cat="ARG">
+	<edge idref="s5_512"/>
+</nt>
+<nt id="s5_512" cat="NP">
+	<edge idref="s5_3"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s6"><graph><terminals>
+<t id="s6_1" word="Leslie" pos="NNP" ner="PERSON"></t>
+<t id="s6_2" word="has" pos="VBZ" ner="_"></t>
+<t id="s6_3" word="evidently" pos="RB" ner="_"></t>
+<t id="s6_4" word="been" pos="VBN" ner="_"></t>
+<t id="s6_5" word="slowly" pos="RB" ner="_"></t>
+<t id="s6_6" word="immersing" pos="VBG" ner="_"></t>
+<t id="s6_7" word="herself" pos="PRP" ner="_"></t>
+<t id="s6_8" word="in" pos="IN" ner="_"></t>
+<t id="s6_9" word="the" pos="DT" ner="_"></t>
+<t id="s6_10" word="new" pos="JJ" ner="_"></t>
+<t id="s6_11" word="language" pos="NN" ner="_"></t>
+<t id="s6_12" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s6_513" cat="ARG">
+	<edge idref="s6_514"/>
+</nt>
+<nt id="s6_514" cat="NP">
+	<edge idref="s6_515"/>
+</nt>
+<nt id="s6_515" cat="COREn">
+	<edge idref="s6_516"/>
+</nt>
+<nt id="s6_516" cat="NUCn">
+	<edge idref="s6_1"/>
+</nt>
+<nt id="s6_517" cat="ADV">
+	<edge idref="s6_3"/>
+</nt>
+<nt id="s6_518" cat="PERIPHERY">
+	<edge idref="s6_519"/>
+</nt>
+<nt id="s6_519" cat="ADV">
+	<edge idref="s6_5"/>
+</nt>
+<nt id="s6_520" cat="NUC">
+	<edge idref="s6_6"/>
+	<secedge idref="s6_2" label="ASP"/>
+	<secedge idref="s6_4" label="ASP"/>
+	<secedge idref="s6_6" label="ASP"/>
+</nt>
+<nt id="s6_521" cat="CORE">
+	<edge idref="s6_525"/>
+	<edge idref="s6_520"/>
+	<edge idref="s6_518"/>
+	<edge idref="s6_533"/>
+	<edge idref="s6_513"/>
+	<secedge idref="s6_5" label="PACE"/>
+</nt>
+<nt id="s6_522" cat="CLAUSE">
+	<edge idref="s6_523"/>
+	<edge idref="s6_521"/>
+	<secedge idref="s6_2" label="IF+TNS"/>
+	<secedge idref="s6_3" label="EVID"/>
+</nt>
+<nt id="s6_523" cat="PERIPHERY">
+	<edge idref="s6_517"/>
+</nt>
+<nt id="s6_524" cat="SENTENCE">
+	<edge idref="s6_522"/>
+</nt>
+<nt id="s6_525" cat="ARG">
+	<edge idref="s6_526"/>
+</nt>
+<nt id="s6_526" cat="NP">
+	<edge idref="s6_7"/>
+</nt>
+<nt id="s6_527" cat="PP">
+	<edge idref="s6_529"/>
+	<edge idref="s6_8"/>
+</nt>
+<nt id="s6_528" cat="ADJ">
+	<edge idref="s6_10"/>
+</nt>
+<nt id="s6_529" cat="NP">
+	<edge idref="s6_530"/>
+	<secedge idref="s6_9" label="DEF"/>
+</nt>
+<nt id="s6_530" cat="COREn">
+	<edge idref="s6_531"/>
+	<secedge idref="s6_11" label="NUM"/>
+</nt>
+<nt id="s6_531" cat="NUCn">
+	<edge idref="s6_532"/>
+	<edge idref="s6_11"/>
+</nt>
+<nt id="s6_532" cat="PERIPHERY">
+	<edge idref="s6_528"/>
+</nt>
+<nt id="s6_533" cat="ARG">
+	<edge idref="s6_527"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s7"><graph><terminals>
+<t id="s7_1" word="Leslie" pos="NNP" ner="PERSON"></t>
+<t id="s7_2" word="has" pos="VBZ" ner="_"></t>
+<t id="s7_3" word="been" pos="VBN" ner="_"></t>
+<t id="s7_4" word="immersing" pos="VBG" ner="_"></t>
+<t id="s7_5" word="herself" pos="PRP" ner="_"></t>
+<t id="s7_6" word="completely" pos="RB" ner="_"></t>
+<t id="s7_7" word="in" pos="IN" ner="_"></t>
+<t id="s7_8" word="the" pos="DT" ner="_"></t>
+<t id="s7_9" word="new" pos="JJ" ner="_"></t>
+<t id="s7_10" word="language" pos="NN" ner="_"></t>
+<t id="s7_11" word="slowly" pos="RB" ner="_"></t>
+<t id="s7_12" word="evidently" pos="RB" ner="_"></t>
+<t id="s7_13" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s7_514" cat="ARG">
+	<edge idref="s7_515"/>
+</nt>
+<nt id="s7_515" cat="NP">
+	<edge idref="s7_516"/>
+</nt>
+<nt id="s7_516" cat="COREn">
+	<edge idref="s7_517"/>
+</nt>
+<nt id="s7_517" cat="NUCn">
+	<edge idref="s7_1"/>
+</nt>
+<nt id="s7_518" cat="NUC">
+	<edge idref="s7_523"/>
+	<edge idref="s7_4"/>
+	<secedge idref="s7_2" label="ASP"/>
+	<secedge idref="s7_3" label="ASP"/>
+	<secedge idref="s7_4" label="ASP"/>
+	<secedge idref="s7_6" label="ASP"/>
+</nt>
+<nt id="s7_519" cat="CORE">
+	<edge idref="s7_524"/>
+	<edge idref="s7_533"/>
+	<edge idref="s7_534"/>
+	<edge idref="s7_514"/>
+	<edge idref="s7_518"/>
+	<secedge idref="s7_11" label="PACE"/>
+</nt>
+<nt id="s7_520" cat="CLAUSE">
+	<edge idref="s7_521"/>
+	<edge idref="s7_519"/>
+	<secedge idref="s7_12" label="EVID"/>
+	<secedge idref="s7_2" label="IF+TNS"/>
+</nt>
+<nt id="s7_521" cat="PERIPHERY">
+	<edge idref="s7_536"/>
+</nt>
+<nt id="s7_522" cat="SENTENCE">
+	<edge idref="s7_520"/>
+</nt>
+<nt id="s7_523" cat="PERIPHERY">
+	<edge idref="s7_526"/>
+</nt>
+<nt id="s7_524" cat="ARG">
+	<edge idref="s7_525"/>
+</nt>
+<nt id="s7_525" cat="NP">
+	<edge idref="s7_5"/>
+</nt>
+<nt id="s7_526" cat="ADV">
+	<edge idref="s7_6"/>
+</nt>
+<nt id="s7_527" cat="PP">
+	<edge idref="s7_7"/>
+	<edge idref="s7_529"/>
+</nt>
+<nt id="s7_528" cat="ADJ">
+	<edge idref="s7_9"/>
+</nt>
+<nt id="s7_529" cat="NP">
+	<edge idref="s7_530"/>
+	<secedge idref="s7_8" label="DEF"/>
+</nt>
+<nt id="s7_530" cat="COREn">
+	<edge idref="s7_531"/>
+	<secedge idref="s7_10" label="NUM"/>
+</nt>
+<nt id="s7_531" cat="NUCn">
+	<edge idref="s7_532"/>
+	<edge idref="s7_10"/>
+</nt>
+<nt id="s7_532" cat="PERIPHERY">
+	<edge idref="s7_528"/>
+</nt>
+<nt id="s7_533" cat="ARG">
+	<edge idref="s7_527"/>
+</nt>
+<nt id="s7_534" cat="PERIPHERY">
+	<edge idref="s7_535"/>
+</nt>
+<nt id="s7_535" cat="ADV">
+	<edge idref="s7_11"/>
+</nt>
+<nt id="s7_536" cat="ADV">
+	<edge idref="s7_12"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s8"><graph><terminals>
+<t id="s8_1" word="to" pos="TO" ner="_"></t>
+<t id="s8_2" word="Pat" pos="NNP" ner="PERSON"></t>
+</terminals>
+<nonterminals>
+<nt id="s8_503" cat="PP">
+	<edge idref="s8_504"/>
+	<edge idref="s8_1"/>
+</nt>
+<nt id="s8_504" cat="NP">
+	<edge idref="s8_505"/>
+</nt>
+<nt id="s8_505" cat="COREn">
+	<edge idref="s8_506"/>
+</nt>
+<nt id="s8_506" cat="NUCn">
+	<edge idref="s8_2"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s9"><graph><terminals>
+<t id="s9_1" word="in" pos="IN" ner="_"></t>
+<t id="s9_2" word="the" pos="DT" ner="_"></t>
+<t id="s9_3" word="library" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s9_504" cat="PP">
+	<edge idref="s9_505"/>
+	<edge idref="s9_1"/>
+</nt>
+<nt id="s9_505" cat="NP">
+	<edge idref="s9_506"/>
+	<secedge idref="s9_2" label="DEF"/>
+</nt>
+<nt id="s9_506" cat="COREn">
+	<edge idref="s9_507"/>
+	<secedge idref="s9_3" label="NUM"/>
+</nt>
+<nt id="s9_507" cat="NUCn">
+	<edge idref="s9_3"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s10"><graph><terminals>
+<t id="s10_1" word="the" pos="DT" ner="_"></t>
+<t id="s10_2" word="three" pos="CD" ner="NUMBER"></t>
+<t id="s10_3" word="big" pos="JJ" ner="_"></t>
+<t id="s10_4" word="bridges" pos="NNS" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s10_505" cat="ADJ">
+	<edge idref="s10_3"/>
+</nt>
+<nt id="s10_506" cat="NP">
+	<edge idref="s10_507"/>
+	<secedge idref="s10_1" label="DEF"/>
+</nt>
+<nt id="s10_507" cat="COREn">
+	<edge idref="s10_508"/>
+	<secedge idref="s10_2" label="QNT"/>
+	<secedge idref="s10_4" label="NUM"/>
+</nt>
+<nt id="s10_508" cat="NUCn">
+	<edge idref="s10_4"/>
+	<edge idref="s10_509"/>
+</nt>
+<nt id="s10_509" cat="PERIPHERY">
+	<edge idref="s10_505"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s11"><graph><terminals>
+<t id="s11_1" word="the" pos="DT" ner="_"></t>
+<t id="s11_2" word="construction" pos="NN" ner="_"></t>
+<t id="s11_3" word="of" pos="IN" ner="_"></t>
+<t id="s11_4" word="the" pos="DT" ner="_"></t>
+<t id="s11_5" word="bridge" pos="NN" ner="_"></t>
+<t id="s11_6" word="by" pos="IN" ner="_"></t>
+<t id="s11_7" word="the" pos="DT" ner="_"></t>
+<t id="s11_8" word="company" pos="NN" ner="_"></t>
+<t id="s11_9" word="in" pos="IN" ner="_"></t>
+<t id="s11_10" word="New" pos="NNP" ner="LOCATION"></t>
+<t id="s11_11" word="York" pos="NNP" ner="LOCATION"></t>
+<t id="s11_12" word="City" pos="NNP" ner="LOCATION"></t>
+</terminals>
+<nonterminals>
+<nt id="s11_513" cat="NP">
+	<edge idref="s11_514"/>
+	<secedge idref="s11_1" label="DEF"/>
+</nt>
+<nt id="s11_514" cat="COREn">
+	<edge idref="s11_526"/>
+	<edge idref="s11_516"/>
+	<edge idref="s11_515"/>
+	<edge idref="s11_521"/>
+	<secedge idref="s11_2" label="NUM"/>
+</nt>
+<nt id="s11_515" cat="NUCn">
+	<edge idref="s11_2"/>
+</nt>
+<nt id="s11_516" cat="PERIPHERY">
+	<edge idref="s11_529"/>
+</nt>
+<nt id="s11_517" cat="PP">
+	<edge idref="s11_3"/>
+	<edge idref="s11_518"/>
+</nt>
+<nt id="s11_518" cat="NP">
+	<edge idref="s11_519"/>
+	<secedge idref="s11_4" label="DEF"/>
+</nt>
+<nt id="s11_519" cat="COREn">
+	<edge idref="s11_520"/>
+	<secedge idref="s11_5" label="NUM"/>
+</nt>
+<nt id="s11_520" cat="NUCn">
+	<edge idref="s11_5"/>
+</nt>
+<nt id="s11_521" cat="ARG">
+	<edge idref="s11_517"/>
+</nt>
+<nt id="s11_522" cat="PP">
+	<edge idref="s11_6"/>
+	<edge idref="s11_523"/>
+</nt>
+<nt id="s11_523" cat="NP">
+	<edge idref="s11_524"/>
+	<secedge idref="s11_7" label="DEF"/>
+</nt>
+<nt id="s11_524" cat="COREn">
+	<edge idref="s11_525"/>
+	<secedge idref="s11_8" label="NUM"/>
+</nt>
+<nt id="s11_525" cat="NUCn">
+	<edge idref="s11_8"/>
+</nt>
+<nt id="s11_526" cat="ARG">
+	<edge idref="s11_522"/>
+</nt>
+<nt id="s11_527" cat="NUC">
+	<edge idref="s11_9"/>
+</nt>
+<nt id="s11_528" cat="CORE">
+	<edge idref="s11_527"/>
+	<edge idref="s11_531"/>
+</nt>
+<nt id="s11_529" cat="PP">
+	<edge idref="s11_528"/>
+</nt>
+<nt id="s11_530" cat="NP">
+	<edge idref="s11_532"/>
+</nt>
+<nt id="s11_531" cat="ARG">
+	<edge idref="s11_530"/>
+</nt>
+<nt id="s11_532" cat="COREn">
+	<edge idref="s11_533"/>
+</nt>
+<nt id="s11_533" cat="NUCn">
+	<edge idref="s11_11"/>
+	<edge idref="s11_12"/>
+	<edge idref="s11_10"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s12"><graph><terminals>
+<t id="s12_1" word="the" pos="DT" ner="_"></t>
+<t id="s12_2" word="company" pos="NN" ner="_"></t>
+<t id="s12_3" word="'s" pos="POS" ner="_"></t>
+<t id="s12_4" word="construction" pos="NN" ner="_"></t>
+<t id="s12_5" word="of" pos="IN" ner="_"></t>
+<t id="s12_6" word="the" pos="DT" ner="_"></t>
+<t id="s12_7" word="bridge" pos="NN" ner="_"></t>
+<t id="s12_8" word="in" pos="IN" ner="_"></t>
+<t id="s12_9" word="New" pos="NNP" ner="LOCATION"></t>
+<t id="s12_10" word="York" pos="NNP" ner="LOCATION"></t>
+<t id="s12_11" word="City" pos="NNP" ner="LOCATION"></t>
+</terminals>
+<nonterminals>
+<nt id="s12_512" cat="NP">
+	<edge idref="s12_513"/>
+	<secedge idref="s12_1" label="DEF"/>
+</nt>
+<nt id="s12_513" cat="COREn">
+	<edge idref="s12_514"/>
+	<secedge idref="s12_2" label="NUM"/>
+</nt>
+<nt id="s12_514" cat="NUCn">
+	<edge idref="s12_2"/>
+</nt>
+<nt id="s12_515" cat="NP">
+	<edge idref="s12_516"/>
+	<edge idref="s12_518"/>
+	<secedge idref="s12_512" label="DEF"/>
+</nt>
+<nt id="s12_516" cat="COREn">
+	<edge idref="s12_524"/>
+	<edge idref="s12_519"/>
+	<edge idref="s12_517"/>
+	<secedge idref="s12_4" label="NUM"/>
+</nt>
+<nt id="s12_517" cat="NUCn">
+	<edge idref="s12_4"/>
+</nt>
+<nt id="s12_518" cat="NPIP">
+	<edge idref="s12_512"/>
+</nt>
+<nt id="s12_519" cat="PERIPHERY">
+	<edge idref="s12_527"/>
+</nt>
+<nt id="s12_520" cat="PP">
+	<edge idref="s12_521"/>
+	<edge idref="s12_5"/>
+</nt>
+<nt id="s12_521" cat="NP">
+	<edge idref="s12_522"/>
+	<secedge idref="s12_6" label="DEF"/>
+</nt>
+<nt id="s12_522" cat="COREn">
+	<edge idref="s12_523"/>
+	<secedge idref="s12_7" label="NUM"/>
+</nt>
+<nt id="s12_523" cat="NUCn">
+	<edge idref="s12_7"/>
+</nt>
+<nt id="s12_524" cat="ARG">
+	<edge idref="s12_520"/>
+</nt>
+<nt id="s12_525" cat="NUC">
+	<edge idref="s12_8"/>
+</nt>
+<nt id="s12_526" cat="CORE">
+	<edge idref="s12_529"/>
+	<edge idref="s12_525"/>
+</nt>
+<nt id="s12_527" cat="PP">
+	<edge idref="s12_526"/>
+</nt>
+<nt id="s12_528" cat="NP">
+	<edge idref="s12_530"/>
+</nt>
+<nt id="s12_529" cat="ARG">
+	<edge idref="s12_528"/>
+</nt>
+<nt id="s12_530" cat="COREn">
+	<edge idref="s12_531"/>
+</nt>
+<nt id="s12_531" cat="NUCn">
+	<edge idref="s12_10"/>
+	<edge idref="s12_9"/>
+	<edge idref="s12_11"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s13"><graph><terminals>
+<t id="s13_1" word="this" pos="DT" ner="_"></t>
+<t id="s13_2" word="book" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s13_503" cat="NP">
+	<edge idref="s13_504"/>
+	<secedge idref="s13_1" label="DEF+DEIC"/>
+</nt>
+<nt id="s13_504" cat="COREn">
+	<edge idref="s13_505"/>
+	<secedge idref="s13_2" label="NUM"/>
+</nt>
+<nt id="s13_505" cat="NUCn">
+	<edge idref="s13_2"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s14"><graph><terminals>
+<t id="s14_1" word="The" pos="DT" ner="_"></t>
+<t id="s14_2" word="man" pos="NN" ner="_"></t>
+<t id="s14_3" word="speared" pos="VBD" ner="_"></t>
+<t id="s14_4" word="the" pos="DT" ner="_"></t>
+<t id="s14_5" word="wallaby" pos="NN" ner="_"></t>
+<t id="s14_6" word="in" pos="IN" ner="_"></t>
+<t id="s14_7" word="the" pos="DT" ner="_"></t>
+<t id="s14_8" word="mountains" pos="NNS" ner="_"></t>
+<t id="s14_9" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s14_510" cat="ARG">
+	<edge idref="s14_511"/>
+</nt>
+<nt id="s14_511" cat="NP">
+	<edge idref="s14_512"/>
+	<secedge idref="s14_1" label="DEF"/>
+</nt>
+<nt id="s14_512" cat="COREn">
+	<edge idref="s14_513"/>
+	<secedge idref="s14_2" label="NUM"/>
+</nt>
+<nt id="s14_513" cat="NUCn">
+	<edge idref="s14_2"/>
+</nt>
+<nt id="s14_514" cat="NUC">
+	<edge idref="s14_3"/>
+</nt>
+<nt id="s14_515" cat="CORE">
+	<edge idref="s14_514"/>
+	<edge idref="s14_529"/>
+	<edge idref="s14_510"/>
+	<edge idref="s14_518"/>
+</nt>
+<nt id="s14_516" cat="CLAUSE">
+	<edge idref="s14_515"/>
+	<secedge idref="s14_3" label="IF+TNS"/>
+</nt>
+<nt id="s14_517" cat="SENTENCE">
+	<edge idref="s14_516"/>
+</nt>
+<nt id="s14_518" cat="ARG">
+	<edge idref="s14_519"/>
+</nt>
+<nt id="s14_519" cat="NP">
+	<edge idref="s14_520"/>
+	<secedge idref="s14_4" label="DEF"/>
+</nt>
+<nt id="s14_520" cat="COREn">
+	<edge idref="s14_521"/>
+	<secedge idref="s14_5" label="NUM"/>
+</nt>
+<nt id="s14_521" cat="NUCn">
+	<edge idref="s14_5"/>
+</nt>
+<nt id="s14_522" cat="NUC">
+	<edge idref="s14_6"/>
+</nt>
+<nt id="s14_523" cat="CORE">
+	<edge idref="s14_522"/>
+	<edge idref="s14_526"/>
+</nt>
+<nt id="s14_524" cat="PP">
+	<edge idref="s14_523"/>
+</nt>
+<nt id="s14_525" cat="NP">
+	<edge idref="s14_527"/>
+	<secedge idref="s14_7" label="DEF"/>
+</nt>
+<nt id="s14_526" cat="ARG">
+	<edge idref="s14_525"/>
+</nt>
+<nt id="s14_527" cat="COREn">
+	<edge idref="s14_528"/>
+	<secedge idref="s14_8" label="NUM"/>
+</nt>
+<nt id="s14_528" cat="NUCn">
+	<edge idref="s14_8"/>
+</nt>
+<nt id="s14_529" cat="PERIPHERY">
+	<edge idref="s14_524"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s15"><graph><terminals>
+<t id="s15_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s15_2" word="presented" pos="VBD" ner="_"></t>
+<t id="s15_3" word="a" pos="DT" ner="_"></t>
+<t id="s15_4" word="child" pos="NN" ner="_"></t>
+<t id="s15_5" word="with" pos="IN" ner="_"></t>
+<t id="s15_6" word="some" pos="DT" ner="_"></t>
+<t id="s15_7" word="flowers" pos="NNS" ner="_"></t>
+<t id="s15_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s15_509" cat="ARG">
+	<edge idref="s15_510"/>
+</nt>
+<nt id="s15_510" cat="NP">
+	<edge idref="s15_511"/>
+</nt>
+<nt id="s15_511" cat="COREn">
+	<edge idref="s15_512"/>
+</nt>
+<nt id="s15_512" cat="NUCn">
+	<edge idref="s15_1"/>
+</nt>
+<nt id="s15_513" cat="NUC">
+	<edge idref="s15_2"/>
+</nt>
+<nt id="s15_514" cat="CORE">
+	<edge idref="s15_509"/>
+	<edge idref="s15_513"/>
+	<edge idref="s15_525"/>
+	<edge idref="s15_517"/>
+</nt>
+<nt id="s15_515" cat="CLAUSE">
+	<edge idref="s15_514"/>
+	<secedge idref="s15_2" label="IF+TNS"/>
+</nt>
+<nt id="s15_516" cat="SENTENCE">
+	<edge idref="s15_515"/>
+</nt>
+<nt id="s15_517" cat="ARG">
+	<edge idref="s15_518"/>
+</nt>
+<nt id="s15_518" cat="NP">
+	<edge idref="s15_519"/>
+	<secedge idref="s15_3" label="DEF"/>
+</nt>
+<nt id="s15_519" cat="COREn">
+	<edge idref="s15_520"/>
+	<secedge idref="s15_4" label="NUM"/>
+</nt>
+<nt id="s15_520" cat="NUCn">
+	<edge idref="s15_4"/>
+</nt>
+<nt id="s15_521" cat="PP">
+	<edge idref="s15_5"/>
+	<edge idref="s15_522"/>
+</nt>
+<nt id="s15_522" cat="NP">
+	<edge idref="s15_523"/>
+	<secedge idref="s15_6" label="DEF"/>
+</nt>
+<nt id="s15_523" cat="COREn">
+	<edge idref="s15_524"/>
+	<secedge idref="s15_7" label="NUM"/>
+</nt>
+<nt id="s15_524" cat="NUCn">
+	<edge idref="s15_7"/>
+</nt>
+<nt id="s15_525" cat="ARG">
+	<edge idref="s15_521"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s16"><graph><terminals>
+<t id="s16_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s16_2" word="gave" pos="VBD" ner="_"></t>
+<t id="s16_3" word="them" pos="PRP" ner="_"></t>
+<t id="s16_4" word="to" pos="TO" ner="_"></t>
+<t id="s16_5" word="her" pos="PRP" ner="_"></t>
+<t id="s16_6" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s16_507" cat="ARG">
+	<edge idref="s16_508"/>
+</nt>
+<nt id="s16_508" cat="NP">
+	<edge idref="s16_509"/>
+</nt>
+<nt id="s16_509" cat="COREn">
+	<edge idref="s16_510"/>
+</nt>
+<nt id="s16_510" cat="NUCn">
+	<edge idref="s16_1"/>
+</nt>
+<nt id="s16_511" cat="NUC">
+	<edge idref="s16_2"/>
+</nt>
+<nt id="s16_512" cat="CORE">
+	<edge idref="s16_507"/>
+	<edge idref="s16_519"/>
+	<edge idref="s16_515"/>
+	<edge idref="s16_511"/>
+</nt>
+<nt id="s16_513" cat="CLAUSE">
+	<edge idref="s16_512"/>
+	<secedge idref="s16_2" label="IF+TNS"/>
+</nt>
+<nt id="s16_514" cat="SENTENCE">
+	<edge idref="s16_513"/>
+</nt>
+<nt id="s16_515" cat="ARG">
+	<edge idref="s16_516"/>
+</nt>
+<nt id="s16_516" cat="NP">
+	<edge idref="s16_3"/>
+</nt>
+<nt id="s16_517" cat="PP">
+	<edge idref="s16_4"/>
+	<edge idref="s16_518"/>
+</nt>
+<nt id="s16_518" cat="NP">
+	<edge idref="s16_5"/>
+</nt>
+<nt id="s16_519" cat="ARG">
+	<edge idref="s16_517"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s17"><graph><terminals>
+<t id="s17_1" word="What" pos="WP" ner="_"></t>
+<t id="s17_2" word="did" pos="VBD" ner="_"></t>
+<t id="s17_3" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s17_4" word="give" pos="VB" ner="_"></t>
+<t id="s17_5" word="them" pos="PRP" ner="_"></t>
+<t id="s17_6" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s17_507" cat="NP">
+	<edge idref="s17_1"/>
+</nt>
+<nt id="s17_508" cat="PrCS">
+	<edge idref="s17_507"/>
+</nt>
+<nt id="s17_509" cat="ARG">
+	<edge idref="s17_510"/>
+</nt>
+<nt id="s17_510" cat="NP">
+	<edge idref="s17_511"/>
+</nt>
+<nt id="s17_511" cat="COREn">
+	<edge idref="s17_512"/>
+</nt>
+<nt id="s17_512" cat="NUCn">
+	<edge idref="s17_3"/>
+</nt>
+<nt id="s17_513" cat="NUC">
+	<edge idref="s17_4"/>
+</nt>
+<nt id="s17_514" cat="CORE">
+	<edge idref="s17_517"/>
+	<edge idref="s17_513"/>
+	<edge idref="s17_509"/>
+</nt>
+<nt id="s17_515" cat="CLAUSE">
+	<edge idref="s17_514"/>
+	<edge idref="s17_508"/>
+	<secedge idref="s17_2" label="TNS+IF"/>
+</nt>
+<nt id="s17_516" cat="SENTENCE">
+	<edge idref="s17_515"/>
+</nt>
+<nt id="s17_517" cat="ARG">
+	<edge idref="s17_518"/>
+</nt>
+<nt id="s17_518" cat="NP">
+	<edge idref="s17_5"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s18"><graph><terminals>
+<t id="s18_1" word="Bill" pos="NNP" ner="PERSON"></t>
+<t id="s18_2" word="gave" pos="VBD" ner="_"></t>
+<t id="s18_3" word="the" pos="DT" ner="_"></t>
+<t id="s18_4" word="book" pos="NN" ner="_"></t>
+<t id="s18_5" word="to" pos="TO" ner="_"></t>
+<t id="s18_6" word="Mary" pos="NNP" ner="PERSON"></t>
+<t id="s18_7" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s18_508" cat="ARG">
+	<edge idref="s18_509"/>
+</nt>
+<nt id="s18_509" cat="NP">
+	<edge idref="s18_510"/>
+</nt>
+<nt id="s18_510" cat="COREn">
+	<edge idref="s18_511"/>
+</nt>
+<nt id="s18_511" cat="NUCn">
+	<edge idref="s18_1"/>
+</nt>
+<nt id="s18_512" cat="NUC">
+	<edge idref="s18_2"/>
+</nt>
+<nt id="s18_513" cat="CORE">
+	<edge idref="s18_516"/>
+	<edge idref="s18_512"/>
+	<edge idref="s18_524"/>
+	<edge idref="s18_508"/>
+</nt>
+<nt id="s18_514" cat="CLAUSE">
+	<edge idref="s18_513"/>
+	<secedge idref="s18_2" label="IF+TNS"/>
+</nt>
+<nt id="s18_515" cat="SENTENCE">
+	<edge idref="s18_514"/>
+</nt>
+<nt id="s18_516" cat="ARG">
+	<edge idref="s18_517"/>
+</nt>
+<nt id="s18_517" cat="NP">
+	<edge idref="s18_518"/>
+	<secedge idref="s18_3" label="DEF"/>
+</nt>
+<nt id="s18_518" cat="COREn">
+	<edge idref="s18_519"/>
+	<secedge idref="s18_4" label="NUM"/>
+</nt>
+<nt id="s18_519" cat="NUCn">
+	<edge idref="s18_4"/>
+</nt>
+<nt id="s18_520" cat="PP">
+	<edge idref="s18_5"/>
+	<edge idref="s18_521"/>
+</nt>
+<nt id="s18_521" cat="NP">
+	<edge idref="s18_522"/>
+</nt>
+<nt id="s18_522" cat="COREn">
+	<edge idref="s18_523"/>
+</nt>
+<nt id="s18_523" cat="NUCn">
+	<edge idref="s18_6"/>
+</nt>
+<nt id="s18_524" cat="ARG">
+	<edge idref="s18_520"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s19"><graph><terminals>
+<t id="s19_1" word="What" pos="WP" ner="_"></t>
+<t id="s19_2" word="did" pos="VBD" ner="_"></t>
+<t id="s19_3" word="Dana" pos="NNP" ner="PERSON"></t>
+<t id="s19_4" word="give" pos="VB" ner="_"></t>
+<t id="s19_5" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s19_6" word="yesterday" pos="RB" ner="DATE"></t>
+<t id="s19_7" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s19_508" cat="NP">
+	<edge idref="s19_1"/>
+</nt>
+<nt id="s19_509" cat="PrCS">
+	<edge idref="s19_508"/>
+</nt>
+<nt id="s19_510" cat="ARG">
+	<edge idref="s19_511"/>
+</nt>
+<nt id="s19_511" cat="NP">
+	<edge idref="s19_512"/>
+</nt>
+<nt id="s19_512" cat="COREn">
+	<edge idref="s19_513"/>
+</nt>
+<nt id="s19_513" cat="NUCn">
+	<edge idref="s19_3"/>
+</nt>
+<nt id="s19_514" cat="NUC">
+	<edge idref="s19_4"/>
+</nt>
+<nt id="s19_515" cat="CORE">
+	<edge idref="s19_510"/>
+	<edge idref="s19_522"/>
+	<edge idref="s19_518"/>
+	<edge idref="s19_514"/>
+	<secedge idref="s19_6" label="TEMP"/>
+</nt>
+<nt id="s19_516" cat="CLAUSE">
+	<edge idref="s19_515"/>
+	<edge idref="s19_509"/>
+	<secedge idref="s19_2" label="TNS+IF"/>
+</nt>
+<nt id="s19_517" cat="SENTENCE">
+	<edge idref="s19_516"/>
+</nt>
+<nt id="s19_518" cat="ARG">
+	<edge idref="s19_519"/>
+</nt>
+<nt id="s19_519" cat="NP">
+	<edge idref="s19_520"/>
+</nt>
+<nt id="s19_520" cat="COREn">
+	<edge idref="s19_521"/>
+</nt>
+<nt id="s19_521" cat="NUCn">
+	<edge idref="s19_5"/>
+</nt>
+<nt id="s19_522" cat="PERIPHERY">
+	<edge idref="s19_523"/>
+</nt>
+<nt id="s19_523" cat="ADV">
+	<edge idref="s19_6"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s20"><graph><terminals>
+<t id="s20_1" word="Every" pos="DT" ner="_"></t>
+<t id="s20_2" word="girl" pos="NN" ner="_"></t>
+<t id="s20_3" word="kissed" pos="VBD" ner="_"></t>
+<t id="s20_4" word="a" pos="DT" ner="_"></t>
+<t id="s20_5" word="boy" pos="NN" ner="_"></t>
+<t id="s20_6" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s20_507" cat="ARG">
+	<edge idref="s20_508"/>
+</nt>
+<nt id="s20_508" cat="NP">
+	<edge idref="s20_509"/>
+	<secedge idref="s20_1" label="DEF"/>
+</nt>
+<nt id="s20_509" cat="COREn">
+	<edge idref="s20_510"/>
+	<secedge idref="s20_2" label="NUM"/>
+</nt>
+<nt id="s20_510" cat="NUCn">
+	<edge idref="s20_2"/>
+</nt>
+<nt id="s20_511" cat="NUC">
+	<edge idref="s20_3"/>
+</nt>
+<nt id="s20_512" cat="CORE">
+	<edge idref="s20_515"/>
+	<edge idref="s20_507"/>
+	<edge idref="s20_511"/>
+</nt>
+<nt id="s20_513" cat="CLAUSE">
+	<edge idref="s20_512"/>
+	<secedge idref="s20_3" label="IF+TNS"/>
+</nt>
+<nt id="s20_514" cat="SENTENCE">
+	<edge idref="s20_513"/>
+</nt>
+<nt id="s20_515" cat="ARG">
+	<edge idref="s20_516"/>
+</nt>
+<nt id="s20_516" cat="NP">
+	<edge idref="s20_517"/>
+	<secedge idref="s20_4" label="DEF"/>
+</nt>
+<nt id="s20_517" cat="COREn">
+	<edge idref="s20_518"/>
+	<secedge idref="s20_5" label="NUM"/>
+</nt>
+<nt id="s20_518" cat="NUCn">
+	<edge idref="s20_5"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s21"><graph><terminals>
+<t id="s21_1" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s21_2" word="presented" pos="VBD" ner="_"></t>
+<t id="s21_3" word="the" pos="DT" ner="_"></t>
+<t id="s21_4" word="flowers" pos="NNS" ner="_"></t>
+<t id="s21_5" word="to" pos="TO" ner="_"></t>
+<t id="s21_6" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s21_7" word="at" pos="IN" ner="_"></t>
+<t id="s21_8" word="the" pos="DT" ner="_"></t>
+<t id="s21_9" word="party" pos="NN" ner="_"></t>
+<t id="s21_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s21_511" cat="ARG">
+	<edge idref="s21_512"/>
+</nt>
+<nt id="s21_512" cat="NP">
+	<edge idref="s21_513"/>
+</nt>
+<nt id="s21_513" cat="COREn">
+	<edge idref="s21_514"/>
+</nt>
+<nt id="s21_514" cat="NUCn">
+	<edge idref="s21_1"/>
+</nt>
+<nt id="s21_515" cat="NUC">
+	<edge idref="s21_2"/>
+</nt>
+<nt id="s21_516" cat="CORE">
+	<edge idref="s21_511"/>
+	<edge idref="s21_535"/>
+	<edge idref="s21_527"/>
+	<edge idref="s21_515"/>
+	<edge idref="s21_519"/>
+</nt>
+<nt id="s21_517" cat="CLAUSE">
+	<edge idref="s21_516"/>
+	<secedge idref="s21_2" label="IF+TNS"/>
+</nt>
+<nt id="s21_518" cat="SENTENCE">
+	<edge idref="s21_517"/>
+</nt>
+<nt id="s21_519" cat="ARG">
+	<edge idref="s21_520"/>
+</nt>
+<nt id="s21_520" cat="NP">
+	<edge idref="s21_521"/>
+	<secedge idref="s21_3" label="DEF"/>
+</nt>
+<nt id="s21_521" cat="COREn">
+	<edge idref="s21_522"/>
+	<secedge idref="s21_4" label="NUM"/>
+</nt>
+<nt id="s21_522" cat="NUCn">
+	<edge idref="s21_4"/>
+</nt>
+<nt id="s21_523" cat="PP">
+	<edge idref="s21_524"/>
+	<edge idref="s21_5"/>
+</nt>
+<nt id="s21_524" cat="NP">
+	<edge idref="s21_525"/>
+</nt>
+<nt id="s21_525" cat="COREn">
+	<edge idref="s21_526"/>
+</nt>
+<nt id="s21_526" cat="NUCn">
+	<edge idref="s21_6"/>
+</nt>
+<nt id="s21_527" cat="ARG">
+	<edge idref="s21_523"/>
+</nt>
+<nt id="s21_528" cat="NUC">
+	<edge idref="s21_7"/>
+</nt>
+<nt id="s21_529" cat="CORE">
+	<edge idref="s21_528"/>
+	<edge idref="s21_532"/>
+</nt>
+<nt id="s21_530" cat="PP">
+	<edge idref="s21_529"/>
+</nt>
+<nt id="s21_531" cat="NP">
+	<edge idref="s21_533"/>
+	<secedge idref="s21_8" label="DEF"/>
+</nt>
+<nt id="s21_532" cat="ARG">
+	<edge idref="s21_531"/>
+</nt>
+<nt id="s21_533" cat="COREn">
+	<edge idref="s21_534"/>
+	<secedge idref="s21_9" label="NUM"/>
+</nt>
+<nt id="s21_534" cat="NUCn">
+	<edge idref="s21_9"/>
+</nt>
+<nt id="s21_535" cat="PERIPHERY">
+	<edge idref="s21_530"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s22"><graph><terminals>
+<t id="s22_1" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s22_2" word="presented" pos="VBD" ner="_"></t>
+<t id="s22_3" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s22_4" word="with" pos="IN" ner="_"></t>
+<t id="s22_5" word="the" pos="DT" ner="_"></t>
+<t id="s22_6" word="flowers" pos="NNS" ner="_"></t>
+<t id="s22_7" word="at" pos="IN" ner="_"></t>
+<t id="s22_8" word="the" pos="DT" ner="_"></t>
+<t id="s22_9" word="party" pos="NN" ner="_"></t>
+<t id="s22_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s22_511" cat="ARG">
+	<edge idref="s22_512"/>
+</nt>
+<nt id="s22_512" cat="NP">
+	<edge idref="s22_513"/>
+</nt>
+<nt id="s22_513" cat="COREn">
+	<edge idref="s22_514"/>
+</nt>
+<nt id="s22_514" cat="NUCn">
+	<edge idref="s22_1"/>
+</nt>
+<nt id="s22_515" cat="NUC">
+	<edge idref="s22_2"/>
+</nt>
+<nt id="s22_516" cat="CORE">
+	<edge idref="s22_511"/>
+	<edge idref="s22_535"/>
+	<edge idref="s22_515"/>
+	<edge idref="s22_527"/>
+	<edge idref="s22_519"/>
+</nt>
+<nt id="s22_517" cat="CLAUSE">
+	<edge idref="s22_516"/>
+	<secedge idref="s22_2" label="IF+TNS"/>
+</nt>
+<nt id="s22_518" cat="SENTENCE">
+	<edge idref="s22_517"/>
+</nt>
+<nt id="s22_519" cat="ARG">
+	<edge idref="s22_520"/>
+</nt>
+<nt id="s22_520" cat="NP">
+	<edge idref="s22_521"/>
+</nt>
+<nt id="s22_521" cat="COREn">
+	<edge idref="s22_522"/>
+</nt>
+<nt id="s22_522" cat="NUCn">
+	<edge idref="s22_3"/>
+</nt>
+<nt id="s22_523" cat="PP">
+	<edge idref="s22_524"/>
+	<edge idref="s22_4"/>
+</nt>
+<nt id="s22_524" cat="NP">
+	<edge idref="s22_525"/>
+	<secedge idref="s22_5" label="DEF"/>
+</nt>
+<nt id="s22_525" cat="COREn">
+	<edge idref="s22_526"/>
+	<secedge idref="s22_6" label="NUM"/>
+</nt>
+<nt id="s22_526" cat="NUCn">
+	<edge idref="s22_6"/>
+</nt>
+<nt id="s22_527" cat="ARG">
+	<edge idref="s22_523"/>
+</nt>
+<nt id="s22_528" cat="NUC">
+	<edge idref="s22_7"/>
+</nt>
+<nt id="s22_529" cat="CORE">
+	<edge idref="s22_528"/>
+	<edge idref="s22_532"/>
+</nt>
+<nt id="s22_530" cat="PP">
+	<edge idref="s22_529"/>
+</nt>
+<nt id="s22_531" cat="NP">
+	<edge idref="s22_533"/>
+	<secedge idref="s22_8" label="DEF"/>
+</nt>
+<nt id="s22_532" cat="ARG">
+	<edge idref="s22_531"/>
+</nt>
+<nt id="s22_533" cat="COREn">
+	<edge idref="s22_534"/>
+	<secedge idref="s22_9" label="NUM"/>
+</nt>
+<nt id="s22_534" cat="NUCn">
+	<edge idref="s22_9"/>
+</nt>
+<nt id="s22_535" cat="PERIPHERY">
+	<edge idref="s22_530"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s23"><graph><terminals>
+<t id="s23_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s23_2" word="was" pos="VBD" ner="_"></t>
+<t id="s23_3" word="presented" pos="VBN" ner="_"></t>
+<t id="s23_4" word="with" pos="IN" ner="_"></t>
+<t id="s23_5" word="the" pos="DT" ner="_"></t>
+<t id="s23_6" word="flowers" pos="NNS" ner="_"></t>
+<t id="s23_7" word="by" pos="IN" ner="_"></t>
+<t id="s23_8" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s23_9" word="at" pos="IN" ner="_"></t>
+<t id="s23_10" word="the" pos="DT" ner="_"></t>
+<t id="s23_11" word="party" pos="NN" ner="_"></t>
+<t id="s23_12" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s23_513" cat="ARG">
+	<edge idref="s23_514"/>
+</nt>
+<nt id="s23_514" cat="NP">
+	<edge idref="s23_515"/>
+</nt>
+<nt id="s23_515" cat="COREn">
+	<edge idref="s23_516"/>
+</nt>
+<nt id="s23_516" cat="NUCn">
+	<edge idref="s23_1"/>
+</nt>
+<nt id="s23_517" cat="AUX">
+	<edge idref="s23_2"/>
+</nt>
+<nt id="s23_518" cat="NUC">
+	<edge idref="s23_3"/>
+	<edge idref="s23_517"/>
+</nt>
+<nt id="s23_519" cat="CORE">
+	<edge idref="s23_526"/>
+	<edge idref="s23_513"/>
+	<edge idref="s23_538"/>
+	<edge idref="s23_518"/>
+</nt>
+<nt id="s23_520" cat="CLAUSE">
+	<edge idref="s23_519"/>
+	<secedge idref="s23_2" label="TNS+IF"/>
+</nt>
+<nt id="s23_521" cat="SENTENCE">
+	<edge idref="s23_520"/>
+</nt>
+<nt id="s23_522" cat="PP">
+	<edge idref="s23_523"/>
+	<edge idref="s23_4"/>
+</nt>
+<nt id="s23_523" cat="NP">
+	<edge idref="s23_524"/>
+	<secedge idref="s23_5" label="DEF"/>
+</nt>
+<nt id="s23_524" cat="COREn">
+	<edge idref="s23_525"/>
+	<secedge idref="s23_6" label="NUM"/>
+</nt>
+<nt id="s23_525" cat="NUCn">
+	<edge idref="s23_6"/>
+</nt>
+<nt id="s23_526" cat="ARG">
+	<edge idref="s23_522"/>
+</nt>
+<nt id="s23_527" cat="PP">
+	<edge idref="s23_7"/>
+	<edge idref="s23_528"/>
+</nt>
+<nt id="s23_528" cat="NP">
+	<edge idref="s23_529"/>
+</nt>
+<nt id="s23_529" cat="COREn">
+	<edge idref="s23_530"/>
+</nt>
+<nt id="s23_530" cat="NUCn">
+	<edge idref="s23_8"/>
+</nt>
+<nt id="s23_531" cat="NUC">
+	<edge idref="s23_9"/>
+</nt>
+<nt id="s23_532" cat="CORE">
+	<edge idref="s23_535"/>
+	<edge idref="s23_531"/>
+</nt>
+<nt id="s23_533" cat="PP">
+	<edge idref="s23_532"/>
+</nt>
+<nt id="s23_534" cat="NP">
+	<edge idref="s23_536"/>
+	<secedge idref="s23_10" label="DEF"/>
+</nt>
+<nt id="s23_535" cat="ARG">
+	<edge idref="s23_534"/>
+</nt>
+<nt id="s23_536" cat="COREn">
+	<edge idref="s23_537"/>
+	<secedge idref="s23_11" label="NUM"/>
+</nt>
+<nt id="s23_537" cat="NUCn">
+	<edge idref="s23_11"/>
+</nt>
+<nt id="s23_538" cat="PERIPHERY">
+	<edge idref="s23_533"/>
+	<edge idref="s23_527"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s24"><graph><terminals>
+<t id="s24_1" word="Whom" pos="WP" ner="_"></t>
+<t id="s24_2" word="did" pos="VBD" ner="_"></t>
+<t id="s24_3" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s24_4" word="present" pos="VB" ner="_"></t>
+<t id="s24_5" word="with" pos="IN" ner="_"></t>
+<t id="s24_6" word="the" pos="DT" ner="_"></t>
+<t id="s24_7" word="flowers" pos="NNS" ner="_"></t>
+<t id="s24_8" word="at" pos="IN" ner="_"></t>
+<t id="s24_9" word="the" pos="DT" ner="_"></t>
+<t id="s24_10" word="party" pos="NN" ner="_"></t>
+<t id="s24_11" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s24_512" cat="NP">
+	<edge idref="s24_1"/>
+</nt>
+<nt id="s24_513" cat="PrCS">
+	<edge idref="s24_512"/>
+</nt>
+<nt id="s24_514" cat="ARG">
+	<edge idref="s24_515"/>
+</nt>
+<nt id="s24_515" cat="NP">
+	<edge idref="s24_516"/>
+</nt>
+<nt id="s24_516" cat="COREn">
+	<edge idref="s24_517"/>
+</nt>
+<nt id="s24_517" cat="NUCn">
+	<edge idref="s24_3"/>
+</nt>
+<nt id="s24_518" cat="NUC">
+	<edge idref="s24_4"/>
+</nt>
+<nt id="s24_519" cat="CORE">
+	<edge idref="s24_526"/>
+	<edge idref="s24_514"/>
+	<edge idref="s24_534"/>
+	<edge idref="s24_518"/>
+</nt>
+<nt id="s24_520" cat="CLAUSE">
+	<edge idref="s24_513"/>
+	<edge idref="s24_519"/>
+	<secedge idref="s24_2" label="TNS+IF"/>
+</nt>
+<nt id="s24_521" cat="SENTENCE">
+	<edge idref="s24_520"/>
+</nt>
+<nt id="s24_522" cat="PP">
+	<edge idref="s24_523"/>
+	<edge idref="s24_5"/>
+</nt>
+<nt id="s24_523" cat="NP">
+	<edge idref="s24_524"/>
+	<secedge idref="s24_6" label="DEF"/>
+</nt>
+<nt id="s24_524" cat="COREn">
+	<edge idref="s24_525"/>
+	<secedge idref="s24_7" label="NUM"/>
+</nt>
+<nt id="s24_525" cat="NUCn">
+	<edge idref="s24_7"/>
+</nt>
+<nt id="s24_526" cat="ARG">
+	<edge idref="s24_522"/>
+</nt>
+<nt id="s24_527" cat="NUC">
+	<edge idref="s24_8"/>
+</nt>
+<nt id="s24_528" cat="CORE">
+	<edge idref="s24_527"/>
+	<edge idref="s24_531"/>
+</nt>
+<nt id="s24_529" cat="PP">
+	<edge idref="s24_528"/>
+</nt>
+<nt id="s24_530" cat="NP">
+	<edge idref="s24_532"/>
+	<secedge idref="s24_9" label="DEF"/>
+</nt>
+<nt id="s24_531" cat="ARG">
+	<edge idref="s24_530"/>
+</nt>
+<nt id="s24_532" cat="COREn">
+	<edge idref="s24_533"/>
+	<secedge idref="s24_10" label="NUM"/>
+</nt>
+<nt id="s24_533" cat="NUCn">
+	<edge idref="s24_10"/>
+</nt>
+<nt id="s24_534" cat="PERIPHERY">
+	<edge idref="s24_529"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s25"><graph><terminals>
+<t id="s25_1" word="Who" pos="WP" ner="_"></t>
+<t id="s25_2" word="did" pos="VBD" ner="_"></t>
+<t id="s25_3" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s25_4" word="present" pos="VB" ner="_"></t>
+<t id="s25_5" word="the" pos="DT" ner="_"></t>
+<t id="s25_6" word="flowers" pos="NNS" ner="_"></t>
+<t id="s25_7" word="to" pos="TO" ner="_"></t>
+<t id="s25_8" word="at" pos="IN" ner="_"></t>
+<t id="s25_9" word="the" pos="DT" ner="_"></t>
+<t id="s25_10" word="party" pos="NN" ner="_"></t>
+<t id="s25_11" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s25_512" cat="NP">
+	<edge idref="s25_1"/>
+</nt>
+<nt id="s25_513" cat="PrCS">
+	<edge idref="s25_512"/>
+</nt>
+<nt id="s25_514" cat="ARG">
+	<edge idref="s25_515"/>
+</nt>
+<nt id="s25_515" cat="NP">
+	<edge idref="s25_516"/>
+</nt>
+<nt id="s25_516" cat="COREn">
+	<edge idref="s25_517"/>
+</nt>
+<nt id="s25_517" cat="NUCn">
+	<edge idref="s25_3"/>
+</nt>
+<nt id="s25_518" cat="NUC">
+	<edge idref="s25_4"/>
+</nt>
+<nt id="s25_519" cat="CORE">
+	<edge idref="s25_535"/>
+	<edge idref="s25_526"/>
+	<edge idref="s25_522"/>
+	<edge idref="s25_514"/>
+	<edge idref="s25_518"/>
+</nt>
+<nt id="s25_520" cat="CLAUSE">
+	<edge idref="s25_513"/>
+	<edge idref="s25_519"/>
+	<secedge idref="s25_2" label="TNS+IF"/>
+</nt>
+<nt id="s25_521" cat="SENTENCE">
+	<edge idref="s25_520"/>
+</nt>
+<nt id="s25_522" cat="ARG">
+	<edge idref="s25_523"/>
+</nt>
+<nt id="s25_523" cat="NP">
+	<edge idref="s25_524"/>
+	<secedge idref="s25_5" label="DEF"/>
+</nt>
+<nt id="s25_524" cat="COREn">
+	<edge idref="s25_525"/>
+	<secedge idref="s25_6" label="NUM"/>
+</nt>
+<nt id="s25_525" cat="NUCn">
+	<edge idref="s25_6"/>
+</nt>
+<nt id="s25_526" cat="ARG">
+	<edge idref="s25_527"/>
+</nt>
+<nt id="s25_527" cat="PP">
+	<edge idref="s25_7"/>
+</nt>
+<nt id="s25_528" cat="NUC">
+	<edge idref="s25_8"/>
+</nt>
+<nt id="s25_529" cat="CORE">
+	<edge idref="s25_532"/>
+	<edge idref="s25_528"/>
+</nt>
+<nt id="s25_530" cat="PP">
+	<edge idref="s25_529"/>
+</nt>
+<nt id="s25_531" cat="NP">
+	<edge idref="s25_533"/>
+	<secedge idref="s25_9" label="DEF"/>
+</nt>
+<nt id="s25_532" cat="ARG">
+	<edge idref="s25_531"/>
+</nt>
+<nt id="s25_533" cat="COREn">
+	<edge idref="s25_534"/>
+	<secedge idref="s25_10" label="NUM"/>
+</nt>
+<nt id="s25_534" cat="NUCn">
+	<edge idref="s25_10"/>
+</nt>
+<nt id="s25_535" cat="PERIPHERY">
+	<edge idref="s25_530"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s26"><graph><terminals>
+<t id="s26_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s26_2" word="smashed" pos="VBD" ner="_"></t>
+<t id="s26_3" word="the" pos="DT" ner="_"></t>
+<t id="s26_4" word="glass" pos="NN" ner="_"></t>
+<t id="s26_5" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s26_506" cat="ARG">
+	<edge idref="s26_507"/>
+</nt>
+<nt id="s26_507" cat="NP">
+	<edge idref="s26_508"/>
+</nt>
+<nt id="s26_508" cat="COREn">
+	<edge idref="s26_509"/>
+</nt>
+<nt id="s26_509" cat="NUCn">
+	<edge idref="s26_1"/>
+</nt>
+<nt id="s26_510" cat="NUC">
+	<edge idref="s26_2"/>
+</nt>
+<nt id="s26_511" cat="CORE">
+	<edge idref="s26_506"/>
+	<edge idref="s26_510"/>
+	<edge idref="s26_514"/>
+</nt>
+<nt id="s26_512" cat="CLAUSE">
+	<edge idref="s26_511"/>
+	<secedge idref="s26_2" label="IF+TNS"/>
+</nt>
+<nt id="s26_513" cat="SENTENCE">
+	<edge idref="s26_512"/>
+</nt>
+<nt id="s26_514" cat="ARG">
+	<edge idref="s26_515"/>
+</nt>
+<nt id="s26_515" cat="NP">
+	<edge idref="s26_516"/>
+	<secedge idref="s26_3" label="DEF"/>
+</nt>
+<nt id="s26_516" cat="COREn">
+	<edge idref="s26_517"/>
+	<secedge idref="s26_4" label="NUM"/>
+</nt>
+<nt id="s26_517" cat="NUCn">
+	<edge idref="s26_4"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s27"><graph><terminals>
+<t id="s27_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s27_2" word="was" pos="VBD" ner="_"></t>
+<t id="s27_3" word="presented" pos="VBN" ner="_"></t>
+<t id="s27_4" word="with" pos="IN" ner="_"></t>
+<t id="s27_5" word="the" pos="DT" ner="_"></t>
+<t id="s27_6" word="flowers" pos="NNS" ner="_"></t>
+<t id="s27_7" word="by" pos="IN" ner="_"></t>
+<t id="s27_8" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s27_9" word="at" pos="IN" ner="_"></t>
+<t id="s27_10" word="the" pos="DT" ner="_"></t>
+<t id="s27_11" word="party" pos="NN" ner="_"></t>
+<t id="s27_12" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s27_513" cat="ARG">
+	<edge idref="s27_514"/>
+</nt>
+<nt id="s27_514" cat="NP">
+	<edge idref="s27_515"/>
+</nt>
+<nt id="s27_515" cat="COREn">
+	<edge idref="s27_516"/>
+</nt>
+<nt id="s27_516" cat="NUCn">
+	<edge idref="s27_1"/>
+</nt>
+<nt id="s27_517" cat="AUX">
+	<edge idref="s27_2"/>
+</nt>
+<nt id="s27_518" cat="NUC">
+	<edge idref="s27_517"/>
+	<edge idref="s27_3"/>
+</nt>
+<nt id="s27_519" cat="CORE">
+	<edge idref="s27_538"/>
+	<edge idref="s27_518"/>
+	<edge idref="s27_513"/>
+	<edge idref="s27_526"/>
+</nt>
+<nt id="s27_520" cat="CLAUSE">
+	<edge idref="s27_519"/>
+	<secedge idref="s27_2" label="IF+TNS"/>
+</nt>
+<nt id="s27_521" cat="SENTENCE">
+	<edge idref="s27_520"/>
+</nt>
+<nt id="s27_522" cat="PP">
+	<edge idref="s27_523"/>
+	<edge idref="s27_4"/>
+</nt>
+<nt id="s27_523" cat="NP">
+	<edge idref="s27_524"/>
+	<secedge idref="s27_5" label="DEF"/>
+</nt>
+<nt id="s27_524" cat="COREn">
+	<edge idref="s27_525"/>
+	<secedge idref="s27_6" label="NUM"/>
+</nt>
+<nt id="s27_525" cat="NUCn">
+	<edge idref="s27_6"/>
+</nt>
+<nt id="s27_526" cat="ARG">
+	<edge idref="s27_522"/>
+</nt>
+<nt id="s27_527" cat="PP">
+	<edge idref="s27_528"/>
+	<edge idref="s27_7"/>
+</nt>
+<nt id="s27_528" cat="NP">
+	<edge idref="s27_529"/>
+</nt>
+<nt id="s27_529" cat="COREn">
+	<edge idref="s27_530"/>
+</nt>
+<nt id="s27_530" cat="NUCn">
+	<edge idref="s27_8"/>
+</nt>
+<nt id="s27_531" cat="NUC">
+	<edge idref="s27_9"/>
+</nt>
+<nt id="s27_532" cat="CORE">
+	<edge idref="s27_535"/>
+	<edge idref="s27_531"/>
+</nt>
+<nt id="s27_533" cat="PP">
+	<edge idref="s27_532"/>
+</nt>
+<nt id="s27_534" cat="NP">
+	<edge idref="s27_536"/>
+	<secedge idref="s27_10" label="DEF"/>
+</nt>
+<nt id="s27_535" cat="ARG">
+	<edge idref="s27_534"/>
+</nt>
+<nt id="s27_536" cat="COREn">
+	<edge idref="s27_537"/>
+	<secedge idref="s27_11" label="NUM"/>
+</nt>
+<nt id="s27_537" cat="NUCn">
+	<edge idref="s27_11"/>
+</nt>
+<nt id="s27_538" cat="PERIPHERY">
+	<edge idref="s27_533"/>
+	<edge idref="s27_527"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s28"><graph><terminals>
+<t id="s28_1" word="What" pos="WP" ner="_"></t>
+<t id="s28_2" word="did" pos="VBD" ner="_"></t>
+<t id="s28_3" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s28_4" word="present" pos="VB" ner="_"></t>
+<t id="s28_5" word="to" pos="TO" ner="_"></t>
+<t id="s28_6" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s28_7" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s28_508" cat="NP">
+	<edge idref="s28_1"/>
+</nt>
+<nt id="s28_509" cat="PrCS">
+	<edge idref="s28_508"/>
+</nt>
+<nt id="s28_510" cat="ARG">
+	<edge idref="s28_511"/>
+</nt>
+<nt id="s28_511" cat="NP">
+	<edge idref="s28_512"/>
+</nt>
+<nt id="s28_512" cat="COREn">
+	<edge idref="s28_513"/>
+</nt>
+<nt id="s28_513" cat="NUCn">
+	<edge idref="s28_3"/>
+</nt>
+<nt id="s28_514" cat="NUC">
+	<edge idref="s28_4"/>
+</nt>
+<nt id="s28_515" cat="CORE">
+	<edge idref="s28_514"/>
+	<edge idref="s28_522"/>
+	<edge idref="s28_510"/>
+</nt>
+<nt id="s28_516" cat="CLAUSE">
+	<edge idref="s28_509"/>
+	<edge idref="s28_515"/>
+	<secedge idref="s28_2" label="IF+TNS"/>
+</nt>
+<nt id="s28_517" cat="SENTENCE">
+	<edge idref="s28_516"/>
+</nt>
+<nt id="s28_518" cat="PP">
+	<edge idref="s28_519"/>
+	<edge idref="s28_5"/>
+</nt>
+<nt id="s28_519" cat="NP">
+	<edge idref="s28_520"/>
+</nt>
+<nt id="s28_520" cat="COREn">
+	<edge idref="s28_521"/>
+</nt>
+<nt id="s28_521" cat="NUCn">
+	<edge idref="s28_6"/>
+</nt>
+<nt id="s28_522" cat="ARG">
+	<edge idref="s28_518"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s29"><graph><terminals>
+<t id="s29_1" word="Who" pos="WP" ner="_"></t>
+<t id="s29_2" word="did" pos="VBD" ner="_"></t>
+<t id="s29_3" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s29_4" word="present" pos="VB" ner="_"></t>
+<t id="s29_5" word="the" pos="DT" ner="_"></t>
+<t id="s29_6" word="flowers" pos="NNS" ner="_"></t>
+<t id="s29_7" word="to" pos="TO" ner="_"></t>
+<t id="s29_8" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s29_509" cat="NP">
+	<edge idref="s29_1"/>
+</nt>
+<nt id="s29_510" cat="PrCS">
+	<edge idref="s29_509"/>
+</nt>
+<nt id="s29_511" cat="ARG">
+	<edge idref="s29_512"/>
+</nt>
+<nt id="s29_512" cat="NP">
+	<edge idref="s29_513"/>
+</nt>
+<nt id="s29_513" cat="COREn">
+	<edge idref="s29_514"/>
+</nt>
+<nt id="s29_514" cat="NUCn">
+	<edge idref="s29_3"/>
+</nt>
+<nt id="s29_515" cat="NUC">
+	<edge idref="s29_4"/>
+</nt>
+<nt id="s29_516" cat="CORE">
+	<edge idref="s29_519"/>
+	<edge idref="s29_515"/>
+	<edge idref="s29_523"/>
+	<edge idref="s29_511"/>
+</nt>
+<nt id="s29_517" cat="CLAUSE">
+	<edge idref="s29_516"/>
+	<edge idref="s29_510"/>
+	<secedge idref="s29_2" label="TNS+IF"/>
+</nt>
+<nt id="s29_518" cat="SENTENCE">
+	<edge idref="s29_517"/>
+</nt>
+<nt id="s29_519" cat="ARG">
+	<edge idref="s29_520"/>
+</nt>
+<nt id="s29_520" cat="NP">
+	<edge idref="s29_521"/>
+	<secedge idref="s29_5" label="DEF"/>
+</nt>
+<nt id="s29_521" cat="COREn">
+	<edge idref="s29_522"/>
+	<secedge idref="s29_6" label="NUM"/>
+</nt>
+<nt id="s29_522" cat="NUCn">
+	<edge idref="s29_6"/>
+</nt>
+<nt id="s29_523" cat="ARG">
+	<edge idref="s29_524"/>
+</nt>
+<nt id="s29_524" cat="PP">
+	<edge idref="s29_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s30"><graph><terminals>
+<t id="s30_1" word="What" pos="WP" ner="_"></t>
+<t id="s30_2" word="did" pos="VBD" ner="_"></t>
+<t id="s30_3" word="Dana" pos="NNP" ner="PERSON"></t>
+<t id="s30_4" word="give" pos="VB" ner="_"></t>
+<t id="s30_5" word="to" pos="TO" ner="_"></t>
+<t id="s30_6" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s30_7" word="yesterday" pos="RB" ner="DATE"></t>
+<t id="s30_8" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s30_509" cat="NP">
+	<edge idref="s30_1"/>
+</nt>
+<nt id="s30_510" cat="PrCS">
+	<edge idref="s30_509"/>
+</nt>
+<nt id="s30_511" cat="ARG">
+	<edge idref="s30_512"/>
+</nt>
+<nt id="s30_512" cat="NP">
+	<edge idref="s30_513"/>
+</nt>
+<nt id="s30_513" cat="COREn">
+	<edge idref="s30_514"/>
+</nt>
+<nt id="s30_514" cat="NUCn">
+	<edge idref="s30_3"/>
+</nt>
+<nt id="s30_515" cat="NUC">
+	<edge idref="s30_4"/>
+</nt>
+<nt id="s30_516" cat="CORE">
+	<edge idref="s30_511"/>
+	<edge idref="s30_524"/>
+	<edge idref="s30_515"/>
+	<edge idref="s30_523"/>
+	<secedge idref="s30_7" label="TEMP"/>
+</nt>
+<nt id="s30_517" cat="CLAUSE">
+	<edge idref="s30_510"/>
+	<edge idref="s30_516"/>
+	<secedge idref="s30_2" label="IF+TNS"/>
+</nt>
+<nt id="s30_518" cat="SENTENCE">
+	<edge idref="s30_517"/>
+</nt>
+<nt id="s30_519" cat="PP">
+	<edge idref="s30_520"/>
+	<edge idref="s30_5"/>
+</nt>
+<nt id="s30_520" cat="NP">
+	<edge idref="s30_521"/>
+</nt>
+<nt id="s30_521" cat="COREn">
+	<edge idref="s30_522"/>
+</nt>
+<nt id="s30_522" cat="NUCn">
+	<edge idref="s30_6"/>
+</nt>
+<nt id="s30_523" cat="ARG">
+	<edge idref="s30_519"/>
+</nt>
+<nt id="s30_524" cat="PERIPHERY">
+	<edge idref="s30_525"/>
+</nt>
+<nt id="s30_525" cat="ADV">
+	<edge idref="s30_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s31"><graph><terminals>
+<t id="s31_1" word="Sandy" pos="NNP" ner="PERSON"></t>
+<t id="s31_2" word="presented" pos="VBD" ner="_"></t>
+<t id="s31_3" word="the" pos="DT" ner="_"></t>
+<t id="s31_4" word="flowers" pos="NNS" ner="_"></t>
+<t id="s31_5" word="to" pos="TO" ner="_"></t>
+<t id="s31_6" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s31_7" word="at" pos="IN" ner="_"></t>
+<t id="s31_8" word="the" pos="DT" ner="_"></t>
+<t id="s31_9" word="party" pos="NN" ner="_"></t>
+<t id="s31_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s31_511" cat="ARG">
+	<edge idref="s31_512"/>
+</nt>
+<nt id="s31_512" cat="NP">
+	<edge idref="s31_513"/>
+</nt>
+<nt id="s31_513" cat="COREn">
+	<edge idref="s31_514"/>
+</nt>
+<nt id="s31_514" cat="NUCn">
+	<edge idref="s31_1"/>
+</nt>
+<nt id="s31_515" cat="NUC">
+	<edge idref="s31_2"/>
+</nt>
+<nt id="s31_516" cat="CORE">
+	<edge idref="s31_515"/>
+	<edge idref="s31_511"/>
+	<edge idref="s31_527"/>
+	<edge idref="s31_535"/>
+	<edge idref="s31_519"/>
+</nt>
+<nt id="s31_517" cat="CLAUSE">
+	<edge idref="s31_516"/>
+	<secedge idref="s31_2" label="TNS+IF"/>
+</nt>
+<nt id="s31_518" cat="SENTENCE">
+	<edge idref="s31_517"/>
+</nt>
+<nt id="s31_519" cat="ARG">
+	<edge idref="s31_520"/>
+</nt>
+<nt id="s31_520" cat="NP">
+	<edge idref="s31_521"/>
+	<secedge idref="s31_3" label="DEF"/>
+</nt>
+<nt id="s31_521" cat="COREn">
+	<edge idref="s31_522"/>
+	<secedge idref="s31_4" label="NUM"/>
+</nt>
+<nt id="s31_522" cat="NUCn">
+	<edge idref="s31_4"/>
+</nt>
+<nt id="s31_523" cat="PP">
+	<edge idref="s31_524"/>
+	<edge idref="s31_5"/>
+</nt>
+<nt id="s31_524" cat="NP">
+	<edge idref="s31_525"/>
+</nt>
+<nt id="s31_525" cat="COREn">
+	<edge idref="s31_526"/>
+</nt>
+<nt id="s31_526" cat="NUCn">
+	<edge idref="s31_6"/>
+</nt>
+<nt id="s31_527" cat="ARG">
+	<edge idref="s31_523"/>
+</nt>
+<nt id="s31_528" cat="NUC">
+	<edge idref="s31_7"/>
+</nt>
+<nt id="s31_529" cat="CORE">
+	<edge idref="s31_528"/>
+	<edge idref="s31_532"/>
+</nt>
+<nt id="s31_530" cat="PP">
+	<edge idref="s31_529"/>
+</nt>
+<nt id="s31_531" cat="NP">
+	<edge idref="s31_533"/>
+	<secedge idref="s31_8" label="DEF"/>
+</nt>
+<nt id="s31_532" cat="ARG">
+	<edge idref="s31_531"/>
+</nt>
+<nt id="s31_533" cat="COREn">
+	<edge idref="s31_534"/>
+	<secedge idref="s31_9" label="NUM"/>
+</nt>
+<nt id="s31_534" cat="NUCn">
+	<edge idref="s31_9"/>
+</nt>
+<nt id="s31_535" cat="PERIPHERY">
+	<edge idref="s31_530"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s32"><graph><terminals>
+<t id="s32_1" word="As" pos="IN" ner="_"></t>
+<t id="s32_2" word="for" pos="IN" ner="_"></t>
+<t id="s32_3" word="Sam" pos="NNP" ner="PERSON"></t>
+<t id="s32_4" word="," pos="," ner="_"></t>
+<t id="s32_5" word="Mary" pos="NNP" ner="PERSON"></t>
+<t id="s32_6" word="saw" pos="VBD" ner="_"></t>
+<t id="s32_7" word="him" pos="PRP" ner="_"></t>
+<t id="s32_8" word="last" pos="JJ" ner="DATE"></t>
+<t id="s32_9" word="week" pos="NN" ner="DATE"></t>
+<t id="s32_10" word="," pos="," ner="_"></t>
+<t id="s32_11" word="and" pos="CC" ner="_"></t>
+<t id="s32_12" word="as" pos="IN" ner="_"></t>
+<t id="s32_13" word="for" pos="IN" ner="_"></t>
+<t id="s32_14" word="Paul" pos="NNP" ner="PERSON"></t>
+<t id="s32_15" word="," pos="," ner="_"></t>
+<t id="s32_16" word="I" pos="PRP" ner="_"></t>
+<t id="s32_17" word="saw" pos="VBD" ner="_"></t>
+<t id="s32_18" word="him" pos="PRP" ner="_"></t>
+<t id="s32_19" word="yesterday" pos="RB" ner="DATE"></t>
+<t id="s32_20" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s32_521" cat="P">
+	<edge idref="s32_1"/>
+	<edge idref="s32_2"/>
+</nt>
+<nt id="s32_522" cat="PP">
+	<edge idref="s32_521"/>
+	<edge idref="s32_523"/>
+</nt>
+<nt id="s32_523" cat="NP">
+	<edge idref="s32_524"/>
+</nt>
+<nt id="s32_524" cat="COREn">
+	<edge idref="s32_525"/>
+</nt>
+<nt id="s32_525" cat="NUCn">
+	<edge idref="s32_3"/>
+</nt>
+<nt id="s32_526" cat="ARG">
+	<edge idref="s32_527"/>
+</nt>
+<nt id="s32_527" cat="NP">
+	<edge idref="s32_528"/>
+</nt>
+<nt id="s32_528" cat="COREn">
+	<edge idref="s32_529"/>
+</nt>
+<nt id="s32_529" cat="NUCn">
+	<edge idref="s32_5"/>
+</nt>
+<nt id="s32_530" cat="NUC">
+	<edge idref="s32_6"/>
+</nt>
+<nt id="s32_531" cat="CORE">
+	<edge idref="s32_543"/>
+	<edge idref="s32_530"/>
+	<edge idref="s32_536"/>
+	<edge idref="s32_526"/>
+	<secedge idref="s32_9" label="TEMP"/>
+</nt>
+<nt id="s32_532" cat="CLAUSE">
+	<edge idref="s32_531"/>
+	<secedge idref="s32_6" label="TNS+IF"/>
+</nt>
+<nt id="s32_533" cat="SENTENCE">
+	<edge idref="s32_532"/>
+	<edge idref="s32_534"/>
+</nt>
+<nt id="s32_534" cat="LDP">
+	<edge idref="s32_522"/>
+</nt>
+<nt id="s32_535" cat="TEXT">
+	<edge idref="s32_555"/>
+	<edge idref="s32_544"/>
+	<edge idref="s32_533"/>
+</nt>
+<nt id="s32_536" cat="ARG">
+	<edge idref="s32_537"/>
+</nt>
+<nt id="s32_537" cat="NP">
+	<edge idref="s32_7"/>
+</nt>
+<nt id="s32_538" cat="ADV">
+	<edge idref="s32_8"/>
+</nt>
+<nt id="s32_539" cat="NP">
+	<edge idref="s32_541"/>
+</nt>
+<nt id="s32_540" cat="ADV">
+	<edge idref="s32_539"/>
+</nt>
+<nt id="s32_541" cat="COREn">
+	<edge idref="s32_542"/>
+	<edge idref="s32_538"/>
+	<secedge idref="s32_8" label="TEMP"/>
+	<secedge idref="s32_9" label="NUM"/>
+</nt>
+<nt id="s32_542" cat="NUCn">
+	<edge idref="s32_9"/>
+</nt>
+<nt id="s32_543" cat="PERIPHERY">
+	<edge idref="s32_540"/>
+</nt>
+<nt id="s32_544" cat="CONJ">
+	<edge idref="s32_11"/>
+</nt>
+<nt id="s32_545" cat="P">
+	<edge idref="s32_12"/>
+	<edge idref="s32_13"/>
+</nt>
+<nt id="s32_546" cat="PP">
+	<edge idref="s32_545"/>
+	<edge idref="s32_547"/>
+</nt>
+<nt id="s32_547" cat="NP">
+	<edge idref="s32_548"/>
+</nt>
+<nt id="s32_548" cat="COREn">
+	<edge idref="s32_549"/>
+</nt>
+<nt id="s32_549" cat="NUCn">
+	<edge idref="s32_14"/>
+</nt>
+<nt id="s32_550" cat="ARG">
+	<edge idref="s32_551"/>
+</nt>
+<nt id="s32_551" cat="NP">
+	<edge idref="s32_16"/>
+</nt>
+<nt id="s32_552" cat="NUC">
+	<edge idref="s32_17"/>
+</nt>
+<nt id="s32_553" cat="CORE">
+	<edge idref="s32_559"/>
+	<edge idref="s32_550"/>
+	<edge idref="s32_557"/>
+	<edge idref="s32_552"/>
+	<secedge idref="s32_19" label="TEMP"/>
+</nt>
+<nt id="s32_554" cat="CLAUSE">
+	<edge idref="s32_553"/>
+	<secedge idref="s32_17" label="IF+TNS"/>
+</nt>
+<nt id="s32_555" cat="SENTENCE">
+	<edge idref="s32_554"/>
+	<edge idref="s32_556"/>
+</nt>
+<nt id="s32_556" cat="LDP">
+	<edge idref="s32_546"/>
+</nt>
+<nt id="s32_557" cat="ARG">
+	<edge idref="s32_558"/>
+</nt>
+<nt id="s32_558" cat="NP">
+	<edge idref="s32_18"/>
+</nt>
+<nt id="s32_559" cat="PERIPHERY">
+	<edge idref="s32_560"/>
+</nt>
+<nt id="s32_560" cat="ADV">
+	<edge idref="s32_19"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s33"><graph><terminals>
+<t id="s33_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s33_2" word="saw" pos="VBD" ner="_"></t>
+<t id="s33_3" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s33_4" word="after" pos="IN" ner="_"></t>
+<t id="s33_5" word="she" pos="PRP" ner="_"></t>
+<t id="s33_6" word="arrived" pos="VBD" ner="_"></t>
+<t id="s33_7" word="at" pos="IN" ner="_"></t>
+<t id="s33_8" word="the" pos="DT" ner="_"></t>
+<t id="s33_9" word="party" pos="NN" ner="_"></t>
+<t id="s33_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s33_511" cat="ARG">
+	<edge idref="s33_512"/>
+</nt>
+<nt id="s33_512" cat="NP">
+	<edge idref="s33_513"/>
+</nt>
+<nt id="s33_513" cat="COREn">
+	<edge idref="s33_514"/>
+</nt>
+<nt id="s33_514" cat="NUCn">
+	<edge idref="s33_1"/>
+</nt>
+<nt id="s33_515" cat="NUC">
+	<edge idref="s33_2"/>
+</nt>
+<nt id="s33_516" cat="CORE">
+	<edge idref="s33_515"/>
+	<edge idref="s33_537"/>
+	<edge idref="s33_511"/>
+	<edge idref="s33_519"/>
+</nt>
+<nt id="s33_517" cat="CLAUSE">
+	<edge idref="s33_516"/>
+	<secedge idref="s33_2" label="IF+TNS"/>
+</nt>
+<nt id="s33_518" cat="SENTENCE">
+	<edge idref="s33_517"/>
+</nt>
+<nt id="s33_519" cat="ARG">
+	<edge idref="s33_520"/>
+</nt>
+<nt id="s33_520" cat="NP">
+	<edge idref="s33_521"/>
+</nt>
+<nt id="s33_521" cat="COREn">
+	<edge idref="s33_522"/>
+</nt>
+<nt id="s33_522" cat="NUCn">
+	<edge idref="s33_3"/>
+</nt>
+<nt id="s33_523" cat="NUC">
+	<edge idref="s33_4"/>
+</nt>
+<nt id="s33_524" cat="PP">
+	<edge idref="s33_536"/>
+</nt>
+<nt id="s33_525" cat="ARG">
+	<edge idref="s33_526"/>
+</nt>
+<nt id="s33_526" cat="NP">
+	<edge idref="s33_5"/>
+</nt>
+<nt id="s33_527" cat="NUC">
+	<edge idref="s33_6"/>
+</nt>
+<nt id="s33_528" cat="CORE">
+	<edge idref="s33_527"/>
+	<edge idref="s33_534"/>
+	<edge idref="s33_525"/>
+</nt>
+<nt id="s33_529" cat="CLAUSE">
+	<edge idref="s33_528"/>
+	<secedge idref="s33_6" label="TNS"/>
+</nt>
+<nt id="s33_530" cat="PP">
+	<edge idref="s33_7"/>
+	<edge idref="s33_531"/>
+</nt>
+<nt id="s33_531" cat="NP">
+	<edge idref="s33_532"/>
+	<secedge idref="s33_8" label="DEF"/>
+</nt>
+<nt id="s33_532" cat="COREn">
+	<edge idref="s33_533"/>
+	<secedge idref="s33_9" label="NUM"/>
+</nt>
+<nt id="s33_533" cat="NUCn">
+	<edge idref="s33_9"/>
+</nt>
+<nt id="s33_534" cat="ARG">
+	<edge idref="s33_530"/>
+</nt>
+<nt id="s33_535" cat="ARG">
+	<edge idref="s33_529"/>
+</nt>
+<nt id="s33_536" cat="CORE">
+	<edge idref="s33_523"/>
+	<edge idref="s33_535"/>
+</nt>
+<nt id="s33_537" cat="PERIPHERY">
+	<edge idref="s33_524"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s34"><graph><terminals>
+<t id="s34_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s34_2" word="berated" pos="VBD" ner="_"></t>
+<t id="s34_3" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s34_4" word="because" pos="IN" ner="_"></t>
+<t id="s34_5" word="she" pos="PRP" ner="_"></t>
+<t id="s34_6" word="kissed" pos="VBD" ner="_"></t>
+<t id="s34_7" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s34_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s34_509" cat="ARG">
+	<edge idref="s34_510"/>
+</nt>
+<nt id="s34_510" cat="NP">
+	<edge idref="s34_511"/>
+</nt>
+<nt id="s34_511" cat="COREn">
+	<edge idref="s34_512"/>
+</nt>
+<nt id="s34_512" cat="NUCn">
+	<edge idref="s34_1"/>
+</nt>
+<nt id="s34_513" cat="NUC">
+	<edge idref="s34_2"/>
+</nt>
+<nt id="s34_514" cat="CORE">
+	<edge idref="s34_509"/>
+	<edge idref="s34_513"/>
+	<edge idref="s34_517"/>
+	<edge idref="s34_531"/>
+</nt>
+<nt id="s34_515" cat="CLAUSE">
+	<edge idref="s34_514"/>
+	<secedge idref="s34_2" label="IF+TNS"/>
+</nt>
+<nt id="s34_516" cat="SENTENCE">
+	<edge idref="s34_515"/>
+</nt>
+<nt id="s34_517" cat="ARG">
+	<edge idref="s34_518"/>
+</nt>
+<nt id="s34_518" cat="NP">
+	<edge idref="s34_519"/>
+</nt>
+<nt id="s34_519" cat="COREn">
+	<edge idref="s34_520"/>
+</nt>
+<nt id="s34_520" cat="NUCn">
+	<edge idref="s34_3"/>
+</nt>
+<nt id="s34_521" cat="CLM">
+	<edge idref="s34_4"/>
+</nt>
+<nt id="s34_522" cat="CLAUSE">
+	<edge idref="s34_521"/>
+	<edge idref="s34_526"/>
+	<secedge idref="s34_6" label="TNS"/>
+</nt>
+<nt id="s34_523" cat="ARG">
+	<edge idref="s34_524"/>
+</nt>
+<nt id="s34_524" cat="NP">
+	<edge idref="s34_5"/>
+</nt>
+<nt id="s34_525" cat="NUC">
+	<edge idref="s34_6"/>
+</nt>
+<nt id="s34_526" cat="CORE">
+	<edge idref="s34_527"/>
+	<edge idref="s34_525"/>
+	<edge idref="s34_523"/>
+</nt>
+<nt id="s34_527" cat="ARG">
+	<edge idref="s34_528"/>
+</nt>
+<nt id="s34_528" cat="NP">
+	<edge idref="s34_529"/>
+</nt>
+<nt id="s34_529" cat="COREn">
+	<edge idref="s34_530"/>
+</nt>
+<nt id="s34_530" cat="NUCn">
+	<edge idref="s34_7"/>
+</nt>
+<nt id="s34_531" cat="PERIPHERY">
+	<edge idref="s34_522"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s35"><graph><terminals>
+<t id="s35_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s35_2" word="berated" pos="VBD" ner="_"></t>
+<t id="s35_3" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s35_4" word="after" pos="IN" ner="_"></t>
+<t id="s35_5" word="they" pos="PRP" ner="_"></t>
+<t id="s35_6" word="arrived" pos="VBD" ner="_"></t>
+<t id="s35_7" word="at" pos="IN" ner="_"></t>
+<t id="s35_8" word="the" pos="DT" ner="_"></t>
+<t id="s35_9" word="party" pos="NN" ner="_"></t>
+<t id="s35_10" word="because" pos="IN" ner="_"></t>
+<t id="s35_11" word="she" pos="PRP" ner="_"></t>
+<t id="s35_12" word="kissed" pos="VBD" ner="_"></t>
+<t id="s35_13" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s35_14" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s35_515" cat="ARG">
+	<edge idref="s35_516"/>
+</nt>
+<nt id="s35_516" cat="NP">
+	<edge idref="s35_517"/>
+</nt>
+<nt id="s35_517" cat="COREn">
+	<edge idref="s35_518"/>
+</nt>
+<nt id="s35_518" cat="NUCn">
+	<edge idref="s35_1"/>
+</nt>
+<nt id="s35_519" cat="NUC">
+	<edge idref="s35_2"/>
+</nt>
+<nt id="s35_520" cat="CORE">
+	<edge idref="s35_551"/>
+	<edge idref="s35_519"/>
+	<edge idref="s35_515"/>
+	<edge idref="s35_523"/>
+</nt>
+<nt id="s35_521" cat="CLAUSE">
+	<edge idref="s35_520"/>
+	<secedge idref="s35_2" label="TNS+IF"/>
+</nt>
+<nt id="s35_522" cat="SENTENCE">
+	<edge idref="s35_521"/>
+</nt>
+<nt id="s35_523" cat="ARG">
+	<edge idref="s35_524"/>
+</nt>
+<nt id="s35_524" cat="NP">
+	<edge idref="s35_525"/>
+</nt>
+<nt id="s35_525" cat="COREn">
+	<edge idref="s35_526"/>
+</nt>
+<nt id="s35_526" cat="NUCn">
+	<edge idref="s35_3"/>
+</nt>
+<nt id="s35_527" cat="NUC">
+	<edge idref="s35_4"/>
+</nt>
+<nt id="s35_528" cat="PP">
+	<edge idref="s35_540"/>
+</nt>
+<nt id="s35_529" cat="ARG">
+	<edge idref="s35_530"/>
+</nt>
+<nt id="s35_530" cat="NP">
+	<edge idref="s35_5"/>
+</nt>
+<nt id="s35_531" cat="NUC">
+	<edge idref="s35_6"/>
+</nt>
+<nt id="s35_532" cat="CORE">
+	<edge idref="s35_529"/>
+	<edge idref="s35_538"/>
+	<edge idref="s35_531"/>
+</nt>
+<nt id="s35_533" cat="CLAUSE">
+	<edge idref="s35_532"/>
+	<secedge idref="s35_6" label="TNS"/>
+</nt>
+<nt id="s35_534" cat="PP">
+	<edge idref="s35_535"/>
+	<edge idref="s35_7"/>
+</nt>
+<nt id="s35_535" cat="NP">
+	<edge idref="s35_536"/>
+	<secedge idref="s35_8" label="DEF"/>
+</nt>
+<nt id="s35_536" cat="COREn">
+	<edge idref="s35_537"/>
+	<secedge idref="s35_9" label="NUM"/>
+</nt>
+<nt id="s35_537" cat="NUCn">
+	<edge idref="s35_9"/>
+</nt>
+<nt id="s35_538" cat="ARG">
+	<edge idref="s35_534"/>
+</nt>
+<nt id="s35_539" cat="ARG">
+	<edge idref="s35_533"/>
+</nt>
+<nt id="s35_540" cat="CORE">
+	<edge idref="s35_539"/>
+	<edge idref="s35_527"/>
+</nt>
+<nt id="s35_541" cat="CLM">
+	<edge idref="s35_10"/>
+</nt>
+<nt id="s35_542" cat="CLAUSE">
+	<edge idref="s35_546"/>
+	<edge idref="s35_541"/>
+	<secedge idref="s35_12" label="TNS"/>
+</nt>
+<nt id="s35_543" cat="ARG">
+	<edge idref="s35_544"/>
+</nt>
+<nt id="s35_544" cat="NP">
+	<edge idref="s35_11"/>
+</nt>
+<nt id="s35_545" cat="NUC">
+	<edge idref="s35_12"/>
+</nt>
+<nt id="s35_546" cat="CORE">
+	<edge idref="s35_547"/>
+	<edge idref="s35_543"/>
+	<edge idref="s35_545"/>
+</nt>
+<nt id="s35_547" cat="ARG">
+	<edge idref="s35_548"/>
+</nt>
+<nt id="s35_548" cat="NP">
+	<edge idref="s35_549"/>
+</nt>
+<nt id="s35_549" cat="COREn">
+	<edge idref="s35_550"/>
+</nt>
+<nt id="s35_550" cat="NUCn">
+	<edge idref="s35_13"/>
+</nt>
+<nt id="s35_551" cat="PERIPHERY">
+	<edge idref="s35_528"/>
+	<edge idref="s35_542"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s36"><graph><terminals>
+<t id="s36_1" word="Max" pos="NNP" ner="PERSON"></t>
+<t id="s36_2" word="seemed" pos="VBD" ner="_"></t>
+<t id="s36_3" word="tired" pos="JJ" ner="_"></t>
+<t id="s36_4" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s36_505" cat="ARG">
+	<edge idref="s36_506"/>
+</nt>
+<nt id="s36_506" cat="NP">
+	<edge idref="s36_507"/>
+</nt>
+<nt id="s36_507" cat="COREn">
+	<edge idref="s36_508"/>
+</nt>
+<nt id="s36_508" cat="NUCn">
+	<edge idref="s36_1"/>
+</nt>
+<nt id="s36_509" cat="NUC">
+	<edge idref="s36_2"/>
+</nt>
+<nt id="s36_510" cat="NUC">
+	<edge idref="s36_514"/>
+	<edge idref="s36_509"/>
+</nt>
+<nt id="s36_511" cat="CORE">
+	<edge idref="s36_510"/>
+	<edge idref="s36_505"/>
+</nt>
+<nt id="s36_512" cat="CLAUSE">
+	<edge idref="s36_511"/>
+	<secedge idref="s36_2" label="IF+TNS"/>
+</nt>
+<nt id="s36_513" cat="SENTENCE">
+	<edge idref="s36_512"/>
+</nt>
+<nt id="s36_514" cat="NUC">
+	<edge idref="s36_3"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s37"><graph><terminals>
+<t id="s37_1" word="Vince" pos="NNP" ner="PERSON"></t>
+<t id="s37_2" word="has" pos="VBZ" ner="_"></t>
+<t id="s37_3" word="wiped" pos="VBN" ner="_"></t>
+<t id="s37_4" word="the" pos="DT" ner="_"></t>
+<t id="s37_5" word="table" pos="NN" ner="_"></t>
+<t id="s37_6" word="clean" pos="JJ" ner="_"></t>
+<t id="s37_7" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s37_508" cat="ARG">
+	<edge idref="s37_509"/>
+</nt>
+<nt id="s37_509" cat="NP">
+	<edge idref="s37_510"/>
+</nt>
+<nt id="s37_510" cat="COREn">
+	<edge idref="s37_511"/>
+</nt>
+<nt id="s37_511" cat="NUCn">
+	<edge idref="s37_1"/>
+</nt>
+<nt id="s37_512" cat="NUC">
+	<edge idref="s37_3"/>
+</nt>
+<nt id="s37_513" cat="NUC">
+	<edge idref="s37_512"/>
+	<edge idref="s37_521"/>
+	<secedge idref="s37_2" label="ASP"/>
+	<secedge idref="s37_3" label="ASP"/>
+</nt>
+<nt id="s37_514" cat="CORE">
+	<edge idref="s37_517"/>
+	<edge idref="s37_513"/>
+	<edge idref="s37_508"/>
+</nt>
+<nt id="s37_515" cat="CLAUSE">
+	<edge idref="s37_514"/>
+	<secedge idref="s37_2" label="TNS+IF"/>
+</nt>
+<nt id="s37_516" cat="SENTENCE">
+	<edge idref="s37_515"/>
+</nt>
+<nt id="s37_517" cat="ARG">
+	<edge idref="s37_518"/>
+</nt>
+<nt id="s37_518" cat="NP">
+	<edge idref="s37_519"/>
+	<secedge idref="s37_4" label="DEF"/>
+</nt>
+<nt id="s37_519" cat="COREn">
+	<edge idref="s37_520"/>
+	<secedge idref="s37_5" label="NUM"/>
+</nt>
+<nt id="s37_520" cat="NUCn">
+	<edge idref="s37_5"/>
+</nt>
+<nt id="s37_521" cat="NUC">
+	<edge idref="s37_6"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s38"><graph><terminals>
+<t id="s38_1" word="Ted" pos="NNP" ner="PERSON"></t>
+<t id="s38_2" word="tried" pos="VBD" ner="_"></t>
+<t id="s38_3" word="to" pos="TO" ner="_"></t>
+<t id="s38_4" word="open" pos="VB" ner="_"></t>
+<t id="s38_5" word="the" pos="DT" ner="_"></t>
+<t id="s38_6" word="door" pos="NN" ner="_"></t>
+<t id="s38_7" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s38_508" cat="ARG">
+	<edge idref="s38_509"/>
+</nt>
+<nt id="s38_509" cat="NP">
+	<edge idref="s38_510"/>
+</nt>
+<nt id="s38_510" cat="COREn">
+	<edge idref="s38_511"/>
+</nt>
+<nt id="s38_511" cat="NUCn">
+	<edge idref="s38_1"/>
+</nt>
+<nt id="s38_512" cat="NUC">
+	<edge idref="s38_2"/>
+</nt>
+<nt id="s38_513" cat="CORE">
+	<edge idref="s38_512"/>
+	<edge idref="s38_508"/>
+</nt>
+<nt id="s38_514" cat="CORE">
+	<edge idref="s38_513"/>
+	<edge idref="s38_519"/>
+</nt>
+<nt id="s38_515" cat="CLAUSE">
+	<edge idref="s38_514"/>
+	<secedge idref="s38_2" label="IF+TNS"/>
+</nt>
+<nt id="s38_516" cat="SENTENCE">
+	<edge idref="s38_515"/>
+</nt>
+<nt id="s38_517" cat="CLM">
+	<edge idref="s38_3"/>
+</nt>
+<nt id="s38_518" cat="NUC">
+	<edge idref="s38_4"/>
+</nt>
+<nt id="s38_519" cat="CORE">
+	<edge idref="s38_520"/>
+	<edge idref="s38_517"/>
+	<edge idref="s38_518"/>
+</nt>
+<nt id="s38_520" cat="ARG">
+	<edge idref="s38_521"/>
+</nt>
+<nt id="s38_521" cat="NP">
+	<edge idref="s38_522"/>
+	<secedge idref="s38_5" label="DEF"/>
+</nt>
+<nt id="s38_522" cat="COREn">
+	<edge idref="s38_523"/>
+	<secedge idref="s38_6" label="NUM"/>
+</nt>
+<nt id="s38_523" cat="NUCn">
+	<edge idref="s38_6"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s39"><graph><terminals>
+<t id="s39_1" word="Sam" pos="NNP" ner="PERSON"></t>
+<t id="s39_2" word="sat" pos="VBD" ner="_"></t>
+<t id="s39_3" word="playing" pos="VBG" ner="_"></t>
+<t id="s39_4" word="the" pos="DT" ner="_"></t>
+<t id="s39_5" word="guitar" pos="NN" ner="_"></t>
+<t id="s39_6" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s39_507" cat="ARG">
+	<edge idref="s39_508"/>
+</nt>
+<nt id="s39_508" cat="NP">
+	<edge idref="s39_509"/>
+</nt>
+<nt id="s39_509" cat="COREn">
+	<edge idref="s39_510"/>
+</nt>
+<nt id="s39_510" cat="NUCn">
+	<edge idref="s39_1"/>
+</nt>
+<nt id="s39_511" cat="NUC">
+	<edge idref="s39_2"/>
+</nt>
+<nt id="s39_512" cat="CORE">
+	<edge idref="s39_511"/>
+	<edge idref="s39_507"/>
+	<edge idref="s39_521"/>
+</nt>
+<nt id="s39_513" cat="CLAUSE">
+	<edge idref="s39_512"/>
+	<secedge idref="s39_2" label="IF+TNS"/>
+</nt>
+<nt id="s39_514" cat="SENTENCE">
+	<edge idref="s39_513"/>
+</nt>
+<nt id="s39_515" cat="NUC">
+	<edge idref="s39_3"/>
+	<secedge idref="s39_3" label="ASP"/>
+</nt>
+<nt id="s39_516" cat="CORE">
+	<edge idref="s39_517"/>
+	<edge idref="s39_515"/>
+</nt>
+<nt id="s39_517" cat="ARG">
+	<edge idref="s39_518"/>
+</nt>
+<nt id="s39_518" cat="NP">
+	<edge idref="s39_519"/>
+	<secedge idref="s39_4" label="DEF"/>
+</nt>
+<nt id="s39_519" cat="COREn">
+	<edge idref="s39_520"/>
+	<secedge idref="s39_5" label="NUM"/>
+</nt>
+<nt id="s39_520" cat="NUCn">
+	<edge idref="s39_5"/>
+</nt>
+<nt id="s39_521" cat="ARG">
+	<edge idref="s39_516"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s40"><graph><terminals>
+<t id="s40_1" word="Louisa" pos="NNP" ner="PERSON"></t>
+<t id="s40_2" word="told" pos="VBD" ner="_"></t>
+<t id="s40_3" word="Bob" pos="NNP" ner="PERSON"></t>
+<t id="s40_4" word="to" pos="TO" ner="_"></t>
+<t id="s40_5" word="close" pos="VB" ner="_"></t>
+<t id="s40_6" word="the" pos="DT" ner="_"></t>
+<t id="s40_7" word="window" pos="NN" ner="_"></t>
+<t id="s40_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s40_509" cat="ARG">
+	<edge idref="s40_510"/>
+</nt>
+<nt id="s40_510" cat="NP">
+	<edge idref="s40_511"/>
+</nt>
+<nt id="s40_511" cat="COREn">
+	<edge idref="s40_512"/>
+</nt>
+<nt id="s40_512" cat="NUCn">
+	<edge idref="s40_1"/>
+</nt>
+<nt id="s40_513" cat="NUC">
+	<edge idref="s40_2"/>
+</nt>
+<nt id="s40_514" cat="CORE">
+	<edge idref="s40_517"/>
+	<edge idref="s40_509"/>
+	<edge idref="s40_513"/>
+</nt>
+<nt id="s40_515" cat="CLAUSE">
+	<edge idref="s40_514"/>
+	<edge idref="s40_523"/>
+	<secedge idref="s40_2" label="IF+TNS"/>
+</nt>
+<nt id="s40_516" cat="SENTENCE">
+	<edge idref="s40_515"/>
+</nt>
+<nt id="s40_517" cat="ARG">
+	<edge idref="s40_518"/>
+</nt>
+<nt id="s40_518" cat="NP">
+	<edge idref="s40_519"/>
+</nt>
+<nt id="s40_519" cat="COREn">
+	<edge idref="s40_520"/>
+</nt>
+<nt id="s40_520" cat="NUCn">
+	<edge idref="s40_3"/>
+</nt>
+<nt id="s40_521" cat="CLM">
+	<edge idref="s40_4"/>
+</nt>
+<nt id="s40_522" cat="NUC">
+	<edge idref="s40_5"/>
+</nt>
+<nt id="s40_523" cat="CORE">
+	<edge idref="s40_521"/>
+	<edge idref="s40_522"/>
+	<edge idref="s40_524"/>
+</nt>
+<nt id="s40_524" cat="ARG">
+	<edge idref="s40_525"/>
+</nt>
+<nt id="s40_525" cat="NP">
+	<edge idref="s40_526"/>
+	<secedge idref="s40_6" label="DEF"/>
+</nt>
+<nt id="s40_526" cat="COREn">
+	<edge idref="s40_527"/>
+	<secedge idref="s40_7" label="NUM"/>
+</nt>
+<nt id="s40_527" cat="NUCn">
+	<edge idref="s40_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s41"><graph><terminals>
+<t id="s41_1" word="Fred" pos="NNP" ner="PERSON"></t>
+<t id="s41_2" word="saw" pos="VBD" ner="_"></t>
+<t id="s41_3" word="Harry" pos="NNP" ner="PERSON"></t>
+<t id="s41_4" word="leave" pos="VB" ner="_"></t>
+<t id="s41_5" word="the" pos="DT" ner="_"></t>
+<t id="s41_6" word="room" pos="NN" ner="_"></t>
+<t id="s41_7" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s41_508" cat="ARG">
+	<edge idref="s41_509"/>
+</nt>
+<nt id="s41_509" cat="NP">
+	<edge idref="s41_510"/>
+</nt>
+<nt id="s41_510" cat="COREn">
+	<edge idref="s41_511"/>
+</nt>
+<nt id="s41_511" cat="NUCn">
+	<edge idref="s41_1"/>
+</nt>
+<nt id="s41_512" cat="NUC">
+	<edge idref="s41_2"/>
+</nt>
+<nt id="s41_513" cat="CORE">
+	<edge idref="s41_508"/>
+	<edge idref="s41_512"/>
+</nt>
+<nt id="s41_514" cat="CLAUSE">
+	<edge idref="s41_521"/>
+	<edge idref="s41_513"/>
+	<secedge idref="s41_2" label="IF+TNS"/>
+</nt>
+<nt id="s41_515" cat="SENTENCE">
+	<edge idref="s41_514"/>
+</nt>
+<nt id="s41_516" cat="ARG">
+	<edge idref="s41_517"/>
+</nt>
+<nt id="s41_517" cat="NP">
+	<edge idref="s41_518"/>
+</nt>
+<nt id="s41_518" cat="COREn">
+	<edge idref="s41_519"/>
+</nt>
+<nt id="s41_519" cat="NUCn">
+	<edge idref="s41_3"/>
+</nt>
+<nt id="s41_520" cat="NUC">
+	<edge idref="s41_4"/>
+</nt>
+<nt id="s41_521" cat="CORE">
+	<edge idref="s41_516"/>
+	<edge idref="s41_522"/>
+	<edge idref="s41_520"/>
+</nt>
+<nt id="s41_522" cat="ARG">
+	<edge idref="s41_523"/>
+</nt>
+<nt id="s41_523" cat="NP">
+	<edge idref="s41_524"/>
+	<secedge idref="s41_5" label="DEF"/>
+</nt>
+<nt id="s41_524" cat="COREn">
+	<edge idref="s41_525"/>
+	<secedge idref="s41_6" label="NUM"/>
+</nt>
+<nt id="s41_525" cat="NUCn">
+	<edge idref="s41_6"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s42"><graph><terminals>
+<t id="s42_1" word="To" pos="TO" ner="_"></t>
+<t id="s42_2" word="wash" pos="VB" ner="_"></t>
+<t id="s42_3" word="the" pos="DT" ner="_"></t>
+<t id="s42_4" word="car" pos="NN" ner="_"></t>
+<t id="s42_5" word="today" pos="NN" ner="DATE"></t>
+<t id="s42_6" word="would" pos="MD" ner="_"></t>
+<t id="s42_7" word="be" pos="VB" ner="_"></t>
+<t id="s42_8" word="a" pos="DT" ner="_"></t>
+<t id="s42_9" word="mistake" pos="NN" ner="_"></t>
+<t id="s42_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s42_511" cat="CLM">
+	<edge idref="s42_1"/>
+</nt>
+<nt id="s42_512" cat="NUC">
+	<edge idref="s42_2"/>
+</nt>
+<nt id="s42_513" cat="CORE">
+	<edge idref="s42_512"/>
+	<edge idref="s42_511"/>
+	<edge idref="s42_518"/>
+	<edge idref="s42_514"/>
+	<secedge idref="s42_5" label="TEMP"/>
+</nt>
+<nt id="s42_514" cat="ARG">
+	<edge idref="s42_515"/>
+</nt>
+<nt id="s42_515" cat="NP">
+	<edge idref="s42_516"/>
+	<secedge idref="s42_3" label="DEF"/>
+</nt>
+<nt id="s42_516" cat="COREn">
+	<edge idref="s42_517"/>
+	<secedge idref="s42_4" label="NUM"/>
+</nt>
+<nt id="s42_517" cat="NUCn">
+	<edge idref="s42_4"/>
+</nt>
+<nt id="s42_518" cat="PERIPHERY">
+	<edge idref="s42_520"/>
+</nt>
+<nt id="s42_519" cat="NP">
+	<edge idref="s42_521"/>
+</nt>
+<nt id="s42_520" cat="ADV">
+	<edge idref="s42_519"/>
+</nt>
+<nt id="s42_521" cat="COREn">
+	<edge idref="s42_522"/>
+	<secedge idref="s42_5" label="NUM"/>
+</nt>
+<nt id="s42_522" cat="NUCn">
+	<edge idref="s42_5"/>
+</nt>
+<nt id="s42_523" cat="ARG">
+	<edge idref="s42_513"/>
+</nt>
+<nt id="s42_524" cat="AUX">
+	<edge idref="s42_7"/>
+</nt>
+<nt id="s42_525" cat="NUC">
+	<edge idref="s42_529"/>
+	<edge idref="s42_524"/>
+</nt>
+<nt id="s42_526" cat="CORE">
+	<edge idref="s42_523"/>
+	<edge idref="s42_525"/>
+	<secedge idref="s42_6" label="MOD"/>
+</nt>
+<nt id="s42_527" cat="CLAUSE">
+	<edge idref="s42_526"/>
+	<secedge idref="s42_6" label="TNS+IF"/>
+</nt>
+<nt id="s42_528" cat="SENTENCE">
+	<edge idref="s42_527"/>
+</nt>
+<nt id="s42_529" cat="NP">
+	<edge idref="s42_530"/>
+	<secedge idref="s42_8" label="DEF"/>
+</nt>
+<nt id="s42_530" cat="COREn">
+	<edge idref="s42_531"/>
+	<secedge idref="s42_9" label="NUM"/>
+</nt>
+<nt id="s42_531" cat="NUCn">
+	<edge idref="s42_9"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s43"><graph><terminals>
+<t id="s43_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s43_2" word="regretted" pos="VBD" ner="_"></t>
+<t id="s43_3" word="dating" pos="VBG" ner="_"></t>
+<t id="s43_4" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s43_5" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s43_506" cat="ARG">
+	<edge idref="s43_507"/>
+</nt>
+<nt id="s43_507" cat="NP">
+	<edge idref="s43_508"/>
+</nt>
+<nt id="s43_508" cat="COREn">
+	<edge idref="s43_509"/>
+</nt>
+<nt id="s43_509" cat="NUCn">
+	<edge idref="s43_1"/>
+</nt>
+<nt id="s43_510" cat="NUC">
+	<edge idref="s43_2"/>
+</nt>
+<nt id="s43_511" cat="CORE">
+	<edge idref="s43_510"/>
+	<edge idref="s43_506"/>
+	<edge idref="s43_520"/>
+</nt>
+<nt id="s43_512" cat="CLAUSE">
+	<edge idref="s43_511"/>
+	<secedge idref="s43_2" label="IF+TNS"/>
+</nt>
+<nt id="s43_513" cat="SENTENCE">
+	<edge idref="s43_512"/>
+</nt>
+<nt id="s43_514" cat="NUC">
+	<edge idref="s43_3"/>
+	<secedge idref="s43_3" label="ASP"/>
+</nt>
+<nt id="s43_515" cat="CORE">
+	<edge idref="s43_516"/>
+	<edge idref="s43_514"/>
+</nt>
+<nt id="s43_516" cat="ARG">
+	<edge idref="s43_517"/>
+</nt>
+<nt id="s43_517" cat="NP">
+	<edge idref="s43_518"/>
+</nt>
+<nt id="s43_518" cat="COREn">
+	<edge idref="s43_519"/>
+</nt>
+<nt id="s43_519" cat="NUCn">
+	<edge idref="s43_4"/>
+</nt>
+<nt id="s43_520" cat="ARG">
+	<edge idref="s43_515"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s44"><graph><terminals>
+<t id="s44_1" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s44_2" word="went" pos="VBD" ner="_"></t>
+<t id="s44_3" word="to" pos="TO" ner="_"></t>
+<t id="s44_4" word="the" pos="DT" ner="_"></t>
+<t id="s44_5" word="party" pos="NN" ner="_"></t>
+<t id="s44_6" word="after" pos="IN" ner="_"></t>
+<t id="s44_7" word="he" pos="PRP" ner="_"></t>
+<t id="s44_8" word="talked" pos="VBD" ner="_"></t>
+<t id="s44_9" word="to" pos="TO" ner="_"></t>
+<t id="s44_10" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s44_11" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s44_512" cat="ARG">
+	<edge idref="s44_513"/>
+</nt>
+<nt id="s44_513" cat="NP">
+	<edge idref="s44_514"/>
+</nt>
+<nt id="s44_514" cat="COREn">
+	<edge idref="s44_515"/>
+</nt>
+<nt id="s44_515" cat="NUCn">
+	<edge idref="s44_1"/>
+</nt>
+<nt id="s44_516" cat="NUC">
+	<edge idref="s44_2"/>
+</nt>
+<nt id="s44_517" cat="CORE">
+	<edge idref="s44_524"/>
+	<edge idref="s44_512"/>
+	<edge idref="s44_516"/>
+	<edge idref="s44_539"/>
+</nt>
+<nt id="s44_518" cat="CLAUSE">
+	<edge idref="s44_517"/>
+	<secedge idref="s44_2" label="IF+TNS"/>
+</nt>
+<nt id="s44_519" cat="SENTENCE">
+	<edge idref="s44_518"/>
+</nt>
+<nt id="s44_520" cat="PP">
+	<edge idref="s44_3"/>
+	<edge idref="s44_521"/>
+</nt>
+<nt id="s44_521" cat="NP">
+	<edge idref="s44_522"/>
+	<secedge idref="s44_4" label="DEF"/>
+</nt>
+<nt id="s44_522" cat="COREn">
+	<edge idref="s44_523"/>
+	<secedge idref="s44_5" label="NUM"/>
+</nt>
+<nt id="s44_523" cat="NUCn">
+	<edge idref="s44_5"/>
+</nt>
+<nt id="s44_524" cat="AAJ">
+	<edge idref="s44_520"/>
+</nt>
+<nt id="s44_525" cat="NUC">
+	<edge idref="s44_6"/>
+</nt>
+<nt id="s44_526" cat="PP">
+	<edge idref="s44_538"/>
+</nt>
+<nt id="s44_527" cat="ARG">
+	<edge idref="s44_528"/>
+</nt>
+<nt id="s44_528" cat="NP">
+	<edge idref="s44_7"/>
+</nt>
+<nt id="s44_529" cat="NUC">
+	<edge idref="s44_8"/>
+</nt>
+<nt id="s44_530" cat="CORE">
+	<edge idref="s44_529"/>
+	<edge idref="s44_536"/>
+	<edge idref="s44_527"/>
+</nt>
+<nt id="s44_531" cat="CLAUSE">
+	<edge idref="s44_530"/>
+	<secedge idref="s44_8" label="TNS"/>
+</nt>
+<nt id="s44_532" cat="PP">
+	<edge idref="s44_9"/>
+	<edge idref="s44_533"/>
+</nt>
+<nt id="s44_533" cat="NP">
+	<edge idref="s44_534"/>
+</nt>
+<nt id="s44_534" cat="COREn">
+	<edge idref="s44_535"/>
+</nt>
+<nt id="s44_535" cat="NUCn">
+	<edge idref="s44_10"/>
+</nt>
+<nt id="s44_536" cat="ARG">
+	<edge idref="s44_532"/>
+</nt>
+<nt id="s44_537" cat="ARG">
+	<edge idref="s44_531"/>
+</nt>
+<nt id="s44_538" cat="CORE">
+	<edge idref="s44_537"/>
+	<edge idref="s44_525"/>
+</nt>
+<nt id="s44_539" cat="PERIPHERY">
+	<edge idref="s44_526"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s45"><graph><terminals>
+<t id="s45_1" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s45_2" word="ran" pos="VBD" ner="_"></t>
+<t id="s45_3" word="down" pos="RP" ner="_"></t>
+<t id="s45_4" word="the" pos="DT" ner="_"></t>
+<t id="s45_5" word="hall" pos="NN" ner="_"></t>
+<t id="s45_6" word="laughing" pos="VBG" ner="_"></t>
+<t id="s45_7" word="loudly" pos="RB" ner="_"></t>
+<t id="s45_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s45_509" cat="ARG">
+	<edge idref="s45_510"/>
+</nt>
+<nt id="s45_510" cat="NP">
+	<edge idref="s45_511"/>
+</nt>
+<nt id="s45_511" cat="COREn">
+	<edge idref="s45_512"/>
+</nt>
+<nt id="s45_512" cat="NUCn">
+	<edge idref="s45_1"/>
+</nt>
+<nt id="s45_513" cat="NUC">
+	<edge idref="s45_3"/>
+	<edge idref="s45_2"/>
+</nt>
+<nt id="s45_514" cat="CORE">
+	<edge idref="s45_517"/>
+	<edge idref="s45_509"/>
+	<edge idref="s45_513"/>
+	<edge idref="s45_526"/>
+</nt>
+<nt id="s45_515" cat="CLAUSE">
+	<edge idref="s45_514"/>
+	<secedge idref="s45_2" label="IF+TNS"/>
+</nt>
+<nt id="s45_516" cat="SENTENCE">
+	<edge idref="s45_515"/>
+</nt>
+<nt id="s45_517" cat="ARG">
+	<edge idref="s45_518"/>
+</nt>
+<nt id="s45_518" cat="NP">
+	<edge idref="s45_519"/>
+	<secedge idref="s45_4" label="DEF"/>
+</nt>
+<nt id="s45_519" cat="COREn">
+	<edge idref="s45_520"/>
+	<secedge idref="s45_5" label="NUM"/>
+</nt>
+<nt id="s45_520" cat="NUCn">
+	<edge idref="s45_5"/>
+</nt>
+<nt id="s45_521" cat="NUC">
+	<edge idref="s45_6"/>
+	<secedge idref="s45_6" label="ASP"/>
+</nt>
+<nt id="s45_522" cat="CORE">
+	<edge idref="s45_524"/>
+	<edge idref="s45_521"/>
+</nt>
+<nt id="s45_523" cat="CLAUSE">
+	<edge idref="s45_522"/>
+</nt>
+<nt id="s45_524" cat="PERIPHERY">
+	<edge idref="s45_525"/>
+</nt>
+<nt id="s45_525" cat="ADV">
+	<edge idref="s45_7"/>
+</nt>
+<nt id="s45_526" cat="PERIPHERY">
+	<edge idref="s45_523"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s46"><graph><terminals>
+<t id="s46_1" word="Leslie" pos="NNP" ner="PERSON"></t>
+<t id="s46_2" word="drove" pos="VBD" ner="_"></t>
+<t id="s46_3" word="to" pos="TO" ner="_"></t>
+<t id="s46_4" word="the" pos="DT" ner="_"></t>
+<t id="s46_5" word="store" pos="NN" ner="_"></t>
+<t id="s46_6" word="and" pos="CC" ner="_"></t>
+<t id="s46_7" word="bought" pos="VBD" ner="_"></t>
+<t id="s46_8" word="some" pos="DT" ner="_"></t>
+<t id="s46_9" word="beer" pos="NN" ner="_"></t>
+<t id="s46_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s46_511" cat="ARG">
+	<edge idref="s46_512"/>
+</nt>
+<nt id="s46_512" cat="NP">
+	<edge idref="s46_513"/>
+</nt>
+<nt id="s46_513" cat="COREn">
+	<edge idref="s46_514"/>
+</nt>
+<nt id="s46_514" cat="NUCn">
+	<edge idref="s46_1"/>
+</nt>
+<nt id="s46_515" cat="NUC">
+	<edge idref="s46_2"/>
+</nt>
+<nt id="s46_516" cat="CORE">
+	<edge idref="s46_524"/>
+	<edge idref="s46_515"/>
+	<edge idref="s46_511"/>
+</nt>
+<nt id="s46_517" cat="CLAUSE">
+	<edge idref="s46_516"/>
+	<secedge idref="s46_2" label="TNS"/>
+</nt>
+<nt id="s46_518" cat="CLAUSE">
+	<edge idref="s46_528"/>
+	<edge idref="s46_517"/>
+</nt>
+<nt id="s46_519" cat="SENTENCE">
+	<edge idref="s46_518"/>
+</nt>
+<nt id="s46_520" cat="PP">
+	<edge idref="s46_521"/>
+	<edge idref="s46_3"/>
+</nt>
+<nt id="s46_521" cat="NP">
+	<edge idref="s46_522"/>
+	<secedge idref="s46_4" label="DEF"/>
+</nt>
+<nt id="s46_522" cat="COREn">
+	<edge idref="s46_523"/>
+	<secedge idref="s46_5" label="NUM"/>
+</nt>
+<nt id="s46_523" cat="NUCn">
+	<edge idref="s46_5"/>
+</nt>
+<nt id="s46_524" cat="ARG">
+	<edge idref="s46_520"/>
+</nt>
+<nt id="s46_525" cat="CLM">
+	<edge idref="s46_6"/>
+</nt>
+<nt id="s46_526" cat="NUC">
+	<edge idref="s46_7"/>
+</nt>
+<nt id="s46_527" cat="CORE">
+	<edge idref="s46_529"/>
+	<edge idref="s46_526"/>
+</nt>
+<nt id="s46_528" cat="CLAUSE">
+	<edge idref="s46_527"/>
+	<edge idref="s46_525"/>
+	<secedge idref="s46_7" label="TNS"/>
+</nt>
+<nt id="s46_529" cat="ARG">
+	<edge idref="s46_530"/>
+</nt>
+<nt id="s46_530" cat="NP">
+	<edge idref="s46_531"/>
+	<secedge idref="s46_8" label="DEF"/>
+</nt>
+<nt id="s46_531" cat="COREn">
+	<edge idref="s46_532"/>
+	<secedge idref="s46_9" label="NUM"/>
+</nt>
+<nt id="s46_532" cat="NUCn">
+	<edge idref="s46_9"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s47"><graph><terminals>
+<t id="s47_1" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s47_2" word="told" pos="VBD" ner="_"></t>
+<t id="s47_3" word="Leslie" pos="NNP" ner="PERSON"></t>
+<t id="s47_4" word="after" pos="IN" ner="_"></t>
+<t id="s47_5" word="the" pos="DT" ner="_"></t>
+<t id="s47_6" word="party" pos="NN" ner="_"></t>
+<t id="s47_7" word="that" pos="IN" ner="_"></t>
+<t id="s47_8" word="she" pos="PRP" ner="_"></t>
+<t id="s47_9" word="talked" pos="VBD" ner="_"></t>
+<t id="s47_10" word="to" pos="TO" ner="_"></t>
+<t id="s47_11" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s47_12" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s47_513" cat="ARG">
+	<edge idref="s47_514"/>
+</nt>
+<nt id="s47_514" cat="NP">
+	<edge idref="s47_515"/>
+</nt>
+<nt id="s47_515" cat="COREn">
+	<edge idref="s47_516"/>
+</nt>
+<nt id="s47_516" cat="NUCn">
+	<edge idref="s47_1"/>
+</nt>
+<nt id="s47_517" cat="NUC">
+	<edge idref="s47_2"/>
+</nt>
+<nt id="s47_518" cat="CORE">
+	<edge idref="s47_517"/>
+	<edge idref="s47_521"/>
+	<edge idref="s47_513"/>
+	<edge idref="s47_544"/>
+	<edge idref="s47_532"/>
+</nt>
+<nt id="s47_519" cat="CLAUSE">
+	<edge idref="s47_518"/>
+	<secedge idref="s47_2" label="IF+TNS"/>
+</nt>
+<nt id="s47_520" cat="SENTENCE">
+	<edge idref="s47_519"/>
+</nt>
+<nt id="s47_521" cat="ARG">
+	<edge idref="s47_522"/>
+</nt>
+<nt id="s47_522" cat="NP">
+	<edge idref="s47_523"/>
+</nt>
+<nt id="s47_523" cat="COREn">
+	<edge idref="s47_524"/>
+</nt>
+<nt id="s47_524" cat="NUCn">
+	<edge idref="s47_3"/>
+</nt>
+<nt id="s47_525" cat="NUC">
+	<edge idref="s47_4"/>
+</nt>
+<nt id="s47_526" cat="CORE">
+	<edge idref="s47_529"/>
+	<edge idref="s47_525"/>
+</nt>
+<nt id="s47_527" cat="PP">
+	<edge idref="s47_526"/>
+</nt>
+<nt id="s47_528" cat="NP">
+	<edge idref="s47_530"/>
+	<secedge idref="s47_5" label="DEF"/>
+</nt>
+<nt id="s47_529" cat="ARG">
+	<edge idref="s47_528"/>
+</nt>
+<nt id="s47_530" cat="COREn">
+	<edge idref="s47_531"/>
+	<secedge idref="s47_6" label="NUM"/>
+</nt>
+<nt id="s47_531" cat="NUCn">
+	<edge idref="s47_6"/>
+</nt>
+<nt id="s47_532" cat="PERIPHERY">
+	<edge idref="s47_527"/>
+</nt>
+<nt id="s47_533" cat="CLM">
+	<edge idref="s47_7"/>
+</nt>
+<nt id="s47_534" cat="ARG">
+	<edge idref="s47_535"/>
+</nt>
+<nt id="s47_535" cat="NP">
+	<edge idref="s47_8"/>
+</nt>
+<nt id="s47_536" cat="NUC">
+	<edge idref="s47_9"/>
+</nt>
+<nt id="s47_537" cat="CORE">
+	<edge idref="s47_543"/>
+	<edge idref="s47_536"/>
+	<edge idref="s47_534"/>
+</nt>
+<nt id="s47_538" cat="CLAUSE">
+	<edge idref="s47_533"/>
+	<edge idref="s47_537"/>
+	<secedge idref="s47_9" label="TNS"/>
+</nt>
+<nt id="s47_539" cat="PP">
+	<edge idref="s47_10"/>
+	<edge idref="s47_540"/>
+</nt>
+<nt id="s47_540" cat="NP">
+	<edge idref="s47_541"/>
+</nt>
+<nt id="s47_541" cat="COREn">
+	<edge idref="s47_542"/>
+</nt>
+<nt id="s47_542" cat="NUCn">
+	<edge idref="s47_11"/>
+</nt>
+<nt id="s47_543" cat="ARG">
+	<edge idref="s47_539"/>
+</nt>
+<nt id="s47_544" cat="ARG">
+	<edge idref="s47_538"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s48"><graph><terminals>
+<t id="s48_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s48_2" word="cried" pos="VBD" ner="_"></t>
+<t id="s48_3" word="," pos="," ner="_"></t>
+<t id="s48_4" word="because" pos="IN" ner="_"></t>
+<t id="s48_5" word="Leslie" pos="NNP" ner="PERSON"></t>
+<t id="s48_6" word="did" pos="VBD" ner="_"></t>
+<t id="s48_7" word="n't" pos="RB" ner="_"></t>
+<t id="s48_8" word="call" pos="VB" ner="_"></t>
+<t id="s48_9" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s48_510" cat="ARG">
+	<edge idref="s48_511"/>
+</nt>
+<nt id="s48_511" cat="NP">
+	<edge idref="s48_512"/>
+</nt>
+<nt id="s48_512" cat="COREn">
+	<edge idref="s48_513"/>
+</nt>
+<nt id="s48_513" cat="NUCn">
+	<edge idref="s48_1"/>
+</nt>
+<nt id="s48_514" cat="NUC">
+	<edge idref="s48_2"/>
+</nt>
+<nt id="s48_515" cat="CORE">
+	<edge idref="s48_514"/>
+	<edge idref="s48_510"/>
+	<edge idref="s48_526"/>
+</nt>
+<nt id="s48_516" cat="CLAUSE">
+	<edge idref="s48_515"/>
+	<secedge idref="s48_2" label="TNS+IF"/>
+</nt>
+<nt id="s48_517" cat="SENTENCE">
+	<edge idref="s48_516"/>
+</nt>
+<nt id="s48_518" cat="CLM">
+	<edge idref="s48_4"/>
+</nt>
+<nt id="s48_519" cat="CLAUSE">
+	<edge idref="s48_525"/>
+	<edge idref="s48_518"/>
+	<secedge idref="s48_6" label="TNS"/>
+	<secedge idref="s48_7" label="STA"/>
+</nt>
+<nt id="s48_520" cat="ARG">
+	<edge idref="s48_521"/>
+</nt>
+<nt id="s48_521" cat="NP">
+	<edge idref="s48_522"/>
+</nt>
+<nt id="s48_522" cat="COREn">
+	<edge idref="s48_523"/>
+</nt>
+<nt id="s48_523" cat="NUCn">
+	<edge idref="s48_5"/>
+</nt>
+<nt id="s48_524" cat="NUC">
+	<edge idref="s48_8"/>
+</nt>
+<nt id="s48_525" cat="CORE">
+	<edge idref="s48_524"/>
+	<edge idref="s48_520"/>
+</nt>
+<nt id="s48_526" cat="PERIPHERY">
+	<edge idref="s48_519"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s49"><graph><terminals>
+<t id="s49_1" word="Anna" pos="NNP" ner="PERSON"></t>
+<t id="s49_2" word="read" pos="VBD" ner="_"></t>
+<t id="s49_3" word="for" pos="IN" ner="_"></t>
+<t id="s49_4" word="a" pos="DT" ner="DURATION"></t>
+<t id="s49_5" word="few" pos="JJ" ner="DURATION"></t>
+<t id="s49_6" word="minutes" pos="NNS" ner="DURATION"></t>
+<t id="s49_7" word="," pos="," ner="_"></t>
+<t id="s49_8" word="and" pos="CC" ner="_"></t>
+<t id="s49_9" word="then" pos="RB" ner="_"></t>
+<t id="s49_10" word="she" pos="PRP" ner="_"></t>
+<t id="s49_11" word="went" pos="VBD" ner="_"></t>
+<t id="s49_12" word="out" pos="RB" ner="_"></t>
+<t id="s49_13" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s49_514" cat="ARG">
+	<edge idref="s49_515"/>
+</nt>
+<nt id="s49_515" cat="NP">
+	<edge idref="s49_516"/>
+</nt>
+<nt id="s49_516" cat="COREn">
+	<edge idref="s49_517"/>
+</nt>
+<nt id="s49_517" cat="NUCn">
+	<edge idref="s49_1"/>
+</nt>
+<nt id="s49_518" cat="NUC">
+	<edge idref="s49_2"/>
+</nt>
+<nt id="s49_519" cat="CORE">
+	<edge idref="s49_514"/>
+	<edge idref="s49_518"/>
+	<edge idref="s49_531"/>
+</nt>
+<nt id="s49_520" cat="CLAUSE">
+	<edge idref="s49_519"/>
+	<secedge idref="s49_2" label="IF+TNS"/>
+</nt>
+<nt id="s49_521" cat="SENTENCE">
+	<edge idref="s49_539"/>
+	<edge idref="s49_520"/>
+</nt>
+<nt id="s49_522" cat="NUC">
+	<edge idref="s49_3"/>
+</nt>
+<nt id="s49_523" cat="CORE">
+	<edge idref="s49_527"/>
+	<edge idref="s49_522"/>
+</nt>
+<nt id="s49_524" cat="PP">
+	<edge idref="s49_523"/>
+</nt>
+<nt id="s49_525" cat="ADJ">
+	<edge idref="s49_5"/>
+</nt>
+<nt id="s49_526" cat="NP">
+	<edge idref="s49_528"/>
+	<secedge idref="s49_4" label="DEF"/>
+</nt>
+<nt id="s49_527" cat="ARG">
+	<edge idref="s49_526"/>
+</nt>
+<nt id="s49_528" cat="COREn">
+	<edge idref="s49_529"/>
+	<secedge idref="s49_6" label="NUM"/>
+</nt>
+<nt id="s49_529" cat="NUCn">
+	<edge idref="s49_530"/>
+	<edge idref="s49_6"/>
+	<edge idref="s49_4"/>
+</nt>
+<nt id="s49_530" cat="PERIPHERY">
+	<edge idref="s49_525"/>
+</nt>
+<nt id="s49_531" cat="PERIPHERY">
+	<edge idref="s49_524"/>
+</nt>
+<nt id="s49_532" cat="CLM">
+	<edge idref="s49_8"/>
+</nt>
+<nt id="s49_533" cat="PrCS">
+	<edge idref="s49_534"/>
+</nt>
+<nt id="s49_534" cat="ADV">
+	<edge idref="s49_9"/>
+</nt>
+<nt id="s49_535" cat="ARG">
+	<edge idref="s49_536"/>
+</nt>
+<nt id="s49_536" cat="NP">
+	<edge idref="s49_10"/>
+</nt>
+<nt id="s49_537" cat="NUC">
+	<edge idref="s49_11"/>
+</nt>
+<nt id="s49_538" cat="CORE">
+	<edge idref="s49_535"/>
+	<edge idref="s49_537"/>
+	<edge idref="s49_540"/>
+</nt>
+<nt id="s49_539" cat="CLAUSE">
+	<edge idref="s49_533"/>
+	<edge idref="s49_538"/>
+	<edge idref="s49_532"/>
+	<secedge idref="s49_11" label="TNS+IF"/>
+</nt>
+<nt id="s49_540" cat="PERIPHERY">
+	<edge idref="s49_541"/>
+</nt>
+<nt id="s49_541" cat="ADV">
+	<edge idref="s49_12"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s50"><graph><terminals>
+<t id="s50_1" word="After" pos="IN" ner="_"></t>
+<t id="s50_2" word="Anna" pos="NNP" ner="PERSON"></t>
+<t id="s50_3" word="finished" pos="VBD" ner="_"></t>
+<t id="s50_4" word="her" pos="PRP$" ner="_"></t>
+<t id="s50_5" word="work" pos="NN" ner="_"></t>
+<t id="s50_6" word="," pos="," ner="_"></t>
+<t id="s50_7" word="she" pos="PRP" ner="_"></t>
+<t id="s50_8" word="went" pos="VBD" ner="_"></t>
+<t id="s50_9" word="to" pos="TO" ner="_"></t>
+<t id="s50_10" word="the" pos="DT" ner="_"></t>
+<t id="s50_11" word="party" pos="NN" ner="_"></t>
+<t id="s50_12" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s50_513" cat="NUC">
+	<edge idref="s50_1"/>
+</nt>
+<nt id="s50_514" cat="PP">
+	<edge idref="s50_529"/>
+</nt>
+<nt id="s50_515" cat="ARG">
+	<edge idref="s50_516"/>
+</nt>
+<nt id="s50_516" cat="NP">
+	<edge idref="s50_517"/>
+</nt>
+<nt id="s50_517" cat="COREn">
+	<edge idref="s50_518"/>
+</nt>
+<nt id="s50_518" cat="NUCn">
+	<edge idref="s50_2"/>
+</nt>
+<nt id="s50_519" cat="NUC">
+	<edge idref="s50_3"/>
+</nt>
+<nt id="s50_520" cat="CORE">
+	<edge idref="s50_527"/>
+	<edge idref="s50_515"/>
+	<edge idref="s50_519"/>
+</nt>
+<nt id="s50_521" cat="CLAUSE">
+	<edge idref="s50_520"/>
+	<secedge idref="s50_3" label="TNS"/>
+</nt>
+<nt id="s50_522" cat="NP">
+	<edge idref="s50_4"/>
+</nt>
+<nt id="s50_523" cat="NP">
+	<edge idref="s50_524"/>
+	<edge idref="s50_526"/>
+	<secedge idref="s50_522" label="DEF"/>
+</nt>
+<nt id="s50_524" cat="COREn">
+	<edge idref="s50_525"/>
+	<secedge idref="s50_5" label="NUM"/>
+</nt>
+<nt id="s50_525" cat="NUCn">
+	<edge idref="s50_5"/>
+</nt>
+<nt id="s50_526" cat="NPIP">
+	<edge idref="s50_522"/>
+</nt>
+<nt id="s50_527" cat="ARG">
+	<edge idref="s50_523"/>
+</nt>
+<nt id="s50_528" cat="ARG">
+	<edge idref="s50_521"/>
+</nt>
+<nt id="s50_529" cat="CORE">
+	<edge idref="s50_513"/>
+	<edge idref="s50_528"/>
+</nt>
+<nt id="s50_530" cat="ARG">
+	<edge idref="s50_531"/>
+</nt>
+<nt id="s50_531" cat="NP">
+	<edge idref="s50_7"/>
+</nt>
+<nt id="s50_532" cat="NUC">
+	<edge idref="s50_8"/>
+</nt>
+<nt id="s50_533" cat="CORE">
+	<edge idref="s50_541"/>
+	<edge idref="s50_530"/>
+	<edge idref="s50_532"/>
+</nt>
+<nt id="s50_534" cat="CLAUSE">
+	<edge idref="s50_533"/>
+	<secedge idref="s50_8" label="TNS+IF"/>
+</nt>
+<nt id="s50_535" cat="SENTENCE">
+	<edge idref="s50_536"/>
+	<edge idref="s50_534"/>
+</nt>
+<nt id="s50_536" cat="LDP">
+	<edge idref="s50_514"/>
+</nt>
+<nt id="s50_537" cat="PP">
+	<edge idref="s50_9"/>
+	<edge idref="s50_538"/>
+</nt>
+<nt id="s50_538" cat="NP">
+	<edge idref="s50_539"/>
+	<secedge idref="s50_10" label="DEF"/>
+</nt>
+<nt id="s50_539" cat="COREn">
+	<edge idref="s50_540"/>
+	<secedge idref="s50_11" label="NUM"/>
+</nt>
+<nt id="s50_540" cat="NUCn">
+	<edge idref="s50_11"/>
+</nt>
+<nt id="s50_541" cat="AAJ">
+	<edge idref="s50_537"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s51"><graph><terminals>
+<t id="s51_1" word="As" pos="IN" ner="_"></t>
+<t id="s51_2" word="for" pos="IN" ner="_"></t>
+<t id="s51_3" word="Tom" pos="NNP" ner="PERSON"></t>
+<t id="s51_4" word="," pos="," ner="_"></t>
+<t id="s51_5" word="Mary" pos="NNP" ner="PERSON"></t>
+<t id="s51_6" word="talked" pos="VBD" ner="_"></t>
+<t id="s51_7" word="to" pos="TO" ner="_"></t>
+<t id="s51_8" word="him" pos="PRP" ner="_"></t>
+<t id="s51_9" word="," pos="," ner="_"></t>
+<t id="s51_10" word="but" pos="CC" ner="_"></t>
+<t id="s51_11" word="as" pos="IN" ner="_"></t>
+<t id="s51_12" word="for" pos="IN" ner="_"></t>
+<t id="s51_13" word="Sam" pos="NNP" ner="PERSON"></t>
+<t id="s51_14" word="," pos="," ner="_"></t>
+<t id="s51_15" word="she" pos="PRP" ner="_"></t>
+<t id="s51_16" word="refused" pos="VBD" ner="_"></t>
+<t id="s51_17" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s51_518" cat="P">
+	<edge idref="s51_2"/>
+	<edge idref="s51_1"/>
+</nt>
+<nt id="s51_519" cat="PP">
+	<edge idref="s51_518"/>
+	<edge idref="s51_520"/>
+</nt>
+<nt id="s51_520" cat="NP">
+	<edge idref="s51_521"/>
+</nt>
+<nt id="s51_521" cat="COREn">
+	<edge idref="s51_522"/>
+</nt>
+<nt id="s51_522" cat="NUCn">
+	<edge idref="s51_3"/>
+</nt>
+<nt id="s51_523" cat="ARG">
+	<edge idref="s51_524"/>
+</nt>
+<nt id="s51_524" cat="NP">
+	<edge idref="s51_525"/>
+</nt>
+<nt id="s51_525" cat="COREn">
+	<edge idref="s51_526"/>
+</nt>
+<nt id="s51_526" cat="NUCn">
+	<edge idref="s51_5"/>
+</nt>
+<nt id="s51_527" cat="NUC">
+	<edge idref="s51_6"/>
+</nt>
+<nt id="s51_528" cat="CORE">
+	<edge idref="s51_527"/>
+	<edge idref="s51_535"/>
+	<edge idref="s51_523"/>
+</nt>
+<nt id="s51_529" cat="CLAUSE">
+	<edge idref="s51_528"/>
+	<secedge idref="s51_6" label="TNS+IF"/>
+</nt>
+<nt id="s51_530" cat="SENTENCE">
+	<edge idref="s51_529"/>
+	<edge idref="s51_531"/>
+</nt>
+<nt id="s51_531" cat="LDP">
+	<edge idref="s51_519"/>
+</nt>
+<nt id="s51_532" cat="TEXT">
+	<edge idref="s51_547"/>
+	<edge idref="s51_530"/>
+	<edge idref="s51_536"/>
+</nt>
+<nt id="s51_533" cat="PP">
+	<edge idref="s51_7"/>
+	<edge idref="s51_534"/>
+</nt>
+<nt id="s51_534" cat="NP">
+	<edge idref="s51_8"/>
+</nt>
+<nt id="s51_535" cat="ARG">
+	<edge idref="s51_533"/>
+</nt>
+<nt id="s51_536" cat="CONJ">
+	<edge idref="s51_10"/>
+</nt>
+<nt id="s51_537" cat="P">
+	<edge idref="s51_11"/>
+	<edge idref="s51_12"/>
+</nt>
+<nt id="s51_538" cat="PP">
+	<edge idref="s51_539"/>
+	<edge idref="s51_537"/>
+</nt>
+<nt id="s51_539" cat="NP">
+	<edge idref="s51_540"/>
+</nt>
+<nt id="s51_540" cat="COREn">
+	<edge idref="s51_541"/>
+</nt>
+<nt id="s51_541" cat="NUCn">
+	<edge idref="s51_13"/>
+</nt>
+<nt id="s51_542" cat="ARG">
+	<edge idref="s51_543"/>
+</nt>
+<nt id="s51_543" cat="NP">
+	<edge idref="s51_15"/>
+</nt>
+<nt id="s51_544" cat="NUC">
+	<edge idref="s51_16"/>
+</nt>
+<nt id="s51_545" cat="CORE">
+	<edge idref="s51_544"/>
+	<edge idref="s51_542"/>
+</nt>
+<nt id="s51_546" cat="CLAUSE">
+	<edge idref="s51_545"/>
+	<secedge idref="s51_16" label="TNS+IF"/>
+</nt>
+<nt id="s51_547" cat="SENTENCE">
+	<edge idref="s51_548"/>
+	<edge idref="s51_546"/>
+</nt>
+<nt id="s51_548" cat="LDP">
+	<edge idref="s51_538"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s52"><graph><terminals>
+<t id="s52_1" word="Mary" pos="NNP" ner="PERSON"></t>
+<t id="s52_2" word="called" pos="VBD" ner="_"></t>
+<t id="s52_3" word="Fred" pos="NNP" ner="PERSON"></t>
+<t id="s52_4" word="yesterday" pos="RB" ner="DATE"></t>
+<t id="s52_5" word="and" pos="CC" ner="_"></t>
+<t id="s52_6" word="she" pos="PRP" ner="_"></t>
+<t id="s52_7" word="asked" pos="VBD" ner="_"></t>
+<t id="s52_8" word="him" pos="PRP" ner="_"></t>
+<t id="s52_9" word="to" pos="TO" ner="_"></t>
+<t id="s52_10" word="paint" pos="VB" ner="_"></t>
+<t id="s52_11" word="her" pos="PRP$" ner="_"></t>
+<t id="s52_12" word="room" pos="NN" ner="_"></t>
+<t id="s52_13" word="white" pos="JJ" ner="_"></t>
+<t id="s52_14" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s52_515" cat="ARG">
+	<edge idref="s52_516"/>
+</nt>
+<nt id="s52_516" cat="NP">
+	<edge idref="s52_517"/>
+</nt>
+<nt id="s52_517" cat="COREn">
+	<edge idref="s52_518"/>
+</nt>
+<nt id="s52_518" cat="NUCn">
+	<edge idref="s52_1"/>
+</nt>
+<nt id="s52_519" cat="NUC">
+	<edge idref="s52_2"/>
+</nt>
+<nt id="s52_520" cat="CORE">
+	<edge idref="s52_527"/>
+	<edge idref="s52_523"/>
+	<edge idref="s52_515"/>
+	<edge idref="s52_519"/>
+	<secedge idref="s52_4" label="TEMP"/>
+</nt>
+<nt id="s52_521" cat="CLAUSE">
+	<edge idref="s52_520"/>
+	<secedge idref="s52_2" label="IF+TNS"/>
+</nt>
+<nt id="s52_522" cat="SENTENCE">
+	<edge idref="s52_534"/>
+	<edge idref="s52_521"/>
+</nt>
+<nt id="s52_523" cat="ARG">
+	<edge idref="s52_524"/>
+</nt>
+<nt id="s52_524" cat="NP">
+	<edge idref="s52_525"/>
+</nt>
+<nt id="s52_525" cat="COREn">
+	<edge idref="s52_526"/>
+</nt>
+<nt id="s52_526" cat="NUCn">
+	<edge idref="s52_3"/>
+</nt>
+<nt id="s52_527" cat="PERIPHERY">
+	<edge idref="s52_528"/>
+</nt>
+<nt id="s52_528" cat="ADV">
+	<edge idref="s52_4"/>
+</nt>
+<nt id="s52_529" cat="CLM">
+	<edge idref="s52_5"/>
+</nt>
+<nt id="s52_530" cat="ARG">
+	<edge idref="s52_531"/>
+</nt>
+<nt id="s52_531" cat="NP">
+	<edge idref="s52_6"/>
+</nt>
+<nt id="s52_532" cat="NUC">
+	<edge idref="s52_7"/>
+</nt>
+<nt id="s52_533" cat="CORE">
+	<edge idref="s52_530"/>
+	<edge idref="s52_535"/>
+	<edge idref="s52_532"/>
+</nt>
+<nt id="s52_534" cat="CLAUSE">
+	<edge idref="s52_529"/>
+	<edge idref="s52_533"/>
+	<edge idref="s52_540"/>
+	<secedge idref="s52_7" label="IF+TNS"/>
+</nt>
+<nt id="s52_535" cat="ARG">
+	<edge idref="s52_536"/>
+</nt>
+<nt id="s52_536" cat="NP">
+	<edge idref="s52_8"/>
+</nt>
+<nt id="s52_537" cat="CLM">
+	<edge idref="s52_9"/>
+</nt>
+<nt id="s52_538" cat="NUC">
+	<edge idref="s52_10"/>
+</nt>
+<nt id="s52_539" cat="NUC">
+	<edge idref="s52_538"/>
+	<edge idref="s52_547"/>
+</nt>
+<nt id="s52_540" cat="CORE">
+	<edge idref="s52_546"/>
+	<edge idref="s52_537"/>
+	<edge idref="s52_539"/>
+</nt>
+<nt id="s52_541" cat="NP">
+	<edge idref="s52_11"/>
+</nt>
+<nt id="s52_542" cat="NP">
+	<edge idref="s52_543"/>
+	<edge idref="s52_545"/>
+	<secedge idref="s52_541" label="DEF"/>
+</nt>
+<nt id="s52_543" cat="COREn">
+	<edge idref="s52_544"/>
+	<secedge idref="s52_12" label="NUM"/>
+</nt>
+<nt id="s52_544" cat="NUCn">
+	<edge idref="s52_12"/>
+</nt>
+<nt id="s52_545" cat="NPIP">
+	<edge idref="s52_541"/>
+</nt>
+<nt id="s52_546" cat="ARG">
+	<edge idref="s52_542"/>
+</nt>
+<nt id="s52_547" cat="NUC">
+	<edge idref="s52_13"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s53"><graph><terminals>
+<t id="s53_1" word="That" pos="IN" ner="_"></t>
+<t id="s53_2" word="she" pos="PRP" ner="_"></t>
+<t id="s53_3" word="arrived" pos="VBD" ner="_"></t>
+<t id="s53_4" word="late" pos="JJ" ner="_"></t>
+<t id="s53_5" word="shocked" pos="VB" ner="_"></t>
+<t id="s53_6" word="everyone" pos="NN" ner="_"></t>
+<t id="s53_7" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s53_508" cat="CLM">
+	<edge idref="s53_1"/>
+</nt>
+<nt id="s53_509" cat="ARG">
+	<edge idref="s53_510"/>
+</nt>
+<nt id="s53_510" cat="NP">
+	<edge idref="s53_2"/>
+</nt>
+<nt id="s53_511" cat="NUC">
+	<edge idref="s53_3"/>
+</nt>
+<nt id="s53_512" cat="CORE">
+	<edge idref="s53_509"/>
+	<edge idref="s53_514"/>
+	<edge idref="s53_511"/>
+</nt>
+<nt id="s53_513" cat="CLAUSE">
+	<edge idref="s53_512"/>
+	<edge idref="s53_508"/>
+	<secedge idref="s53_3" label="TNS"/>
+</nt>
+<nt id="s53_514" cat="PERIPHERY">
+	<edge idref="s53_515"/>
+</nt>
+<nt id="s53_515" cat="ADV">
+	<edge idref="s53_4"/>
+</nt>
+<nt id="s53_516" cat="ARG">
+	<edge idref="s53_513"/>
+</nt>
+<nt id="s53_517" cat="NUC">
+	<edge idref="s53_5"/>
+</nt>
+<nt id="s53_518" cat="CORE">
+	<edge idref="s53_516"/>
+	<edge idref="s53_521"/>
+	<edge idref="s53_517"/>
+</nt>
+<nt id="s53_519" cat="CLAUSE">
+	<edge idref="s53_518"/>
+</nt>
+<nt id="s53_520" cat="SENTENCE">
+	<edge idref="s53_519"/>
+</nt>
+<nt id="s53_521" cat="ARG">
+	<edge idref="s53_522"/>
+</nt>
+<nt id="s53_522" cat="NP">
+	<edge idref="s53_523"/>
+</nt>
+<nt id="s53_523" cat="COREn">
+	<edge idref="s53_524"/>
+	<secedge idref="s53_6" label="NUM"/>
+</nt>
+<nt id="s53_524" cat="NUCn">
+	<edge idref="s53_6"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s54"><graph><terminals>
+<t id="s54_1" word="It" pos="PRP" ner="_"></t>
+<t id="s54_2" word="shocked" pos="VBD" ner="_"></t>
+<t id="s54_3" word="everyone" pos="NN" ner="_"></t>
+<t id="s54_4" word="that" pos="IN" ner="_"></t>
+<t id="s54_5" word="she" pos="PRP" ner="_"></t>
+<t id="s54_6" word="arrived" pos="VBD" ner="_"></t>
+<t id="s54_7" word="late" pos="RB" ner="_"></t>
+<t id="s54_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s54_509" cat="ARG">
+	<edge idref="s54_510"/>
+</nt>
+<nt id="s54_510" cat="NP">
+	<edge idref="s54_1"/>
+</nt>
+<nt id="s54_511" cat="NUC">
+	<edge idref="s54_2"/>
+</nt>
+<nt id="s54_512" cat="CORE">
+	<edge idref="s54_509"/>
+	<edge idref="s54_515"/>
+	<edge idref="s54_511"/>
+</nt>
+<nt id="s54_513" cat="CLAUSE">
+	<edge idref="s54_524"/>
+	<edge idref="s54_512"/>
+	<secedge idref="s54_2" label="IF+TNS"/>
+</nt>
+<nt id="s54_514" cat="SENTENCE">
+	<edge idref="s54_513"/>
+</nt>
+<nt id="s54_515" cat="ARG">
+	<edge idref="s54_516"/>
+</nt>
+<nt id="s54_516" cat="NP">
+	<edge idref="s54_517"/>
+</nt>
+<nt id="s54_517" cat="COREn">
+	<edge idref="s54_518"/>
+	<secedge idref="s54_3" label="NUM"/>
+</nt>
+<nt id="s54_518" cat="NUCn">
+	<edge idref="s54_3"/>
+</nt>
+<nt id="s54_519" cat="CLM">
+	<edge idref="s54_4"/>
+</nt>
+<nt id="s54_520" cat="ARG">
+	<edge idref="s54_521"/>
+</nt>
+<nt id="s54_521" cat="NP">
+	<edge idref="s54_5"/>
+</nt>
+<nt id="s54_522" cat="NUC">
+	<edge idref="s54_6"/>
+</nt>
+<nt id="s54_523" cat="CORE">
+	<edge idref="s54_525"/>
+	<edge idref="s54_522"/>
+	<edge idref="s54_520"/>
+</nt>
+<nt id="s54_524" cat="CLAUSE">
+	<edge idref="s54_523"/>
+	<edge idref="s54_519"/>
+	<secedge idref="s54_6" label="TNS"/>
+</nt>
+<nt id="s54_525" cat="PERIPHERY">
+	<edge idref="s54_526"/>
+</nt>
+<nt id="s54_526" cat="ADV">
+	<edge idref="s54_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s55"><graph><terminals>
+<t id="s55_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s55_2" word="told" pos="VBD" ner="_"></t>
+<t id="s55_3" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s55_4" word="after" pos="IN" ner="_"></t>
+<t id="s55_5" word="work" pos="NN" ner="_"></t>
+<t id="s55_6" word="that" pos="IN" ner="_"></t>
+<t id="s55_7" word="she" pos="PRP" ner="_"></t>
+<t id="s55_8" word="will" pos="MD" ner="_"></t>
+<t id="s55_9" word="arrive" pos="VB" ner="_"></t>
+<t id="s55_10" word="at" pos="IN" ner="_"></t>
+<t id="s55_11" word="the" pos="DT" ner="_"></t>
+<t id="s55_12" word="party" pos="NN" ner="_"></t>
+<t id="s55_13" word="late" pos="RB" ner="_"></t>
+<t id="s55_14" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s55_515" cat="ARG">
+	<edge idref="s55_516"/>
+</nt>
+<nt id="s55_516" cat="NP">
+	<edge idref="s55_517"/>
+</nt>
+<nt id="s55_517" cat="COREn">
+	<edge idref="s55_518"/>
+</nt>
+<nt id="s55_518" cat="NUCn">
+	<edge idref="s55_1"/>
+</nt>
+<nt id="s55_519" cat="NUC">
+	<edge idref="s55_2"/>
+</nt>
+<nt id="s55_520" cat="CORE">
+	<edge idref="s55_523"/>
+	<edge idref="s55_534"/>
+	<edge idref="s55_519"/>
+	<edge idref="s55_515"/>
+	<edge idref="s55_548"/>
+</nt>
+<nt id="s55_521" cat="CLAUSE">
+	<edge idref="s55_520"/>
+	<secedge idref="s55_2" label="TNS+IF"/>
+</nt>
+<nt id="s55_522" cat="SENTENCE">
+	<edge idref="s55_521"/>
+</nt>
+<nt id="s55_523" cat="ARG">
+	<edge idref="s55_524"/>
+</nt>
+<nt id="s55_524" cat="NP">
+	<edge idref="s55_525"/>
+</nt>
+<nt id="s55_525" cat="COREn">
+	<edge idref="s55_526"/>
+</nt>
+<nt id="s55_526" cat="NUCn">
+	<edge idref="s55_3"/>
+</nt>
+<nt id="s55_527" cat="NUC">
+	<edge idref="s55_4"/>
+</nt>
+<nt id="s55_528" cat="CORE">
+	<edge idref="s55_531"/>
+	<edge idref="s55_527"/>
+</nt>
+<nt id="s55_529" cat="PP">
+	<edge idref="s55_528"/>
+</nt>
+<nt id="s55_530" cat="NP">
+	<edge idref="s55_532"/>
+</nt>
+<nt id="s55_531" cat="ARG">
+	<edge idref="s55_530"/>
+</nt>
+<nt id="s55_532" cat="COREn">
+	<edge idref="s55_533"/>
+	<secedge idref="s55_5" label="NUM"/>
+</nt>
+<nt id="s55_533" cat="NUCn">
+	<edge idref="s55_5"/>
+</nt>
+<nt id="s55_534" cat="PERIPHERY">
+	<edge idref="s55_529"/>
+</nt>
+<nt id="s55_535" cat="CLM">
+	<edge idref="s55_6"/>
+</nt>
+<nt id="s55_536" cat="ARG">
+	<edge idref="s55_537"/>
+</nt>
+<nt id="s55_537" cat="NP">
+	<edge idref="s55_7"/>
+</nt>
+<nt id="s55_538" cat="NUC">
+	<edge idref="s55_9"/>
+</nt>
+<nt id="s55_539" cat="CORE">
+	<edge idref="s55_545"/>
+	<edge idref="s55_538"/>
+	<edge idref="s55_536"/>
+	<edge idref="s55_546"/>
+</nt>
+<nt id="s55_540" cat="CLAUSE">
+	<edge idref="s55_535"/>
+	<edge idref="s55_539"/>
+	<secedge idref="s55_8" label="TNS"/>
+</nt>
+<nt id="s55_541" cat="PP">
+	<edge idref="s55_10"/>
+	<edge idref="s55_542"/>
+</nt>
+<nt id="s55_542" cat="NP">
+	<edge idref="s55_543"/>
+	<secedge idref="s55_11" label="DEF"/>
+</nt>
+<nt id="s55_543" cat="COREn">
+	<edge idref="s55_544"/>
+	<secedge idref="s55_12" label="NUM"/>
+</nt>
+<nt id="s55_544" cat="NUCn">
+	<edge idref="s55_12"/>
+</nt>
+<nt id="s55_545" cat="ARG">
+	<edge idref="s55_541"/>
+</nt>
+<nt id="s55_546" cat="PERIPHERY">
+	<edge idref="s55_547"/>
+</nt>
+<nt id="s55_547" cat="ADV">
+	<edge idref="s55_13"/>
+</nt>
+<nt id="s55_548" cat="ARG">
+	<edge idref="s55_540"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s56"><graph><terminals>
+<t id="s56_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s56_2" word="must" pos="MD" ner="_"></t>
+<t id="s56_3" word="go" pos="VB" ner="_"></t>
+<t id="s56_4" word="to" pos="TO" ner="_"></t>
+<t id="s56_5" word="try" pos="VB" ner="_"></t>
+<t id="s56_6" word="to" pos="TO" ner="_"></t>
+<t id="s56_7" word="wash" pos="VB" ner="_"></t>
+<t id="s56_8" word="the" pos="DT" ner="_"></t>
+<t id="s56_9" word="car" pos="NN" ner="_"></t>
+<t id="s56_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s56_511" cat="ARG">
+	<edge idref="s56_512"/>
+</nt>
+<nt id="s56_512" cat="NP">
+	<edge idref="s56_513"/>
+</nt>
+<nt id="s56_513" cat="COREn">
+	<edge idref="s56_514"/>
+</nt>
+<nt id="s56_514" cat="NUCn">
+	<edge idref="s56_1"/>
+</nt>
+<nt id="s56_515" cat="NUC">
+	<edge idref="s56_3"/>
+</nt>
+<nt id="s56_516" cat="CORE">
+	<edge idref="s56_511"/>
+	<edge idref="s56_515"/>
+</nt>
+<nt id="s56_517" cat="CORE">
+	<edge idref="s56_523"/>
+	<edge idref="s56_516"/>
+	<secedge idref="s56_2" label="MOD"/>
+</nt>
+<nt id="s56_518" cat="CLAUSE">
+	<edge idref="s56_517"/>
+	<secedge idref="s56_2" label="IF+TNS"/>
+</nt>
+<nt id="s56_519" cat="SENTENCE">
+	<edge idref="s56_518"/>
+</nt>
+<nt id="s56_520" cat="CLM">
+	<edge idref="s56_4"/>
+</nt>
+<nt id="s56_521" cat="NUC">
+	<edge idref="s56_5"/>
+</nt>
+<nt id="s56_522" cat="CORE">
+	<edge idref="s56_521"/>
+</nt>
+<nt id="s56_523" cat="CORE">
+	<edge idref="s56_520"/>
+	<edge idref="s56_522"/>
+	<edge idref="s56_526"/>
+</nt>
+<nt id="s56_524" cat="CLM">
+	<edge idref="s56_6"/>
+</nt>
+<nt id="s56_525" cat="NUC">
+	<edge idref="s56_7"/>
+</nt>
+<nt id="s56_526" cat="CORE">
+	<edge idref="s56_527"/>
+	<edge idref="s56_525"/>
+	<edge idref="s56_524"/>
+</nt>
+<nt id="s56_527" cat="ARG">
+	<edge idref="s56_528"/>
+</nt>
+<nt id="s56_528" cat="NP">
+	<edge idref="s56_529"/>
+	<secedge idref="s56_8" label="DEF"/>
+</nt>
+<nt id="s56_529" cat="COREn">
+	<edge idref="s56_530"/>
+	<secedge idref="s56_9" label="NUM"/>
+</nt>
+<nt id="s56_530" cat="NUCn">
+	<edge idref="s56_9"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s57"><graph><terminals>
+<t id="s57_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s57_2" word="must" pos="MD" ner="_"></t>
+<t id="s57_3" word="ask" pos="VB" ner="_"></t>
+<t id="s57_4" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s57_5" word="to" pos="TO" ner="_"></t>
+<t id="s57_6" word="wash" pos="VB" ner="_"></t>
+<t id="s57_7" word="the" pos="DT" ner="_"></t>
+<t id="s57_8" word="car" pos="NN" ner="_"></t>
+<t id="s57_9" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s57_510" cat="ARG">
+	<edge idref="s57_511"/>
+</nt>
+<nt id="s57_511" cat="NP">
+	<edge idref="s57_512"/>
+</nt>
+<nt id="s57_512" cat="COREn">
+	<edge idref="s57_513"/>
+</nt>
+<nt id="s57_513" cat="NUCn">
+	<edge idref="s57_1"/>
+</nt>
+<nt id="s57_514" cat="NUC">
+	<edge idref="s57_3"/>
+</nt>
+<nt id="s57_515" cat="CORE">
+	<edge idref="s57_514"/>
+	<edge idref="s57_510"/>
+	<edge idref="s57_518"/>
+	<secedge idref="s57_2" label="MOD"/>
+</nt>
+<nt id="s57_516" cat="CLAUSE">
+	<edge idref="s57_524"/>
+	<edge idref="s57_515"/>
+	<secedge idref="s57_2" label="IF+TNS"/>
+</nt>
+<nt id="s57_517" cat="SENTENCE">
+	<edge idref="s57_516"/>
+</nt>
+<nt id="s57_518" cat="ARG">
+	<edge idref="s57_519"/>
+</nt>
+<nt id="s57_519" cat="NP">
+	<edge idref="s57_520"/>
+</nt>
+<nt id="s57_520" cat="COREn">
+	<edge idref="s57_521"/>
+</nt>
+<nt id="s57_521" cat="NUCn">
+	<edge idref="s57_4"/>
+</nt>
+<nt id="s57_522" cat="CLM">
+	<edge idref="s57_5"/>
+</nt>
+<nt id="s57_523" cat="NUC">
+	<edge idref="s57_6"/>
+</nt>
+<nt id="s57_524" cat="CORE">
+	<edge idref="s57_523"/>
+	<edge idref="s57_525"/>
+	<edge idref="s57_522"/>
+</nt>
+<nt id="s57_525" cat="ARG">
+	<edge idref="s57_526"/>
+</nt>
+<nt id="s57_526" cat="NP">
+	<edge idref="s57_527"/>
+	<secedge idref="s57_7" label="DEF"/>
+</nt>
+<nt id="s57_527" cat="COREn">
+	<edge idref="s57_528"/>
+	<secedge idref="s57_8" label="NUM"/>
+</nt>
+<nt id="s57_528" cat="NUCn">
+	<edge idref="s57_8"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s58"><graph><terminals>
+<t id="s58_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s58_2" word="told" pos="VBD" ner="_"></t>
+<t id="s58_3" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s58_4" word="that" pos="IN" ner="_"></t>
+<t id="s58_5" word="she" pos="PRP" ner="_"></t>
+<t id="s58_6" word="will" pos="MD" ner="_"></t>
+<t id="s58_7" word="arrive" pos="VB" ner="_"></t>
+<t id="s58_8" word="at" pos="IN" ner="_"></t>
+<t id="s58_9" word="the" pos="DT" ner="_"></t>
+<t id="s58_10" word="party" pos="NN" ner="_"></t>
+<t id="s58_11" word="late" pos="RB" ner="_"></t>
+<t id="s58_12" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s58_513" cat="ARG">
+	<edge idref="s58_514"/>
+</nt>
+<nt id="s58_514" cat="NP">
+	<edge idref="s58_515"/>
+</nt>
+<nt id="s58_515" cat="COREn">
+	<edge idref="s58_516"/>
+</nt>
+<nt id="s58_516" cat="NUCn">
+	<edge idref="s58_1"/>
+</nt>
+<nt id="s58_517" cat="NUC">
+	<edge idref="s58_2"/>
+</nt>
+<nt id="s58_518" cat="CORE">
+	<edge idref="s58_538"/>
+	<edge idref="s58_513"/>
+	<edge idref="s58_521"/>
+	<edge idref="s58_517"/>
+</nt>
+<nt id="s58_519" cat="CLAUSE">
+	<edge idref="s58_518"/>
+	<secedge idref="s58_2" label="TNS+IF"/>
+</nt>
+<nt id="s58_520" cat="SENTENCE">
+	<edge idref="s58_519"/>
+</nt>
+<nt id="s58_521" cat="ARG">
+	<edge idref="s58_522"/>
+</nt>
+<nt id="s58_522" cat="NP">
+	<edge idref="s58_523"/>
+</nt>
+<nt id="s58_523" cat="COREn">
+	<edge idref="s58_524"/>
+</nt>
+<nt id="s58_524" cat="NUCn">
+	<edge idref="s58_3"/>
+</nt>
+<nt id="s58_525" cat="CLM">
+	<edge idref="s58_4"/>
+</nt>
+<nt id="s58_526" cat="ARG">
+	<edge idref="s58_527"/>
+</nt>
+<nt id="s58_527" cat="NP">
+	<edge idref="s58_5"/>
+</nt>
+<nt id="s58_528" cat="NUC">
+	<edge idref="s58_7"/>
+</nt>
+<nt id="s58_529" cat="CORE">
+	<edge idref="s58_536"/>
+	<edge idref="s58_526"/>
+	<edge idref="s58_535"/>
+	<edge idref="s58_528"/>
+</nt>
+<nt id="s58_530" cat="CLAUSE">
+	<edge idref="s58_525"/>
+	<edge idref="s58_529"/>
+	<secedge idref="s58_6" label="TNS"/>
+</nt>
+<nt id="s58_531" cat="PP">
+	<edge idref="s58_8"/>
+	<edge idref="s58_532"/>
+</nt>
+<nt id="s58_532" cat="NP">
+	<edge idref="s58_533"/>
+	<secedge idref="s58_9" label="DEF"/>
+</nt>
+<nt id="s58_533" cat="COREn">
+	<edge idref="s58_534"/>
+	<secedge idref="s58_10" label="NUM"/>
+</nt>
+<nt id="s58_534" cat="NUCn">
+	<edge idref="s58_10"/>
+</nt>
+<nt id="s58_535" cat="ARG">
+	<edge idref="s58_531"/>
+</nt>
+<nt id="s58_536" cat="PERIPHERY">
+	<edge idref="s58_537"/>
+</nt>
+<nt id="s58_537" cat="ADV">
+	<edge idref="s58_11"/>
+</nt>
+<nt id="s58_538" cat="ARG">
+	<edge idref="s58_530"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s59"><graph><terminals>
+<t id="s59_1" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s59_2" word="saw" pos="VBD" ner="_"></t>
+<t id="s59_3" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s59_4" word="after" pos="IN" ner="_"></t>
+<t id="s59_5" word="she" pos="PRP" ner="_"></t>
+<t id="s59_6" word="arrived" pos="VBD" ner="_"></t>
+<t id="s59_7" word="at" pos="IN" ner="_"></t>
+<t id="s59_8" word="the" pos="DT" ner="_"></t>
+<t id="s59_9" word="party" pos="NN" ner="_"></t>
+<t id="s59_10" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s59_511" cat="ARG">
+	<edge idref="s59_512"/>
+</nt>
+<nt id="s59_512" cat="NP">
+	<edge idref="s59_513"/>
+</nt>
+<nt id="s59_513" cat="COREn">
+	<edge idref="s59_514"/>
+</nt>
+<nt id="s59_514" cat="NUCn">
+	<edge idref="s59_1"/>
+</nt>
+<nt id="s59_515" cat="NUC">
+	<edge idref="s59_2"/>
+</nt>
+<nt id="s59_516" cat="CORE">
+	<edge idref="s59_537"/>
+	<edge idref="s59_511"/>
+	<edge idref="s59_519"/>
+	<edge idref="s59_515"/>
+</nt>
+<nt id="s59_517" cat="CLAUSE">
+	<edge idref="s59_516"/>
+	<secedge idref="s59_2" label="TNS+IF"/>
+</nt>
+<nt id="s59_518" cat="SENTENCE">
+	<edge idref="s59_517"/>
+</nt>
+<nt id="s59_519" cat="ARG">
+	<edge idref="s59_520"/>
+</nt>
+<nt id="s59_520" cat="NP">
+	<edge idref="s59_521"/>
+</nt>
+<nt id="s59_521" cat="COREn">
+	<edge idref="s59_522"/>
+</nt>
+<nt id="s59_522" cat="NUCn">
+	<edge idref="s59_3"/>
+</nt>
+<nt id="s59_523" cat="NUC">
+	<edge idref="s59_4"/>
+</nt>
+<nt id="s59_524" cat="PP">
+	<edge idref="s59_536"/>
+</nt>
+<nt id="s59_525" cat="ARG">
+	<edge idref="s59_526"/>
+</nt>
+<nt id="s59_526" cat="NP">
+	<edge idref="s59_5"/>
+</nt>
+<nt id="s59_527" cat="NUC">
+	<edge idref="s59_6"/>
+</nt>
+<nt id="s59_528" cat="CORE">
+	<edge idref="s59_534"/>
+	<edge idref="s59_525"/>
+	<edge idref="s59_527"/>
+</nt>
+<nt id="s59_529" cat="CLAUSE">
+	<edge idref="s59_528"/>
+	<secedge idref="s59_6" label="TNS"/>
+</nt>
+<nt id="s59_530" cat="PP">
+	<edge idref="s59_7"/>
+	<edge idref="s59_531"/>
+</nt>
+<nt id="s59_531" cat="NP">
+	<edge idref="s59_532"/>
+	<secedge idref="s59_8" label="DEF"/>
+</nt>
+<nt id="s59_532" cat="COREn">
+	<edge idref="s59_533"/>
+	<secedge idref="s59_9" label="NUM"/>
+</nt>
+<nt id="s59_533" cat="NUCn">
+	<edge idref="s59_9"/>
+</nt>
+<nt id="s59_534" cat="ARG">
+	<edge idref="s59_530"/>
+</nt>
+<nt id="s59_535" cat="ARG">
+	<edge idref="s59_529"/>
+</nt>
+<nt id="s59_536" cat="CORE">
+	<edge idref="s59_535"/>
+	<edge idref="s59_523"/>
+</nt>
+<nt id="s59_537" cat="PERIPHERY">
+	<edge idref="s59_524"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s60"><graph><terminals>
+<t id="s60_1" word="the" pos="DT" ner="_"></t>
+<t id="s60_2" word="tall" pos="JJ" ner="_"></t>
+<t id="s60_3" word="woman" pos="NN" ner="_"></t>
+<t id="s60_4" word="and" pos="CC" ner="_"></t>
+<t id="s60_5" word="the" pos="DT" ner="_"></t>
+<t id="s60_6" word="happy" pos="JJ" ner="_"></t>
+<t id="s60_7" word="man" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s60_508" cat="ADJ">
+	<edge idref="s60_2"/>
+</nt>
+<nt id="s60_509" cat="NP">
+	<edge idref="s60_510"/>
+	<secedge idref="s60_1" label="DEF"/>
+</nt>
+<nt id="s60_510" cat="COREn">
+	<edge idref="s60_511"/>
+	<secedge idref="s60_3" label="NUM"/>
+</nt>
+<nt id="s60_511" cat="NUCn">
+	<edge idref="s60_512"/>
+	<edge idref="s60_3"/>
+</nt>
+<nt id="s60_512" cat="PERIPHERY">
+	<edge idref="s60_508"/>
+</nt>
+<nt id="s60_513" cat="NP">
+	<edge idref="s60_509"/>
+	<edge idref="s60_516"/>
+	<edge idref="s60_514"/>
+</nt>
+<nt id="s60_514" cat="CONJ">
+	<edge idref="s60_4"/>
+</nt>
+<nt id="s60_515" cat="ADJ">
+	<edge idref="s60_6"/>
+</nt>
+<nt id="s60_516" cat="NP">
+	<edge idref="s60_517"/>
+	<secedge idref="s60_5" label="DEF"/>
+</nt>
+<nt id="s60_517" cat="COREn">
+	<edge idref="s60_518"/>
+	<secedge idref="s60_7" label="NUM"/>
+</nt>
+<nt id="s60_518" cat="NUCn">
+	<edge idref="s60_519"/>
+	<edge idref="s60_7"/>
+</nt>
+<nt id="s60_519" cat="PERIPHERY">
+	<edge idref="s60_515"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s61"><graph><terminals>
+<t id="s61_1" word="the" pos="DT" ner="_"></t>
+<t id="s61_2" word="tall" pos="JJ" ner="_"></t>
+<t id="s61_3" word="woman" pos="NN" ner="_"></t>
+<t id="s61_4" word="and" pos="CC" ner="_"></t>
+<t id="s61_5" word="happy" pos="JJ" ner="_"></t>
+<t id="s61_6" word="man" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s61_507" cat="ADJ">
+	<edge idref="s61_2"/>
+</nt>
+<nt id="s61_508" cat="NP">
+	<edge idref="s61_512"/>
+	<edge idref="s61_514"/>
+	<edge idref="s61_509"/>
+	<secedge idref="s61_1" label="DEF"/>
+</nt>
+<nt id="s61_509" cat="COREn">
+	<edge idref="s61_510"/>
+	<secedge idref="s61_3" label="NUM"/>
+</nt>
+<nt id="s61_510" cat="NUCn">
+	<edge idref="s61_3"/>
+	<edge idref="s61_511"/>
+</nt>
+<nt id="s61_511" cat="PERIPHERY">
+	<edge idref="s61_507"/>
+</nt>
+<nt id="s61_512" cat="CONJ">
+	<edge idref="s61_4"/>
+</nt>
+<nt id="s61_513" cat="ADJ">
+	<edge idref="s61_5"/>
+</nt>
+<nt id="s61_514" cat="COREn">
+	<edge idref="s61_515"/>
+	<secedge idref="s61_6" label="NUM"/>
+</nt>
+<nt id="s61_515" cat="NUCn">
+	<edge idref="s61_6"/>
+	<edge idref="s61_516"/>
+</nt>
+<nt id="s61_516" cat="PERIPHERY">
+	<edge idref="s61_513"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s62"><graph><terminals>
+<t id="s62_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s62_2" word="," pos="," ner="_"></t>
+<t id="s62_3" word="who" pos="WP" ner="_"></t>
+<t id="s62_4" word="loves" pos="VBZ" ner="_"></t>
+<t id="s62_5" word="soccer" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s62_506" cat="NP">
+	<edge idref="s62_509"/>
+	<edge idref="s62_507"/>
+</nt>
+<nt id="s62_507" cat="COREn">
+	<edge idref="s62_508"/>
+</nt>
+<nt id="s62_508" cat="NUCn">
+	<edge idref="s62_1"/>
+</nt>
+<nt id="s62_509" cat="PERIPHERY">
+	<edge idref="s62_514"/>
+</nt>
+<nt id="s62_510" cat="NP">
+	<edge idref="s62_3"/>
+</nt>
+<nt id="s62_511" cat="PrCS">
+	<edge idref="s62_510"/>
+</nt>
+<nt id="s62_512" cat="NUC">
+	<edge idref="s62_4"/>
+</nt>
+<nt id="s62_513" cat="CORE">
+	<edge idref="s62_515"/>
+	<edge idref="s62_512"/>
+</nt>
+<nt id="s62_514" cat="CLAUSE">
+	<edge idref="s62_513"/>
+	<edge idref="s62_511"/>
+	<secedge idref="s62_4" label="TNS"/>
+</nt>
+<nt id="s62_515" cat="ARG">
+	<edge idref="s62_516"/>
+</nt>
+<nt id="s62_516" cat="NP">
+	<edge idref="s62_517"/>
+</nt>
+<nt id="s62_517" cat="COREn">
+	<edge idref="s62_518"/>
+	<secedge idref="s62_5" label="NUM"/>
+</nt>
+<nt id="s62_518" cat="NUCn">
+	<edge idref="s62_5"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s63"><graph><terminals>
+<t id="s63_1" word="the" pos="DT" ner="_"></t>
+<t id="s63_2" word="order" pos="NN" ner="_"></t>
+<t id="s63_3" word="from" pos="IN" ner="_"></t>
+<t id="s63_4" word="the" pos="DT" ner="_"></t>
+<t id="s63_5" word="general" pos="NN" ner="_"></t>
+<t id="s63_6" word="to" pos="TO" ner="_"></t>
+<t id="s63_7" word="attack" pos="VB" ner="_"></t>
+<t id="s63_8" word="the" pos="DT" ner="_"></t>
+<t id="s63_9" word="city" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s63_510" cat="NP">
+	<edge idref="s63_511"/>
+	<secedge idref="s63_1" label="DEF"/>
+</nt>
+<nt id="s63_511" cat="COREn">
+	<edge idref="s63_513"/>
+	<edge idref="s63_523"/>
+	<edge idref="s63_512"/>
+	<secedge idref="s63_2" label="NUM"/>
+</nt>
+<nt id="s63_512" cat="NUCn">
+	<edge idref="s63_2"/>
+</nt>
+<nt id="s63_513" cat="PERIPHERY">
+	<edge idref="s63_516"/>
+</nt>
+<nt id="s63_514" cat="NUC">
+	<edge idref="s63_3"/>
+</nt>
+<nt id="s63_515" cat="CORE">
+	<edge idref="s63_514"/>
+	<edge idref="s63_518"/>
+</nt>
+<nt id="s63_516" cat="PP">
+	<edge idref="s63_515"/>
+</nt>
+<nt id="s63_517" cat="NP">
+	<edge idref="s63_519"/>
+	<secedge idref="s63_4" label="DEF"/>
+</nt>
+<nt id="s63_518" cat="ARG">
+	<edge idref="s63_517"/>
+</nt>
+<nt id="s63_519" cat="COREn">
+	<edge idref="s63_520"/>
+	<secedge idref="s63_5" label="NUM"/>
+</nt>
+<nt id="s63_520" cat="NUCn">
+	<edge idref="s63_5"/>
+</nt>
+<nt id="s63_521" cat="CLM">
+	<edge idref="s63_6"/>
+</nt>
+<nt id="s63_522" cat="NUC">
+	<edge idref="s63_7"/>
+</nt>
+<nt id="s63_523" cat="CORE">
+	<edge idref="s63_522"/>
+	<edge idref="s63_521"/>
+	<edge idref="s63_524"/>
+</nt>
+<nt id="s63_524" cat="ARG">
+	<edge idref="s63_525"/>
+</nt>
+<nt id="s63_525" cat="NP">
+	<edge idref="s63_526"/>
+	<secedge idref="s63_8" label="DEF"/>
+</nt>
+<nt id="s63_526" cat="COREn">
+	<edge idref="s63_527"/>
+	<secedge idref="s63_9" label="NUM"/>
+</nt>
+<nt id="s63_527" cat="NUCn">
+	<edge idref="s63_9"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s64"><graph><terminals>
+<t id="s64_1" word="the" pos="DT" ner="_"></t>
+<t id="s64_2" word="rumour" pos="NN" ner="_"></t>
+<t id="s64_3" word="that" pos="IN" ner="_"></t>
+<t id="s64_4" word="Fred" pos="NNP" ner="PERSON"></t>
+<t id="s64_5" word="saw" pos="VBD" ner="_"></t>
+<t id="s64_6" word="a" pos="DT" ner="_"></t>
+<t id="s64_7" word="UFO" pos="NNP" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s64_508" cat="NP">
+	<edge idref="s64_509"/>
+	<secedge idref="s64_1" label="DEF"/>
+</nt>
+<nt id="s64_509" cat="COREn">
+	<edge idref="s64_510"/>
+	<edge idref="s64_511"/>
+	<secedge idref="s64_2" label="NUM"/>
+</nt>
+<nt id="s64_510" cat="NUCn">
+	<edge idref="s64_2"/>
+</nt>
+<nt id="s64_511" cat="PERIPHERY">
+	<edge idref="s64_519"/>
+</nt>
+<nt id="s64_512" cat="CLM">
+	<edge idref="s64_3"/>
+</nt>
+<nt id="s64_513" cat="ARG">
+	<edge idref="s64_514"/>
+</nt>
+<nt id="s64_514" cat="NP">
+	<edge idref="s64_515"/>
+</nt>
+<nt id="s64_515" cat="COREn">
+	<edge idref="s64_516"/>
+</nt>
+<nt id="s64_516" cat="NUCn">
+	<edge idref="s64_4"/>
+</nt>
+<nt id="s64_517" cat="NUC">
+	<edge idref="s64_5"/>
+</nt>
+<nt id="s64_518" cat="CORE">
+	<edge idref="s64_513"/>
+	<edge idref="s64_517"/>
+	<edge idref="s64_520"/>
+</nt>
+<nt id="s64_519" cat="CLAUSE">
+	<edge idref="s64_518"/>
+	<edge idref="s64_512"/>
+	<secedge idref="s64_5" label="TNS"/>
+</nt>
+<nt id="s64_520" cat="ARG">
+	<edge idref="s64_521"/>
+</nt>
+<nt id="s64_521" cat="NP">
+	<edge idref="s64_522"/>
+	<secedge idref="s64_6" label="DEF"/>
+</nt>
+<nt id="s64_522" cat="COREn">
+	<edge idref="s64_523"/>
+</nt>
+<nt id="s64_523" cat="NUCn">
+	<edge idref="s64_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s65"><graph><terminals>
+<t id="s65_1" word="duckhunter" pos="NN" ner="_"></t>
+<t id="s65_2" word="," pos="," ner="_"></t>
+<t id="s65_3" word="woodchopper" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s65_504" cat="NP">
+	<edge idref="s65_505"/>
+</nt>
+<nt id="s65_505" cat="COREn">
+	<edge idref="s65_507"/>
+	<secedge idref="s65_1" label="NUM"/>
+	<secedge idref="s65_3" label="NUM"/>
+</nt>
+<nt id="s65_506" cat="NUCn">
+	<edge idref="s65_1"/>
+</nt>
+<nt id="s65_507" cat="NUCn">
+	<edge idref="s65_506"/>
+	<edge idref="s65_508"/>
+</nt>
+<nt id="s65_508" cat="NUCn">
+	<edge idref="s65_3"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s66"><graph><terminals>
+<t id="s66_1" word="the" pos="DT" ner="_"></t>
+<t id="s66_2" word="woman" pos="NN" ner="_"></t>
+<t id="s66_3" word="who" pos="WP" ner="_"></t>
+<t id="s66_4" word="left" pos="VBD" ner="_"></t>
+<t id="s66_5" word="the" pos="DT" ner="_"></t>
+<t id="s66_6" word="party" pos="NN" ner="_"></t>
+<t id="s66_7" word="early" pos="RB" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s66_508" cat="NP">
+	<edge idref="s66_509"/>
+	<secedge idref="s66_1" label="DEF"/>
+</nt>
+<nt id="s66_509" cat="COREn">
+	<edge idref="s66_510"/>
+	<secedge idref="s66_2" label="NUM"/>
+</nt>
+<nt id="s66_510" cat="NUCn">
+	<edge idref="s66_2"/>
+	<edge idref="s66_511"/>
+</nt>
+<nt id="s66_511" cat="PERIPHERY">
+	<edge idref="s66_516"/>
+</nt>
+<nt id="s66_512" cat="NP">
+	<edge idref="s66_3"/>
+</nt>
+<nt id="s66_513" cat="PrCS">
+	<edge idref="s66_512"/>
+</nt>
+<nt id="s66_514" cat="NUC">
+	<edge idref="s66_4"/>
+</nt>
+<nt id="s66_515" cat="CORE">
+	<edge idref="s66_514"/>
+	<edge idref="s66_521"/>
+	<edge idref="s66_517"/>
+</nt>
+<nt id="s66_516" cat="CLAUSE">
+	<edge idref="s66_515"/>
+	<edge idref="s66_513"/>
+	<secedge idref="s66_4" label="TNS"/>
+</nt>
+<nt id="s66_517" cat="ARG">
+	<edge idref="s66_518"/>
+</nt>
+<nt id="s66_518" cat="NP">
+	<edge idref="s66_519"/>
+	<secedge idref="s66_5" label="DEF"/>
+</nt>
+<nt id="s66_519" cat="COREn">
+	<edge idref="s66_520"/>
+	<secedge idref="s66_6" label="NUM"/>
+</nt>
+<nt id="s66_520" cat="NUCn">
+	<edge idref="s66_6"/>
+</nt>
+<nt id="s66_521" cat="PERIPHERY">
+	<edge idref="s66_522"/>
+</nt>
+<nt id="s66_522" cat="ADV">
+	<edge idref="s66_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s67"><graph><terminals>
+<t id="s67_1" word="the" pos="DT" ner="_"></t>
+<t id="s67_2" word="two" pos="CD" ner="NUMBER"></t>
+<t id="s67_3" word="cars" pos="NNS" ner="_"></t>
+<t id="s67_4" word="which" pos="WDT" ner="_"></t>
+<t id="s67_5" word="were" pos="VBD" ner="_"></t>
+<t id="s67_6" word="sold" pos="VBN" ner="_"></t>
+<t id="s67_7" word="yesterday" pos="RB" ner="DATE"></t>
+</terminals>
+<nonterminals>
+<nt id="s67_508" cat="NP">
+	<edge idref="s67_509"/>
+	<secedge idref="s67_1" label="DEF"/>
+</nt>
+<nt id="s67_509" cat="COREn">
+	<edge idref="s67_510"/>
+	<secedge idref="s67_2" label="QNT"/>
+	<secedge idref="s67_3" label="NUM"/>
+</nt>
+<nt id="s67_510" cat="NUCn">
+	<edge idref="s67_511"/>
+	<edge idref="s67_3"/>
+</nt>
+<nt id="s67_511" cat="PERIPHERY">
+	<edge idref="s67_517"/>
+</nt>
+<nt id="s67_512" cat="NP">
+	<edge idref="s67_4"/>
+</nt>
+<nt id="s67_513" cat="PrCS">
+	<edge idref="s67_512"/>
+</nt>
+<nt id="s67_514" cat="AUX">
+	<edge idref="s67_5"/>
+</nt>
+<nt id="s67_515" cat="NUC">
+	<edge idref="s67_6"/>
+	<edge idref="s67_514"/>
+</nt>
+<nt id="s67_516" cat="CORE">
+	<edge idref="s67_515"/>
+	<edge idref="s67_518"/>
+	<secedge idref="s67_7" label="TEMP"/>
+</nt>
+<nt id="s67_517" cat="CLAUSE">
+	<edge idref="s67_513"/>
+	<edge idref="s67_516"/>
+	<secedge idref="s67_5" label="TNS"/>
+</nt>
+<nt id="s67_518" cat="PERIPHERY">
+	<edge idref="s67_519"/>
+</nt>
+<nt id="s67_519" cat="ADV">
+	<edge idref="s67_7"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s68"><graph><terminals>
+<t id="s68_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s68_2" word="," pos="," ner="_"></t>
+<t id="s68_3" word="who" pos="WP" ner="_"></t>
+<t id="s68_4" word="loves" pos="VBZ" ner="_"></t>
+<t id="s68_5" word="soccer" pos="NN" ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s68_506" cat="NP">
+	<edge idref="s68_509"/>
+	<edge idref="s68_507"/>
+</nt>
+<nt id="s68_507" cat="COREn">
+	<edge idref="s68_508"/>
+</nt>
+<nt id="s68_508" cat="NUCn">
+	<edge idref="s68_1"/>
+</nt>
+<nt id="s68_509" cat="PERIPHERY">
+	<edge idref="s68_514"/>
+</nt>
+<nt id="s68_510" cat="NP">
+	<edge idref="s68_3"/>
+</nt>
+<nt id="s68_511" cat="PrCS">
+	<edge idref="s68_510"/>
+</nt>
+<nt id="s68_512" cat="NUC">
+	<edge idref="s68_4"/>
+</nt>
+<nt id="s68_513" cat="CORE">
+	<edge idref="s68_515"/>
+	<edge idref="s68_512"/>
+</nt>
+<nt id="s68_514" cat="CLAUSE">
+	<edge idref="s68_513"/>
+	<edge idref="s68_511"/>
+	<secedge idref="s68_4" label="TNS"/>
+</nt>
+<nt id="s68_515" cat="ARG">
+	<edge idref="s68_516"/>
+</nt>
+<nt id="s68_516" cat="NP">
+	<edge idref="s68_517"/>
+</nt>
+<nt id="s68_517" cat="COREn">
+	<edge idref="s68_518"/>
+	<secedge idref="s68_5" label="NUM"/>
+</nt>
+<nt id="s68_518" cat="NUCn">
+	<edge idref="s68_5"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s69"><graph><terminals>
+<t id="s69_1" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s69_2" word="worked" pos="VBD" ner="_"></t>
+<t id="s69_3" word="on" pos="IN" ner="_"></t>
+<t id="s69_4" word="the" pos="DT" ner="_"></t>
+<t id="s69_5" word="assignment" pos="NN" ner="_"></t>
+<t id="s69_6" word="in" pos="IN" ner="_"></t>
+<t id="s69_7" word="the" pos="DT" ner="_"></t>
+<t id="s69_8" word="morning" pos="NN" ner="TIME"></t>
+<t id="s69_9" word="and" pos="CC" ner="_"></t>
+<t id="s69_10" word="will" pos="MD" ner="_"></t>
+<t id="s69_11" word="finish" pos="VB" ner="_"></t>
+<t id="s69_12" word="it" pos="PRP" ner="_"></t>
+<t id="s69_13" word="in" pos="IN" ner="_"></t>
+<t id="s69_14" word="the" pos="DT" ner="_"></t>
+<t id="s69_15" word="afternoon" pos="NN" ner="TIME"></t>
+</terminals>
+<nonterminals>
+<nt id="s69_516" cat="ARG">
+	<edge idref="s69_517"/>
+</nt>
+<nt id="s69_517" cat="NP">
+	<edge idref="s69_518"/>
+</nt>
+<nt id="s69_518" cat="COREn">
+	<edge idref="s69_519"/>
+</nt>
+<nt id="s69_519" cat="NUCn">
+	<edge idref="s69_1"/>
+</nt>
+<nt id="s69_520" cat="NUC">
+	<edge idref="s69_2"/>
+</nt>
+<nt id="s69_521" cat="CORE">
+	<edge idref="s69_516"/>
+	<edge idref="s69_529"/>
+	<edge idref="s69_520"/>
+	<edge idref="s69_535"/>
+</nt>
+<nt id="s69_522" cat="CLAUSE">
+	<edge idref="s69_521"/>
+	<secedge idref="s69_2" label="TNS"/>
+</nt>
+<nt id="s69_523" cat="CLAUSE">
+	<edge idref="s69_539"/>
+	<edge idref="s69_522"/>
+</nt>
+<nt id="s69_524" cat="SENTENCE">
+	<edge idref="s69_523"/>
+</nt>
+<nt id="s69_525" cat="PP">
+	<edge idref="s69_526"/>
+	<edge idref="s69_3"/>
+</nt>
+<nt id="s69_526" cat="NP">
+	<edge idref="s69_527"/>
+	<secedge idref="s69_4" label="DEF"/>
+</nt>
+<nt id="s69_527" cat="COREn">
+	<edge idref="s69_528"/>
+	<secedge idref="s69_5" label="NUM"/>
+</nt>
+<nt id="s69_528" cat="NUCn">
+	<edge idref="s69_5"/>
+</nt>
+<nt id="s69_529" cat="ARG">
+	<edge idref="s69_525"/>
+</nt>
+<nt id="s69_530" cat="PP">
+	<edge idref="s69_532"/>
+	<edge idref="s69_6"/>
+</nt>
+<nt id="s69_531" cat="ADV">
+	<edge idref="s69_530"/>
+</nt>
+<nt id="s69_532" cat="NP">
+	<edge idref="s69_533"/>
+	<secedge idref="s69_7" label="DEF"/>
+</nt>
+<nt id="s69_533" cat="COREn">
+	<edge idref="s69_534"/>
+	<secedge idref="s69_8" label="NUM"/>
+</nt>
+<nt id="s69_534" cat="NUCn">
+	<edge idref="s69_8"/>
+</nt>
+<nt id="s69_535" cat="PERIPHERY">
+	<edge idref="s69_531"/>
+</nt>
+<nt id="s69_536" cat="CLM">
+	<edge idref="s69_9"/>
+</nt>
+<nt id="s69_537" cat="NUC">
+	<edge idref="s69_11"/>
+</nt>
+<nt id="s69_538" cat="CORE">
+	<edge idref="s69_540"/>
+	<edge idref="s69_547"/>
+	<edge idref="s69_537"/>
+</nt>
+<nt id="s69_539" cat="CLAUSE">
+	<edge idref="s69_538"/>
+	<edge idref="s69_536"/>
+	<secedge idref="s69_10" label="TNS"/>
+</nt>
+<nt id="s69_540" cat="ARG">
+	<edge idref="s69_541"/>
+</nt>
+<nt id="s69_541" cat="NP">
+	<edge idref="s69_12"/>
+</nt>
+<nt id="s69_542" cat="PP">
+	<edge idref="s69_13"/>
+	<edge idref="s69_544"/>
+</nt>
+<nt id="s69_543" cat="ADV">
+	<edge idref="s69_542"/>
+</nt>
+<nt id="s69_544" cat="NP">
+	<edge idref="s69_545"/>
+	<secedge idref="s69_14" label="DEF"/>
+</nt>
+<nt id="s69_545" cat="COREn">
+	<edge idref="s69_546"/>
+	<secedge idref="s69_15" label="NUM"/>
+</nt>
+<nt id="s69_546" cat="NUCn">
+	<edge idref="s69_15"/>
+</nt>
+<nt id="s69_547" cat="PERIPHERY">
+	<edge idref="s69_543"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s70"><graph><terminals>
+<t id="s70_1" word="Leslie" pos="NNP" ner="PERSON"></t>
+<t id="s70_2" word="may" pos="MD" ner="_"></t>
+<t id="s70_3" word="go" pos="VB" ner="_"></t>
+<t id="s70_4" word="to" pos="TO" ner="_"></t>
+<t id="s70_5" word="the" pos="DT" ner="_"></t>
+<t id="s70_6" word="concert" pos="NN" ner="_"></t>
+<t id="s70_7" word="," pos="," ner="_"></t>
+<t id="s70_8" word="and" pos="CC" ner="_"></t>
+<t id="s70_9" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s70_10" word="may" pos="MD" ner="_"></t>
+<t id="s70_11" word="," pos="," ner="_"></t>
+<t id="s70_12" word="too" pos="RB" ner="_"></t>
+<t id="s70_13" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s70_514" cat="ARG">
+	<edge idref="s70_515"/>
+</nt>
+<nt id="s70_515" cat="NP">
+	<edge idref="s70_516"/>
+</nt>
+<nt id="s70_516" cat="COREn">
+	<edge idref="s70_517"/>
+</nt>
+<nt id="s70_517" cat="NUCn">
+	<edge idref="s70_1"/>
+</nt>
+<nt id="s70_518" cat="NUC">
+	<edge idref="s70_3"/>
+</nt>
+<nt id="s70_519" cat="CORE">
+	<edge idref="s70_526"/>
+	<edge idref="s70_518"/>
+	<edge idref="s70_514"/>
+	<secedge idref="s70_2" label="MOD"/>
+</nt>
+<nt id="s70_520" cat="CLAUSE">
+	<edge idref="s70_519"/>
+	<secedge idref="s70_2" label="TNS+IF"/>
+</nt>
+<nt id="s70_521" cat="SENTENCE">
+	<edge idref="s70_534"/>
+	<edge idref="s70_520"/>
+</nt>
+<nt id="s70_522" cat="PP">
+	<edge idref="s70_4"/>
+	<edge idref="s70_523"/>
+</nt>
+<nt id="s70_523" cat="NP">
+	<edge idref="s70_524"/>
+	<secedge idref="s70_5" label="DEF"/>
+</nt>
+<nt id="s70_524" cat="COREn">
+	<edge idref="s70_525"/>
+	<secedge idref="s70_6" label="NUM"/>
+</nt>
+<nt id="s70_525" cat="NUCn">
+	<edge idref="s70_6"/>
+</nt>
+<nt id="s70_526" cat="AAJ">
+	<edge idref="s70_522"/>
+</nt>
+<nt id="s70_527" cat="CLM">
+	<edge idref="s70_8"/>
+</nt>
+<nt id="s70_528" cat="ARG">
+	<edge idref="s70_529"/>
+</nt>
+<nt id="s70_529" cat="NP">
+	<edge idref="s70_530"/>
+</nt>
+<nt id="s70_530" cat="COREn">
+	<edge idref="s70_531"/>
+</nt>
+<nt id="s70_531" cat="NUCn">
+	<edge idref="s70_9"/>
+</nt>
+<nt id="s70_532" cat="NUC">
+	<edge idref="s70_12"/>
+</nt>
+<nt id="s70_533" cat="CORE">
+	<edge idref="s70_528"/>
+	<edge idref="s70_532"/>
+	<secedge idref="s70_10" label="MOD"/>
+</nt>
+<nt id="s70_534" cat="CLAUSE">
+	<edge idref="s70_533"/>
+	<edge idref="s70_527"/>
+	<secedge idref="s70_10" label="IF+TNS"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s71"><graph><terminals>
+<t id="s71_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s71_2" word="tried" pos="VBD" ner="_"></t>
+<t id="s71_3" word="to" pos="TO" ner="_"></t>
+<t id="s71_4" word="see" pos="VB" ner="_"></t>
+<t id="s71_5" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s71_6" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s71_507" cat="ARG">
+	<edge idref="s71_508"/>
+</nt>
+<nt id="s71_508" cat="NP">
+	<edge idref="s71_509"/>
+</nt>
+<nt id="s71_509" cat="COREn">
+	<edge idref="s71_510"/>
+</nt>
+<nt id="s71_510" cat="NUCn">
+	<edge idref="s71_1"/>
+</nt>
+<nt id="s71_511" cat="NUC">
+	<edge idref="s71_2"/>
+</nt>
+<nt id="s71_512" cat="CORE">
+	<edge idref="s71_507"/>
+	<edge idref="s71_511"/>
+</nt>
+<nt id="s71_513" cat="CORE">
+	<edge idref="s71_512"/>
+	<edge idref="s71_518"/>
+</nt>
+<nt id="s71_514" cat="CLAUSE">
+	<edge idref="s71_513"/>
+	<secedge idref="s71_2" label="TNS+IF"/>
+</nt>
+<nt id="s71_515" cat="SENTENCE">
+	<edge idref="s71_514"/>
+</nt>
+<nt id="s71_516" cat="CLM">
+	<edge idref="s71_3"/>
+</nt>
+<nt id="s71_517" cat="NUC">
+	<edge idref="s71_4"/>
+</nt>
+<nt id="s71_518" cat="CORE">
+	<edge idref="s71_516"/>
+	<edge idref="s71_517"/>
+	<edge idref="s71_519"/>
+</nt>
+<nt id="s71_519" cat="ARG">
+	<edge idref="s71_520"/>
+</nt>
+<nt id="s71_520" cat="NP">
+	<edge idref="s71_521"/>
+</nt>
+<nt id="s71_521" cat="COREn">
+	<edge idref="s71_522"/>
+</nt>
+<nt id="s71_522" cat="NUCn">
+	<edge idref="s71_5"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s72"><graph><terminals>
+<t id="s72_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s72_2" word="tried" pos="VBD" ner="_"></t>
+<t id="s72_3" word="to" pos="TO" ner="_"></t>
+<t id="s72_4" word="be" pos="VB" ner="_"></t>
+<t id="s72_5" word="seen" pos="VBN" ner="_"></t>
+<t id="s72_6" word="by" pos="IN" ner="_"></t>
+<t id="s72_7" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s72_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s72_509" cat="ARG">
+	<edge idref="s72_510"/>
+</nt>
+<nt id="s72_510" cat="NP">
+	<edge idref="s72_511"/>
+</nt>
+<nt id="s72_511" cat="COREn">
+	<edge idref="s72_512"/>
+</nt>
+<nt id="s72_512" cat="NUCn">
+	<edge idref="s72_1"/>
+</nt>
+<nt id="s72_513" cat="NUC">
+	<edge idref="s72_2"/>
+</nt>
+<nt id="s72_514" cat="CORE">
+	<edge idref="s72_513"/>
+	<edge idref="s72_509"/>
+</nt>
+<nt id="s72_515" cat="CORE">
+	<edge idref="s72_521"/>
+	<edge idref="s72_514"/>
+</nt>
+<nt id="s72_516" cat="CLAUSE">
+	<edge idref="s72_515"/>
+	<secedge idref="s72_2" label="IF+TNS"/>
+</nt>
+<nt id="s72_517" cat="SENTENCE">
+	<edge idref="s72_516"/>
+</nt>
+<nt id="s72_518" cat="CLM">
+	<edge idref="s72_3"/>
+</nt>
+<nt id="s72_519" cat="AUX">
+	<edge idref="s72_4"/>
+</nt>
+<nt id="s72_520" cat="NUC">
+	<edge idref="s72_5"/>
+	<edge idref="s72_519"/>
+</nt>
+<nt id="s72_521" cat="CORE">
+	<edge idref="s72_526"/>
+	<edge idref="s72_518"/>
+	<edge idref="s72_520"/>
+</nt>
+<nt id="s72_522" cat="PP">
+	<edge idref="s72_6"/>
+	<edge idref="s72_523"/>
+</nt>
+<nt id="s72_523" cat="NP">
+	<edge idref="s72_524"/>
+</nt>
+<nt id="s72_524" cat="COREn">
+	<edge idref="s72_525"/>
+</nt>
+<nt id="s72_525" cat="NUCn">
+	<edge idref="s72_7"/>
+</nt>
+<nt id="s72_526" cat="PERIPHERY">
+	<edge idref="s72_522"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s73"><graph><terminals>
+<t id="s73_1" word="Mary" pos="NNP" ner="PERSON"></t>
+<t id="s73_2" word="seems" pos="VBZ" ner="_"></t>
+<t id="s73_3" word="to" pos="TO" ner="_"></t>
+<t id="s73_4" word="know" pos="VB" ner="_"></t>
+<t id="s73_5" word="the" pos="DT" ner="_"></t>
+<t id="s73_6" word="answer" pos="NN" ner="_"></t>
+<t id="s73_7" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s73_508" cat="ARG">
+	<edge idref="s73_509"/>
+</nt>
+<nt id="s73_509" cat="NP">
+	<edge idref="s73_510"/>
+</nt>
+<nt id="s73_510" cat="COREn">
+	<edge idref="s73_511"/>
+</nt>
+<nt id="s73_511" cat="NUCn">
+	<edge idref="s73_1"/>
+</nt>
+<nt id="s73_512" cat="NUC">
+	<edge idref="s73_2"/>
+</nt>
+<nt id="s73_513" cat="CORE">
+	<edge idref="s73_508"/>
+	<edge idref="s73_512"/>
+</nt>
+<nt id="s73_514" cat="CORE">
+	<edge idref="s73_513"/>
+	<edge idref="s73_519"/>
+	<secedge idref="s73_2" label="MOD"/>
+	<secedge idref="s73_3" label="MOD"/>
+</nt>
+<nt id="s73_515" cat="CLAUSE">
+	<edge idref="s73_514"/>
+	<secedge idref="s73_2" label="TNS+IF"/>
+</nt>
+<nt id="s73_516" cat="SENTENCE">
+	<edge idref="s73_515"/>
+</nt>
+<nt id="s73_517" cat="CLM">
+	<edge idref="s73_3"/>
+</nt>
+<nt id="s73_518" cat="NUC">
+	<edge idref="s73_4"/>
+</nt>
+<nt id="s73_519" cat="CORE">
+	<edge idref="s73_517"/>
+	<edge idref="s73_520"/>
+	<edge idref="s73_518"/>
+</nt>
+<nt id="s73_520" cat="ARG">
+	<edge idref="s73_521"/>
+</nt>
+<nt id="s73_521" cat="NP">
+	<edge idref="s73_522"/>
+	<secedge idref="s73_5" label="DEF"/>
+</nt>
+<nt id="s73_522" cat="COREn">
+	<edge idref="s73_523"/>
+	<secedge idref="s73_6" label="NUM"/>
+</nt>
+<nt id="s73_523" cat="NUCn">
+	<edge idref="s73_6"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s74"><graph><terminals>
+<t id="s74_1" word="What" pos="WP" ner="_"></t>
+<t id="s74_2" word="does" pos="VBZ" ner="_"></t>
+<t id="s74_3" word="Mary" pos="NNP" ner="PERSON"></t>
+<t id="s74_4" word="seem" pos="VB" ner="_"></t>
+<t id="s74_5" word="to" pos="TO" ner="_"></t>
+<t id="s74_6" word="like" pos="VB" ner="_"></t>
+<t id="s74_7" word="?" pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s74_508" cat="NP">
+	<edge idref="s74_1"/>
+</nt>
+<nt id="s74_509" cat="PrCS">
+	<edge idref="s74_508"/>
+</nt>
+<nt id="s74_510" cat="ARG">
+	<edge idref="s74_511"/>
+</nt>
+<nt id="s74_511" cat="NP">
+	<edge idref="s74_512"/>
+</nt>
+<nt id="s74_512" cat="COREn">
+	<edge idref="s74_513"/>
+</nt>
+<nt id="s74_513" cat="NUCn">
+	<edge idref="s74_3"/>
+</nt>
+<nt id="s74_514" cat="NUC">
+	<edge idref="s74_4"/>
+</nt>
+<nt id="s74_515" cat="CORE">
+	<edge idref="s74_514"/>
+	<edge idref="s74_510"/>
+</nt>
+<nt id="s74_516" cat="CLAUSE">
+	<edge idref="s74_515"/>
+	<edge idref="s74_509"/>
+	<edge idref="s74_520"/>
+	<secedge idref="s74_2" label="TNS+IF"/>
+</nt>
+<nt id="s74_517" cat="SENTENCE">
+	<edge idref="s74_516"/>
+</nt>
+<nt id="s74_518" cat="CLM">
+	<edge idref="s74_5"/>
+</nt>
+<nt id="s74_519" cat="NUC">
+	<edge idref="s74_6"/>
+</nt>
+<nt id="s74_520" cat="CORE">
+	<edge idref="s74_519"/>
+	<edge idref="s74_518"/>
+	<secedge idref="s74_4" label="MOD"/>
+	<secedge idref="s74_5" label="MOD"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s75"><graph><terminals>
+<t id="s75_1" word="Chris" pos="NNP" ner="PERSON"></t>
+<t id="s75_2" word="was" pos="VBD" ner="_"></t>
+<t id="s75_3" word="believed" pos="VBN" ner="_"></t>
+<t id="s75_4" word="by" pos="IN" ner="_"></t>
+<t id="s75_5" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s75_6" word="to" pos="TO" ner="_"></t>
+<t id="s75_7" word="have" pos="VB" ner="_"></t>
+<t id="s75_8" word="eaten" pos="VBN" ner="_"></t>
+<t id="s75_9" word="the" pos="DT" ner="_"></t>
+<t id="s75_10" word="bagel" pos="NN" ner="_"></t>
+<t id="s75_11" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s75_512" cat="ARG">
+	<edge idref="s75_513"/>
+</nt>
+<nt id="s75_513" cat="NP">
+	<edge idref="s75_514"/>
+</nt>
+<nt id="s75_514" cat="COREn">
+	<edge idref="s75_515"/>
+</nt>
+<nt id="s75_515" cat="NUCn">
+	<edge idref="s75_1"/>
+</nt>
+<nt id="s75_516" cat="AUX">
+	<edge idref="s75_2"/>
+</nt>
+<nt id="s75_517" cat="NUC">
+	<edge idref="s75_516"/>
+	<edge idref="s75_3"/>
+</nt>
+<nt id="s75_518" cat="CORE">
+	<edge idref="s75_512"/>
+	<edge idref="s75_517"/>
+	<edge idref="s75_526"/>
+</nt>
+<nt id="s75_519" cat="CORE">
+	<edge idref="s75_518"/>
+	<edge idref="s75_529"/>
+</nt>
+<nt id="s75_520" cat="CLAUSE">
+	<edge idref="s75_519"/>
+	<secedge idref="s75_2" label="IF+TNS"/>
+</nt>
+<nt id="s75_521" cat="SENTENCE">
+	<edge idref="s75_520"/>
+</nt>
+<nt id="s75_522" cat="PP">
+	<edge idref="s75_4"/>
+	<edge idref="s75_523"/>
+</nt>
+<nt id="s75_523" cat="NP">
+	<edge idref="s75_524"/>
+</nt>
+<nt id="s75_524" cat="COREn">
+	<edge idref="s75_525"/>
+</nt>
+<nt id="s75_525" cat="NUCn">
+	<edge idref="s75_5"/>
+</nt>
+<nt id="s75_526" cat="PERIPHERY">
+	<edge idref="s75_522"/>
+</nt>
+<nt id="s75_527" cat="CLM">
+	<edge idref="s75_6"/>
+</nt>
+<nt id="s75_528" cat="NUC">
+	<edge idref="s75_8"/>
+	<secedge idref="s75_7" label="ASP"/>
+	<secedge idref="s75_8" label="ASP"/>
+</nt>
+<nt id="s75_529" cat="CORE">
+	<edge idref="s75_528"/>
+	<edge idref="s75_527"/>
+	<edge idref="s75_530"/>
+</nt>
+<nt id="s75_530" cat="ARG">
+	<edge idref="s75_531"/>
+</nt>
+<nt id="s75_531" cat="NP">
+	<edge idref="s75_532"/>
+	<secedge idref="s75_9" label="DEF"/>
+</nt>
+<nt id="s75_532" cat="COREn">
+	<edge idref="s75_533"/>
+	<secedge idref="s75_10" label="NUM"/>
+</nt>
+<nt id="s75_533" cat="NUCn">
+	<edge idref="s75_10"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s76"><graph><terminals>
+<t id="s76_1" word="Pat" pos="NNP" ner="PERSON"></t>
+<t id="s76_2" word="liked" pos="VBD" ner="_"></t>
+<t id="s76_3" word="the" pos="DT" ner="_"></t>
+<t id="s76_4" word="puppies" pos="NNS" ner="_"></t>
+<t id="s76_5" word="which" pos="WDT" ner="_"></t>
+<t id="s76_6" word="Kim" pos="NNP" ner="PERSON"></t>
+<t id="s76_7" word="saw" pos="VBD" ner="_"></t>
+<t id="s76_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s76_509" cat="ARG">
+	<edge idref="s76_510"/>
+</nt>
+<nt id="s76_510" cat="NP">
+	<edge idref="s76_511"/>
+</nt>
+<nt id="s76_511" cat="COREn">
+	<edge idref="s76_512"/>
+</nt>
+<nt id="s76_512" cat="NUCn">
+	<edge idref="s76_1"/>
+</nt>
+<nt id="s76_513" cat="NUC">
+	<edge idref="s76_2"/>
+</nt>
+<nt id="s76_514" cat="CORE">
+	<edge idref="s76_509"/>
+	<edge idref="s76_513"/>
+	<edge idref="s76_530"/>
+</nt>
+<nt id="s76_515" cat="CLAUSE">
+	<edge idref="s76_514"/>
+	<secedge idref="s76_2" label="TNS+IF"/>
+</nt>
+<nt id="s76_516" cat="SENTENCE">
+	<edge idref="s76_515"/>
+</nt>
+<nt id="s76_517" cat="NP">
+	<edge idref="s76_518"/>
+	<secedge idref="s76_3" label="DEF"/>
+</nt>
+<nt id="s76_518" cat="COREn">
+	<edge idref="s76_519"/>
+	<secedge idref="s76_4" label="NUM"/>
+</nt>
+<nt id="s76_519" cat="NUCn">
+	<edge idref="s76_520"/>
+	<edge idref="s76_4"/>
+</nt>
+<nt id="s76_520" cat="PERIPHERY">
+	<edge idref="s76_529"/>
+</nt>
+<nt id="s76_521" cat="PrCS">
+	<edge idref="s76_522"/>
+</nt>
+<nt id="s76_522" cat="NP">
+	<edge idref="s76_5"/>
+</nt>
+<nt id="s76_523" cat="ARG">
+	<edge idref="s76_524"/>
+</nt>
+<nt id="s76_524" cat="NP">
+	<edge idref="s76_525"/>
+</nt>
+<nt id="s76_525" cat="COREn">
+	<edge idref="s76_526"/>
+</nt>
+<nt id="s76_526" cat="NUCn">
+	<edge idref="s76_6"/>
+</nt>
+<nt id="s76_527" cat="NUC">
+	<edge idref="s76_7"/>
+</nt>
+<nt id="s76_528" cat="CORE">
+	<edge idref="s76_527"/>
+	<edge idref="s76_523"/>
+</nt>
+<nt id="s76_529" cat="CLAUSE">
+	<edge idref="s76_521"/>
+	<edge idref="s76_528"/>
+	<secedge idref="s76_7" label="TNS"/>
+</nt>
+<nt id="s76_530" cat="ARG">
+	<edge idref="s76_517"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s77"><graph><terminals>
+<t id="s77_1" word="John" pos="NNP" ner="PERSON"></t>
+<t id="s77_2" word="seems" pos="VBZ" ner="_"></t>
+<t id="s77_3" word="to" pos="TO" ner="_"></t>
+<t id="s77_4" word="himself" pos="PRP" ner="_"></t>
+<t id="s77_5" word="to" pos="TO" ner="_"></t>
+<t id="s77_6" word="be" pos="VB" ner="_"></t>
+<t id="s77_7" word="sick" pos="JJ" ner="_"></t>
+<t id="s77_8" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s77_509" cat="ARG">
+	<edge idref="s77_510"/>
+</nt>
+<nt id="s77_510" cat="NP">
+	<edge idref="s77_511"/>
+</nt>
+<nt id="s77_511" cat="COREn">
+	<edge idref="s77_512"/>
+</nt>
+<nt id="s77_512" cat="NUCn">
+	<edge idref="s77_1"/>
+</nt>
+<nt id="s77_513" cat="NUC">
+	<edge idref="s77_2"/>
+</nt>
+<nt id="s77_514" cat="CORE">
+	<edge idref="s77_513"/>
+	<edge idref="s77_509"/>
+	<edge idref="s77_520"/>
+</nt>
+<nt id="s77_515" cat="CORE">
+	<edge idref="s77_514"/>
+	<edge idref="s77_524"/>
+	<secedge idref="s77_2" label="MOD"/>
+	<secedge idref="s77_5" label="MOD"/>
+</nt>
+<nt id="s77_516" cat="CLAUSE">
+	<edge idref="s77_515"/>
+	<secedge idref="s77_2" label="TNS+IF"/>
+</nt>
+<nt id="s77_517" cat="SENTENCE">
+	<edge idref="s77_516"/>
+</nt>
+<nt id="s77_518" cat="PP">
+	<edge idref="s77_519"/>
+	<edge idref="s77_3"/>
+</nt>
+<nt id="s77_519" cat="NP">
+	<edge idref="s77_4"/>
+</nt>
+<nt id="s77_520" cat="ARG">
+	<edge idref="s77_518"/>
+</nt>
+<nt id="s77_521" cat="CLM">
+	<edge idref="s77_5"/>
+</nt>
+<nt id="s77_522" cat="AUX">
+	<edge idref="s77_6"/>
+</nt>
+<nt id="s77_523" cat="NUC">
+	<edge idref="s77_522"/>
+	<edge idref="s77_7"/>
+</nt>
+<nt id="s77_524" cat="CORE">
+	<edge idref="s77_523"/>
+	<edge idref="s77_521"/>
+</nt>
+</nonterminals></graph></s>
+<s id="s78"><graph><terminals>
+<t id="s78_1" word="It" pos="PRP" ner="_"></t>
+<t id="s78_2" word="seems" pos="VBZ" ner="_"></t>
+<t id="s78_3" word="to" pos="TO" ner="_"></t>
+<t id="s78_4" word="himself" pos="PRP" ner="_"></t>
+<t id="s78_5" word="that" pos="IN" ner="_"></t>
+<t id="s78_6" word="John" pos="NNP" ner="PERSON"></t>
+<t id="s78_7" word="is" pos="VBZ" ner="_"></t>
+<t id="s78_8" word="sick" pos="JJ" ner="_"></t>
+<t id="s78_9" word="." pos="." ner="_"></t>
+</terminals>
+<nonterminals>
+<nt id="s78_510" cat="ARG">
+	<edge idref="s78_511"/>
+</nt>
+<nt id="s78_511" cat="NP">
+	<edge idref="s78_1"/>
+</nt>
+<nt id="s78_512" cat="NUC">
+	<edge idref="s78_2"/>
+</nt>
+<nt id="s78_513" cat="CORE">
+	<edge idref="s78_510"/>
+	<edge idref="s78_518"/>
+	<edge idref="s78_512"/>
+</nt>
+<nt id="s78_514" cat="CLAUSE">
+	<edge idref="s78_513"/>
+	<edge idref="s78_527"/>
+	<secedge idref="s78_2" label="TNS+IF"/>
+</nt>
+<nt id="s78_515" cat="SENTENCE">
+	<edge idref="s78_514"/>
+</nt>
+<nt id="s78_516" cat="PP">
+	<edge idref="s78_517"/>
+	<edge idref="s78_3"/>
+</nt>
+<nt id="s78_517" cat="NP">
+	<edge idref="s78_4"/>
+</nt>
+<nt id="s78_518" cat="ARG">
+	<edge idref="s78_516"/>
+</nt>
+<nt id="s78_519" cat="CLM">
+	<edge idref="s78_5"/>
+</nt>
+<nt id="s78_520" cat="ARG">
+	<edge idref="s78_521"/>
+</nt>
+<nt id="s78_521" cat="NP">
+	<edge idref="s78_522"/>
+</nt>
+<nt id="s78_522" cat="COREn">
+	<edge idref="s78_523"/>
+</nt>
+<nt id="s78_523" cat="NUCn">
+	<edge idref="s78_6"/>
+</nt>
+<nt id="s78_524" cat="AUX">
+	<edge idref="s78_7"/>
+</nt>
+<nt id="s78_525" cat="NUC">
+	<edge idref="s78_8"/>
+	<edge idref="s78_524"/>
+</nt>
+<nt id="s78_526" cat="CORE">
+	<edge idref="s78_520"/>
+	<edge idref="s78_525"/>
+</nt>
+<nt id="s78_527" cat="CLAUSE">
+	<edge idref="s78_519"/>
+	<edge idref="s78_526"/>
+	<secedge idref="s78_7" label="TNS"/>
+</nt>
+</nonterminals></graph></s></body></corpus>
