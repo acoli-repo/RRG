@@ -16,13 +16,16 @@ Observations on the source data:
 
 ## Content
 
-<code>input/</code>
-+ text and annotated source documents
-
 <code>release/</code>
 + generated RRG data, TIGER XML format; 
   also includes generation scripts
+
+<code>doc/</code>
++ documentation (papers, slides)
   
+<code>input/</code>
++ text and annotated source documents
+
 ## References and Usage
 
 The code for building the RRG Corpus is licensed under the Apache License v.2, see the scripts in the release folder. The RRG gold data (textbook examples) provided in the release folder also fall under this license.
