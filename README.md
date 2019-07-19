@@ -20,7 +20,7 @@ Observations on the source data:
 + text and annotated source documents
 
 <code>release/</code>
-+ generated RRG data, TIGER XML format
++ generated RRG data, TIGER XML format; 
   also includes generation scripts
   
 ## References and Usage
@@ -57,6 +57,6 @@ For a piece of related research, compare https://rrgbank.phil.hhu.de, an effort 
 - CF - Christian Fäth, ACoLi, Goethe-Universität Frankfurt, Germany, faeth@informatik.uni-frankfurt.de
 - MRP - Monika Rind-Pawlowski, ACoLi/LiODi, Goethe-Universität Frankfurt, Germany, pawlowski@lingua.uni-frankfurt.de
 
-The research of Christian Chiarcos and Monika Rind-Pawlowski has been conducted in the context of the Early Carreer Research Group "Linked Open Dictionaries (LiODi)'', funded 2015-2020 by the German Ministry of Education and Research (BMBF) in the context of the 2014/2015 eHumanities programme. The research of Christian Fäth was partially supported by the context of the Special Information Service "Linguistics'' (FID Linguistik), funded 2016-2019 by the German Research Foundation (DFG).
+The research of Christian Chiarcos and Monika Rind-Pawlowski has been conducted in the context of the Early Carreer Research Group "Linked Open Dictionaries (LiODi)'', funded 2015-2020 by the German Ministry of Education and Research (BMBF) in the context of the 2014/2015 eHumanities programme. The research of Christian Fäth was partially supported by the Special Information Service "Linguistics'' (FID Linguistik), funded 2016-2019 by the German Research Foundation (DFG).
 
 Brought to you by ACoLi/LiODi 2015-2018.
