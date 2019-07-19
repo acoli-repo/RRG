@@ -38,7 +38,7 @@ sh and sparql scripts for conversion
 
 history
 -------
-- ????-??-?? v.015 (EWT/UD+PB, developed on dev/answers) in preparation
+- [under dev] v.015 (EWT/UD+PB, developed on dev/answers) -- CC
 - 2018-08-10 v.014 (EWT/UD, developed on dev/answers) -- CC
 - 2018-07-15 v.013 (RRG1997+RRG2005, keeping ARG/AAJ as in RRG1997) -- CC
 - 2018-07-08 v.012 (RRG1997, RRG template validation ok except for treatment of "have to" as core cosubordination) -- CC
@@ -48,4 +48,5 @@ history
 
 contributors
 ------------
-CC - chiarcos@informatik.uni-frankfurt.de
+CC - Christian Chiarcos, ACoLi, Goethe-Universität Frankfurt, Germany, chiarcos@informatik.uni-frankfurt.de
+CF - Christian Fäth, ACoLi, Goethe-Universität Frankfurt, Germany, faeth@informatik.uni-frankfurt.de
